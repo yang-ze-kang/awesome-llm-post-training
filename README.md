@@ -1,13 +1,55 @@
 # Awesome LLM Post-Training
 
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-GitHub_Pages-6f42c1)](https://yang-ze-kang.github.io/awesome-llm-post-training/)
+[![Papers](https://img.shields.io/badge/papers-60+-blue)](data/papers.json)
+[![Auto-updated](https://img.shields.io/badge/updated-daily-brightgreen)](.github/workflows/crawl.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A curated, **bilingual (中文 / English)**, auto-updating website that categorizes
 papers on Large Language Model **post-training** — supervised fine-tuning, RLHF,
 preference optimization, reward modeling, RL policy optimization, reasoning /
 test-time scaling, distillation, benchmarks, safety, and tooling.
 
+<p align="center">
+  <a href="https://yang-ze-kang.github.io/awesome-llm-post-training/">
+    <b>🌐 Live site → yang-ze-kang.github.io/awesome-llm-post-training</b>
+  </a>
+</p>
+
+> The live site deploys automatically from `main` via GitHub Pages. If the link
+> 404s, the repo owner still needs to enable Pages (Settings → Pages → Source:
+> **GitHub Actions**) — see [DEPLOY.md](DEPLOY.md).
+
 Seeded from [mbzuai-oryx/Awesome-LLM-Post-training](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training)
 and kept fresh by a daily GitHub Action that crawls arXiv and uses Claude to
 judge relevance, classify each paper, and write a bilingual one-line summary.
+
+## Preview
+
+```
+┌────────────────────────────────────────────────────────────────────┐
+│  Awesome LLM Post-Training                    [中文] [🌙] [Source]  │
+│  A curated, auto-updating collection of LLM post-training papers.    │
+├──────────────────────┬─────────────────────────────────────────────┤
+│  🔎 Search papers... │  ▸ Supervised Fine-Tuning                    │
+│                      │    Instruction Tuning              [5]        │
+│  Supervised FT  [17] │    ┌───────────────────────────────────────┐ │
+│    Instruction   [5] │    │ Finetuned LMs Are Zero-Shot Learners  │ │
+│    PEFT          [5] │    │ Introduces instruction tuning: ...     │ │
+│    Data & Synth  [4] │    │ ICLR 2022 · 2021-09-03 · Paper →       │ │
+│    Distillation  [3] │    └───────────────────────────────────────┘ │
+│  Reinforcement  [22] │    Parameter-Efficient FT           [5]       │
+│    Reward Model  [4] │    ┌───────────────────────────────────────┐ │
+│    RLHF/PPO      [4] │    │ LoRA: Low-Rank Adaptation of LLMs     │ │
+│    DPO           [6] │    │ Freezes pretrained weights and ...     │ │
+│    RLAIF         [3] │    └───────────────────────────────────────┘ │
+│    Reasoning RL  [5] │  ▸ Reinforcement Learning                    │
+│  Test-Time       [7] │    Reward Modeling (RM/PRM/ORM)     [4]       │
+│  Resources      [14] │    ...                                        │
+└──────────────────────┴─────────────────────────────────────────────┘
+   ↑ two-level sidebar nav      ↑ papers grouped by group → category
+   Toggle 中文/EN rewrites the whole UI and every summary. Search filters live.
+```
 
 ## Features
 
