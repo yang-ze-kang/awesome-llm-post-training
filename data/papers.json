@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-08",
+    "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training; auto-updated daily via arXiv crawler."
+  },
+  "papers": [
+    {
+      "id": "2503.06072",
+      "title": "A Survey on Post-training of Large Language Models",
+      "category": "survey",
+      "date": "2025-03-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2503.06072",
+      "summary": {
+        "en": "A comprehensive survey systematically organizing the landscape of LLM post-training methods, spanning fine-tuning, RLHF, and reasoning enhancement.",
+        "zh": "系统梳理 LLM 后训练方法全景的综述,涵盖微调、RLHF 与推理增强等方向。"
+      }
+    },
+    {
+      "id": "2502.21321",
+      "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+      "category": "survey",
+      "date": "2025-02-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/pdf/2502.21321",
+      "summary": {
+        "en": "The foundational survey behind this list, taxonomizing post-training into fine-tuning, reinforcement learning, and test-time scaling.",
+        "zh": "本列表所依据的基础综述,将后训练划分为微调、强化学习与测试时扩展三大类。"
+      }
+    },
+    {
+      "id": "2502.17419",
+      "title": "From System 1 to System 2: A Survey of Reasoning Large Language Models",
+      "category": "survey",
+      "date": "2025-02-25",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2502.17419",
+      "summary": {
+        "en": "Surveys the transition from fast intuitive (System 1) to deliberate reasoning (System 2) capabilities in large language models.",
+        "zh": "综述大语言模型从快速直觉 (System 1) 到审慎推理 (System 2) 能力的演进。"
+      }
+    },
+    {
+      "id": "2203.02155",
+      "title": "Training language models to follow instructions with human feedback",
+      "category": "rlhf",
+      "date": "2022-03-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "summary": {
+        "en": "The InstructGPT paper: aligns language models with human intent using RLHF, the blueprint for modern instruction-following models.",
+        "zh": "InstructGPT 论文:用 RLHF 将语言模型与人类意图对齐,是现代指令遵循模型的蓝本。"
+      }
+    },
+    {
+      "id": "2402.03300",
+      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "category": "policy-optimization",
+      "date": "2024-02-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2402.03300",
+      "summary": {
+        "en": "Introduces GRPO (Group Relative Policy Optimization) and demonstrates strong mathematical reasoning in open models.",
+        "zh": "提出 GRPO(组相对策略优化),在开源模型上实现强大的数学推理能力。"
+      }
+    },
+    {
+      "id": "2501.12948",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "category": "reasoning",
+      "date": "2025-01-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "summary": {
+        "en": "Shows that large-scale RL alone can incentivize strong reasoning, producing R1 with emergent chain-of-thought behavior.",
+        "zh": "证明仅靠大规模强化学习即可激发强推理能力,训练出具备涌现思维链行为的 R1。"
+      }
+    },
+    {
+      "id": "2501.12599",
+      "title": "Kimi k1.5: Scaling Reinforcement Learning with LLMs",
+      "category": "reasoning",
+      "date": "2025-01-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.12599",
+      "summary": {
+        "en": "Describes scaling RL training with long-context and multimodal reasoning to reach frontier performance.",
+        "zh": "介绍通过长上下文与多模态推理扩展 RL 训练,达到前沿性能。"
+      }
+    },
+    {
+      "id": "2305.20050",
+      "title": "Let's Verify Step by Step",
+      "category": "reward-modeling",
+      "date": "2023-05-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2305.20050",
+      "summary": {
+        "en": "Demonstrates that process supervision (rewarding each reasoning step) outperforms outcome supervision for math reasoning.",
+        "zh": "证明过程监督(对每一步推理给予奖励)在数学推理上优于结果监督。"
+      }
+    },
+    {
+      "id": "2406.18629",
+      "title": "Step-DPO: Step-wise Preference Optimization for Long-chain Reasoning of LLMs",
+      "category": "preference-optimization",
+      "date": "2024-06-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2406.18629",
+      "summary": {
+        "en": "Extends DPO to operate at the level of individual reasoning steps for improved long-chain reasoning.",
+        "zh": "将 DPO 扩展到单个推理步骤层面,以提升长链条推理能力。"
+      }
+    },
+    {
+      "id": "2501.04519",
+      "title": "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+      "category": "tree-search",
+      "date": "2025-01-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.04519",
+      "summary": {
+        "en": "Uses MCTS-driven self-evolution to let small models achieve strong math reasoning without distillation from larger models.",
+        "zh": "借助 MCTS 驱动的自我进化,让小模型无需从大模型蒸馏即可获得强数学推理能力。"
+      }
+    },
+    {
+      "id": "2407.06023",
+      "title": "Distilling System 2 into System 1",
+      "category": "distillation",
+      "date": "2024-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2407.06023",
+      "summary": {
+        "en": "Distills deliberate System 2 reasoning into faster System 1 responses, reducing inference cost while retaining quality.",
+        "zh": "将审慎的 System 2 推理蒸馏为更快的 System 1 响应,在保持质量的同时降低推理成本。"
+      }
+    },
+    {
+      "id": "2501.14249",
+      "title": "Humanity's Last Exam",
+      "category": "benchmarks",
+      "date": "2025-01-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.14249",
+      "summary": {
+        "en": "A frontier benchmark of extremely difficult, expert-level questions designed to resist saturation by current models.",
+        "zh": "一个由极难的专家级题目组成的前沿基准,旨在抵抗当前模型的性能饱和。"
+      }
+    },
+    {
+      "id": "2503.00555",
+      "title": "Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable",
+      "category": "safety",
+      "date": "2025-03-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2503.00555v1",
+      "summary": {
+        "en": "Investigates the trade-off where safety alignment can degrade the reasoning ability of large reasoning models.",
+        "zh": "研究安全对齐可能削弱大型推理模型推理能力的权衡关系。"
+      }
+    },
+    {
+      "id": "2501.18492",
+      "title": "GuardReasoner: Towards Reasoning-based LLM Safeguards",
+      "category": "safety",
+      "date": "2025-01-30",
+      "venue": "ICLR Workshop 2025",
+      "url": "https://arxiv.org/abs/2501.18492",
+      "summary": {
+        "en": "Proposes reasoning-based guardrails that improve the interpretability and robustness of LLM safety moderation.",
+        "zh": "提出基于推理的护栏机制,提升 LLM 安全审核的可解释性与鲁棒性。"
+      }
+    },
+    {
+      "id": "2507.06892",
+      "title": "Squeeze the Soaked Sponge: Efficient Off-policy Reinforcement Finetuning for LLMs",
+      "category": "policy-optimization",
+      "date": "2025-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2507.06892",
+      "summary": {
+        "en": "Proposes an efficient off-policy reinforcement fine-tuning method that better reuses collected experience.",
+        "zh": "提出一种高效的离线策略强化微调方法,更充分地复用已采集的经验数据。"
+      }
+    },
+    {
+      "id": "2412.16145",
+      "title": "Offline Reinforcement Learning for LLM Multi-Step Reasoning",
+      "category": "policy-optimization",
+      "date": "2024-12-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2412.16145",
+      "summary": {
+        "en": "Applies offline RL to improve multi-step reasoning without costly online rollouts.",
+        "zh": "将离线强化学习应用于多步推理,无需昂贵的在线采样。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+name: Daily paper crawl
+
+on:
+  schedule:
+    # Runs every day at 01:17 UTC (off the top of the hour on purpose).
+    - cron: "17 1 * * *"
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run crawler
+        id: crawl
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          CRAWL_DAYS: "3"
+          MAX_CANDIDATES: "40"
+        run: python scripts/crawl.py
+
+      - name: Commit updates
+        run: |
+          if [[ -z "$(git status --porcelain data/papers.json)" ]]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json
+          COUNT="${{ steps.crawl.outputs.added_count }}"
+          git commit -m "chore: add ${COUNT:-new} paper(s) via daily crawl [skip ci]"
+          git push

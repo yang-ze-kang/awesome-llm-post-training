@@ -1,0 +1,112 @@
+{
+  "categories": [
+    {
+      "id": "survey",
+      "name": { "en": "Survey", "zh": "综述" },
+      "desc": {
+        "en": "Comprehensive reviews of LLM post-training, reasoning, and alignment.",
+        "zh": "关于 LLM 后训练、推理与对齐的综合性综述。"
+      },
+      "keywords": ["survey", "overview", "review"]
+    },
+    {
+      "id": "sft",
+      "name": { "en": "Supervised Fine-Tuning", "zh": "监督微调 (SFT)" },
+      "desc": {
+        "en": "Instruction tuning and supervised fine-tuning methods, including PEFT/LoRA.",
+        "zh": "指令微调与监督微调方法,包括 PEFT/LoRA 等参数高效方案。"
+      },
+      "keywords": ["supervised fine-tuning", "instruction tuning", "SFT", "LoRA", "PEFT", "parameter-efficient"]
+    },
+    {
+      "id": "rlhf",
+      "name": { "en": "RLHF", "zh": "人类反馈强化学习 (RLHF)" },
+      "desc": {
+        "en": "Reinforcement Learning from Human Feedback and related alignment pipelines.",
+        "zh": "基于人类反馈的强化学习及相关对齐流程。"
+      },
+      "keywords": ["RLHF", "human feedback", "reinforcement learning from human feedback"]
+    },
+    {
+      "id": "preference-optimization",
+      "name": { "en": "Preference Optimization", "zh": "偏好优化" },
+      "desc": {
+        "en": "Direct preference-based methods such as DPO, IPO, KTO, and variants.",
+        "zh": "基于偏好的直接优化方法,如 DPO、IPO、KTO 及其变体。"
+      },
+      "keywords": ["DPO", "preference optimization", "direct preference", "IPO", "KTO", "ORPO", "SimPO"]
+    },
+    {
+      "id": "reward-modeling",
+      "name": { "en": "Reward Modeling", "zh": "奖励建模" },
+      "desc": {
+        "en": "Outcome and process reward models (PRM/ORM) and reward learning.",
+        "zh": "结果与过程奖励模型 (PRM/ORM) 及奖励学习。"
+      },
+      "keywords": ["reward model", "process reward", "PRM", "ORM", "reward learning", "verifier"]
+    },
+    {
+      "id": "policy-optimization",
+      "name": { "en": "Policy Optimization", "zh": "策略优化" },
+      "desc": {
+        "en": "RL policy optimization algorithms for LLMs: PPO, GRPO, RLOO, offline RL.",
+        "zh": "面向 LLM 的强化学习策略优化算法:PPO、GRPO、RLOO、离线 RL 等。"
+      },
+      "keywords": ["PPO", "GRPO", "policy optimization", "RLOO", "offline RL", "reinforcement finetuning"]
+    },
+    {
+      "id": "reasoning",
+      "name": { "en": "Reasoning & Test-time Scaling", "zh": "推理与测试时扩展" },
+      "desc": {
+        "en": "Chain-of-thought, long reasoning, and inference-time compute scaling.",
+        "zh": "思维链、长程推理与推理时算力扩展。"
+      },
+      "keywords": ["reasoning", "chain-of-thought", "test-time", "inference scaling", "long reasoning", "o1", "R1", "system 2"]
+    },
+    {
+      "id": "tree-search",
+      "name": { "en": "MCTS / Tree Search", "zh": "蒙特卡洛树搜索 / 树搜索" },
+      "desc": {
+        "en": "Monte Carlo Tree Search and tree/graph search-guided reasoning.",
+        "zh": "蒙特卡洛树搜索及树/图搜索引导的推理方法。"
+      },
+      "keywords": ["MCTS", "tree search", "monte carlo", "tree of thought", "beam search"]
+    },
+    {
+      "id": "distillation",
+      "name": { "en": "Distillation", "zh": "知识蒸馏" },
+      "desc": {
+        "en": "Distilling reasoning and capabilities from larger to smaller models.",
+        "zh": "将推理能力从大模型蒸馏到小模型。"
+      },
+      "keywords": ["distillation", "distill", "knowledge distillation", "self-training", "self-improvement"]
+    },
+    {
+      "id": "benchmarks",
+      "name": { "en": "Benchmarks & Datasets", "zh": "基准与数据集" },
+      "desc": {
+        "en": "Evaluation benchmarks and datasets for reasoning and alignment.",
+        "zh": "面向推理与对齐的评测基准与数据集。"
+      },
+      "keywords": ["benchmark", "dataset", "evaluation", "eval"]
+    },
+    {
+      "id": "safety",
+      "name": { "en": "Safety & Alignment", "zh": "安全与对齐" },
+      "desc": {
+        "en": "Safety alignment, guardrails, and robustness of reasoning models.",
+        "zh": "推理模型的安全对齐、护栏与鲁棒性。"
+      },
+      "keywords": ["safety", "alignment", "guardrail", "jailbreak", "harmful", "robustness"]
+    },
+    {
+      "id": "tools",
+      "name": { "en": "Tools & Frameworks", "zh": "工具与框架" },
+      "desc": {
+        "en": "Open-source frameworks and libraries for RL / LLM fine-tuning.",
+        "zh": "用于 RL / LLM 微调的开源框架与代码库。"
+      },
+      "keywords": ["framework", "library", "toolkit", "open-source", "implementation"]
+    }
+  ]
+}
