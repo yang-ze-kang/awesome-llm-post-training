@@ -28,7 +28,7 @@ judge relevance, classify each paper, and write a bilingual one-line summary.
 │   ├── i18n.js              # UI string translations
 │   └── app.js               # data loading + rendering
 ├── data/
-│   ├── categories.json      # bilingual category taxonomy
+│   ├── categories.json      # bilingual, hierarchical taxonomy (groups → categories)
 │   └── papers.json          # the paper database (crawler appends here)
 ├── scripts/
 │   └── crawl.py             # arXiv fetch + LLM classification
@@ -62,9 +62,19 @@ Each paper in `data/papers.json`:
 }
 ```
 
-`category` must match an `id` in `data/categories.json`. To add a category, add
-an entry there (with `name`, `desc`, and `keywords` in both languages) — the UI
+`category` must match a category `id` in `data/categories.json`, which is
+organized as a two-level hierarchy — top-level **groups** (SFT, RL, Test-Time
+Scaling, Resources), each containing **categories** (e.g. RL → Reward Modeling,
+RLHF/PPO, DPO, RLAIF, Reasoning RL). To add a category, add an entry under the
+right group (with `name`, `desc`, and `keywords` in both languages) — the UI
 and crawler pick it up automatically.
+
+### Taxonomy
+
+- **监督微调 / Supervised Fine-Tuning** — Instruction Tuning · Parameter-Efficient FT · Data & Synthetic Data · Knowledge Distillation
+- **强化学习 / Reinforcement Learning** — Reward Modeling (RM/PRM/ORM) · RLHF Policy Optimization (PPO/RLOO) · Direct Preference Optimization (DPO/IPO/KTO/SimPO/ORPO) · RLAIF & Constitutional AI · Reasoning RL / Verifiable Rewards (GRPO/R1)
+- **测试时扩展 / Test-Time Scaling** — Chain-of-Thought & Reasoning · Search (MCTS / Tree)
+- **资源 / Resources** — Surveys · Benchmarks & Datasets · Safety & Alignment · Tools & Frameworks
 
 ## The crawler
 

@@ -1,127 +1,187 @@
 {
   "meta": {
     "lastUpdated": "2026-07-08",
-    "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training; auto-updated daily via arXiv crawler."
+    "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
     {
-      "id": "2503.06072",
-      "title": "A Survey on Post-training of Large Language Models",
-      "category": "survey",
-      "date": "2025-03-08",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2503.06072",
+      "id": "2109.01652",
+      "title": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+      "category": "instruction-tuning",
+      "date": "2021-09-03",
+      "venue": "ICLR 2022",
+      "url": "https://arxiv.org/abs/2109.01652",
       "summary": {
-        "en": "A comprehensive survey systematically organizing the landscape of LLM post-training methods, spanning fine-tuning, RLHF, and reasoning enhancement.",
-        "zh": "系统梳理 LLM 后训练方法全景的综述,涵盖微调、RLHF 与推理增强等方向。"
+        "en": "Introduces instruction tuning: finetuning on many tasks phrased as instructions dramatically improves zero-shot generalization.",
+        "zh": "提出指令微调:在大量以指令形式表述的任务上微调,可显著提升零样本泛化能力。"
       }
     },
     {
-      "id": "2502.21321",
-      "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
-      "category": "survey",
-      "date": "2025-02-28",
+      "id": "2210.11416",
+      "title": "Scaling Instruction-Finetuned Language Models (Flan-T5)",
+      "category": "instruction-tuning",
+      "date": "2022-10-20",
       "venue": "arXiv",
-      "url": "https://arxiv.org/pdf/2502.21321",
+      "url": "https://arxiv.org/abs/2210.11416",
       "summary": {
-        "en": "The foundational survey behind this list, taxonomizing post-training into fine-tuning, reinforcement learning, and test-time scaling.",
-        "zh": "本列表所依据的基础综述,将后训练划分为微调、强化学习与测试时扩展三大类。"
-      }
-    },
-    {
-      "id": "2502.17419",
-      "title": "From System 1 to System 2: A Survey of Reasoning Large Language Models",
-      "category": "survey",
-      "date": "2025-02-25",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2502.17419",
-      "summary": {
-        "en": "Surveys the transition from fast intuitive (System 1) to deliberate reasoning (System 2) capabilities in large language models.",
-        "zh": "综述大语言模型从快速直觉 (System 1) 到审慎推理 (System 2) 能力的演进。"
+        "en": "Scales instruction finetuning to 1.8K tasks and shows gains across model sizes, including chain-of-thought data.",
+        "zh": "将指令微调扩展到 1800 个任务,并证明在各种规模模型上均有提升,还纳入了思维链数据。"
       }
     },
     {
       "id": "2203.02155",
-      "title": "Training language models to follow instructions with human feedback",
-      "category": "rlhf",
+      "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+      "category": "instruction-tuning",
       "date": "2022-03-04",
-      "venue": "arXiv",
+      "venue": "NeurIPS 2022",
       "url": "https://arxiv.org/abs/2203.02155",
       "summary": {
-        "en": "The InstructGPT paper: aligns language models with human intent using RLHF, the blueprint for modern instruction-following models.",
-        "zh": "InstructGPT 论文:用 RLHF 将语言模型与人类意图对齐,是现代指令遵循模型的蓝本。"
+        "en": "The InstructGPT paper: combines supervised instruction tuning with RLHF to align models with user intent.",
+        "zh": "InstructGPT 论文:将监督指令微调与 RLHF 结合,使模型与用户意图对齐。"
       }
     },
     {
-      "id": "2402.03300",
-      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
-      "category": "policy-optimization",
-      "date": "2024-02-02",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2402.03300",
+      "id": "2304.12244",
+      "title": "WizardLM: Empowering Large Language Models to Follow Complex Instructions (Evol-Instruct)",
+      "category": "instruction-tuning",
+      "date": "2023-04-24",
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/abs/2304.12244",
       "summary": {
-        "en": "Introduces GRPO (Group Relative Policy Optimization) and demonstrates strong mathematical reasoning in open models.",
-        "zh": "提出 GRPO(组相对策略优化),在开源模型上实现强大的数学推理能力。"
+        "en": "Introduces Evol-Instruct to automatically evolve instructions into more complex ones for stronger instruction following.",
+        "zh": "提出 Evol-Instruct,自动将指令演化为更复杂的版本,以增强指令遵循能力。"
       }
     },
     {
-      "id": "2501.12948",
-      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
-      "category": "reasoning",
-      "date": "2025-01-22",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2501.12948",
+      "id": "2305.11206",
+      "title": "LIMA: Less Is More for Alignment",
+      "category": "instruction-tuning",
+      "date": "2023-05-18",
+      "venue": "NeurIPS 2023",
+      "url": "https://arxiv.org/abs/2305.11206",
       "summary": {
-        "en": "Shows that large-scale RL alone can incentivize strong reasoning, producing R1 with emergent chain-of-thought behavior.",
-        "zh": "证明仅靠大规模强化学习即可激发强推理能力,训练出具备涌现思维链行为的 R1。"
+        "en": "Shows that just 1,000 carefully curated examples can align a strong pretrained model, suggesting alignment is mostly format learning.",
+        "zh": "证明仅用 1000 条精心挑选的样本即可对齐强预训练模型,暗示对齐主要是学习格式。"
       }
     },
     {
-      "id": "2501.12599",
-      "title": "Kimi k1.5: Scaling Reinforcement Learning with LLMs",
-      "category": "reasoning",
-      "date": "2025-01-22",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2501.12599",
+      "id": "2106.09685",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "category": "peft",
+      "date": "2021-06-17",
+      "venue": "ICLR 2022",
+      "url": "https://arxiv.org/abs/2106.09685",
       "summary": {
-        "en": "Describes scaling RL training with long-context and multimodal reasoning to reach frontier performance.",
-        "zh": "介绍通过长上下文与多模态推理扩展 RL 训练,达到前沿性能。"
+        "en": "Freezes pretrained weights and injects trainable low-rank matrices, drastically cutting fine-tuning cost.",
+        "zh": "冻结预训练权重并注入可训练的低秩矩阵,大幅降低微调成本。"
       }
     },
     {
-      "id": "2305.20050",
-      "title": "Let's Verify Step by Step",
-      "category": "reward-modeling",
-      "date": "2023-05-31",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2305.20050",
+      "id": "2305.14314",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "category": "peft",
+      "date": "2023-05-23",
+      "venue": "NeurIPS 2023",
+      "url": "https://arxiv.org/abs/2305.14314",
       "summary": {
-        "en": "Demonstrates that process supervision (rewarding each reasoning step) outperforms outcome supervision for math reasoning.",
-        "zh": "证明过程监督(对每一步推理给予奖励)在数学推理上优于结果监督。"
+        "en": "Back-propagates through 4-bit quantized weights into LoRA adapters, enabling fine-tuning of huge models on one GPU.",
+        "zh": "在 4-bit 量化权重上反向传播到 LoRA 适配器,使超大模型可在单张 GPU 上微调。"
       }
     },
     {
-      "id": "2406.18629",
-      "title": "Step-DPO: Step-wise Preference Optimization for Long-chain Reasoning of LLMs",
-      "category": "preference-optimization",
-      "date": "2024-06-26",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2406.18629",
+      "id": "2101.00190",
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "category": "peft",
+      "date": "2021-01-01",
+      "venue": "ACL 2021",
+      "url": "https://arxiv.org/abs/2101.00190",
       "summary": {
-        "en": "Extends DPO to operate at the level of individual reasoning steps for improved long-chain reasoning.",
-        "zh": "将 DPO 扩展到单个推理步骤层面,以提升长链条推理能力。"
+        "en": "Keeps the model frozen and learns a small continuous task-specific prefix, a foundational PEFT method.",
+        "zh": "冻结模型,仅学习一个小的连续任务前缀,是参数高效微调的奠基方法之一。"
       }
     },
     {
-      "id": "2501.04519",
-      "title": "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
-      "category": "tree-search",
-      "date": "2025-01-08",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2501.04519",
+      "id": "2104.08691",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "category": "peft",
+      "date": "2021-04-18",
+      "venue": "EMNLP 2021",
+      "url": "https://arxiv.org/abs/2104.08691",
       "summary": {
-        "en": "Uses MCTS-driven self-evolution to let small models achieve strong math reasoning without distillation from larger models.",
-        "zh": "借助 MCTS 驱动的自我进化,让小模型无需从大模型蒸馏即可获得强数学推理能力。"
+        "en": "Learns soft prompts only; shows prompt tuning matches full fine-tuning as model scale grows.",
+        "zh": "只学习软提示;证明随着模型规模增大,提示微调可媲美全量微调。"
+      }
+    },
+    {
+      "id": "2402.09353",
+      "title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "category": "peft",
+      "date": "2024-02-14",
+      "venue": "ICML 2024",
+      "url": "https://arxiv.org/abs/2402.09353",
+      "summary": {
+        "en": "Decomposes weights into magnitude and direction, improving LoRA's learning capacity with no extra inference cost.",
+        "zh": "将权重分解为幅度与方向,在不增加推理成本的情况下提升 LoRA 的学习能力。"
+      }
+    },
+    {
+      "id": "2212.10560",
+      "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+      "category": "data-synthesis",
+      "date": "2022-12-20",
+      "venue": "ACL 2023",
+      "url": "https://arxiv.org/abs/2212.10560",
+      "summary": {
+        "en": "Bootstraps an instruction dataset from a model's own generations, reducing reliance on human-written data.",
+        "zh": "利用模型自身生成来自举指令数据集,降低对人工编写数据的依赖。"
+      }
+    },
+    {
+      "id": "2306.02707",
+      "title": "Orca: Progressive Learning from Complex Explanation Traces of GPT-4",
+      "category": "data-synthesis",
+      "date": "2023-06-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2306.02707",
+      "summary": {
+        "en": "Trains smaller models on rich explanation traces from GPT-4, teaching reasoning process rather than just answers.",
+        "zh": "用 GPT-4 的丰富解释轨迹训练小模型,教会其推理过程而非仅仅答案。"
+      }
+    },
+    {
+      "id": "2308.06259",
+      "title": "Self-Alignment with Instruction Backtranslation",
+      "category": "data-synthesis",
+      "date": "2023-08-11",
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/abs/2308.06259",
+      "summary": {
+        "en": "Generates instructions for unlabeled web text (backtranslation) and self-curates high-quality pairs for tuning.",
+        "zh": "为无标注网页文本反向生成指令(回译),并自我筛选高质量样本对用于微调。"
+      }
+    },
+    {
+      "id": "2312.15685",
+      "title": "What Makes Good Data for Alignment? A Comprehensive Study (DEITA)",
+      "category": "data-synthesis",
+      "date": "2023-12-25",
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/abs/2312.15685",
+      "summary": {
+        "en": "Studies complexity, quality, and diversity of alignment data, and proposes automatic data selection (DEITA).",
+        "zh": "研究对齐数据的复杂度、质量与多样性,并提出自动数据筛选方法 DEITA。"
+      }
+    },
+    {
+      "id": "2203.14465",
+      "title": "STaR: Bootstrapping Reasoning with Reasoning",
+      "category": "distillation",
+      "date": "2022-03-28",
+      "venue": "NeurIPS 2022",
+      "url": "https://arxiv.org/abs/2203.14465",
+      "summary": {
+        "en": "Iteratively fine-tunes a model on its own correct rationales, bootstrapping reasoning from a small seed set.",
+        "zh": "在模型自身生成的正确推理过程上迭代微调,从少量种子样本自举推理能力。"
       }
     },
     {
@@ -132,8 +192,428 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2407.06023",
       "summary": {
-        "en": "Distills deliberate System 2 reasoning into faster System 1 responses, reducing inference cost while retaining quality.",
-        "zh": "将审慎的 System 2 推理蒸馏为更快的 System 1 响应,在保持质量的同时降低推理成本。"
+        "en": "Distills deliberate System 2 reasoning into faster System 1 responses, cutting inference cost while keeping quality.",
+        "zh": "将审慎的 System 2 推理蒸馏为更快的 System 1 响应,降低推理成本同时保持质量。"
+      }
+    },
+    {
+      "id": "2306.08543",
+      "title": "Knowledge Distillation of Large Language Models (MiniLLM)",
+      "category": "distillation",
+      "date": "2023-06-14",
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/abs/2306.08543",
+      "summary": {
+        "en": "Proposes reverse-KL distillation better suited to generative LLMs, avoiding overestimation of low-probability regions.",
+        "zh": "提出更适合生成式 LLM 的反向 KL 蒸馏,避免对低概率区域的高估。"
+      }
+    },
+    {
+      "id": "2501.12948",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2025-01-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "summary": {
+        "en": "Shows large-scale RL with verifiable rewards alone can incentivize strong reasoning, with distillation to smaller models.",
+        "zh": "证明仅用可验证奖励的大规模 RL 即可激发强推理能力,并可蒸馏到小模型。"
+      }
+    },
+    {
+      "id": "2402.03300",
+      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "category": "rlvr",
+      "date": "2024-02-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2402.03300",
+      "summary": {
+        "en": "Introduces GRPO (Group Relative Policy Optimization), removing the value model for efficient RL on math reasoning.",
+        "zh": "提出 GRPO(组相对策略优化),去掉价值模型,实现数学推理上的高效 RL。"
+      }
+    },
+    {
+      "id": "2501.12599",
+      "title": "Kimi k1.5: Scaling Reinforcement Learning with LLMs",
+      "category": "rlvr",
+      "date": "2025-01-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.12599",
+      "summary": {
+        "en": "Scales RL with long-context and multimodal reasoning, with techniques for long-to-short CoT, to reach frontier performance.",
+        "zh": "通过长上下文与多模态推理扩展 RL,并用长到短思维链等技术达到前沿性能。"
+      }
+    },
+    {
+      "id": "2503.20783",
+      "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+      "category": "rlvr",
+      "date": "2025-03-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2503.20783",
+      "summary": {
+        "en": "Analyzes R1-Zero-style RL, identifies bias in GRPO's optimization, and proposes Dr. GRPO to fix it.",
+        "zh": "剖析 R1-Zero 式 RL,指出 GRPO 优化中的偏差,并提出 Dr. GRPO 加以修正。"
+      }
+    },
+    {
+      "id": "2504.13837",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity Beyond the Base Model?",
+      "category": "rlvr",
+      "date": "2025-04-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2504.13837",
+      "summary": {
+        "en": "Questions whether RLVR adds new reasoning ability or mainly sharpens sampling of what the base model already knows.",
+        "zh": "质疑 RLVR 究竟是带来新的推理能力,还是主要在强化基座模型已有知识的采样。"
+      }
+    },
+    {
+      "id": "2305.18290",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "category": "dpo",
+      "date": "2023-05-29",
+      "venue": "NeurIPS 2023",
+      "url": "https://arxiv.org/abs/2305.18290",
+      "summary": {
+        "en": "Introduces DPO, optimizing preferences directly with a classification loss, no separate reward model or RL loop.",
+        "zh": "提出 DPO,用分类损失直接优化偏好,无需单独的奖励模型与 RL 循环。"
+      }
+    },
+    {
+      "id": "2310.12036",
+      "title": "A General Theoretical Paradigm to Understand Learning from Human Preferences (IPO)",
+      "category": "dpo",
+      "date": "2023-10-18",
+      "venue": "AISTATS 2024",
+      "url": "https://arxiv.org/abs/2310.12036",
+      "summary": {
+        "en": "Proposes IPO, a theoretically grounded objective avoiding the overfitting DPO suffers when preferences are near-deterministic.",
+        "zh": "提出 IPO,一种有理论支撑的目标,避免偏好接近确定时 DPO 的过拟合。"
+      }
+    },
+    {
+      "id": "2402.01306",
+      "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
+      "category": "dpo",
+      "date": "2024-02-02",
+      "venue": "ICML 2024",
+      "url": "https://arxiv.org/abs/2402.01306",
+      "summary": {
+        "en": "Aligns models using only per-output binary good/bad signals, drawing on prospect theory; no paired preferences needed.",
+        "zh": "基于前景理论,仅用每条输出的好/坏二元信号对齐,无需成对偏好数据。"
+      }
+    },
+    {
+      "id": "2405.14734",
+      "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "category": "dpo",
+      "date": "2024-05-23",
+      "venue": "NeurIPS 2024",
+      "url": "https://arxiv.org/abs/2405.14734",
+      "summary": {
+        "en": "Uses average log-probability as an implicit reward, eliminating the reference model DPO requires.",
+        "zh": "用平均对数概率作为隐式奖励,去除 DPO 所需的参考模型。"
+      }
+    },
+    {
+      "id": "2403.07691",
+      "title": "ORPO: Monolithic Preference Optimization without Reference Model",
+      "category": "dpo",
+      "date": "2024-03-12",
+      "venue": "EMNLP 2024",
+      "url": "https://arxiv.org/abs/2403.07691",
+      "summary": {
+        "en": "Merges SFT and preference alignment into one stage with an odds-ratio penalty, needing no reference model.",
+        "zh": "用几率比惩罚将 SFT 与偏好对齐合并为单一阶段,无需参考模型。"
+      }
+    },
+    {
+      "id": "2406.18629",
+      "title": "Step-DPO: Step-wise Preference Optimization for Long-chain Reasoning",
+      "category": "dpo",
+      "date": "2024-06-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2406.18629",
+      "summary": {
+        "en": "Extends DPO to individual reasoning steps for improved long-chain reasoning.",
+        "zh": "将 DPO 扩展到单个推理步骤,以提升长链条推理能力。"
+      }
+    },
+    {
+      "id": "2009.01325",
+      "title": "Learning to Summarize from Human Feedback",
+      "category": "rlhf-ppo",
+      "date": "2020-09-02",
+      "venue": "NeurIPS 2020",
+      "url": "https://arxiv.org/abs/2009.01325",
+      "summary": {
+        "en": "An early demonstration that reward modeling on human comparisons plus PPO beats supervised summarization.",
+        "zh": "早期工作,证明在人类比较上做奖励建模再用 PPO,效果优于监督式摘要。"
+      }
+    },
+    {
+      "id": "2204.05862",
+      "title": "Training a Helpful and Harmless Assistant with RLHF",
+      "category": "rlhf-ppo",
+      "date": "2022-04-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2204.05862",
+      "summary": {
+        "en": "Anthropic's study of RLHF for helpfulness and harmlessness, covering preference data and reward model scaling.",
+        "zh": "Anthropic 关于以有用性与无害性为目标的 RLHF 研究,涵盖偏好数据与奖励模型扩展。"
+      }
+    },
+    {
+      "id": "2402.14740",
+      "title": "Back to Basics: Revisiting REINFORCE-Style Optimization for RLHF (RLOO)",
+      "category": "rlhf-ppo",
+      "date": "2024-02-22",
+      "venue": "ACL 2024",
+      "url": "https://arxiv.org/abs/2402.14740",
+      "summary": {
+        "en": "Shows a simpler REINFORCE-style estimator (RLOO) can match or beat PPO for RLHF at lower cost.",
+        "zh": "证明更简单的 REINFORCE 式估计器(RLOO)在 RLHF 中能以更低成本媲美甚至超过 PPO。"
+      }
+    },
+    {
+      "id": "2307.04964",
+      "title": "Secrets of RLHF in Large Language Models Part I: PPO",
+      "category": "rlhf-ppo",
+      "date": "2023-07-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2307.04964",
+      "summary": {
+        "en": "A detailed practical study of stabilizing PPO for RLHF, including reward normalization and clipping tricks.",
+        "zh": "关于稳定 RLHF 中 PPO 训练的详尽实践研究,含奖励归一化与裁剪技巧。"
+      }
+    },
+    {
+      "id": "2212.08073",
+      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "category": "rlaif",
+      "date": "2022-12-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "summary": {
+        "en": "Replaces human harmlessness labels with AI feedback guided by a set of principles (a 'constitution'), enabling RLAIF.",
+        "zh": "用受一组原则(“宪法”)引导的 AI 反馈替代人工无害性标注,实现 RLAIF。"
+      }
+    },
+    {
+      "id": "2309.00267",
+      "title": "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
+      "category": "rlaif",
+      "date": "2023-09-01",
+      "venue": "ICML 2024",
+      "url": "https://arxiv.org/abs/2309.00267",
+      "summary": {
+        "en": "Shows RL from AI feedback can match RLHF, and studies direct vs. distilled AI preference labeling.",
+        "zh": "证明基于 AI 反馈的 RL 可媲美 RLHF,并研究直接与蒸馏式 AI 偏好标注。"
+      }
+    },
+    {
+      "id": "2401.10020",
+      "title": "Self-Rewarding Language Models",
+      "category": "rlaif",
+      "date": "2024-01-18",
+      "venue": "ICML 2024",
+      "url": "https://arxiv.org/abs/2401.10020",
+      "summary": {
+        "en": "Uses the model itself as an LLM-as-judge to generate its own rewards, iteratively improving via DPO.",
+        "zh": "让模型自身作为裁判生成奖励,并通过 DPO 迭代自我提升。"
+      }
+    },
+    {
+      "id": "2305.20050",
+      "title": "Let's Verify Step by Step",
+      "category": "reward-modeling",
+      "date": "2023-05-31",
+      "venue": "ICLR 2024",
+      "url": "https://arxiv.org/abs/2305.20050",
+      "summary": {
+        "en": "Demonstrates process supervision (rewarding each step) outperforms outcome supervision for math reasoning.",
+        "zh": "证明过程监督(对每一步给予奖励)在数学推理上优于结果监督。"
+      }
+    },
+    {
+      "id": "2312.08935",
+      "title": "Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations",
+      "category": "reward-modeling",
+      "date": "2023-12-14",
+      "venue": "ACL 2024",
+      "url": "https://arxiv.org/abs/2312.08935",
+      "summary": {
+        "en": "Builds a process reward model with automatically labeled step correctness, no human annotation needed.",
+        "zh": "用自动标注的步骤正确性构建过程奖励模型,无需人工标注。"
+      }
+    },
+    {
+      "id": "2403.13787",
+      "title": "RewardBench: Evaluating Reward Models for Language Modeling",
+      "category": "reward-modeling",
+      "date": "2024-03-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2403.13787",
+      "summary": {
+        "en": "The first comprehensive benchmark for evaluating reward models across chat, reasoning, and safety.",
+        "zh": "首个全面评测奖励模型的基准,覆盖对话、推理与安全等维度。"
+      }
+    },
+    {
+      "id": "2211.14275",
+      "title": "Solving Math Word Problems with Process- and Outcome-Based Feedback",
+      "category": "reward-modeling",
+      "date": "2022-11-25",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2211.14275",
+      "summary": {
+        "en": "An early comparison of process vs. outcome supervision for training verifiers on math problems.",
+        "zh": "早期工作,比较过程监督与结果监督在数学题验证器训练中的效果。"
+      }
+    },
+    {
+      "id": "2201.11903",
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "category": "cot-reasoning",
+      "date": "2022-01-28",
+      "venue": "NeurIPS 2022",
+      "url": "https://arxiv.org/abs/2201.11903",
+      "summary": {
+        "en": "Shows that prompting for intermediate reasoning steps unlocks strong performance on complex reasoning tasks.",
+        "zh": "证明引导模型输出中间推理步骤可在复杂推理任务上释放强大性能。"
+      }
+    },
+    {
+      "id": "2203.11171",
+      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+      "category": "cot-reasoning",
+      "date": "2022-03-21",
+      "venue": "ICLR 2023",
+      "url": "https://arxiv.org/abs/2203.11171",
+      "summary": {
+        "en": "Samples multiple reasoning paths and majority-votes over answers, substantially improving CoT accuracy.",
+        "zh": "采样多条推理路径并对答案取多数投票,显著提升思维链准确率。"
+      }
+    },
+    {
+      "id": "2408.03314",
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Parameters",
+      "category": "cot-reasoning",
+      "date": "2024-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2408.03314",
+      "summary": {
+        "en": "Shows optimally allocating inference-time compute can beat simply using a larger model.",
+        "zh": "证明在最优分配下,增加推理时算力可胜过单纯使用更大的模型。"
+      }
+    },
+    {
+      "id": "2501.19393",
+      "title": "s1: Simple Test-Time Scaling",
+      "category": "cot-reasoning",
+      "date": "2025-01-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.19393",
+      "summary": {
+        "en": "Achieves strong reasoning with only 1K curated examples plus 'budget forcing' to control test-time thinking length.",
+        "zh": "仅用 1000 条精选样本加“预算强制”控制推理长度,即获得强推理能力。"
+      }
+    },
+    {
+      "id": "2305.10601",
+      "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+      "category": "search",
+      "date": "2023-05-17",
+      "venue": "NeurIPS 2023",
+      "url": "https://arxiv.org/abs/2305.10601",
+      "summary": {
+        "en": "Generalizes chain-of-thought into a search over a tree of intermediate thoughts with lookahead and backtracking.",
+        "zh": "将思维链推广为在思维树上的搜索,支持前瞻与回溯。"
+      }
+    },
+    {
+      "id": "2501.04519",
+      "title": "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+      "category": "search",
+      "date": "2025-01-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2501.04519",
+      "summary": {
+        "en": "Uses MCTS-driven self-evolution to let small models reach strong math reasoning without distillation from larger ones.",
+        "zh": "借助 MCTS 驱动的自我进化,让小模型无需从大模型蒸馏即可获得强数学推理能力。"
+      }
+    },
+    {
+      "id": "2406.03816",
+      "title": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "category": "search",
+      "date": "2024-06-06",
+      "venue": "NeurIPS 2024",
+      "url": "https://arxiv.org/abs/2406.03816",
+      "summary": {
+        "en": "Combines MCTS with a process reward model to collect high-quality traces for self-training.",
+        "zh": "将 MCTS 与过程奖励模型结合,采集高质量轨迹用于自训练。"
+      }
+    },
+    {
+      "id": "2503.06072",
+      "title": "A Survey on Post-training of Large Language Models",
+      "category": "survey",
+      "date": "2025-03-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2503.06072",
+      "summary": {
+        "en": "A comprehensive survey organizing LLM post-training across fine-tuning, RLHF, and reasoning enhancement.",
+        "zh": "系统梳理 LLM 后训练全景的综述,涵盖微调、RLHF 与推理增强。"
+      }
+    },
+    {
+      "id": "2502.21321",
+      "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+      "category": "survey",
+      "date": "2025-02-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2502.21321",
+      "summary": {
+        "en": "The foundational survey behind this list, taxonomizing post-training into fine-tuning, RL, and test-time scaling.",
+        "zh": "本列表所依据的基础综述,将后训练划分为微调、强化学习与测试时扩展。"
+      }
+    },
+    {
+      "id": "2502.17419",
+      "title": "From System 1 to System 2: A Survey of Reasoning Large Language Models",
+      "category": "survey",
+      "date": "2025-02-25",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2502.17419",
+      "summary": {
+        "en": "Surveys the transition from fast intuitive (System 1) to deliberate (System 2) reasoning in LLMs.",
+        "zh": "综述 LLM 从快速直觉 (System 1) 到审慎推理 (System 2) 的演进。"
+      }
+    },
+    {
+      "id": "2110.14168",
+      "title": "Training Verifiers to Solve Math Word Problems (GSM8K)",
+      "category": "benchmarks",
+      "date": "2021-10-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2110.14168",
+      "summary": {
+        "en": "Introduces the GSM8K grade-school math benchmark and shows verifiers can rerank solutions for big accuracy gains.",
+        "zh": "提出 GSM8K 小学数学基准,并证明验证器可对候选解重排以大幅提升准确率。"
+      }
+    },
+    {
+      "id": "2103.03874",
+      "title": "Measuring Mathematical Problem Solving With the MATH Dataset",
+      "category": "benchmarks",
+      "date": "2021-03-05",
+      "venue": "NeurIPS 2021",
+      "url": "https://arxiv.org/abs/2103.03874",
+      "summary": {
+        "en": "Introduces the challenging MATH dataset of competition problems, a standard reasoning benchmark.",
+        "zh": "提出高难度的 MATH 竞赛题数据集,成为标准推理基准。"
       }
     },
     {
@@ -144,8 +624,20 @@
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2501.14249",
       "summary": {
-        "en": "A frontier benchmark of extremely difficult, expert-level questions designed to resist saturation by current models.",
-        "zh": "一个由极难的专家级题目组成的前沿基准,旨在抵抗当前模型的性能饱和。"
+        "en": "A frontier benchmark of extremely difficult expert-level questions designed to resist saturation.",
+        "zh": "由极难的专家级题目组成的前沿基准,旨在抵抗性能饱和。"
+      }
+    },
+    {
+      "id": "2009.03300",
+      "title": "MMLU: Measuring Massive Multitask Language Understanding",
+      "category": "benchmarks",
+      "date": "2020-09-07",
+      "venue": "ICLR 2021",
+      "url": "https://arxiv.org/abs/2009.03300",
+      "summary": {
+        "en": "A 57-subject knowledge and reasoning benchmark widely used to compare LLM capabilities.",
+        "zh": "涵盖 57 个学科的知识与推理基准,广泛用于比较 LLM 能力。"
       }
     },
     {
@@ -168,255 +660,27 @@
       "venue": "ICLR Workshop 2025",
       "url": "https://arxiv.org/abs/2501.18492",
       "summary": {
-        "en": "Proposes reasoning-based guardrails that improve the interpretability and robustness of LLM safety moderation.",
+        "en": "Proposes reasoning-based guardrails improving interpretability and robustness of LLM safety moderation.",
         "zh": "提出基于推理的护栏机制,提升 LLM 安全审核的可解释性与鲁棒性。"
       }
     },
     {
-      "id": "2507.06892",
-      "title": "Squeeze the Soaked Sponge: Efficient Off-policy Reinforcement Finetuning for LLMs",
-      "category": "policy-optimization",
-      "date": "2025-07-09",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2507.06892",
-      "summary": {
-        "en": "Proposes an efficient off-policy reinforcement fine-tuning method that better reuses collected experience.",
-        "zh": "提出一种高效的离线策略强化微调方法,更充分地复用已采集的经验数据。"
-      }
-    },
-    {
-      "id": "2412.16145",
-      "title": "Offline Reinforcement Learning for LLM Multi-Step Reasoning",
-      "category": "policy-optimization",
-      "date": "2024-12-20",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2412.16145",
-      "summary": {
-        "en": "Applies offline RL to improve multi-step reasoning without costly online rollouts.",
-        "zh": "将离线强化学习应用于多步推理,无需昂贵的在线采样。"
-      }
-    },
-    {
-      "id": "2305.18290",
-      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
-      "category": "preference-optimization",
-      "date": "2023-05-29",
-      "venue": "NeurIPS 2023",
-      "url": "https://arxiv.org/abs/2305.18290",
-      "summary": {
-        "en": "Introduces DPO, which optimizes preferences directly with a simple classification loss, removing the need for a separate reward model and RL loop.",
-        "zh": "提出 DPO,用简单的分类损失直接优化偏好,无需单独的奖励模型与强化学习循环。"
-      }
-    },
-    {
-      "id": "2306.02231",
-      "title": "Preference Ranking Optimization for Human Alignment (PRO)",
-      "category": "preference-optimization",
-      "date": "2023-06-04",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2306.02231",
-      "summary": {
-        "en": "Generalizes pairwise preference learning to ranked lists of responses for more efficient human alignment.",
-        "zh": "将成对偏好学习推广到排序列表,以更高效地实现人类对齐。"
-      }
-    },
-    {
-      "id": "2310.12036",
-      "title": "A General Theoretical Paradigm to Understand Learning from Human Preferences (IPO)",
-      "category": "preference-optimization",
-      "date": "2023-10-18",
-      "venue": "AISTATS 2024",
-      "url": "https://arxiv.org/abs/2310.12036",
-      "summary": {
-        "en": "Proposes IPO, a theoretically grounded objective that avoids the overfitting DPO can suffer when preferences are near-deterministic.",
-        "zh": "提出 IPO,一种有理论支撑的目标函数,可避免偏好接近确定时 DPO 易出现的过拟合。"
-      }
-    },
-    {
-      "id": "2402.01306",
-      "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
-      "category": "preference-optimization",
-      "date": "2024-02-02",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2402.01306",
-      "summary": {
-        "en": "Aligns models using only binary good/bad signals per output, drawing on prospect theory and removing the need for paired preferences.",
-        "zh": "基于前景理论,仅用每条输出的好/坏二元信号进行对齐,无需成对偏好数据。"
-      }
-    },
-    {
-      "id": "2405.14734",
-      "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
-      "category": "preference-optimization",
-      "date": "2024-05-23",
-      "venue": "NeurIPS 2024",
-      "url": "https://arxiv.org/abs/2405.14734",
-      "summary": {
-        "en": "Simplifies DPO by using the average log-probability as an implicit reward, eliminating the reference model.",
-        "zh": "用平均对数概率作为隐式奖励来简化 DPO,去除了参考模型。"
-      }
-    },
-    {
-      "id": "2403.07691",
-      "title": "ORPO: Monolithic Preference Optimization without Reference Model",
-      "category": "preference-optimization",
-      "date": "2024-03-12",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2403.07691",
-      "summary": {
-        "en": "Combines supervised fine-tuning and preference alignment into a single stage with an odds-ratio penalty, no reference model needed.",
-        "zh": "用几率比惩罚将监督微调与偏好对齐合并为单一阶段,无需参考模型。"
-      }
-    },
-    {
-      "id": "2106.09685",
-      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
-      "category": "sft",
-      "date": "2021-06-17",
-      "venue": "ICLR 2022",
-      "url": "https://arxiv.org/abs/2106.09685",
-      "summary": {
-        "en": "Freezes pretrained weights and injects trainable low-rank matrices, drastically cutting the cost of fine-tuning large models.",
-        "zh": "冻结预训练权重并注入可训练的低秩矩阵,大幅降低大模型微调成本。"
-      }
-    },
-    {
-      "id": "2305.14314",
-      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
-      "category": "sft",
-      "date": "2023-05-23",
-      "venue": "NeurIPS 2023",
-      "url": "https://arxiv.org/abs/2305.14314",
-      "summary": {
-        "en": "Enables fine-tuning of large models on a single GPU by back-propagating through 4-bit quantized weights into LoRA adapters.",
-        "zh": "通过在 4-bit 量化权重上反向传播到 LoRA 适配器,使大模型可在单张 GPU 上微调。"
-      }
-    },
-    {
-      "id": "2212.10560",
-      "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
-      "category": "sft",
-      "date": "2022-12-20",
-      "venue": "ACL 2023",
-      "url": "https://arxiv.org/abs/2212.10560",
-      "summary": {
-        "en": "Bootstraps an instruction-following dataset from a model's own generations, reducing reliance on human-written instructions.",
-        "zh": "利用模型自身生成来自举指令数据集,降低对人工编写指令的依赖。"
-      }
-    },
-    {
-      "id": "2203.11171",
-      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
-      "category": "reasoning",
-      "date": "2022-03-21",
-      "venue": "ICLR 2023",
-      "url": "https://arxiv.org/abs/2203.11171",
-      "summary": {
-        "en": "Samples multiple reasoning paths and takes a majority vote over answers, substantially improving chain-of-thought accuracy.",
-        "zh": "采样多条推理路径并对答案取多数投票,显著提升思维链的准确率。"
-      }
-    },
-    {
-      "id": "2201.11903",
-      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
-      "category": "reasoning",
-      "date": "2022-01-28",
-      "venue": "NeurIPS 2022",
-      "url": "https://arxiv.org/abs/2201.11903",
-      "summary": {
-        "en": "Shows that prompting models to produce intermediate reasoning steps unlocks strong performance on complex reasoning tasks.",
-        "zh": "证明引导模型输出中间推理步骤可在复杂推理任务上释放强大性能。"
-      }
-    },
-    {
-      "id": "2305.10601",
-      "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
-      "category": "tree-search",
-      "date": "2023-05-17",
-      "venue": "NeurIPS 2023",
-      "url": "https://arxiv.org/abs/2305.10601",
-      "summary": {
-        "en": "Generalizes chain-of-thought into a search over a tree of intermediate thoughts with lookahead and backtracking.",
-        "zh": "将思维链推广为在思维树上的搜索,支持前瞻与回溯。"
-      }
-    },
-    {
-      "id": "2408.03314",
-      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
-      "category": "reasoning",
-      "date": "2024-08-06",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2408.03314",
-      "summary": {
-        "en": "Shows that allocating more inference-time compute can outperform simply using a larger model, given an optimal strategy.",
-        "zh": "证明在最优策略下,增加推理时算力可胜过单纯使用更大的模型。"
-      }
-    },
-    {
-      "id": "2009.01325",
-      "title": "Learning to Summarize from Human Feedback",
-      "category": "rlhf",
-      "date": "2020-09-02",
-      "venue": "NeurIPS 2020",
-      "url": "https://arxiv.org/abs/2009.01325",
-      "summary": {
-        "en": "An early demonstration that training a reward model on human comparisons and optimizing with RL beats supervised summarization.",
-        "zh": "早期工作,证明在人类比较上训练奖励模型并用 RL 优化,效果优于监督式摘要。"
-      }
-    },
-    {
-      "id": "2204.05862",
-      "title": "Training a Helpful and Harmless Assistant with RLHF",
-      "category": "rlhf",
-      "date": "2022-04-12",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2204.05862",
-      "summary": {
-        "en": "Anthropic's study of RLHF for helpfulness and harmlessness, including preference data collection and reward model scaling.",
-        "zh": "Anthropic 关于以有用性与无害性为目标的 RLHF 研究,涵盖偏好数据收集与奖励模型扩展。"
-      }
-    },
-    {
-      "id": "2212.08073",
-      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "id": "2307.15043",
+      "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models (GCG)",
       "category": "safety",
-      "date": "2022-12-15",
+      "date": "2023-07-27",
       "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2212.08073",
+      "url": "https://arxiv.org/abs/2307.15043",
       "summary": {
-        "en": "Replaces human harmlessness labels with AI feedback guided by a set of principles (a 'constitution'), enabling RLAIF.",
-        "zh": "用受一组原则(“宪法”)引导的 AI 反馈替代人工无害性标注,实现 RLAIF。"
+        "en": "Shows automated adversarial suffixes can jailbreak aligned models and transfer across them, exposing alignment fragility.",
+        "zh": "证明自动生成的对抗后缀可越狱对齐模型并跨模型迁移,暴露对齐的脆弱性。"
       }
     },
     {
-      "id": "2203.14465",
-      "title": "STaR: Bootstrapping Reasoning with Reasoning",
-      "category": "distillation",
-      "date": "2022-03-28",
-      "venue": "NeurIPS 2022",
-      "url": "https://arxiv.org/abs/2203.14465",
-      "summary": {
-        "en": "Iteratively fine-tunes a model on its own correct rationales, bootstrapping reasoning ability from a small seed set.",
-        "zh": "在模型自身生成的正确推理过程上迭代微调,从少量种子样本自举出推理能力。"
-      }
-    },
-    {
-      "id": "2110.14168",
-      "title": "Training Verifiers to Solve Math Word Problems (GSM8K)",
-      "category": "benchmarks",
-      "date": "2021-10-27",
-      "venue": "arXiv",
-      "url": "https://arxiv.org/abs/2110.14168",
-      "summary": {
-        "en": "Introduces the GSM8K grade-school math benchmark and shows verifiers can rerank solutions for large accuracy gains.",
-        "zh": "提出 GSM8K 小学数学基准,并证明验证器可对候选解重排以大幅提升准确率。"
-      }
-    },
-    {
-      "id": "2402.14740",
+      "id": "trl",
       "title": "TRL: Transformer Reinforcement Learning",
       "category": "tools",
-      "date": "2020-01-01",
+      "date": "2023-01-01",
       "venue": "GitHub",
       "url": "https://github.com/huggingface/trl",
       "summary": {
@@ -433,11 +697,11 @@
       "url": "https://github.com/OpenRLHF/OpenRLHF",
       "summary": {
         "en": "A scalable RLHF framework built on Ray, vLLM, and DeepSpeed for training large models with PPO and related algorithms.",
-        "zh": "基于 Ray、vLLM 与 DeepSpeed 的可扩展 RLHF 框架,用于以 PPO 等算法训练大模型。"
+        "zh": "基于 Ray、vLLM 与 DeepSpeed 的可扩展 RLHF 框架,用 PPO 等算法训练大模型。"
       }
     },
     {
-      "id": "veRL",
+      "id": "verl",
       "title": "verl: Volcano Engine Reinforcement Learning for LLMs",
       "category": "tools",
       "date": "2024-09-01",
@@ -446,6 +710,18 @@
       "summary": {
         "en": "A flexible, efficient RL training library for LLMs implementing the HybridFlow programming model.",
         "zh": "面向 LLM 的灵活高效 RL 训练库,实现了 HybridFlow 编程模型。"
+      }
+    },
+    {
+      "id": "llamafactory",
+      "title": "LLaMA-Factory: Unified Efficient Fine-Tuning of 100+ Language Models",
+      "category": "tools",
+      "date": "2024-03-20",
+      "venue": "ACL 2024",
+      "url": "https://github.com/hiyouga/LLaMA-Factory",
+      "summary": {
+        "en": "A unified framework for SFT, PEFT, and preference optimization across a wide range of open models.",
+        "zh": "统一的微调框架,支持在众多开源模型上做 SFT、PEFT 与偏好优化。"
       }
     }
   ]

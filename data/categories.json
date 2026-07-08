@@ -1,112 +1,179 @@
 {
-  "categories": [
-    {
-      "id": "survey",
-      "name": { "en": "Survey", "zh": "综述" },
-      "desc": {
-        "en": "Comprehensive reviews of LLM post-training, reasoning, and alignment.",
-        "zh": "关于 LLM 后训练、推理与对齐的综合性综述。"
-      },
-      "keywords": ["survey", "overview", "review"]
-    },
+  "groups": [
     {
       "id": "sft",
       "name": { "en": "Supervised Fine-Tuning", "zh": "监督微调 (SFT)" },
       "desc": {
-        "en": "Instruction tuning and supervised fine-tuning methods, including PEFT/LoRA.",
-        "zh": "指令微调与监督微调方法,包括 PEFT/LoRA 等参数高效方案。"
+        "en": "Learning from demonstrations and labeled data after pretraining.",
+        "zh": "预训练之后,从示范数据与标注数据中学习。"
       },
-      "keywords": ["supervised fine-tuning", "instruction tuning", "SFT", "LoRA", "PEFT", "parameter-efficient"]
+      "categories": [
+        {
+          "id": "instruction-tuning",
+          "name": { "en": "Instruction Tuning", "zh": "指令微调" },
+          "desc": {
+            "en": "Teaching models to follow natural-language instructions across tasks.",
+            "zh": "教模型跨任务地遵循自然语言指令。"
+          },
+          "keywords": ["instruction tuning", "instruction following", "FLAN", "multitask", "supervised fine-tuning"]
+        },
+        {
+          "id": "peft",
+          "name": { "en": "Parameter-Efficient FT", "zh": "参数高效微调" },
+          "desc": {
+            "en": "Adapting large models by training a small fraction of parameters (LoRA, adapters, prefix/prompt tuning).",
+            "zh": "只训练极少量参数来适配大模型(LoRA、Adapter、前缀/提示微调)。"
+          },
+          "keywords": ["LoRA", "QLoRA", "PEFT", "adapter", "prefix tuning", "prompt tuning", "parameter-efficient", "DoRA"]
+        },
+        {
+          "id": "data-synthesis",
+          "name": { "en": "Data & Synthetic Data", "zh": "数据与合成数据" },
+          "desc": {
+            "en": "Constructing, selecting, and synthesizing instruction/alignment data.",
+            "zh": "构造、筛选与合成指令/对齐数据。"
+          },
+          "keywords": ["synthetic data", "self-instruct", "data selection", "data quality", "evol-instruct", "distillation data"]
+        },
+        {
+          "id": "distillation",
+          "name": { "en": "Knowledge Distillation", "zh": "知识蒸馏" },
+          "desc": {
+            "en": "Transferring capabilities (especially reasoning) from stronger to smaller models.",
+            "zh": "将能力(尤其是推理)从更强的模型迁移到更小的模型。"
+          },
+          "keywords": ["distillation", "distill", "knowledge distillation", "self-training", "self-improvement", "STaR"]
+        }
+      ]
     },
     {
-      "id": "rlhf",
-      "name": { "en": "RLHF", "zh": "人类反馈强化学习 (RLHF)" },
+      "id": "rl",
+      "name": { "en": "Reinforcement Learning", "zh": "强化学习 (RL)" },
       "desc": {
-        "en": "Reinforcement Learning from Human Feedback and related alignment pipelines.",
-        "zh": "基于人类反馈的强化学习及相关对齐流程。"
+        "en": "Optimizing model behavior against reward or preference signals.",
+        "zh": "针对奖励或偏好信号来优化模型行为。"
       },
-      "keywords": ["RLHF", "human feedback", "reinforcement learning from human feedback"]
+      "categories": [
+        {
+          "id": "reward-modeling",
+          "name": { "en": "Reward Modeling (RM/PRM/ORM)", "zh": "奖励建模 (RM/PRM/ORM)" },
+          "desc": {
+            "en": "Learning outcome and process reward models that score responses or reasoning steps.",
+            "zh": "学习对回答或推理步骤打分的结果/过程奖励模型。"
+          },
+          "keywords": ["reward model", "process reward", "PRM", "ORM", "reward learning", "verifier", "reward bench"]
+        },
+        {
+          "id": "rlhf-ppo",
+          "name": { "en": "RLHF Policy Optimization (PPO/RLOO)", "zh": "RLHF 策略优化 (PPO/RLOO)" },
+          "desc": {
+            "en": "Online RL algorithms optimizing a policy against a learned reward model.",
+            "zh": "针对已学习奖励模型来优化策略的在线 RL 算法。"
+          },
+          "keywords": ["PPO", "RLHF", "RLOO", "policy optimization", "proximal policy", "REINFORCE", "human feedback"]
+        },
+        {
+          "id": "dpo",
+          "name": { "en": "Direct Preference Optimization", "zh": "直接偏好优化" },
+          "desc": {
+            "en": "RL-free methods that optimize preferences directly (DPO, IPO, KTO, SimPO, ORPO).",
+            "zh": "无需 RL 循环、直接优化偏好的方法(DPO、IPO、KTO、SimPO、ORPO)。"
+          },
+          "keywords": ["DPO", "direct preference", "IPO", "KTO", "SimPO", "ORPO", "preference optimization"]
+        },
+        {
+          "id": "rlaif",
+          "name": { "en": "RLAIF & Constitutional AI", "zh": "AI 反馈强化学习 (RLAIF)" },
+          "desc": {
+            "en": "Using AI-generated feedback and principles in place of human labels.",
+            "zh": "用 AI 生成的反馈与原则替代人工标注。"
+          },
+          "keywords": ["RLAIF", "AI feedback", "constitutional", "self-rewarding", "LLM-as-judge feedback"]
+        },
+        {
+          "id": "rlvr",
+          "name": { "en": "Reasoning RL / Verifiable Rewards", "zh": "推理 RL / 可验证奖励" },
+          "desc": {
+            "en": "RL with verifiable/rule-based rewards for reasoning (GRPO, DeepSeek-R1, RLVR).",
+            "zh": "面向推理、使用可验证/规则奖励的 RL(GRPO、DeepSeek-R1、RLVR)。"
+          },
+          "keywords": ["GRPO", "RLVR", "verifiable reward", "reasoning RL", "DeepSeek-R1", "rule-based reward", "reinforcement finetuning"]
+        }
+      ]
     },
     {
-      "id": "preference-optimization",
-      "name": { "en": "Preference Optimization", "zh": "偏好优化" },
+      "id": "test-time",
+      "name": { "en": "Test-Time Scaling", "zh": "测试时扩展" },
       "desc": {
-        "en": "Direct preference-based methods such as DPO, IPO, KTO, and variants.",
-        "zh": "基于偏好的直接优化方法,如 DPO、IPO、KTO 及其变体。"
+        "en": "Spending more compute at inference to improve reasoning quality.",
+        "zh": "在推理阶段投入更多算力以提升推理质量。"
       },
-      "keywords": ["DPO", "preference optimization", "direct preference", "IPO", "KTO", "ORPO", "SimPO"]
+      "categories": [
+        {
+          "id": "cot-reasoning",
+          "name": { "en": "Chain-of-Thought & Reasoning", "zh": "思维链与推理" },
+          "desc": {
+            "en": "Prompting and training for explicit multi-step reasoning and long CoT.",
+            "zh": "通过提示与训练激发显式多步推理与长思维链。"
+          },
+          "keywords": ["chain-of-thought", "CoT", "reasoning", "self-consistency", "long reasoning", "o1", "test-time", "inference scaling", "system 2"]
+        },
+        {
+          "id": "search",
+          "name": { "en": "Search (MCTS / Tree)", "zh": "搜索 (MCTS / 树搜索)" },
+          "desc": {
+            "en": "Guiding generation with tree/graph search and MCTS.",
+            "zh": "用树/图搜索与 MCTS 引导生成。"
+          },
+          "keywords": ["MCTS", "tree search", "monte carlo", "tree of thought", "beam search", "best-of-n"]
+        }
+      ]
     },
     {
-      "id": "reward-modeling",
-      "name": { "en": "Reward Modeling", "zh": "奖励建模" },
+      "id": "resources",
+      "name": { "en": "Resources", "zh": "资源" },
       "desc": {
-        "en": "Outcome and process reward models (PRM/ORM) and reward learning.",
-        "zh": "结果与过程奖励模型 (PRM/ORM) 及奖励学习。"
+        "en": "Surveys, benchmarks, safety research, and open-source tooling.",
+        "zh": "综述、基准、安全研究与开源工具。"
       },
-      "keywords": ["reward model", "process reward", "PRM", "ORM", "reward learning", "verifier"]
-    },
-    {
-      "id": "policy-optimization",
-      "name": { "en": "Policy Optimization", "zh": "策略优化" },
-      "desc": {
-        "en": "RL policy optimization algorithms for LLMs: PPO, GRPO, RLOO, offline RL.",
-        "zh": "面向 LLM 的强化学习策略优化算法:PPO、GRPO、RLOO、离线 RL 等。"
-      },
-      "keywords": ["PPO", "GRPO", "policy optimization", "RLOO", "offline RL", "reinforcement finetuning"]
-    },
-    {
-      "id": "reasoning",
-      "name": { "en": "Reasoning & Test-time Scaling", "zh": "推理与测试时扩展" },
-      "desc": {
-        "en": "Chain-of-thought, long reasoning, and inference-time compute scaling.",
-        "zh": "思维链、长程推理与推理时算力扩展。"
-      },
-      "keywords": ["reasoning", "chain-of-thought", "test-time", "inference scaling", "long reasoning", "o1", "R1", "system 2"]
-    },
-    {
-      "id": "tree-search",
-      "name": { "en": "MCTS / Tree Search", "zh": "蒙特卡洛树搜索 / 树搜索" },
-      "desc": {
-        "en": "Monte Carlo Tree Search and tree/graph search-guided reasoning.",
-        "zh": "蒙特卡洛树搜索及树/图搜索引导的推理方法。"
-      },
-      "keywords": ["MCTS", "tree search", "monte carlo", "tree of thought", "beam search"]
-    },
-    {
-      "id": "distillation",
-      "name": { "en": "Distillation", "zh": "知识蒸馏" },
-      "desc": {
-        "en": "Distilling reasoning and capabilities from larger to smaller models.",
-        "zh": "将推理能力从大模型蒸馏到小模型。"
-      },
-      "keywords": ["distillation", "distill", "knowledge distillation", "self-training", "self-improvement"]
-    },
-    {
-      "id": "benchmarks",
-      "name": { "en": "Benchmarks & Datasets", "zh": "基准与数据集" },
-      "desc": {
-        "en": "Evaluation benchmarks and datasets for reasoning and alignment.",
-        "zh": "面向推理与对齐的评测基准与数据集。"
-      },
-      "keywords": ["benchmark", "dataset", "evaluation", "eval"]
-    },
-    {
-      "id": "safety",
-      "name": { "en": "Safety & Alignment", "zh": "安全与对齐" },
-      "desc": {
-        "en": "Safety alignment, guardrails, and robustness of reasoning models.",
-        "zh": "推理模型的安全对齐、护栏与鲁棒性。"
-      },
-      "keywords": ["safety", "alignment", "guardrail", "jailbreak", "harmful", "robustness"]
-    },
-    {
-      "id": "tools",
-      "name": { "en": "Tools & Frameworks", "zh": "工具与框架" },
-      "desc": {
-        "en": "Open-source frameworks and libraries for RL / LLM fine-tuning.",
-        "zh": "用于 RL / LLM 微调的开源框架与代码库。"
-      },
-      "keywords": ["framework", "library", "toolkit", "open-source", "implementation"]
+      "categories": [
+        {
+          "id": "survey",
+          "name": { "en": "Surveys", "zh": "综述" },
+          "desc": {
+            "en": "Comprehensive reviews of post-training, reasoning, and alignment.",
+            "zh": "关于后训练、推理与对齐的综合性综述。"
+          },
+          "keywords": ["survey", "overview", "review"]
+        },
+        {
+          "id": "benchmarks",
+          "name": { "en": "Benchmarks & Datasets", "zh": "基准与数据集" },
+          "desc": {
+            "en": "Evaluation benchmarks and datasets for reasoning and alignment.",
+            "zh": "面向推理与对齐的评测基准与数据集。"
+          },
+          "keywords": ["benchmark", "dataset", "evaluation", "eval", "leaderboard"]
+        },
+        {
+          "id": "safety",
+          "name": { "en": "Safety & Alignment", "zh": "安全与对齐" },
+          "desc": {
+            "en": "Safety alignment, guardrails, and robustness of reasoning models.",
+            "zh": "推理模型的安全对齐、护栏与鲁棒性。"
+          },
+          "keywords": ["safety", "alignment", "guardrail", "jailbreak", "harmful", "robustness", "red-team"]
+        },
+        {
+          "id": "tools",
+          "name": { "en": "Tools & Frameworks", "zh": "工具与框架" },
+          "desc": {
+            "en": "Open-source frameworks and libraries for post-training and RL fine-tuning.",
+            "zh": "用于后训练与 RL 微调的开源框架与代码库。"
+          },
+          "keywords": ["framework", "library", "toolkit", "open-source", "implementation"]
+        }
+      ]
     }
   ]
 }

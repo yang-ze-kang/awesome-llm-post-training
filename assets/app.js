@@ -5,9 +5,9 @@
     lang: localStorage.getItem("lang") || "en",
     theme: localStorage.getItem("theme") || "light",
     query: "",
-    categories: [],
+    groups: [],
     papers: [],
-    activeCategory: null
+    meta: {}
   };
 
   const el = {
@@ -31,7 +31,7 @@
       if (!catRes.ok || !paperRes.ok) throw new Error("fetch failed");
       const catJson = await catRes.json();
       const paperJson = await paperRes.json();
-      state.categories = catJson.categories || [];
+      state.groups = catJson.groups || [];
       state.papers = paperJson.papers || [];
       state.meta = paperJson.meta || {};
     } catch (e) {
@@ -46,24 +46,20 @@
     return I18N[state.lang][key];
   }
 
-  function papersByCategory(catId) {
+  function matchesQuery(p) {
     const q = state.query.trim().toLowerCase();
+    if (!q) return true;
+    const hay = [p.title, p.summary?.en, p.summary?.zh, p.venue, p.category]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return hay.includes(q);
+  }
+
+  function papersByCategory(catId) {
     return state.papers
       .filter((p) => p.category === catId)
-      .filter((p) => {
-        if (!q) return true;
-        const hay = [
-          p.title,
-          p.summary?.en,
-          p.summary?.zh,
-          p.venue,
-          p.category
-        ]
-          .filter(Boolean)
-          .join(" ")
-          .toLowerCase();
-        return hay.includes(q);
-      })
+      .filter(matchesQuery)
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   }
 
@@ -76,52 +72,97 @@
   }
 
   // ---- rendering ----
-  function renderNav(counts) {
+  function renderNav(catCounts, groupCounts) {
     el.nav.innerHTML = "";
-    state.categories.forEach((cat) => {
-      const count = counts[cat.id] || 0;
-      if (count === 0 && state.query) return; // hide empty during search
-      const a = document.createElement("a");
-      a.href = "#cat-" + cat.id;
-      a.innerHTML =
-        '<span>' + escapeHtml(cat.name[state.lang]) + "</span>" +
-        '<span class="badge">' + count + "</span>";
-      a.addEventListener("click", () => {
-        state.activeCategory = cat.id;
+    state.groups.forEach((group) => {
+      if ((groupCounts[group.id] || 0) === 0 && state.query) return;
+
+      const groupEl = document.createElement("div");
+      groupEl.className = "nav-group";
+
+      const header = document.createElement("a");
+      header.className = "nav-group-title";
+      header.href = "#group-" + group.id;
+      header.innerHTML =
+        "<span>" + escapeHtml(group.name[state.lang]) + "</span>" +
+        '<span class="badge">' + (groupCounts[group.id] || 0) + "</span>";
+      groupEl.appendChild(header);
+
+      group.categories.forEach((cat) => {
+        const count = catCounts[cat.id] || 0;
+        if (count === 0 && state.query) return;
+        const a = document.createElement("a");
+        a.className = "nav-cat";
+        a.href = "#cat-" + cat.id;
+        a.innerHTML =
+          "<span>" + escapeHtml(cat.name[state.lang]) + "</span>" +
+          '<span class="badge">' + count + "</span>";
+        groupEl.appendChild(a);
       });
-      el.nav.appendChild(a);
+
+      el.nav.appendChild(groupEl);
     });
   }
 
   function renderSections() {
     el.sections.innerHTML = "";
-    const counts = {};
+    const catCounts = {};
+    const groupCounts = {};
     let totalVisible = 0;
 
-    state.categories.forEach((cat) => {
-      const papers = papersByCategory(cat.id);
-      counts[cat.id] = papers.length;
-      if (papers.length === 0) return;
-      totalVisible += papers.length;
+    state.groups.forEach((group) => {
+      let groupTotal = 0;
+      const catFragments = [];
 
-      const section = document.createElement("section");
-      section.className = "category-section";
-      section.id = "cat-" + cat.id;
+      group.categories.forEach((cat) => {
+        const papers = papersByCategory(cat.id);
+        catCounts[cat.id] = papers.length;
+        if (papers.length === 0) return;
+        groupTotal += papers.length;
+
+        const section = document.createElement("section");
+        section.className = "category-section";
+        section.id = "cat-" + cat.id;
+
+        const h3 = document.createElement("h3");
+        h3.className = "category-title";
+        h3.innerHTML =
+          escapeHtml(cat.name[state.lang]) +
+          ' <span class="count">' + papers.length + "</span>";
+        section.appendChild(h3);
+
+        const desc = document.createElement("p");
+        desc.className = "category-desc";
+        desc.textContent = cat.desc[state.lang];
+        section.appendChild(desc);
+
+        papers.forEach((p) => section.appendChild(renderCard(p)));
+        catFragments.push(section);
+      });
+
+      groupCounts[group.id] = groupTotal;
+      if (groupTotal === 0) return;
+      totalVisible += groupTotal;
+
+      const groupSection = document.createElement("section");
+      groupSection.className = "group-section";
+      groupSection.id = "group-" + group.id;
 
       const h2 = document.createElement("h2");
-      h2.textContent = cat.name[state.lang];
-      section.appendChild(h2);
+      h2.className = "group-title";
+      h2.textContent = group.name[state.lang];
+      groupSection.appendChild(h2);
 
-      const desc = document.createElement("p");
-      desc.className = "category-desc";
-      desc.textContent = cat.desc[state.lang];
-      section.appendChild(desc);
+      const gdesc = document.createElement("p");
+      gdesc.className = "group-desc";
+      gdesc.textContent = group.desc[state.lang];
+      groupSection.appendChild(gdesc);
 
-      papers.forEach((p) => section.appendChild(renderCard(p)));
-      el.sections.appendChild(section);
+      catFragments.forEach((f) => groupSection.appendChild(f));
+      el.sections.appendChild(groupSection);
     });
 
-    renderNav(counts);
+    renderNav(catCounts, groupCounts);
     el.empty.hidden = totalVisible !== 0;
     el.paperCount.textContent = t("papersCount")(state.papers.length);
     if (state.meta && state.meta.lastUpdated) {
@@ -133,7 +174,7 @@
     const card = document.createElement("article");
     card.className = "paper-card";
 
-    const title = document.createElement("h3");
+    const title = document.createElement("h4");
     title.className = "paper-title";
     if (p.url) {
       const link = document.createElement("a");
@@ -160,7 +201,8 @@
     if (p.date) metaHtml += '<span class="tag">' + escapeHtml(p.date) + "</span>";
     if (p.url) {
       metaHtml +=
-        '<a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">Paper →</a>';
+        '<a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">' +
+        t("paperLink") + "</a>";
     }
     meta.innerHTML = metaHtml;
     card.appendChild(meta);

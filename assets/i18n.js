@@ -8,6 +8,7 @@ const I18N = {
     empty: "No papers match your search.",
     footer: "Built with a daily arXiv + Claude crawler. Contributions welcome.",
     langButton: "中文",
+    paperLink: "Paper →",
     papersCount: (n) => `${n} papers`,
     updated: (d) => `Updated ${d}`
   },
@@ -19,6 +20,7 @@ const I18N = {
     empty: "没有匹配的论文。",
     footer: "由每日 arXiv + Claude 爬虫自动构建,欢迎贡献。",
     langButton: "EN",
+    paperLink: "原文 →",
     papersCount: (n) => `${n} 篇论文`,
     updated: (d) => `更新于 ${d}`
   }

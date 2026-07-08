@@ -110,7 +110,8 @@ def parse_arxiv(xml_text):
 # ----------------------------------------------------------------------------
 def build_prompt(candidate, categories):
     cat_lines = "\n".join(
-        f"- {c['id']}: {c['name']['en']} — {c['desc']['en']}" for c in categories
+        f"- {c['id']}: [{c['group']}] {c['name']['en']} — {c['desc']['en']}"
+        for c in categories
     )
     return f"""You are curating an "Awesome LLM Post-Training" paper list. Post-training \
 covers what happens AFTER pretraining: supervised fine-tuning, RLHF, preference \
@@ -207,8 +208,21 @@ def classify(candidate, categories, token, base_url, valid_ids):
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
+def load_categories():
+    """Flatten the groups -> categories hierarchy into a list of leaf categories,
+    tagging each with its parent group name for a richer LLM prompt."""
+    raw = json.loads(CATEGORIES_FILE.read_text())
+    cats = []
+    for group in raw.get("groups", []):
+        for cat in group.get("categories", []):
+            cat = dict(cat)
+            cat["group"] = group["name"]["en"]
+            cats.append(cat)
+    return cats
+
+
 def main():
-    categories = json.loads(CATEGORIES_FILE.read_text())["categories"]
+    categories = load_categories()
     valid_ids = {c["id"] for c in categories}
     db = json.loads(PAPERS_FILE.read_text())
     existing_ids = {p["id"] for p in db["papers"]}
