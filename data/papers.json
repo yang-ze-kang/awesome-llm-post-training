@@ -747,6 +747,18 @@
         "en": "On-policy self-distillation for diffusion LLMs using the model's own denoising trajectory as privileged information for token-level supervision.",
         "zh": "使用模型自身的去噪轨迹作为特权信息的扩散语言模型在线自蒸馏方法，提供令牌级监督。"
       }
+    },
+    {
+      "id": "2607.05734",
+      "title": "SCOReD: Student-Aware CoT Optimization for Recommendation Distillation",
+      "category": "distillation",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05734",
+      "summary": {
+        "en": "Optimizes teacher CoT traces for student distillation in recommendations by parsing, scoring, and editing segments to improve learning signal.",
+        "zh": "通过解析、评分和编辑推理段落来优化教师CoT轨迹，用于推荐域中的学生蒸馏，改进学习信号。"
+      }
     }
   ]
 }

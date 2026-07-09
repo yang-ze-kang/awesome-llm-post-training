@@ -77,10 +77,18 @@ HF_KEYWORDS = [
     "lora", "distillation", "self-training", "self-improvement", "self-reward",
 ]
 
-MAX_CANDIDATES = int(os.environ.get("MAX_CANDIDATES", "40"))
-CRAWL_DAYS = int(os.environ.get("CRAWL_DAYS", "3"))
-MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
-DISABLE_HF = os.environ.get("DISABLE_HF", "") == "1"
+def env(name, default=""):
+    """os.environ.get, but treats an empty/whitespace value as unset. CI systems
+    (e.g. GitHub Actions `${{ vars.X }}`) inject empty strings for undefined
+    variables, which would otherwise override sensible defaults."""
+    val = os.environ.get(name, "")
+    return val.strip() if val and val.strip() else default
+
+
+MAX_CANDIDATES = int(env("MAX_CANDIDATES", "40"))
+CRAWL_DAYS = int(env("CRAWL_DAYS", "3"))
+MODEL = env("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
+DISABLE_HF = env("DISABLE_HF") == "1"
 
 
 def log(msg):
@@ -329,8 +337,14 @@ def classify(candidate, categories, token, base_url, valid_ids):
             raw = call_claude(prompt, token, base_url)
         except Exception as e:  # noqa: BLE001 - network/transient, retry
             last_err = e
+            detail = ""
+            if hasattr(e, "read"):
+                try:
+                    detail = " | body: " + e.read().decode("utf-8", "replace")[:200]
+                except Exception:  # noqa: BLE001
+                    pass
             wait = 2 ** attempt
-            log(f"  {candidate['id']}: LLM error ({e}); retry in {wait}s.")
+            log(f"  {candidate['id']}: LLM error ({e}){detail}; retry in {wait}s.")
             time.sleep(wait)
             continue
         data = parse_llm_json(raw)
@@ -397,8 +411,8 @@ def main():
     # 3. Rank by popularity, then take the per-run budget.
     new_candidates = rank_candidates(new_candidates)[:MAX_CANDIDATES]
 
-    token = os.environ.get("ANTHROPIC_AUTH_TOKEN") or os.environ.get("ANTHROPIC_API_KEY")
-    base_url = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").strip()
+    token = env("ANTHROPIC_AUTH_TOKEN") or env("ANTHROPIC_API_KEY")
+    base_url = env("ANTHROPIC_BASE_URL", "https://api.anthropic.com")
 
     if not token:
         log("No ANTHROPIC_AUTH_TOKEN set; skipping LLM step (dry run). Nothing written.")
