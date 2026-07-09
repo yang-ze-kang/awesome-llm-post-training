@@ -939,6 +939,210 @@
         "en": "Trains routing policies to decide when to use search via counterfactual supervision and preference optimization, improving search efficiency.",
         "zh": "通过反事实监督和偏好优化训练路由策略，决定何时使用搜索，提高搜索效率。"
       }
+    },
+    {
+      "id": "2607.06855",
+      "title": "Geometric Self-Distillation for Reasoning Generalization",
+      "category": "on-policy-distill",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06855",
+      "summary": {
+        "en": "Geometric self-distillation method that prevents student drift during on-policy distillation via Hellinger loss and proximal Fisher-Rao regularization.",
+        "zh": "几何自蒸馏方法通过Hellinger损失和近似Fisher-Rao正则化防止在线蒸馏中学生模型漂移。"
+      }
+    },
+    {
+      "id": "2607.07646",
+      "title": "RL Post-Training Builds Compositional Reasoning Strategies",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07646",
+      "summary": {
+        "en": "RL post-training composes primitive skills into higher-level strategies through phased discovery of sequential and parallel reductions.",
+        "zh": "RL后训练通过分阶段发现顺序和并行化简，将原始技能组合成更高层次的策略。"
+      }
+    },
+    {
+      "id": "2607.07023",
+      "title": "Online Data Selection Is Implicit Alignment",
+      "category": "data-synthesis",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07023",
+      "summary": {
+        "en": "Shows online data selection during SFT implicitly shapes model alignment; proposes Alignment Drift Auditing and alignment-aware selection.",
+        "zh": "揭示SFT期间的在线数据选择隐含地塑造模型对齐；提出对齐漂移审计和对齐感知选择方法。"
+      }
+    },
+    {
+      "id": "2607.06764",
+      "title": "Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1",
+      "category": "search",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06764",
+      "summary": {
+        "en": "Agentic harnesses for abstract reasoning via structured pattern discovery and program synthesis with adaptive re-exploration.",
+        "zh": "通过结构化模式发现和程序合成以及自适应重新探索的代理框架用于抽象推理。"
+      }
+    },
+    {
+      "id": "2607.07690",
+      "title": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07690",
+      "summary": {
+        "en": "Competitive cross-model RL where models grade each other's reasoning implicitly, doubling GRPO performance on hard math problems.",
+        "zh": "竞争性跨模型强化学习，模型相互评分推理过程，在困难数学问题上性能翻倍。"
+      }
+    },
+    {
+      "id": "2607.07674",
+      "title": "Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07674",
+      "summary": {
+        "en": "Adaptive prefix control for GRPO that maintains ~50% success rate during training, doubling accuracy on hard reasoning problems.",
+        "zh": "自适应前缀控制方法，通过在GRPO训练中保持约50%的成功率，在困难推理问题上实现精度翻倍。"
+      }
+    },
+    {
+      "id": "2607.07663",
+      "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+      "category": "survey",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07663",
+      "summary": {
+        "en": "Comprehensive survey of 1,250 papers on recursive self-improvement in AI systems, taxonomizing improvement loops and self-evaluation mechanisms.",
+        "zh": "对1,250篇论文的综合综述,涵盖AI系统的递归自我改进、改进循环分类和自我评估机制。"
+      }
+    },
+    {
+      "id": "2607.07492",
+      "title": "Search, Fail, Recover: A Training Framework for Correction-Aware Reasoning",
+      "category": "search",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07492",
+      "summary": {
+        "en": "Training framework teaching models to recover from failed reasoning branches via supervised search over partial solution chains with backtracking.",
+        "zh": "通过在部分解链上的监督搜索和回溯，训练模型从失败的推理分支中恢复的框架。"
+      }
+    },
+    {
+      "id": "2607.06987",
+      "title": "UP: Unbounded Positive Asymmetric Optimization for Breaking the Exploration-Stability Dilemma",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06987",
+      "summary": {
+        "en": "UP objective breaks exploration-stability dilemma in RL by using asymmetric clipping for positive/negative advantages across token and sequence-level frameworks.",
+        "zh": "UP目标通过在token和序列级框架中对正负优势使用非对称裁剪，打破RL中的探索-稳定性困境。"
+      }
+    },
+    {
+      "id": "2607.06720",
+      "title": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+      "category": "search",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06720",
+      "summary": {
+        "en": "Theoretical analysis of in-context search complexity for iterative refinement, showing exponential improvements when reflections reliably localize early mistakes.",
+        "zh": "对迭代精化的上下文搜索复杂度进行理论分析，证明当反思可靠定位早期错误时能获得指数级改进。"
+      }
+    },
+    {
+      "id": "2607.06993",
+      "title": "Large Behavior Model: A Promptable Digital Twin of the Retail Customer",
+      "category": "on-policy-distill",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06993",
+      "summary": {
+        "en": "LBM learns customer behavior from retail transactions via continued pre-training, SFT, and RL with verifiable rewards for behavioral grounding.",
+        "zh": "LBM通过持续预训练、有监督微调和可验证奖励RL从零售交易数据中学习客户行为。"
+      }
+    },
+    {
+      "id": "2607.06974",
+      "title": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06974",
+      "summary": {
+        "en": "Memory-augmented framework with learnable selection heads for test-time reasoning improvement via modular instruction retrieval.",
+        "zh": "具有可学习选择头的内存增强框架，通过模块化指令检索改进测试时推理。"
+      }
+    },
+    {
+      "id": "2607.07669",
+      "title": "DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation",
+      "category": "data-synthesis",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07669",
+      "summary": {
+        "en": "Studies post-training methods for dialectal English generation, revealing misalignment between reward optimization and human preference in dialect adaptation.",
+        "zh": "研究方言英语生成的后训练方法，揭示方言适配中奖励优化与人类偏好的不一致。"
+      }
+    },
+    {
+      "id": "2607.07626",
+      "title": "Future Confidence Distillation in Large Language Models",
+      "category": "distillation",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07626",
+      "summary": {
+        "en": "Distills post-solution confidence signals into pre-solution hidden representations for efficient, calibrated confidence estimation without inference overhead.",
+        "zh": "将后生成置信度信号蒸馏到前置隐藏表示中，实现高效且精准的置信度估计，无推理开销。"
+      }
+    },
+    {
+      "id": "2607.07508",
+      "title": "Single-Rollout Asynchronous Optimization for Agentic Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07508",
+      "summary": {
+        "en": "Asynchronous RL method for LLM post-training using single-rollout sampling and token-level clipping to improve stability and performance on agentic tasks.",
+        "zh": "用单次采样和token级别裁剪改进异步强化学习稳定性，用于LLM后训练的智能体任务。"
+      }
+    },
+    {
+      "id": "2607.07178",
+      "title": "Entropy Pacing Policy Optimization for Multi-Task Agentic Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07178",
+      "summary": {
+        "en": "Proposes EPPO, an entropy-aware policy optimization method for multi-task agentic LLM RL that coordinates exploration-exploitation across tasks.",
+        "zh": "提出EPPO方法，通过任务感知的熵调节机制协调多任务智能体LLM强化学习中的探索-利用平衡。"
+      }
+    },
+    {
+      "id": "2607.07050",
+      "title": "Behavior Leverage Imbalance in Multi-Teacher On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07050",
+      "summary": {
+        "en": "Identifies behavior leverage imbalance in multi-teacher on-policy distillation for tool-use models and proposes Soft Clamp to calibrate token-level divergence.",
+        "zh": "识别多教师在线蒸馏中的行为杠杆失衡问题，提出Soft Clamp方法校准令牌级散度。"
+      }
     }
   ]
 }
