@@ -122,13 +122,22 @@ and crawler pick it up automatically.
 
 `scripts/crawl.py`:
 
-1. Queries the arXiv API for recent papers (`cs.CL/cs.LG/cs.AI`) matching
-   post-training / reasoning keywords.
-2. Drops any arXiv id already in `papers.json`.
-3. Sends each new candidate's title + abstract to Claude, which returns JSON:
+1. Gathers recent candidates from **two sources**:
+   - **arXiv API** — keyword + category search (`cs.CL/cs.LG/cs.AI`).
+   - **Hugging Face daily papers** — community-curated, carrying **upvote counts**.
+2. Merges and dedupes by arXiv id (across sources and against `papers.json`).
+3. Ranks candidates **relevance-first** (keyword proxy: title hits weigh more
+   than abstract hits), then by Hugging Face **upvotes**, then recency — so
+   genuinely on-topic papers are processed first within the daily budget.
+4. Sends each candidate's title + abstract to Claude, which returns JSON:
    `{relevant, category, summary_en, summary_zh}`. Irrelevant or
    wrong-category papers are rejected.
-4. Appends accepted papers and bumps `meta.lastUpdated`.
+5. Appends accepted papers and bumps `meta.lastUpdated`.
+
+**Failure alerting:** if there are candidates but *every one* errors out (e.g.
+the LLM endpoint is down or the token is invalid), the script exits non-zero so
+the GitHub Action run goes red and the repo owner is notified. The run summary
+shows status, count added, and any error note.
 
 Run it locally:
 
@@ -143,7 +152,7 @@ Without a token it does a **dry run**: fetches and dedupes but writes nothing.
 
 Tunable via env vars: `CRAWL_DAYS` (lookback window, default 3),
 `MAX_CANDIDATES` (papers sent to the LLM per run, default 40),
-`ANTHROPIC_MODEL`.
+`ANTHROPIC_MODEL`, and `DISABLE_HF=1` (skip the Hugging Face source, arXiv only).
 
 ## Deployment
 

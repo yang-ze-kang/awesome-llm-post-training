@@ -47,3 +47,22 @@ jobs:
           COUNT="${{ steps.crawl.outputs.added_count }}"
           git commit -m "chore: add ${COUNT:-new} paper(s) via daily crawl [skip ci]"
           git push
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "### Daily crawl"
+            echo ""
+            echo "- Status: \`${{ steps.crawl.outputs.status || 'unknown' }}\`"
+            echo "- Papers added: **${{ steps.crawl.outputs.added_count || 0 }}**"
+            echo "- Errored candidates: ${{ steps.crawl.outputs.error_count || 0 }}"
+            if [[ -n "${{ steps.crawl.outputs.added_titles }}" ]]; then
+              echo "- Added: ${{ steps.crawl.outputs.added_titles }}"
+            fi
+            if [[ "${{ steps.crawl.outputs.status }}" == "llm_failure" ]]; then
+              echo ""
+              echo "> ⚠️ **All candidates failed to evaluate** — the LLM endpoint is likely down or the token/secret is invalid. This run is marked failed so you get notified."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
