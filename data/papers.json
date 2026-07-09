@@ -759,6 +759,186 @@
         "en": "Optimizes teacher CoT traces for student distillation in recommendations by parsing, scoring, and editing segments to improve learning signal.",
         "zh": "通过解析、评分和编辑推理段落来优化教师CoT轨迹，用于推荐域中的学生蒸馏，改进学习信号。"
       }
+    },
+    {
+      "id": "2607.05541",
+      "title": "Self-Review Reinforcement Learning (SRRL) with Cross-Episode Memory and Policy Distillation",
+      "category": "rlvr",
+      "date": "2026-07-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05541",
+      "summary": {
+        "en": "Embeds self-review into RL episodes with cross-episode memory and policy distillation to improve learning from sparse feedback.",
+        "zh": "在RL回合中嵌入自评步骤，结合跨回合记忆和策略蒸馏以改进稀疏反馈学习。"
+      }
+    },
+    {
+      "id": "2607.05339",
+      "title": "TREK: Distill to Explore, Reinforce to Refine",
+      "category": "rlvr",
+      "date": "2026-07-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05339",
+      "summary": {
+        "en": "TREK combines distillation for exploration with GRPO refinement to improve reasoning on hard prompts using verified teacher trajectories.",
+        "zh": "TREK结合蒸馏探索和GRPO优化，利用验证的教师轨迹改进困难问题的推理能力。"
+      }
+    },
+    {
+      "id": "2607.06140",
+      "title": "CurateEvo: Data-Curation Evolving for Agentic Post-Training",
+      "category": "data-synthesis",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06140",
+      "summary": {
+        "en": "Dynamic data curation framework that evolves filtering and augmentation strategies using failed trajectories to improve agentic post-training.",
+        "zh": "动态数据策展框架，利用失败轨迹进化筛选和增强策略以改进智能体后训练。"
+      }
+    },
+    {
+      "id": "2607.05391",
+      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "category": "reward-modeling",
+      "date": "2026-07-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05391",
+      "summary": {
+        "en": "A probabilistic verification framework using LLM token logits to generate continuous scores for solution evaluation and RL training.",
+        "zh": "一个使用LLM token logits生成连续分数的概率验证框架，用于解决方案评估和RL训练。"
+      }
+    },
+    {
+      "id": "2607.03530",
+      "title": "MentalThink: Shaping Thoughts in Mental SVG World",
+      "category": "cot-reasoning",
+      "date": "2026-07-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.03530",
+      "summary": {
+        "en": "MLLMs learn to generate and iteratively refine SVG code as an executable intermediate representation for visual-spatial reasoning and scene understanding.",
+        "zh": "多模态大模型学习生成和迭代改进SVG代码作为可执行的中间表示，用于视觉空间推理和场景理解。"
+      }
+    },
+    {
+      "id": "2607.06326",
+      "title": "DT-Guard: Intent-Driven Reasoning-Active Training for Reasoning-Free LLM Safety Guardrail",
+      "category": "safety",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06326",
+      "summary": {
+        "en": "Reasoning-supervised safety guardrail that internalizes reasoning during training to maintain inference efficiency while improving robustness.",
+        "zh": "一种推理监督的安全守卫模型，在训练中内化推理以保持推理效率并提高鲁棒性。"
+      }
+    },
+    {
+      "id": "2607.05863",
+      "title": "Strategic Bargaining in Multi-Buyer Markets: Reinforcement Learning from Verifiable Rewards for LLM Negotiations",
+      "category": "rlvr",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05863",
+      "summary": {
+        "en": "Uses RLVF with verifiable economic rewards to train LLMs for strategic multi-buyer negotiation, learning market exploration and surplus extraction.",
+        "zh": "使用可验证经济奖励的RLVR训练LLM进行多买家谈判，学习市场探索和剩余价值提取。"
+      }
+    },
+    {
+      "id": "2607.05861",
+      "title": "Mitigating Factual Hallucination in Large Reasoning Models via Mixed-Mode Advantage Regularization",
+      "category": "rlvr",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05861",
+      "summary": {
+        "en": "RL framework using non-thinking rollouts as references to mitigate factual hallucination in reasoning models via advantage regularization.",
+        "zh": "使用非推理轨迹作为参考的强化学习框架，通过优势正则化缓解推理模型中的事实幻觉。"
+      }
+    },
+    {
+      "id": "2607.03748",
+      "title": "Bridging Interleaved Multi-Modal Reasoning as a Unified Decision Process",
+      "category": "rlvr",
+      "date": "2026-07-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.03748",
+      "summary": {
+        "en": "Unified RL framework for multi-modal reasoning that jointly optimizes text and image generation through shared trajectory advantages and VLM-based reward signals.",
+        "zh": "统一的多模态推理RL框架，通过共享轨迹优势和基于VLM的奖励信号联合优化文本和图像生成。"
+      }
+    },
+    {
+      "id": "2607.05804",
+      "title": "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training",
+      "category": "distillation",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05804",
+      "summary": {
+        "en": "Efficient on-policy distillation for long-horizon agents via turn-level budgeting and adaptive rollout depth control.",
+        "zh": "通过转轮级预算和自适应回滚深度控制实现长视界代理的高效在线蒸馏。"
+      }
+    },
+    {
+      "id": "2607.01232",
+      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "category": "rlvr",
+      "date": "2026-07-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.01232",
+      "summary": {
+        "en": "Shows that RL gains concentrate in middle transformer layers; training a single layer can match full-parameter RL performance across GRPO and variants.",
+        "zh": "发现RL收益集中在中间变换器层；训练单层可匹配全参数RL性能，覆盖GRPO等多种算法。"
+      }
+    },
+    {
+      "id": "2607.06233",
+      "title": "Demonstrating TOFFEE: A Learned System for Synthesizing Data Agent Trajectories at Scale",
+      "category": "data-synthesis",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06233",
+      "summary": {
+        "en": "TOFFEE synthesizes high-quality data agent trajectories via MCTS for SFT and in-context learning in data environments.",
+        "zh": "TOFFEE通过MCTS为数据代理合成高质量轨迹，用于SFT和上下文学习。"
+      }
+    },
+    {
+      "id": "2607.06160",
+      "title": "LongCrafter: Towards Diverse Long-Context Understanding via Evidence-Graph-Guided Instruction Synthesis",
+      "category": "data-synthesis",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06160",
+      "summary": {
+        "en": "Synthesizes diverse long-context SFT data using hierarchical task taxonomy and evidence graphs to improve LLM long-context understanding.",
+        "zh": "使用分层任务分类和证据图谱合成多样化长文本SFT数据，以改进LLM长文本理解能力。"
+      }
+    },
+    {
+      "id": "2607.05943",
+      "title": "SearchEyes: Towards Frontier Multimodal Deep Search Intelligence via Search World Simulation",
+      "category": "rlvr",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05943",
+      "summary": {
+        "en": "Unified search world simulation with step-level reward anchors for multimodal agent training via hop-level credit assignment.",
+        "zh": "通过跳级信用分配，使用步级奖励锚的统一搜索世界模拟来训练多模态智能体。"
+      }
+    },
+    {
+      "id": "2607.05752",
+      "title": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+      "category": "search",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05752",
+      "summary": {
+        "en": "Trains routing policies to decide when to use search via counterfactual supervision and preference optimization, improving search efficiency.",
+        "zh": "通过反事实监督和偏好优化训练路由策略，决定何时使用搜索，提高搜索效率。"
+      }
     }
   ]
 }
