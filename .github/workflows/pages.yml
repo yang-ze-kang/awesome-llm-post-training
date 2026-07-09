@@ -1,8 +1,14 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Deploy on any direct push to main (e.g. editing papers/site by hand).
   push:
     branches: [main]
+  # Also deploy after the daily crawl finishes — commits pushed by a workflow
+  # using GITHUB_TOKEN do NOT trigger `push`, so we chain explicitly here.
+  workflow_run:
+    workflows: ["Daily paper crawl"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -16,6 +22,9 @@ concurrency:
 
 jobs:
   deploy:
+    # For a workflow_run trigger, only deploy if the crawl succeeded. Direct
+    # pushes and manual dispatches always deploy.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -23,6 +32,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # workflow_run runs against the default branch ref; make sure we grab
+          # the latest main (including the crawl's fresh commit).
+          ref: main
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

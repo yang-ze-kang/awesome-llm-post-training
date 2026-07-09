@@ -53,14 +53,28 @@ if new papers are found it commits to `main`, which triggers a Pages redeploy.
 
 - **Crawl**: daily at 01:17 UTC (`.github/workflows/crawl.yml`). Adjust the
   `cron` there if you want a different time.
-- **Deploy**: on every push to `main` (`.github/workflows/pages.yml`).
+- **Deploy**: `.github/workflows/pages.yml` runs on (a) any direct push to
+  `main`, (b) manual dispatch, and (c) **after the daily crawl completes**.
+
+### Why the crawl → deploy chaining is explicit
+
+The crawler commits with the built-in `GITHUB_TOKEN`. GitHub deliberately does
+**not** fire `push`-triggered workflows for commits made by `GITHUB_TOKEN` (it
+prevents infinite loops). So the deploy is chained via a `workflow_run` trigger
+that listens for the "Daily paper crawl" workflow finishing successfully — that
+picks up the fresh commit and redeploys the site automatically. No manual step
+is needed once secrets and Pages are configured.
+
+> If you ever switch the crawler to push via a Personal Access Token instead of
+> `GITHUB_TOKEN`, the `push` trigger would fire on its own and you could drop the
+> `workflow_run` trigger.
 
 ## Cost note
 
 The crawler sends up to `MAX_CANDIDATES` (default 40) title+abstract pairs to the
 LLM per day, each a short single-turn request. Using a small model like
-`claude-haiku-4-5` keeps this cheap. Lower `MAX_CANDIDATES` or widen the schedule
-to reduce spend further.
+`claude-haiku-4-5-20251001` keeps this cheap. Lower `MAX_CANDIDATES` or widen
+the schedule to reduce spend further.
 
 ## Troubleshooting
 
