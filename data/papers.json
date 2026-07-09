@@ -727,7 +727,7 @@
     {
       "id": "2607.05394",
       "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
-      "category": "rlvr",
+      "category": "on-policy-distill",
       "date": "2026-07-06",
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2607.05394",
@@ -739,7 +739,7 @@
     {
       "id": "2607.04428",
       "title": "dOPSD: On-Policy Self-Distillation for Diffusion Language Models",
-      "category": "distillation",
+      "category": "on-policy-distill",
       "date": "2026-07-04",
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2607.04428",
@@ -763,7 +763,7 @@
     {
       "id": "2607.05541",
       "title": "Self-Review Reinforcement Learning (SRRL) with Cross-Episode Memory and Policy Distillation",
-      "category": "rlvr",
+      "category": "on-policy-distill",
       "date": "2026-07-06",
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2607.05541",
@@ -775,7 +775,7 @@
     {
       "id": "2607.05339",
       "title": "TREK: Distill to Explore, Reinforce to Refine",
-      "category": "rlvr",
+      "category": "on-policy-distill",
       "date": "2026-07-06",
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2607.05339",
@@ -871,7 +871,7 @@
     {
       "id": "2607.05804",
       "title": "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training",
-      "category": "distillation",
+      "category": "on-policy-distill",
       "date": "2026-07-07",
       "venue": "arXiv",
       "url": "https://arxiv.org/abs/2607.05804",

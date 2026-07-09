@@ -98,6 +98,15 @@
             "zh": "面向推理、使用可验证/规则奖励的 RL(GRPO、DeepSeek-R1、RLVR)。"
           },
           "keywords": ["GRPO", "RLVR", "verifiable reward", "reasoning RL", "DeepSeek-R1", "rule-based reward", "reinforcement finetuning"]
+        },
+        {
+          "id": "on-policy-distill",
+          "name": { "en": "On-Policy Distillation & Hybrid", "zh": "On-Policy 蒸馏 / 混合方法" },
+          "desc": {
+            "en": "Methods where the student learns on its own on-policy rollouts but from a teacher/reward signal — bridging distillation and RL (on-policy distillation, distill-then-reinforce).",
+            "zh": "学生在自身 on-policy 采样上学习、但监督来自教师或奖励信号的方法,介于蒸馏与 RL 之间(on-policy 蒸馏、先蒸馏后强化)。"
+          },
+          "keywords": ["on-policy distillation", "on-policy distill", "OPD", "self-distillation", "distill-then-reinforce", "weak-to-strong", "hybrid distillation RL"]
         }
       ]
     },
