@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-09",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -722,6 +722,30 @@
       "summary": {
         "en": "A unified framework for SFT, PEFT, and preference optimization across a wide range of open models.",
         "zh": "统一的微调框架,支持在众多开源模型上做 SFT、PEFT 与偏好优化。"
+      }
+    },
+    {
+      "id": "2607.05394",
+      "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+      "category": "rlvr",
+      "date": "2026-07-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.05394",
+      "summary": {
+        "en": "Transfers RL policy shifts from weaker models to stronger ones via implicit reward signals without explicit reward modeling.",
+        "zh": "通过隐式奖励信号将弱模型的强化学习策略转移到强模型，无需显式奖励建模。"
+      }
+    },
+    {
+      "id": "2607.04428",
+      "title": "dOPSD: On-Policy Self-Distillation for Diffusion Language Models",
+      "category": "distillation",
+      "date": "2026-07-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.04428",
+      "summary": {
+        "en": "On-policy self-distillation for diffusion LLMs using the model's own denoising trajectory as privileged information for token-level supervision.",
+        "zh": "使用模型自身的去噪轨迹作为特权信息的扩散语言模型在线自蒸馏方法，提供令牌级监督。"
       }
     }
   ]

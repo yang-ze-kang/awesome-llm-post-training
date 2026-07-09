@@ -16,7 +16,7 @@ Pipeline:
 Environment variables:
   ANTHROPIC_AUTH_TOKEN  (required for LLM step) API key / token
   ANTHROPIC_BASE_URL    (optional) third-party Anthropic-compatible endpoint
-  ANTHROPIC_MODEL       (optional) defaults to claude-haiku-4-5
+  ANTHROPIC_MODEL       (optional) defaults to claude-haiku-4-5-20251001
   MAX_CANDIDATES        (optional) cap papers sent to the LLM per run (default 40)
   CRAWL_DAYS            (optional) how many days back to search (default 3)
   DISABLE_HF            (optional) set to "1" to skip the Hugging Face source
@@ -79,7 +79,7 @@ HF_KEYWORDS = [
 
 MAX_CANDIDATES = int(os.environ.get("MAX_CANDIDATES", "40"))
 CRAWL_DAYS = int(os.environ.get("CRAWL_DAYS", "3"))
-MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5")
+MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 DISABLE_HF = os.environ.get("DISABLE_HF", "") == "1"
 
 
@@ -291,6 +291,10 @@ def call_claude(prompt, token, base_url):
             "content-type": "application/json",
             "x-api-key": token,
             "anthropic-version": "2023-06-01",
+            # Some Anthropic-compatible proxies sit behind Cloudflare, which
+            # blocks the default Python-urllib User-Agent (error 1010). Send a
+            # conventional UA so the request is allowed through.
+            "User-Agent": "awesome-llm-post-training-crawler/1.0",
         },
         method="POST",
     )
