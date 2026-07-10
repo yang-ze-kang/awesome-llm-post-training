@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-09",
+    "lastUpdated": "2026-07-10",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1142,6 +1142,162 @@
       "summary": {
         "en": "Identifies behavior leverage imbalance in multi-teacher on-policy distillation for tool-use models and proposes Soft Clamp to calibrate token-level divergence.",
         "zh": "识别多教师在线蒸馏中的行为杠杆失衡问题，提出Soft Clamp方法校准令牌级散度。"
+      }
+    },
+    {
+      "id": "2607.08393",
+      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
+      "category": "instruction-tuning",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08393",
+      "summary": {
+        "en": "Identifies why fine-tuned knowledge fails to generalize via knowledge-circuit misalignment; proposes self-patching intervention to improve generalization.",
+        "zh": "通过知识电路错位假设解释微调知识泛化失败，提出自我补丁干预方法改进泛化性能。"
+      }
+    },
+    {
+      "id": "2607.08268",
+      "title": "Different Teachers, Different Capabilities: Sub-1B On-Device Distillation for Structured Text Enrichment",
+      "category": "on-policy-distill",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08268",
+      "summary": {
+        "en": "Distills reasoning teacher (DeepSeek-R1 8B) into 0.6B student via QLoRA, analyzing capability transfer across subtasks with per-field routing.",
+        "zh": "通过QLoRA将推理教师（DeepSeek-R1 8B）蒸馏为0.6B学生，分析不同子任务的能力转移并提供按字段路由方案。"
+      }
+    },
+    {
+      "id": "2607.08602",
+      "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
+      "category": "rlvr",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08602",
+      "summary": {
+        "en": "Clinical LLM optimized with step-verifiable composite rewards for HCC risk stratification and treatment guidance.",
+        "zh": "使用可验证的复合奖励优化的临床LLM，用于肝细胞癌风险分层和治疗指导。"
+      }
+    },
+    {
+      "id": "2607.08255",
+      "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
+      "category": "on-policy-distill",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08255",
+      "summary": {
+        "en": "Multi-teacher curriculum via execution-based ranking improves student coding models through RLVR rather than imitation.",
+        "zh": "通过执行验证排名的多教师课程通过RLVR而非模仿改进学生编码模型。"
+      }
+    },
+    {
+      "id": "2607.08173",
+      "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
+      "category": "safety",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08173",
+      "summary": {
+        "en": "Amplifies reasoning weights via task vectors to elicit hidden information and misalignment in language models during black-box auditing.",
+        "zh": "通过任务向量放大推理权重，在黑盒审计中诱导语言模型隐藏信息和不对齐行为。"
+      }
+    },
+    {
+      "id": "2607.08161",
+      "title": "SQuaD-SQL: Efficient Text-to-SQL with Small Language Models via LLM-Guided Knowledge Distillation",
+      "category": "distillation",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08161",
+      "summary": {
+        "en": "Distills LLM knowledge into small language models for Text-to-SQL using synthetic data and parameter-efficient fine-tuning.",
+        "zh": "通过合成数据和参数高效微调将LLM知识蒸馏到小型语言模型以执行文本转SQL任务。"
+      }
+    },
+    {
+      "id": "2607.08034",
+      "title": "PLURAL: A Global Dataset for Value Alignment",
+      "category": "data-synthesis",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08034",
+      "summary": {
+        "en": "Large-scale preference dataset grounded in cross-cultural values survey, enabling culturally-aligned LLM training across 20 countries.",
+        "zh": "基于跨文化价值观调查的大规模偏好数据集，支持20个国家的文化对齐LLM训练。"
+      }
+    },
+    {
+      "id": "2607.07976",
+      "title": "When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07976",
+      "summary": {
+        "en": "Proposes TACO to calibrate credit assignment in RL by identifying and suppressing reinforcement of low-probability erroneous tokens during LLM training.",
+        "zh": "提出TACO方法通过识别和抑制低概率错误token的强化来校准LLM强化学习中的信用分配。"
+      }
+    },
+    {
+      "id": "2607.08733",
+      "title": "Super Weights in LLMs and the Failure of Selective Training",
+      "category": "peft",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08733",
+      "summary": {
+        "en": "Shows Super Weights are not trainable in isolation; structured methods like LoRA succeed where selective training fails.",
+        "zh": "证明超级权重无法单独训练；结构化方法如LoRA优于选择性训练。"
+      }
+    },
+    {
+      "id": "2607.08124",
+      "title": "TTHE: Test-Time Harness Evolution",
+      "category": "search",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08124",
+      "summary": {
+        "en": "Optimizes LLM agent harnesses at test time through evolutionary search over execution traces without model weight updates.",
+        "zh": "通过在执行轨迹上进行演化搜索，在测试时优化LLM智能体的控制程序，无需更新模型权重。"
+      }
+    },
+    {
+      "id": "2607.08056",
+      "title": "Reinforcing the Generation Order of Multimodal Masked Diffusion Models",
+      "category": "rlvr",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08056",
+      "summary": {
+        "en": "Uses GRPO to learn optimal generation ordering for multimodal diffusion models, improving text-to-image alignment and reasoning.",
+        "zh": "使用GRPO学习多模态扩散模型的最优生成顺序，改进文本到图像对齐和推理性能。"
+      }
+    },
+    {
+      "id": "2607.07918",
+      "title": "Efficient Safety Alignment of Language Models via Latent Personality Traits",
+      "category": "safety",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07918",
+      "summary": {
+        "en": "Efficient safety alignment using adversarial training on personality traits achieves robustness against jailbreaks without harmful data.",
+        "zh": "通过对人格特征进行对抗训练实现高效安全对齐，无需有害数据即可抵御越狱攻击。"
+      }
+    },
+    {
+      "id": "2607.04412",
+      "title": "LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL",
+      "category": "dpo",
+      "date": "2026-07-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.04412",
+      "summary": {
+        "en": "Dynamically adapts training prompts during RL fine-tuning by using an LLM judge to detect non-challenging prompts and incrementally raise difficulty.",
+        "zh": "通过LLM判断器动态检测非挑战性提示并逐步提高难度，在RL微调过程中自适应调整训练提示。"
       }
     }
   ]
