@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-10",
+    "lastUpdated": "2026-07-11",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1298,6 +1298,54 @@
       "summary": {
         "en": "Dynamically adapts training prompts during RL fine-tuning by using an LLM judge to detect non-challenging prompts and incrementally raise difficulty.",
         "zh": "通过LLM判断器动态检测非挑战性提示并逐步提高难度，在RL微调过程中自适应调整训练提示。"
+      }
+    },
+    {
+      "id": "2607.08257",
+      "title": "MentalHospital: A Virtual Environment for Evaluating Psychiatric Clinical Encounters",
+      "category": "benchmarks",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08257",
+      "summary": {
+        "en": "Benchmark for evaluating LLMs on psychiatric clinical encounters using SOAP workflow with expert-aligned domain-specific evaluators.",
+        "zh": "使用SOAP工作流和专家对齐评估器评估LLM精神病学临床诊疗能力的基准。"
+      }
+    },
+    {
+      "id": "2607.08059",
+      "title": "When Thinking Hurts: Epistemic Signals in the Reasoning Chains of Visual Language Models",
+      "category": "cot-reasoning",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08059",
+      "summary": {
+        "en": "Analyzes uncertainty signals in reasoning chains of thinking-mode VLMs, showing chain entropy better predicts errors than answer entropy.",
+        "zh": "分析思维模式视觉语言模型推理链中的不确定性信号，表明链熵比答案熵更好地预测错误。"
+      }
+    },
+    {
+      "id": "2607.04939",
+      "title": "Teaching LLMs a Low-Resource Language: Enhancing Code Completion in Pharo",
+      "category": "data-synthesis",
+      "date": "2026-07-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.04939",
+      "summary": {
+        "en": "Demonstrates data curation and fine-tuning pipeline for adapting code LLMs to low-resource languages like Pharo.",
+        "zh": "展示了为低资源编程语言（如Pharo）适配代码LLM的数据策展和微调流程。"
+      }
+    },
+    {
+      "id": "2607.08700",
+      "title": "Do You Need a Frontier Model as a Citation Verifier? Benchmarking Rubric LLMs for Deep-Research Source Attribution",
+      "category": "reward-modeling",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08700",
+      "summary": {
+        "en": "Benchmarks LLM judges as reward models for citation quality, showing cheaper models can match frontier models while revealing directional biases obscured by F1 metrics.",
+        "zh": "基准测试LLM作为引文质量奖励模型，表明廉价模型可匹配前沿模型，同时揭示F1指标掩盖的方向性偏差。"
       }
     }
   ]
