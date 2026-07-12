@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-11",
+    "lastUpdated": "2026-07-12",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1346,6 +1346,30 @@
       "summary": {
         "en": "Benchmarks LLM judges as reward models for citation quality, showing cheaper models can match frontier models while revealing directional biases obscured by F1 metrics.",
         "zh": "基准测试LLM作为引文质量奖励模型，表明廉价模型可匹配前沿模型，同时揭示F1指标掩盖的方向性偏差。"
+      }
+    },
+    {
+      "id": "2607.08763",
+      "title": "OpenCoF: Learning to Reason Through Video Generation",
+      "category": "cot-reasoning",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08763",
+      "summary": {
+        "en": "Introduces OpenCoF dataset and Wan-CoF model for Chain-of-Frame video reasoning, demonstrating temporal supervision improves visual reasoning.",
+        "zh": "提出OpenCoF数据集和Wan-CoF模型用于帧序列推理，证明时间监督改进视觉推理能力。"
+      }
+    },
+    {
+      "id": "2607.08716",
+      "title": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
+      "category": "on-policy-distill",
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08716",
+      "summary": {
+        "en": "Memory agent alongside action agents improves long-horizon task performance via selective memory injection and on-policy GRPO training.",
+        "zh": "通过选择性记忆注入和在线GRPO训练，内存代理与动作代理协同改进长视界任务性能。"
       }
     }
   ]
