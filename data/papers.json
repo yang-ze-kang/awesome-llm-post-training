@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-12",
+    "lastUpdated": "2026-07-13",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1370,6 +1370,90 @@
       "summary": {
         "en": "Memory agent alongside action agents improves long-horizon task performance via selective memory injection and on-policy GRPO training.",
         "zh": "通过选择性记忆注入和在线GRPO训练，内存代理与动作代理协同改进长视界任务性能。"
+      }
+    },
+    {
+      "id": "2607.09153",
+      "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+      "category": "reward-modeling",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09153",
+      "summary": {
+        "en": "KV-PRM leverages KV-cache transfer to reduce process reward model scoring cost from O(L²) to O(L) for efficient test-time scaling.",
+        "zh": "KV-PRM通过KV缓存转移将过程奖励模型的评分成本从O(L²)降至O(L)，实现高效的测试时扩展。"
+      }
+    },
+    {
+      "id": "2607.09287",
+      "title": "Super-Tuning: From Activation-Aware Pruning to Sparse Fine-Tuning",
+      "category": "peft",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09287",
+      "summary": {
+        "en": "Sparse parameter-efficient fine-tuning using pruning-inspired saliency signals to select trainable parameters, combined with LoRA adapters.",
+        "zh": "使用剪枝启发的显著性信号选择可训练参数的稀疏参数高效微调方法，结合LoRA适配器。"
+      }
+    },
+    {
+      "id": "2607.04751",
+      "title": "Trust Region Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.04751",
+      "summary": {
+        "en": "Trust Region Policy Distillation stabilizes on-policy distillation through proximal teacher construction, improving reasoning task performance without computational overhead.",
+        "zh": "信任域策略蒸馏通过近端教师构造稳定在线策略蒸馏，改进推理任务性能且无计算开销。"
+      }
+    },
+    {
+      "id": "2607.09415",
+      "title": "Self-Guided Test-Time Training for Long-Context LLMs",
+      "category": "search",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09415",
+      "summary": {
+        "en": "Self-guided test-time training that identifies relevant evidence spans before adaptation to improve long-context LLM reasoning.",
+        "zh": "自引导测试时训练通过先识别相关证据片段再进行适应来改进长上下文LLM推理。"
+      }
+    },
+    {
+      "id": "2607.09438",
+      "title": "Test-Time Scaling for Small VLMs on Multilingual Visual MCQ",
+      "category": "search",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09438",
+      "summary": {
+        "en": "Investigates test-time scaling methods for small VLMs on multilingual visual MCQ, finding parseability and token budget matter more than sophisticated search.",
+        "zh": "研究小型视觉语言模型的测试时间缩放方法，发现可解析性和token预算比复杂搜索更重要。"
+      }
+    },
+    {
+      "id": "2607.09375",
+      "title": "Mach-Mind-4-Flash Technical Report",
+      "category": "on-policy-distill",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09375",
+      "summary": {
+        "en": "MoE model using multi-teacher on-policy distillation and token-efficient policy optimization to match 100B models at 3B activated parameters.",
+        "zh": "使用多教师在线蒸馏和令牌高效策略优化的混合专家模型，以3B激活参数匹配100B模型性能。"
+      }
+    },
+    {
+      "id": "2607.09492",
+      "title": "Multimodal Reward Hacking in Reinforcement Learning",
+      "category": "reward-modeling",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09492",
+      "summary": {
+        "en": "Studies reward hacking vulnerabilities in MLLM RL across algorithms and scales, introducing metrics to measure failure rates under optimization.",
+        "zh": "研究多模态大语言模型强化学习中的奖励黑客漏洞，引入指标衡量优化下的失败率。"
       }
     }
   ]
