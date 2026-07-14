@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-14",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1454,6 +1454,210 @@
       "summary": {
         "en": "Studies reward hacking vulnerabilities in MLLM RL across algorithms and scales, introducing metrics to measure failure rates under optimization.",
         "zh": "研究多模态大语言模型强化学习中的奖励黑客漏洞，引入指标衡量优化下的失败率。"
+      }
+    },
+    {
+      "id": "2607.11434",
+      "title": "Direct Image-to-Modern Vietnamese Translation of Han-Nom Manuscripts via Multimodal RLHF Preference Alignment",
+      "category": "dpo",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11434",
+      "summary": {
+        "en": "Multimodal RLHF framework comparing PPO, DPO, and KTO for Han-Nom manuscript translation with image and text conditioning.",
+        "zh": "多模态RLHF框架，比较PPO、DPO和KTO在汉喃手稿翻译中的性能，支持图像和文本条件。"
+      }
+    },
+    {
+      "id": "2607.11505",
+      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
+      "category": "rlhf-ppo",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11505",
+      "summary": {
+        "en": "Decouples exploration from alignment by using lightweight proxy models to generate reusable update signals, enabling efficient cross-model transfer.",
+        "zh": "通过轻量代理模型生成可复用的更新信号来解耦探索与对齐，实现高效的跨模型迁移。"
+      }
+    },
+    {
+      "id": "2607.11506",
+      "title": "SCOPE-RL: Optimizing Reasoning Paths Before and After Success",
+      "category": "rlvr",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11506",
+      "summary": {
+        "en": "Densifies sparse verifiable rewards in RLVR by adding prefix-decomposed rewards before success and process-shape rewards after success, improving accuracy and efficiency.",
+        "zh": "通过在成功前添加前缀分解奖励和在成功后添加过程形状奖励，来加密RLVR中的稀疏可验证奖励，提高准确性和效率。"
+      }
+    },
+    {
+      "id": "2607.11736",
+      "title": "MET: Theory-Grounded and Culture-Aware Multilingual Moral Reasoning",
+      "category": "instruction-tuning",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11736",
+      "summary": {
+        "en": "Culture-aware multilingual moral reasoning via theory-grounded prompting and self-distillation training without external supervision.",
+        "zh": "通过理论基础的提示和自蒸馏训练实现文化感知的多语言道德推理，无需外部监督。"
+      }
+    },
+    {
+      "id": "2607.11475",
+      "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
+      "category": "safety",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11475",
+      "summary": {
+        "en": "HyperSafe restores safety alignment in fine-tuned models via model-specific networks generated at inference time without modifying weights.",
+        "zh": "HyperSafe通过在推理时生成模型特定网络来恢复微调模型的安全对齐，无需修改权重。"
+      }
+    },
+    {
+      "id": "2607.11436",
+      "title": "The Ebb and Flow of Multimodal Focus: Scheduling Visual Relay Windows for Grounded VLM Reasoning",
+      "category": "search",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11436",
+      "summary": {
+        "en": "Controls visual attention allocation in VLMs during inference to strengthen evidence-grounded multimodal reasoning through learned relay windows.",
+        "zh": "通过学习的中继窗口控制VLM推理时的视觉注意力分配，增强证据驱动的多模态推理。"
+      }
+    },
+    {
+      "id": "2607.11258",
+      "title": "TreeThink: A Modular Tree Search Library for Mathematical Reasoning with LLMs",
+      "category": "search",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11258",
+      "summary": {
+        "en": "Open-source library for modular, asynchronous tree search in neural theorem proving with formal verifier integration.",
+        "zh": "用于神经定理证明的模块化异步树搜索开源库，集成形式验证器支持。"
+      }
+    },
+    {
+      "id": "2607.11012",
+      "title": "EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11012",
+      "summary": {
+        "en": "Framework for on-policy distillation bridging supervised fine-tuning and RL, supporting cross-tokenizer and step-wise supervision.",
+        "zh": "支持跨分词器和逐步监督的在线策略蒸馏框架，连接监督微调和强化学习。"
+      }
+    },
+    {
+      "id": "2607.10966",
+      "title": "SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification in Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.10966",
+      "summary": {
+        "en": "Multi-turn RL framework using model self-verification as learning signal for vision-language reasoning with GRPO.",
+        "zh": "使用模型自验证作为学习信号的多轮RL框架，通过GRPO改进视觉语言推理。"
+      }
+    },
+    {
+      "id": "2607.11696",
+      "title": "Think Through a Bottleneck: Hourglass Reasoning for Rigorous Induction",
+      "category": "cot-reasoning",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11696",
+      "summary": {
+        "en": "Hourglass reasoning enforces strict stage isolation with compressed symbolic states to improve few-shot inductive reasoning in LLMs.",
+        "zh": "沙漏推理通过阶段间严格隔离和压缩符号状态来改进LLM的少样本归纳推理。"
+      }
+    },
+    {
+      "id": "2607.11598",
+      "title": "Interaction Scaling: Grounding the Third Axis of Test-Time Compute",
+      "category": "search",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11598",
+      "summary": {
+        "en": "Proposes interaction scaling as a third test-time compute axis: model proposes, external tool observes and provides grounded feedback, model revises iteratively.",
+        "zh": "提出交互缩放作为第三种测试时计算轴：模型提议、外部工具观察并提供基于实际反馈、模型迭代修订。"
+      }
+    },
+    {
+      "id": "2607.11307",
+      "title": "Efficient Test-Time Optimization for Multi-Agent Proof Autoformalization",
+      "category": "search",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11307",
+      "summary": {
+        "en": "Multi-agent framework with test-time optimization for proof autoformalization using formal verification and semantic rubrics.",
+        "zh": "使用形式化验证和语义评分的多智能体测试时间优化框架用于证明自动形式化。"
+      }
+    },
+    {
+      "id": "2607.11266",
+      "title": "Valid $\\ne$ Necessary: Diagnosing Latent Inefficiency in Chain-of-Thought",
+      "category": "cot-reasoning",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11266",
+      "summary": {
+        "en": "Diagnoses inefficient reasoning steps in CoT via information-theoretic metric CAID; achieves 31-53% token reduction while maintaining accuracy.",
+        "zh": "通过信息论指标CAID诊断CoT中的低效推理步骤；在保持准确性的同时实现31-53%的token减少。"
+      }
+    },
+    {
+      "id": "2607.11089",
+      "title": "OS-Pruner: Pruning Chains-of-Thought of Reasoning Models via Optimal Stopping",
+      "category": "cot-reasoning",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11089",
+      "summary": {
+        "en": "Lightweight framework for pruning reasoning chains via optimal stopping, reducing generation length while maintaining accuracy.",
+        "zh": "通过最优停止问题框架修剪推理链的轻量级方法，在保持准确性的同时减少生成长度。"
+      }
+    },
+    {
+      "id": "2607.11022",
+      "title": "When the Reward Suite Is Leaky: A Preregistered Causal Contrast of Natural Verifier False Positives in RLVR",
+      "category": "rlvr",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11022",
+      "summary": {
+        "en": "Empirical study of false positives in code test-suite rewards for RLVR, showing persistent task-specific errors don't significantly harm training outcomes.",
+        "zh": "关于RLVR代码测试套件奖励中假正例的实证研究，表明持久的任务特定错误不会显著损害训练结果。"
+      }
+    },
+    {
+      "id": "2607.11444",
+      "title": "UMoE:Unlocking Every Expert in Domain-Specific Training",
+      "category": "peft",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11444",
+      "summary": {
+        "en": "Realigns MoE expert pools to target domains via pruning and perturbation-based expansion before SFT, preserving inference cost.",
+        "zh": "通过剪枝和基于扰动的专家扩展在SFT前重新调整MoE专家池到目标域，保持推理成本不变。"
+      }
+    },
+    {
+      "id": "2607.11317",
+      "title": "Calibrated e-CUSUM Decoding for Quantized Reasoning Models: Why Token Log-Probability Is the Wrong Observable for Decoding Monitors",
+      "category": "search",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11317",
+      "summary": {
+        "en": "Proposes calibrated e-CUSUM decoding monitor to detect chain-of-thought degradation in quantized reasoning models beyond token log-probability.",
+        "zh": "提出校准的e-CUSUM解码监测器，用于检测量化推理模型中的思维链退化，超越令牌对数概率。"
       }
     }
   ]
