@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-15",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1658,6 +1658,162 @@
       "summary": {
         "en": "Proposes calibrated e-CUSUM decoding monitor to detect chain-of-thought degradation in quantized reasoning models beyond token log-probability.",
         "zh": "提出校准的e-CUSUM解码监测器，用于检测量化推理模型中的思维链退化，超越令牌对数概率。"
+      }
+    },
+    {
+      "id": "2607.12856",
+      "title": "Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control",
+      "category": "rlvr",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12856",
+      "summary": {
+        "en": "Adapts reasoning models via RL with verifiable DP-based rewards for building thermal energy storage control scheduling.",
+        "zh": "通过可验证的动态规划奖励使用强化学习适配推理模型以进行建筑热能存储控制调度。"
+      }
+    },
+    {
+      "id": "2607.12815",
+      "title": "Visual Access Boundaries in Vision-Language Model Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12815",
+      "summary": {
+        "en": "Analyzes what visual information Chain-of-Thought reasoning in VLMs actually uses via causal intervention, revealing CoT operates primarily on early visual representations.",
+        "zh": "通过因果干预分析VLM中链式思考推理实际使用的视觉信息，揭示CoT主要在早期视觉表示上操作。"
+      }
+    },
+    {
+      "id": "2607.12687",
+      "title": "From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation",
+      "category": "rlhf-ppo",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12687",
+      "summary": {
+        "en": "PPO framework for language-based quantitative prediction that jointly learns accurate estimates and reliable confidence signals via a critic-based value function.",
+        "zh": "通过批评家价值函数联合学习精确估计和可靠置信度信号的语言量化预测PPO框架。"
+      }
+    },
+    {
+      "id": "2607.12395",
+      "title": "Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12395",
+      "summary": {
+        "en": "Scales zero RL with verifiable rewards to 1T parameters, demonstrating emergent reasoning behaviors and proposing structured CoT evaluation metrics.",
+        "zh": "将具有可验证奖励的零RL扩展到1万亿参数,展示涌现推理行为并提出结构化思维链评估指标。"
+      }
+    },
+    {
+      "id": "2607.12787",
+      "title": "Do We Really Need Multimodal Emotion Language Models Larger Than 1B Parameters?",
+      "category": "distillation",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12787",
+      "summary": {
+        "en": "Knowledge distillation framework for lightweight multimodal emotion recognition using optimal transport loss and GRPO-based multi-reward optimization.",
+        "zh": "使用最优传输损失和基于GRPO的多奖励优化的轻量级多模态情感识别知识蒸馏框架。"
+      }
+    },
+    {
+      "id": "2607.12650",
+      "title": "Evidence-Grounded Verified Agentic Reasoning: A Path Toward Eliminating LLM Hallucination in Empirical Inference via Tool-Attested Kernel Proofs",
+      "category": "rlvr",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12650",
+      "summary": {
+        "en": "Lean 4 framework for verified agentic reasoning with tool-attestation, ensuring outputs structurally descend from attested evidence and kernel-checked inference.",
+        "zh": "基于Lean 4的验证智能体推理框架，通过工具认证确保输出来自证实证据和内核检查推理。"
+      }
+    },
+    {
+      "id": "2607.12640",
+      "title": "A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism",
+      "category": "rlvr",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12640",
+      "summary": {
+        "en": "Controlled study showing GRPO fails to improve small web agents on mastered tasks; reveals learning-rate-dependent failure mechanisms.",
+        "zh": "受控研究表明GRPO在小型网页代理已掌握的任务上失效；揭示学习率相关的失败机制。"
+      }
+    },
+    {
+      "id": "2607.12111",
+      "title": "PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs",
+      "category": "peft",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12111",
+      "summary": {
+        "en": "Hierarchical LoRA decomposition framework for federated fine-tuning of MLLMs, separating global and local adapter components.",
+        "zh": "用于MLLM联邦微调的分层LoRA分解框架，分离全局和本地适配器组件。"
+      }
+    },
+    {
+      "id": "2607.11881",
+      "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "category": "survey",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.11881",
+      "summary": {
+        "en": "Comprehensive survey of metacognition in LLMs, covering measurement, elicitation techniques, and applications for improving model capabilities and reliability.",
+        "zh": "关于LLM中元认知的综合综述，涵盖测量、启发技术和改进模型能力与可靠性的应用。"
+      }
+    },
+    {
+      "id": "2607.12771",
+      "title": "Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models",
+      "category": "instruction-tuning",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12771",
+      "summary": {
+        "en": "Fine-tunes LLMs on mechanistic reasoning for chemical reactions using a large-scale dataset and introduces FukuyamaBench benchmark.",
+        "zh": "使用大规模数据集对LLM进行化学反应机理推理的微调，并引入FukuyamaBench基准。"
+      }
+    },
+    {
+      "id": "2607.12267",
+      "title": "Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents",
+      "category": "cot-reasoning",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12267",
+      "summary": {
+        "en": "SLEUTH improves multi-hop reasoning in language agents by maintaining explicit epistemic working memory (facts, hypotheses, questions) instead of implicit context.",
+        "zh": "SLEUTH通过维护显式认识论工作记忆（事实、假设、问题）而非隐式上下文，改进语言代理的多跳推理。"
+      }
+    },
+    {
+      "id": "2607.12985",
+      "title": "Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs",
+      "category": "safety",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12985",
+      "summary": {
+        "en": "Method for learning and certifying counterfactual report mediators that make LLM outputs invariant to non-evidential incentive pressure while responsive to genuine evidence.",
+        "zh": "学习和认证反事实报告中介的方法，使LLM输出对非证据性激励压力不变，同时对真实证据保持响应。"
+      }
+    },
+    {
+      "id": "2607.12463",
+      "title": "Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models",
+      "category": "instruction-tuning",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.12463",
+      "summary": {
+        "en": "Function-aware fill-in-the-middle mid-training improves coding agents by leveraging program dependency graphs to condition on tool returns.",
+        "zh": "函数感知的中间填充中训练通过程序依赖图来改进编码智能体对工具返回的条件作用。"
       }
     }
   ]
