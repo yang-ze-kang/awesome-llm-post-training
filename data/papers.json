@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-16",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -1814,6 +1814,222 @@
       "summary": {
         "en": "Function-aware fill-in-the-middle mid-training improves coding agents by leveraging program dependency graphs to condition on tool returns.",
         "zh": "函数感知的中间填充中训练通过程序依赖图来改进编码智能体对工具返回的条件作用。"
+      }
+    },
+    {
+      "id": "2607.13430",
+      "title": "Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet",
+      "category": "dpo",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13430",
+      "summary": {
+        "en": "Comparative study of SFT, DPO, ORPO, and GRPO for biomedical data-to-text generation with Qwen SLMs.",
+        "zh": "针对生物医学数据转文本生成任务比较SFT、DPO、ORPO和GRPO的研究。"
+      }
+    },
+    {
+      "id": "2607.13753",
+      "title": "Post-Training Shifts Confidence: A Three-Stage Analysis of How SFT, RL, and OPD Shape Pre-, Intra-, and Post-CoT Calibration",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13753",
+      "summary": {
+        "en": "Analyzes how SFT, RL, and OPD reshape confidence calibration across reasoning stages, proposing position-aware strategies.",
+        "zh": "分析SFT、RL和OPD如何重塑推理阶段的置信度校准，提出位置感知策略。"
+      }
+    },
+    {
+      "id": "2607.13712",
+      "title": "Groc-PO: Grounded Context Preference Optimization for Truthful Multimodal LLMs",
+      "category": "dpo",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13712",
+      "summary": {
+        "en": "Groc-PO extends DPO with multi-stage preference supervision to mitigate hallucinations and error propagation in multimodal reasoning.",
+        "zh": "Groc-PO通过多阶段偏好监督扩展DPO，以减轻多模态推理中的幻觉和错误传播。"
+      }
+    },
+    {
+      "id": "2607.13501",
+      "title": "LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13501",
+      "summary": {
+        "en": "Self-generated process rewards for multi-turn search reasoning via backward leave-one-turn attribution without auxiliary models.",
+        "zh": "通过反向留一轮归因为多轮搜索推理生成过程奖励，无需辅助模型。"
+      }
+    },
+    {
+      "id": "2607.13399",
+      "title": "Demystifying On-Policy Distillation: Roles, Pathologies, and Regulations",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13399",
+      "summary": {
+        "en": "Systematic study of on-policy distillation dynamics, identifying student-teacher mismatch and length exploitation pathologies, proposing signal regulation techniques.",
+        "zh": "系统研究在策略蒸馏的动力学，识别学生-教师失配和长度利用病态，提出信号调节技术。"
+      }
+    },
+    {
+      "id": "2607.13315",
+      "title": "Meta-Learning Preferences for Multilingual LLM Alignment",
+      "category": "dpo",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13315",
+      "summary": {
+        "en": "Meta-learning framework for multilingual preference alignment, enabling effective DPO and RLHF adaptation to low-resource target languages with minimal data.",
+        "zh": "用于多语言偏好对齐的元学习框架，通过跨语言数据迁移实现低资源目标语言的有效DPO和RLHF自适应。"
+      }
+    },
+    {
+      "id": "2607.13643",
+      "title": "Consensus as Privileged Context for Label-Free Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13643",
+      "summary": {
+        "en": "Label-free self-distillation using consensus-anchored teacher supervision at token level to improve reasoning accuracy.",
+        "zh": "使用共识锚定的教师监督进行无标签自蒸馏，在token级别改进推理准确性。"
+      }
+    },
+    {
+      "id": "2607.13389",
+      "title": "Where Should RL Post-Training Compute Go? Model Size, Search, Learning, and Feedback",
+      "category": "rlvr",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13389",
+      "summary": {
+        "en": "Studies optimal compute allocation across model size, rollouts, learning, and reward feedback in GRPO post-training under fixed budgets.",
+        "zh": "研究GRPO后训练中模型大小、rollout、学习和奖励反馈之间的最优计算分配。"
+      }
+    },
+    {
+      "id": "2607.13416",
+      "title": "EXPLORE: Exploration with Guided Search for Analog Topology Generation using Language Models",
+      "category": "search",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13416",
+      "summary": {
+        "en": "Integrates Monte Carlo Tree Search with transformer decoding for test-time scaling in analog circuit topology generation.",
+        "zh": "将蒙特卡洛树搜索与变压器解码集成，用于模拟电路拓扑生成的测试时间扩展。"
+      }
+    },
+    {
+      "id": "2603.28583",
+      "title": "Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering",
+      "category": "on-policy-distill",
+      "date": "2026-07-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2603.28583",
+      "summary": {
+        "en": "Agentic framework for chart QA using Oracle-Informed SFT and Deception-Aware GRPO for reasoning distillation and adversarial alignment.",
+        "zh": "使用Oracle监督SFT和欺骗感知GRPO进行推理蒸馏和对抗对齐的图表QA智能体框架。"
+      }
+    },
+    {
+      "id": "2607.14049",
+      "title": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14049",
+      "summary": {
+        "en": "Efficient human-in-the-loop correction method for CoT reasoning errors via direct editing and distilled prompts.",
+        "zh": "通过直接编辑和蒸馏提示实现CoT推理错误的高效人类纠正方法。"
+      }
+    },
+    {
+      "id": "2607.13988",
+      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "category": "rlvr",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13988",
+      "summary": {
+        "en": "Dense credit-assignment method for long-horizon agentic RL using log-ratio TD without process labels or additional critics.",
+        "zh": "基于对数比率TD的密集信用分配方法，用于长视野智能体强化学习，无需过程标签或额外评论家。"
+      }
+    },
+    {
+      "id": "2607.13346",
+      "title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't",
+      "category": "safety",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13346",
+      "summary": {
+        "en": "Investigates whether hidden states reveal alignment faking in LLMs, proposing measurement controls for detection robustness.",
+        "zh": "研究隐藏状态是否能揭示大模型的对齐欺骗行为，并提出检测稳健性的测量控制框架。"
+      }
+    },
+    {
+      "id": "2607.13124",
+      "title": "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13124",
+      "summary": {
+        "en": "Short-to-long on-policy distillation schedule recovers pruned LLMs by detecting repetitive suffixes and allocating rollout budget efficiently.",
+        "zh": "短到长的在线策略蒸馏调度通过检测重复后缀并高效分配推导预算来恢复剪枝LLM。"
+      }
+    },
+    {
+      "id": "2607.13735",
+      "title": "Constraint-Driven Model Optimization: An Industry Framework for Selecting Compression and Acceleration Techniques in Modern Machine Learning Systems",
+      "category": "distillation",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13735",
+      "summary": {
+        "en": "Framework for selecting model compression and acceleration techniques based on deployment constraints, including knowledge distillation and PEFT.",
+        "zh": "基于部署约束选择模型压缩和加速技术的框架，包括知识蒸馏和参数高效微调。"
+      }
+    },
+    {
+      "id": "2607.08046",
+      "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+      "category": "safety",
+      "date": "2026-07-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.08046",
+      "summary": {
+        "en": "Probes internal representations to improve calibration, detect faithfulness failures, and audit reasoning in fine-tuned forecasting models.",
+        "zh": "通过探测内部表示来改进校准、检测推理不忠诚性并审计微调预测模型。"
+      }
+    },
+    {
+      "id": "2607.13899",
+      "title": "AIMO Interpretability Challenge",
+      "category": "benchmarks",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13899",
+      "summary": {
+        "en": "Competition framework for evaluating mathematical reasoning robustness in frontier LLMs using interpretability and adversarial variants.",
+        "zh": "通过可解释性和对抗变体评估前沿LLM数学推理鲁棒性的竞赛框架。"
+      }
+    },
+    {
+      "id": "2607.13854",
+      "title": "SPyCE: Skill-Policy Co-evolution for Multimodal Agents",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13854",
+      "summary": {
+        "en": "Distills multimodal RL trajectories into hierarchical skills that co-evolve with policy during training, bridging distillation and RL.",
+        "zh": "将多模态RL轨迹蒸馏为分层技能，在训练过程中与策略共同演进，桥接蒸馏与强化学习。"
       }
     }
   ]
