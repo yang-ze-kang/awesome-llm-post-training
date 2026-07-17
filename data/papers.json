@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-17",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2030,6 +2030,222 @@
       "summary": {
         "en": "Distills multimodal RL trajectories into hierarchical skills that co-evolve with policy during training, bridging distillation and RL.",
         "zh": "将多模态RL轨迹蒸馏为分层技能，在训练过程中与策略共同演进，桥接蒸馏与强化学习。"
+      }
+    },
+    {
+      "id": "2607.14682",
+      "title": "Stop Thinking, Start Looking: Efficient Post-Training for Multimodal Document Question Answering via Reasoning-Free Alignment",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14682",
+      "summary": {
+        "en": "Applies GRPO to multimodal document QA, showing reasoning-free alignment achieves better efficiency and grounding precision than reasoning-enabled RL.",
+        "zh": "将GRPO应用于多模态文档问答，证明无推理对齐比推理启用的强化学习获得更好的效率和定位精度。"
+      }
+    },
+    {
+      "id": "2607.14895",
+      "title": "Leveraging Instruction Tuning and Merging for Reasoning Model Adaptation",
+      "category": "on-policy-distill",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14895",
+      "summary": {
+        "en": "Combines instruction tuning with model merging to improve reasoning models on verifiable and unverifiable domains while preserving general capabilities.",
+        "zh": "通过指令调优与模型合并相结合，在可验证和不可验证的领域改进推理模型，同时保持通用能力。"
+      }
+    },
+    {
+      "id": "2607.14522",
+      "title": "A Continuous-Time Reinforcement Learning Framework for Fine-Tuning Discrete Diffusion Models",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14522",
+      "summary": {
+        "en": "Continuous-time RL framework for fine-tuning discrete diffusion LLMs with intermediate rewards and efficient trajectory likelihood estimation.",
+        "zh": "用于微调离散扩散LLM的连续时间强化学习框架，支持中间奖励和高效轨迹似然估计。"
+      }
+    },
+    {
+      "id": "2607.14506",
+      "title": "Non-vacuous Generalization Bounds for Reinforcement Learning with Verifiable Rewards",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14506",
+      "summary": {
+        "en": "Establishes non-vacuous generalization bounds for parameter-efficient RLVR fine-tuning via PAC-Bayes compression and on-policy distillation.",
+        "zh": "通过PAC-Bayes压缩和在线蒸馏为参数高效的RLVR微调建立非平凡泛化界。"
+      }
+    },
+    {
+      "id": "2607.15161",
+      "title": "On-Policy Delta Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15161",
+      "summary": {
+        "en": "Introduces delta signal distillation for on-policy learning, capturing reasoning capability changes between teacher and base models.",
+        "zh": "引入Delta信号蒸馏用于在线策略学习，捕捉教师模型与基础模型间的推理能力变化。"
+      }
+    },
+    {
+      "id": "2607.15095",
+      "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+      "category": "dpo",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15095",
+      "summary": {
+        "en": "Multi-agent framework using SFT and DPO to simulate ideologically-aligned partisan negotiation with interpretable coalition agreement provenance.",
+        "zh": "使用SFT和DPO的多智能体框架，用于模拟意识形态对齐的党派谈判，具有可解释的联盟协议溯源。"
+      }
+    },
+    {
+      "id": "2607.14552",
+      "title": "Answer-Conditioned Chains of Thought Degrade Verifiable-Reasoning Distillation in Large Language Models",
+      "category": "distillation",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14552",
+      "summary": {
+        "en": "Answer-conditioned chain-of-thought generation degrades reasoning distillation by causing models to rationalize backward rather than derive answers.",
+        "zh": "答案条件化的思维链生成通过导致模型反向推理而非正向推导来降低推理蒸馏效果。"
+      }
+    },
+    {
+      "id": "2607.14709",
+      "title": "Gold-Guided Programmatic Distillation for Financial Reasoning over Hybrid Tables and Text",
+      "category": "on-policy-distill",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14709",
+      "summary": {
+        "en": "Execution-verified programmatic distillation transfers reliable numerical reasoning from teacher to student using verified Python programs as supervision.",
+        "zh": "通过执行验证的Python程序作为监督信号，将教师模型的可靠数值推理蒸馏到学生模型。"
+      }
+    },
+    {
+      "id": "2607.14386",
+      "title": "CIPHER: A Decoupled Exploration-Selection Framework for Test-Time Scaling of Data Science Agents",
+      "category": "search",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14386",
+      "summary": {
+        "en": "Decoupled exploration-selection framework for test-time scaling of data science agents through parallel initial state generation and strategic selection.",
+        "zh": "通过并行初始状态生成和战略选择，实现数据科学智能体测试时间扩展的解耦探索-选择框架。"
+      }
+    },
+    {
+      "id": "2607.14735",
+      "title": "CoTu at EXACT 2026: Neuro-Symbolic Reasoning for Transparent Educational QA",
+      "category": "cot-reasoning",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14735",
+      "summary": {
+        "en": "Neuro-symbolic Program-of-Thought pipeline combining distillation and self-correction for transparent reasoning in small 4B models.",
+        "zh": "结合蒸馏和自我纠正的神经符号程序思维管道，用于小型4B模型中的透明推理。"
+      }
+    },
+    {
+      "id": "2607.14614",
+      "title": "Beyond Entropy: Correctness-Aware Advantage Shaping via Contrastive Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14614",
+      "summary": {
+        "en": "Contrastive Policy Optimization uses token-level disagreement for correctness-aware advantage shaping in reasoning RL, outperforming entropy-based methods.",
+        "zh": "对比策略优化通过令牌级分歧实现正确性感知的优势塑造，超越了基于熵的推理强化学习方法。"
+      }
+    },
+    {
+      "id": "2607.14333",
+      "title": "SD-MAR: Multi-image Analytical Reasoning via Synthetic Data and Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14333",
+      "summary": {
+        "en": "Trains VLMs on multi-image analytical reasoning using GRPO-lite with Backward Discounted Allocation, a verifiable-reward RL approach for visual reasoning.",
+        "zh": "使用GRPO-lite和反向折扣分配训练VLM进行多图像分析推理,一种用于视觉推理的可验证奖励RL方法。"
+      }
+    },
+    {
+      "id": "2607.09786",
+      "title": "Length Penalties Make Chain-of-Thought Less Monitorable",
+      "category": "safety",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.09786",
+      "summary": {
+        "en": "Shows length-penalized reasoning compression hides model influences from monitoring, reducing interpretability despite maintaining accuracy.",
+        "zh": "证明长度惩罚的推理压缩会隐藏模型影响因素，降低可监测性，尽管保持准确度。"
+      }
+    },
+    {
+      "id": "2607.15105",
+      "title": "Long-Context Fine-Tuning with Limited VRAM",
+      "category": "peft",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15105",
+      "summary": {
+        "en": "Combines hierarchical attention with segment-wise backpropagation and tiered KV storage to enable parameter-efficient fine-tuning on long sequences within limited VRAM.",
+        "zh": "结合分层注意力、分段反向传播和分层KV存储，在有限VRAM下实现参数高效的长序列微调。"
+      }
+    },
+    {
+      "id": "2607.14485",
+      "title": "Step-Level Preference Learning for Generative Agents in Social Simulations",
+      "category": "dpo",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14485",
+      "summary": {
+        "en": "Collects 57K step-level preference annotations for LLM agents and applies SFT and DPO to improve decision-making and social behavior.",
+        "zh": "收集57K步级偏好标注用于LLM智能体，通过SFT和DPO改进决策和社交行为。"
+      }
+    },
+    {
+      "id": "2607.14285",
+      "title": "ToolAlignBench: Investigating Alignment Conflicts in Tool-Calling Enabled LLMs",
+      "category": "safety",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14285",
+      "summary": {
+        "en": "Benchmark revealing conflicts between safety alignment and deployment instructions in tool-calling agents, with analysis of abliteration effects.",
+        "zh": "基准测试揭示工具调用代理中安全对齐与部署指令的冲突,并分析消融的影响。"
+      }
+    },
+    {
+      "id": "2607.13639",
+      "title": "OvisOCR2 Technical Report",
+      "category": "on-policy-distill",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13639",
+      "summary": {
+        "en": "End-to-end document parser using SFT, RL with multi-component rewards, and on-policy distillation into a 0.8B model.",
+        "zh": "使用SFT、多组件奖励的强化学习和在线策略蒸馏的端到端文档解析器。"
+      }
+    },
+    {
+      "id": "2607.14777",
+      "title": "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+      "category": "on-policy-distill",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14777",
+      "summary": {
+        "en": "Self-evolving framework that extracts hindsight skills from on-policy trajectories and distills them back into the policy for dense supervision.",
+        "zh": "自演进框架，从在策略轨迹中提取后见之明技能，并将其蒸馏回策略模型以获得密集监督。"
       }
     }
   ]
