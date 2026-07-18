@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-18",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2246,6 +2246,66 @@
       "summary": {
         "en": "Self-evolving framework that extracts hindsight skills from on-policy trajectories and distills them back into the policy for dense supervision.",
         "zh": "自演进框架，从在策略轨迹中提取后见之明技能，并将其蒸馏回策略模型以获得密集监督。"
+      }
+    },
+    {
+      "id": "2607.03065",
+      "title": "Spectral Rewiring for Exploration, Purification, and Model Merging",
+      "category": "rlvr",
+      "date": "2026-07-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.03065",
+      "summary": {
+        "en": "SAR extracts reasoning-effective spectral components from RL updates to preserve performance, improve exploration, and enable model merging.",
+        "zh": "SAR从强化学习更新中提取推理有效的谱分量，以保留性能、改进探索和实现模型合并。"
+      }
+    },
+    {
+      "id": "2607.14345",
+      "title": "Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values",
+      "category": "safety",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14345",
+      "summary": {
+        "en": "Empirical study revealing how LLMs' internal values covertly influence their answers on unverifiable questions, with limited disclosure.",
+        "zh": "实证研究揭示大型语言模型的内在价值观如何暗中影响其对不可验证问题的回答,且披露不足。"
+      }
+    },
+    {
+      "id": "2607.14952",
+      "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14952",
+      "summary": {
+        "en": "Architecture-aware execution stack enabling million-token RL post-training with GRPO under fixed GPU memory constraints.",
+        "zh": "支持百万token规模RL后训练的架构感知执行栈，在固定GPU内存预算下实现GRPO。"
+      }
+    },
+    {
+      "id": "2607.10463",
+      "title": "GRASP: GRanularity-Aware Search Policy for Agentic RAG",
+      "category": "rlvr",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.10463",
+      "summary": {
+        "en": "RL framework training agents to adaptively coordinate retrieval tools and control context granularity for multi-hop reasoning in agentic RAG.",
+        "zh": "训练智能体自适应协调检索工具和控制上下文粒度的强化学习框架，用于多跳推理中的RAG系统。"
+      }
+    },
+    {
+      "id": "2607.15178",
+      "title": "T^2MLR: Transformer with Temporal Middle-Layer Recurrence",
+      "category": "cot-reasoning",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15178",
+      "summary": {
+        "en": "Introduces middle-layer recurrence in Transformers to enable persistent abstract reasoning across decoding steps with minimal overhead.",
+        "zh": "在Transformer中引入中层循环，使抽象推理能够在解码步骤中持久化，开销最小。"
       }
     }
   ]
