@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-18",
+    "lastUpdated": "2026-07-19",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2306,6 +2306,18 @@
       "summary": {
         "en": "Introduces middle-layer recurrence in Transformers to enable persistent abstract reasoning across decoding steps with minimal overhead.",
         "zh": "在Transformer中引入中层循环，使抽象推理能够在解码步骤中持久化，开销最小。"
+      }
+    },
+    {
+      "id": "2607.15200",
+      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
+      "category": "rlvr",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15200",
+      "summary": {
+        "en": "Applies RL with verifiable rewards to masked diffusion language models via decomposed policy gradients for token and masking decisions.",
+        "zh": "通过分解策略梯度将RL应用于掩码扩散语言模型，同时优化令牌和掩码决策。"
       }
     }
   ]
