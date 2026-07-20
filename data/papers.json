@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-19",
+    "lastUpdated": "2026-07-20",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2318,6 +2318,126 @@
       "summary": {
         "en": "Applies RL with verifiable rewards to masked diffusion language models via decomposed policy gradients for token and masking decisions.",
         "zh": "通过分解策略梯度将RL应用于掩码扩散语言模型，同时优化令牌和掩码决策。"
+      }
+    },
+    {
+      "id": "2607.16097",
+      "title": "Understanding Reasoning from Pretraining to Post-Training",
+      "category": "rlvr",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16097",
+      "summary": {
+        "en": "Studies how pretraining shapes RL post-training returns using chess as a controlled testbed with verifiable rewards.",
+        "zh": "使用国际象棋作为受控测试平台，研究预训练如何影响RL后训练的回报，采用可验证的奖励。"
+      }
+    },
+    {
+      "id": "2607.15736",
+      "title": "Better Starts, Better Ends: Bootstrapped Iterative Self-Reasoning Distillation for Compressed Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15736",
+      "summary": {
+        "en": "Two-stage self-distillation method bootstrapping concise reasoning through brevity-instructed SFT before on-policy reverse-KL distillation.",
+        "zh": "通过简洁性指令SFT预热后进行在线反向KL蒸馏的两阶段自我推理蒸馏方法。"
+      }
+    },
+    {
+      "id": "2607.15524",
+      "title": "Recursive Harness Self-Improvement",
+      "category": "on-policy-distill",
+      "date": "2026-07-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15524",
+      "summary": {
+        "en": "Optimizes task-specific harnesses iteratively using pairwise feedback to improve execution-trace quality for future model training.",
+        "zh": "通过迭代优化任务特定的提示框架，利用成对反馈改进执行轨迹质量以支持未来模型训练。"
+      }
+    },
+    {
+      "id": "2607.16122",
+      "title": "CRAFT: Clustering Rubrics to Diagnose Weak LLM Capabilities and Generate Targeted Fine-Tuning Data",
+      "category": "data-synthesis",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16122",
+      "summary": {
+        "en": "CRAFT diagnoses weak LLM capabilities via rubric clustering and generates targeted supervised fine-tuning data for improved model performance.",
+        "zh": "CRAFT通过评分标准聚类诊断LLM薄弱能力，并生成针对性的监督微调数据以提升模型性能。"
+      }
+    },
+    {
+      "id": "2607.16169",
+      "title": "When Does Muon Help Agentic Reinforcement Learning?",
+      "category": "rlvr",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16169",
+      "summary": {
+        "en": "Studies Muon optimizer's effectiveness in sparse-reward agentic RL, showing 88% improvement over AdamW under GiGPO on ALFWorld tasks.",
+        "zh": "研究Muon优化器在稀疏奖励智能体强化学习中的效果，在ALFWorld任务上GiGPO下相比AdamW提升88%。"
+      }
+    },
+    {
+      "id": "2607.15942",
+      "title": "More with Less: a Large Scale Remote Sensing VLM with a Simple Recipe",
+      "category": "rlvr",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15942",
+      "summary": {
+        "en": "Multi-task RL framework with adaptive rewards trains a general VLM for remote sensing, showing data scale outweighs architectural specialization.",
+        "zh": "多任务RL框架采用自适应奖励训练通用VLM用于遥感，证明数据规模比架构创新更重要。"
+      }
+    },
+    {
+      "id": "2607.15845",
+      "title": "Knowledge-Centric Agents for Workflow Generation",
+      "category": "instruction-tuning",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15845",
+      "summary": {
+        "en": "Framework that distills hierarchical knowledge from workflows and uses supervised fine-tuning to teach LLMs to reason from tasks to executable structures.",
+        "zh": "从工作流蒸馏分层知识，通过监督微调教导LLM从任务推理到可执行结构的框架。"
+      }
+    },
+    {
+      "id": "2607.15810",
+      "title": "QUADS: Stabilizing NVFP4 Reinforcement Learning for MoE via QUantization-error Alignment across Dual Sides",
+      "category": "rlhf-ppo",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15810",
+      "summary": {
+        "en": "Stabilizes low-precision NVFP4 quantization for RL rollout generation in MoE models via activation-aware compensation techniques.",
+        "zh": "通过激活感知补偿技术稳定MoE模型中RL rollout生成的低精度NVFP4量化。"
+      }
+    },
+    {
+      "id": "2607.16131",
+      "title": "ToolSciVer: Multimodal Scientific Claim Verification with Visual Tool Augmented Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16131",
+      "summary": {
+        "en": "Tool-augmented VLM for scientific claim verification trained with GRPO and composite rewards for multimodal reasoning.",
+        "zh": "使用GRPO和复合奖励训练的工具增强VLM，用于多模态科学声明验证推理。"
+      }
+    },
+    {
+      "id": "2607.15314",
+      "title": "Cura 1T: Specialized Model for Agentic Healthcare",
+      "category": "data-synthesis",
+      "date": "2026-07-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15314",
+      "summary": {
+        "en": "Healthcare LLM trained via human-gated self-evolution loop that iteratively improves data mixture based on benchmark failures.",
+        "zh": "通过人类把关的自进化循环训练的医疗保健LLM，根据基准测试失败迭代改进数据混合。"
       }
     }
   ]
