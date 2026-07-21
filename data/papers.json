@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-20",
+    "lastUpdated": "2026-07-21",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2438,6 +2438,246 @@
       "summary": {
         "en": "Healthcare LLM trained via human-gated self-evolution loop that iteratively improves data mixture based on benchmark failures.",
         "zh": "通过人类把关的自进化循环训练的医疗保健LLM，根据基准测试失败迭代改进数据混合。"
+      }
+    },
+    {
+      "id": "2607.18006",
+      "title": "MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18006",
+      "summary": {
+        "en": "Multi-agent debate framework with counterfactual critic advantage for parameter-efficient reasoning in compact models via LoRA.",
+        "zh": "具有反事实评论家优势的多智能体辩论框架，通过LoRA实现紧凑型模型的参数高效推理。"
+      }
+    },
+    {
+      "id": "2607.17247",
+      "title": "Distilled Reinforcement Learning for LLM Post-training",
+      "category": "on-policy-distill",
+      "date": "2026-07-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17247",
+      "summary": {
+        "en": "Integrates teacher supervision into RL objectives for fine-grained guidance, enabling effective knowledge transfer across model families.",
+        "zh": "将教师监督集成到RL目标中以提供细粒度指导，实现跨模型族的有效知识转移。"
+      }
+    },
+    {
+      "id": "2607.18163",
+      "title": "OR Else: A Differentiable Trust Region for Policy Optimization",
+      "category": "rlhf-ppo",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18163",
+      "summary": {
+        "en": "Proposes Output Reset (OR), a smooth one-sided saturation alternative to PPO's clipped objective for LLM post-training.",
+        "zh": "提出输出重置（OR）作为PPO裁剪目标的平滑单侧饱和替代方案，用于大语言模型后训练。"
+      }
+    },
+    {
+      "id": "2607.17935",
+      "title": "DeLIVeR: Decomposed Learning for Information-grounded Veracity Recognition via Reinforced Knowledge Graph Exploration",
+      "category": "rlvr",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17935",
+      "summary": {
+        "en": "Uses GRPO to optimize LLM planning for knowledge graph traversal in fact-checking, combining reasoning RL with verifiable rewards.",
+        "zh": "使用GRPO优化LLM规划，通过知识图谱遍历进行事实核查，结合推理强化学习与可验证奖励。"
+      }
+    },
+    {
+      "id": "2607.17575",
+      "title": "A Dual-Hypothesis Reasoning Framework for LLM Guardrails",
+      "category": "safety",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17575",
+      "summary": {
+        "en": "ARBITER uses dual-hypothesis reasoning and multi-component SFT with LoRA for interpretable, cost-effective LLM safety guardrails.",
+        "zh": "ARBITER 采用双假设推理和多组件SFT与LoRA实现可解释的、成本效益高的LLM安全护栏。"
+      }
+    },
+    {
+      "id": "2607.18091",
+      "title": "SciForma: Structure-Faithful Generation of Scientific Diagrams",
+      "category": "dpo",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18091",
+      "summary": {
+        "en": "Multi-Dimensional Conjunctive Preference Optimization enforces simultaneous correctness across structural axes in scientific diagram generation.",
+        "zh": "多维联合偏好优化在科学图表生成中同时确保结构各轴的正确性。"
+      }
+    },
+    {
+      "id": "2607.18199",
+      "title": "PPL-Factory: Task-Aware and Budget-Aware Data Selection from Language Modeling to Reasoning",
+      "category": "data-synthesis",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18199",
+      "summary": {
+        "en": "Task-aware perplexity-based data selection framework that efficiently selects training samples for instruction tuning and reasoning tasks.",
+        "zh": "基于困惑度的任务感知数据选择框架，高效选择指令调优和推理任务的训练样本。"
+      }
+    },
+    {
+      "id": "2607.18130",
+      "title": "Manifold-Constrained Hyper-Connections for Parameter-Efficient Finetuning",
+      "category": "peft",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18130",
+      "summary": {
+        "en": "Proposes Manifold-Constrained Hyper-Connections (mHC), a novel PEFT method that learns residual routing for efficient finetuning of frozen Transformers.",
+        "zh": "提出流形约束超连接(mHC),一种新颖的参数高效微调方法,通过学习残差路由来高效微调冻结的Transformer模型。"
+      }
+    },
+    {
+      "id": "2607.18082",
+      "title": "Enhancing Rubric-based RL via Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18082",
+      "summary": {
+        "en": "Self-distillation method addressing exploration and criterion suppression failures in rubric-based RL for open-ended tasks.",
+        "zh": "通过自蒸馏方法解决基于规则的强化学习中的探索和准则抑制问题的方法。"
+      }
+    },
+    {
+      "id": "2607.17952",
+      "title": "What Transfers Under Source Shift? Definitions, Examples, and Fine-Tuning for Climate Disclosure Classification",
+      "category": "peft",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17952",
+      "summary": {
+        "en": "Studies how LLM adaptation strategies (definitions, examples, LoRA fine-tuning) transfer across source-shifted climate classification tasks.",
+        "zh": "研究定义、示例和LoRA微调等LLM适配策略在源偏移气候分类任务中的迁移效果。"
+      }
+    },
+    {
+      "id": "2607.17946",
+      "title": "A Geometric Perspective on Stabilizing Value Conflict Resolution",
+      "category": "cot-reasoning",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17946",
+      "summary": {
+        "en": "Uses geometric loss landscape analysis to show CoT reasoning smooths optimization and improves moral reasoning under value conflicts.",
+        "zh": "通过几何损失景观分析证明思维链推理可平滑优化并改进价值冲突下的道德推理。"
+      }
+    },
+    {
+      "id": "2607.17902",
+      "title": "Benchmarking Resource-Efficient LLMs for Research Topic Ontology Generation in the Biomedical Field",
+      "category": "instruction-tuning",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17902",
+      "summary": {
+        "en": "Evaluates fine-tuning strategies for small LLMs on biomedical ontology generation, showing 34.1% F1 improvement over prompting baselines.",
+        "zh": "评估小型语言模型在生物医学本体生成中的微调策略，微调相比提示基线提升F1分数34.1%。"
+      }
+    },
+    {
+      "id": "2607.17828",
+      "title": "When a Name Is Not a Name: A Benchmark Dataset and Distilled Reasoning for Culturally Entangled Bangla Homographs in Low-Resource LLMs",
+      "category": "distillation",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17828",
+      "summary": {
+        "en": "Benchmark and distillation method for disambiguating culturally entangled Bangla homographs, reducing dominant-meaning bias in small models.",
+        "zh": "用于消除孟加拉语文化同形异义词歧义的基准和蒸馏方法，显著降低小型模型的主导义偏差。"
+      }
+    },
+    {
+      "id": "2607.17620",
+      "title": "PoLoRA: A Preconditioned Orthogonalized LoRA Optimizer",
+      "category": "peft",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17620",
+      "summary": {
+        "en": "PoLoRA: a matrix-aware optimizer for LoRA that uses spectral updates and preconditioning to reduce training steps by 1.2–1.7× versus Adam.",
+        "zh": "PoLoRA：一个矩阵感知的LoRA优化器，使用谱更新和预处理，相比Adam减少1.2-1.7倍的训练步数。"
+      }
+    },
+    {
+      "id": "2607.17558",
+      "title": "Why Does Feedback-Augmented Self-Distillation Fail to Improve Retrieval-Interleaved Search Agents?",
+      "category": "on-policy-distill",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17558",
+      "summary": {
+        "en": "Studies on-policy self-distillation for agentic search, identifies decoding collapse failure mode, proposes EMA teacher to stabilize supervision signals.",
+        "zh": "研究智能体搜索的在策略自蒸馏，识别解码坍缩失败模式，提出EMA教师稳定监督信号。"
+      }
+    },
+    {
+      "id": "2607.16850",
+      "title": "Group Entropy-Controlled Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16850",
+      "summary": {
+        "en": "Proposes GEPO, a group-based entropy control method for heterogeneous task RL that improves upon GRPO with adaptive advantage shaping.",
+        "zh": "提出GEPO，一种基于分组的熵控制方法，用于异构任务RL，通过自适应优势塑形改进GRPO。"
+      }
+    },
+    {
+      "id": "2607.18110",
+      "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
+      "category": "on-policy-distill",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18110",
+      "summary": {
+        "en": "Experiential Learning repurposes LLM feedback into dense supervisory signals for on-policy context distillation, outperforming scalar reward RL on open-ended tasks.",
+        "zh": "经验学习将LLM反馈重新用于策略内上下文蒸馏，在开放式任务上超过标量奖励RL。"
+      }
+    },
+    {
+      "id": "2607.18114",
+      "title": "How Does Alignment Tuning Shape Representations of Sycophancy and Related Cue-Induced Biases in LLMs?",
+      "category": "safety",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18114",
+      "summary": {
+        "en": "Studies how alignment tuning installs cue-induced biases as distinct representational directions, enabling causal intervention and debiasing.",
+        "zh": "研究对齐调优如何将提示诱导偏差作为不同的表示方向植入，支持因果干预和去偏。"
+      }
+    },
+    {
+      "id": "2607.18100",
+      "title": "Can We Break LLMs Out of Self-Loops? Fine-Grained Reasoning Control with Activation Steering",
+      "category": "search",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18100",
+      "summary": {
+        "en": "Fine-grained control over reasoning trajectories via activation steering to prevent self-loops and improve reasoning quality.",
+        "zh": "通过激活向量引导对推理轨迹的精细控制，防止自循环并提高推理质量。"
+      }
+    },
+    {
+      "id": "2607.17674",
+      "title": "Uncovering Latent Reasoning Strategies in Language Models",
+      "category": "cot-reasoning",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.17674",
+      "summary": {
+        "en": "Decomposes LM response distributions into latent strategy representations using variational inference with information-gain objectives.",
+        "zh": "通过信息增益目标的变分推断将语言模型响应分布分解为隐式策略表示。"
       }
     }
   ]
