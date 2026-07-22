@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-21",
+    "lastUpdated": "2026-07-22",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2678,6 +2678,282 @@
       "summary": {
         "en": "Decomposes LM response distributions into latent strategy representations using variational inference with information-gain objectives.",
         "zh": "通过信息增益目标的变分推断将语言模型响应分布分解为隐式策略表示。"
+      }
+    },
+    {
+      "id": "2607.18820",
+      "title": "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness",
+      "category": "cot-reasoning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18820",
+      "summary": {
+        "en": "Improves CoT faithfulness through causal alignment training and attention masking to prevent instruction-answer shortcuts.",
+        "zh": "通过因果对齐训练和注意力掩蔽防止指令-答案捷径，改进链式思考的忠实性。"
+      }
+    },
+    {
+      "id": "2607.19331",
+      "title": "ISO: An RLVR-Native Optimization Stack",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19331",
+      "summary": {
+        "en": "Isospectral Optimization framework for RLVR that reuses base model spectra while optimizing singular frames, enabling efficient merging and faster convergence.",
+        "zh": "等谱优化框架用于RLVR，复用基础模型谱结构同时优化奇异向量，实现高效合并和更快收敛。"
+      }
+    },
+    {
+      "id": "2607.18532",
+      "title": "Reasoning Fine-Tuning Induces Persistent Latent Policy States",
+      "category": "cot-reasoning",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18532",
+      "summary": {
+        "en": "Analyzes how reasoning fine-tuning reorganizes model internals into latent policy states that specialize for multi-step reasoning.",
+        "zh": "分析推理微调如何将模型内部重组为专门用于多步推理的潜在策略状态。"
+      }
+    },
+    {
+      "id": "2607.07820",
+      "title": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+      "category": "on-policy-distill",
+      "date": "2026-07-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07820",
+      "summary": {
+        "en": "Self-distillation framework for web agents using verifiable environment with progress verification, enabling scalable self-evolution without teacher distillation.",
+        "zh": "用于网络代理的自蒸馏框架，利用可验证环境和进度验证实现可扩展的自演进，无需教师蒸馏。"
+      }
+    },
+    {
+      "id": "2607.18955",
+      "title": "H$^2$SD: Hybrid Hindsight Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18955",
+      "summary": {
+        "en": "Hybrid self-distillation framework that adaptively uses teacher signals based on trajectory correctness for efficient reasoning optimization.",
+        "zh": "混合自蒸馏框架，根据轨迹正确性自适应地使用教师信号以实现高效推理优化。"
+      }
+    },
+    {
+      "id": "2607.19313",
+      "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19313",
+      "summary": {
+        "en": "Off-Context GRPO uses privileged guidance during training with importance correction to improve reasoning on hard problems where standard RLVR fails.",
+        "zh": "Off-Context GRPO在训练中使用特权指导和重要性修正，改进标准RLVR在难题上的失败。"
+      }
+    },
+    {
+      "id": "2607.19226",
+      "title": "The Price of Reasoning: Cost-Quality Tradeoffs in Reinforcement Learning for Neural Machine Translation",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19226",
+      "summary": {
+        "en": "Studies cost-quality tradeoffs of reasoning traces in RLVR for neural machine translation, showing reasoning benefits inference more than training.",
+        "zh": "研究RLVR中推理轨迹的成本-质量权衡，发现推理对推理阶段的收益大于训练阶段。"
+      }
+    },
+    {
+      "id": "2607.19181",
+      "title": "Reasoning Before Translation: Enhancing Legal Machine Translation with Structured Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19181",
+      "summary": {
+        "en": "Compares SFT and RL with verifiable rewards for legal machine translation, showing RL outperforms SFT on small models.",
+        "zh": "比较了法律机器翻译中的有监督微调和可验证奖励强化学习，证明RL在小模型上优于SFT。"
+      }
+    },
+    {
+      "id": "2607.19044",
+      "title": "Adopting Reinforcement Learning with Verifiable Rewards for Molecular Generation",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19044",
+      "summary": {
+        "en": "Applies reinforcement learning with verifiable rewards and GRPO to guide LLM-based molecular generation toward desired chemical properties.",
+        "zh": "使用可验证奖励和GRPO强化学习指导基于LLM的分子生成朝向所需的化学性质优化。"
+      }
+    },
+    {
+      "id": "2607.19219",
+      "title": "Beyond Score Prediction: LLM-Based Essay Scoring and Feedback Generation via Reinforcement Learning with Rubric Rewards",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19219",
+      "summary": {
+        "en": "LLM framework optimizing essay scoring and feedback generation via RL with rubric-based verifiable rewards and adaptive gating.",
+        "zh": "通过基于规则的可验证奖励和自适应门控，优化论文评分和反馈生成的强化学习框架。"
+      }
+    },
+    {
+      "id": "2607.19088",
+      "title": "DAIS: Dependency-Aware Intermediate QA Supervision for Complex Reasoning",
+      "category": "instruction-tuning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19088",
+      "summary": {
+        "en": "Converts teacher rationales into dependency-aware intermediate QA supervision to improve multi-step reasoning during supervised fine-tuning.",
+        "zh": "将教师理由转换为依赖感知的中间QA监督，以改进监督微调期间的多步推理。"
+      }
+    },
+    {
+      "id": "2607.18772",
+      "title": "RF-Agent: A Practical Framework for Building Language Agents for RFIC Design",
+      "category": "data-synthesis",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18772",
+      "summary": {
+        "en": "Textbook-driven knowledge distillation creates an RF circuit design dataset and benchmark, studying SFT and RAG adaptation strategies.",
+        "zh": "通过教科书驱动的知识蒸馏创建射频电路设计数据集和基准，研究SFT和RAG适配策略。"
+      }
+    },
+    {
+      "id": "2607.18756",
+      "title": "RAGAL: A Frugal, Fully Local Retrieval-Augmented Assistant for Technical Support at a Government Agency",
+      "category": "data-synthesis",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18756",
+      "summary": {
+        "en": "Fine-tunes retriever embeddings on domain-specific tickets using locally-generated queries, eliminating cloud dependencies for technical support.",
+        "zh": "在本地生成查询数据上微调检索器嵌入，消除技术支持中的云依赖。"
+      }
+    },
+    {
+      "id": "2607.18618",
+      "title": "LatentMT: Machine Translation with Latent Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18618",
+      "summary": {
+        "en": "Studies latent-reasoning loop language models for machine translation, achieving efficiency through recurrent hidden-state computation instead of explicit reasoning tokens.",
+        "zh": "研究机器翻译中的隐式推理循环语言模型，通过循环隐状态计算而非显式推理tokens实现高效性。"
+      }
+    },
+    {
+      "id": "2607.18470",
+      "title": "RRPO: Reference-Relative Policy Optimization with Stratified Conditional Rollouts",
+      "category": "rlvr",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18470",
+      "summary": {
+        "en": "Generalizes group-relative RL to settings without task verifiers using reference-relative contrastive comparisons and stratified rollouts.",
+        "zh": "通过参考相对对比比较和分层rollout将组相对强化学习推广到无任务验证器的设置。"
+      }
+    },
+    {
+      "id": "2607.19326",
+      "title": "Selective State-Space Adaptation and Retrieval for Language Model Reasoning",
+      "category": "peft",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19326",
+      "summary": {
+        "en": "Proposes MaLoRA and MaRA, state-space adapters with token-level and context-level recurrence for improved reasoning on frozen LLMs.",
+        "zh": "提出MaLoRA和MaRA，具有令牌级和上下文级递归的状态空间适配器，改进冻结LLM的推理能力。"
+      }
+    },
+    {
+      "id": "2607.18985",
+      "title": "Athena-Brain Technical Report: An Efficient Robot Brain for General Intelligence and Embodied Interactio",
+      "category": "on-policy-distill",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18985",
+      "summary": {
+        "en": "Multi-stage post-training pipeline combining SFT, RL, expert training, and model merging to create efficient embodied LLM.",
+        "zh": "通过SFT、强化学习、专家训练和模型融合的多阶段后训练流程创建高效的具身化LLM。"
+      }
+    },
+    {
+      "id": "2607.18979",
+      "title": "Fishing Out Free Riders: Shapley-Based Reward Attribution for Parallel Reasoning via Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18979",
+      "summary": {
+        "en": "Uses Shapley values to attribute fine-grained rewards to individual reasoning paths in parallel reasoning, improving RL training stability.",
+        "zh": "利用Shapley值为平行推理中的单个推理路径分配细粒度奖励，提高RL训练稳定性。"
+      }
+    },
+    {
+      "id": "2607.18966",
+      "title": "Measuring Reward-Seeking via Contrastive Belief Updates",
+      "category": "safety",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18966",
+      "summary": {
+        "en": "Measures reward-seeking behavior in RL-trained LMs using contrastive belief updates to detect misalignment with developer intent.",
+        "zh": "使用对比式信念更新测量RL训练的语言模型中的奖励寻求行为，以检测与开发者意图的不对齐。"
+      }
+    },
+    {
+      "id": "2607.18915",
+      "title": "Reasoning Error from Known Fact: Step-Level Self-Consistency Group Relative Policy Optimization for LLM",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18915",
+      "summary": {
+        "en": "Step-level self-consistency reward modeling with group relative policy optimization to mitigate factual hallucinations in LLM reasoning.",
+        "zh": "基于步级自洽性的组相对策略优化，通过可验证奖励缓解LLM推理中的事实幻觉。"
+      }
+    },
+    {
+      "id": "2607.18725",
+      "title": "Find Before You Fine-Tune: A Diagnostic Study of Small LLMs for Cybersecurity QA",
+      "category": "instruction-tuning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18725",
+      "summary": {
+        "en": "Diagnostic framework to evaluate small LLMs before fine-tuning, identifying which models suit cybersecurity QA and predicting fine-tuning effects.",
+        "zh": "诊断框架用于评估小型语言模型的微调适配性，预测微调对网络安全问答任务的影响。"
+      }
+    },
+    {
+      "id": "2607.19345",
+      "title": "Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19345",
+      "summary": {
+        "en": "Proposes GEAR, a reward shaping method using grounding signals to reduce repetitive copying in long-context reasoning via RL.",
+        "zh": "提出GEAR奖励塑形方法，通过接地信号在强化学习中减少长文本推理中的重复复制问题。"
+      }
+    },
+    {
+      "id": "2607.18639",
+      "title": "Mark, Don't Erase: Token Inoculation for Dual-Use Knowledge in LLMs",
+      "category": "safety",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18639",
+      "summary": {
+        "en": "Token Inoculation enables selective refusal of hazardous knowledge through conditional gating during pre-training and SFT, balancing safety and utility.",
+        "zh": "Token Inoculation通过预训练和SFT中的条件门控实现有害知识的选择性拒绝，平衡安全性和实用性。"
       }
     }
   ]
