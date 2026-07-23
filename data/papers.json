@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-23",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -2954,6 +2954,258 @@
       "summary": {
         "en": "Token Inoculation enables selective refusal of hazardous knowledge through conditional gating during pre-training and SFT, balancing safety and utility.",
         "zh": "Token Inoculation通过预训练和SFT中的条件门控实现有害知识的选择性拒绝，平衡安全性和实用性。"
+      }
+    },
+    {
+      "id": "2607.20129",
+      "title": "CUSUM-Shaped Inference-Time Monitoring and Targeted Re-Decoding for Quantized Small Language Model Reasoning",
+      "category": "search",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20129",
+      "summary": {
+        "en": "Inference-time monitoring with CUSUM-shaped detection and targeted re-decoding to correct degenerate trajectories in quantized small reasoning models.",
+        "zh": "使用CUSUM形状检测和目标重新解码的推理时监控，以纠正量化小型推理模型中的退化轨迹。"
+      }
+    },
+    {
+      "id": "2607.19962",
+      "title": "EvoThink: Evolving Thinking in Large Reasoning Models via Self-Pruning and Aha-Moment Preference Optimization",
+      "category": "rlvr",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19962",
+      "summary": {
+        "en": "Reduces reasoning redundancy via self-pruning and optimizes reasoning paths using aha-moment preference learning inspired by genetic algorithms.",
+        "zh": "通过自剪枝减少推理冗余，并使用灵感来自遗传算法的顿悟时刻偏好学习优化推理路径。"
+      }
+    },
+    {
+      "id": "2607.19824",
+      "title": "Rewarding Better Thinking for LLM Preference Alignment",
+      "category": "reward-modeling",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19824",
+      "summary": {
+        "en": "Process-oriented reward model using thinking checklists and EMA residuals for trajectory-level guidance in RL preference alignment.",
+        "zh": "使用思维检查清单和EMA残差的过程导向奖励模型，为RL偏好对齐提供轨迹级指导。"
+      }
+    },
+    {
+      "id": "2607.19523",
+      "title": "When Reasoning Narrows the Move: Diversity Collapse in LLM Game Play",
+      "category": "instruction-tuning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19523",
+      "summary": {
+        "en": "Shows SFT causes diversity collapse in game-playing; proposes action augmentation to preserve exploratory behavior during fine-tuning.",
+        "zh": "揭示有监督微调导致游戏智能体的行为多样性崩溃；提出行为增强方法在微调中保留探索能力。"
+      }
+    },
+    {
+      "id": "2607.10169",
+      "title": "Beyond Euclidean Clipping: Overcoming Exploration Collapse in LLM RL via Riemannian Isometric Policy Optimization",
+      "category": "rlhf-ppo",
+      "date": "2026-07-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.10169",
+      "summary": {
+        "en": "Proposes RIPO, a Riemannian geometry-based policy optimization method that corrects PPO-Clip's exploration collapse by using isometric updates on the policy manifold.",
+        "zh": "提出RIPO，一种基于黎曼几何的策略优化方法，通过在策略流形上使用等距更新来纠正PPO-Clip的探索崩溃问题。"
+      }
+    },
+    {
+      "id": "2607.19691",
+      "title": "SLPO: Scaling Latent Reasoning via a Surrogate Policy",
+      "category": "rlvr",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19691",
+      "summary": {
+        "en": "Applies outcome-reward RL to latent reasoning via surrogate policy density and supervised stopping head for efficient test-time scaling.",
+        "zh": "通过替代策略密度和监督停止头将结果奖励强化学习应用于潜在推理，实现高效的测试时扩展。"
+      }
+    },
+    {
+      "id": "2607.20268",
+      "title": "PoTRE: Test-Time Reasoning inspired by Cognitive Heterogeneity",
+      "category": "search",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20268",
+      "summary": {
+        "en": "Heterogeneous ensemble framework with four specialized agents and adaptive aggregation for improved test-time reasoning on complex tasks.",
+        "zh": "采用四个专化代理和自适应聚合的异构集成框架，用于改进复杂任务的测试时推理。"
+      }
+    },
+    {
+      "id": "2607.19592",
+      "title": "Knowledge-Centric Self-Improvement",
+      "category": "data-synthesis",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19592",
+      "summary": {
+        "en": "Knowledge-centric self-improvement via curated knowledge bases and distillation enables transferable agent improvements across tasks and LLM families.",
+        "zh": "通过策划知识库和蒸馏实现以知识为中心的自我改进，使智能体改进可跨任务和LLM族群转移。"
+      }
+    },
+    {
+      "id": "2607.20327",
+      "title": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference",
+      "category": "on-policy-distill",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20327",
+      "summary": {
+        "en": "SLM learns token-level handoff policy to collaborate with frozen LLM, reducing inference cost while maintaining reasoning performance.",
+        "zh": "SLM学习token级别的切换策略与冻结LLM协作，在保持推理性能的同时降低推理成本。"
+      }
+    },
+    {
+      "id": "2607.20166",
+      "title": "Audio-Zero: Label-Free Self-Evolution for Fine-Grained Audio Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20166",
+      "summary": {
+        "en": "Label-free self-play framework using verifiable rewards from audio contrast pairs to improve fine-grained audio reasoning in LALMs.",
+        "zh": "使用音频对比对的可验证奖励的无标签自对弈框架，改进大型音频语言模型的细粒度音频推理。"
+      }
+    },
+    {
+      "id": "2607.19956",
+      "title": "When Does Knowledge Distillation Hurt? Reliability-Aware Distillation for Low-Resource Language Summarization",
+      "category": "distillation",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19956",
+      "summary": {
+        "en": "Proposes reliability-aware distillation methods that identify and filter harmful training samples, substantially improving knowledge distillation for low-resource language summarization.",
+        "zh": "提出可靠性感知蒸馏方法，识别并过滤有害样本，显著改进低资源语言摘要的知识蒸馏效果。"
+      }
+    },
+    {
+      "id": "2607.19935",
+      "title": "MOF-Sleuth: Tool-Grounded Reward Alignment for Explainable Fine-Grained MOF CIF Auditing",
+      "category": "rlvr",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19935",
+      "summary": {
+        "en": "RL-guided agent for MOF validation using tool-grounded rewards to align explanations with chemical evidence.",
+        "zh": "使用工具驱动的奖励对齐解释与化学证据的MOF验证RL引导代理。"
+      }
+    },
+    {
+      "id": "2607.19604",
+      "title": "Scaling Laws for Hypernetwork-Based Knowledge Injection in Large Language Models",
+      "category": "peft",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19604",
+      "summary": {
+        "en": "Studies scaling laws for hypernetwork-based train-time knowledge injection via LoRA adapters, demonstrating reliable OOD generalization.",
+        "zh": "研究基于超网络的训练时知识注入缩放律，通过LoRA适配器实现可靠的域外泛化。"
+      }
+    },
+    {
+      "id": "2607.20145",
+      "title": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+      "category": "instruction-tuning",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20145",
+      "summary": {
+        "en": "Full-parameter post-training optimization framework for trillion-parameter MoE models on Ascend NPU with domain-specialized SFT for OR tasks.",
+        "zh": "针对万亿参数MoE模型在昇腾NPU上的全参数后训练优化框架，包含运筹学任务的领域专用SFT。"
+      }
+    },
+    {
+      "id": "2607.20064",
+      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
+      "category": "search",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20064",
+      "summary": {
+        "en": "Programmatic memory framework for LLM agents enabling efficient long-horizon reasoning via structured interaction logs and code-based search.",
+        "zh": "为LLM代理提供程序化记忆框架，通过结构化交互日志和代码搜索实现高效的长视野推理。"
+      }
+    },
+    {
+      "id": "2607.20301",
+      "title": "The Blessing of Dimensionality: How Near-Orthogonality in High-Dimensional Spaces Explains Temporal Portability",
+      "category": "peft",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20301",
+      "summary": {
+        "en": "Analyzes long-term temporal portability of LoRA patches across continual pretraining updates, explaining effectiveness through high-dimensional near-orthogonality.",
+        "zh": "分析LoRA补丁在持续预训练中的长期时间可迁移性，通过高维近正交性解释其有效性。"
+      }
+    },
+    {
+      "id": "2607.20205",
+      "title": "Statistical Inference for Rank Allocation in Low-Rank Adaptation",
+      "category": "peft",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20205",
+      "summary": {
+        "en": "StatLoRA allocates LoRA rank via statistical hypothesis testing, achieving comparable or better performance than adaptive rank baselines.",
+        "zh": "StatLoRA通过统计假设检验分配LoRA秩，性能与自适应秩基线相当或更优。"
+      }
+    },
+    {
+      "id": "2607.20083",
+      "title": "Co-Evolving LLM Evaluators and Policies via DynamicRubric",
+      "category": "reward-modeling",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20083",
+      "summary": {
+        "en": "Co-evolving evaluators and policies via dynamic, response-set-conditioned rubrics to maintain discriminative reward signals during policy optimization.",
+        "zh": "通过动态、响应集合条件的评分标准协同演进评估器和策略，在策略优化中保持判别性奖励信号。"
+      }
+    },
+    {
+      "id": "2607.19932",
+      "title": "Efficient Chain-of-Modality Reasoning via Progressive Compression for Spoken Language Models",
+      "category": "cot-reasoning",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19932",
+      "summary": {
+        "en": "Framework for efficient chain-of-thought reasoning in spoken language models via progressive compression of textual reasoning representations.",
+        "zh": "通过渐进式压缩文本推理表示，为语音语言模型实现高效思维链推理的框架。"
+      }
+    },
+    {
+      "id": "2607.19678",
+      "title": "Reference-Free Evaluation of Reasoning in Open-Ended Question Answering",
+      "category": "benchmarks",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19678",
+      "summary": {
+        "en": "Reference-free evaluation framework using NLI and hypergraph search to audit reasoning traces in LLM outputs without gold references.",
+        "zh": "使用NLI和超图搜索的无参考评估框架，用于审计LLM推理轨迹而无需黄金标准答案。"
+      }
+    },
+    {
+      "id": "2607.19608",
+      "title": "Task Competence Is Not Instruction Following: Evaluating Instruction-Conflicting Behavior in Small Language Models",
+      "category": "instruction-tuning",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19608",
+      "summary": {
+        "en": "Reveals that instruction tuning improves task accuracy but doesn't reliably teach models to follow conflicting instructions, especially in smaller models.",
+        "zh": "揭示指令微调提高了任务准确性，但未能可靠地教会模型遵循冲突指令，尤其是在较小模型中。"
       }
     }
   ]
