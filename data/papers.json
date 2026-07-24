@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-23",
+    "lastUpdated": "2026-07-24",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3206,6 +3206,282 @@
       "summary": {
         "en": "Reveals that instruction tuning improves task accuracy but doesn't reliably teach models to follow conflicting instructions, especially in smaller models.",
         "zh": "揭示指令微调提高了任务准确性，但未能可靠地教会模型遵循冲突指令，尤其是在较小模型中。"
+      }
+    },
+    {
+      "id": "2607.21550",
+      "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+      "category": "on-policy-distill",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21550",
+      "summary": {
+        "en": "On-policy distillation framework transferring reasoning from text teacher to audio-language student via token-level guidance and cross-modal alignment.",
+        "zh": "通过令牌级指导和跨模态对齐，将文本教师的推理能力蒸馏到音频语言学生的在线策略框架。"
+      }
+    },
+    {
+      "id": "2607.20767",
+      "title": "Rushes: A Human Preference Dataset for Pluralistic Alignment",
+      "category": "benchmarks",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20767",
+      "summary": {
+        "en": "Rushes dataset for evaluating pluralistic alignment through user engagement in interactive narratives, revealing LLM limitations in personalized preference modeling.",
+        "zh": "Rushes数据集用于评估交互式叙事中的多元化对齐，揭示大语言模型在个性化偏好建模中的局限性。"
+      }
+    },
+    {
+      "id": "2607.20833",
+      "title": "REFACT: Adaptive Fact Restatement for Compact and Faithful Chain-of-Thought Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20833",
+      "summary": {
+        "en": "Trains models to adaptively restate facts in reasoning traces, optimizing citation utility and answer sufficiency via SFT-to-RL pipeline.",
+        "zh": "通过SFT-to-RL流程训练模型自适应地在推理轨迹中改述事实，优化引文效用和答案充分性。"
+      }
+    },
+    {
+      "id": "2607.21556",
+      "title": "Visual Contrastive Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21556",
+      "summary": {
+        "en": "On-policy self-distillation for vision-language models using visual contrastive signals without external teachers or privileged information.",
+        "zh": "使用视觉对比信号的视觉语言模型在策略自蒸馏方法，无需外部教师或特殊信息。"
+      }
+    },
+    {
+      "id": "2607.21433",
+      "title": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+      "category": "cot-reasoning",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21433",
+      "summary": {
+        "en": "Detects reasoning convergence failure early in chain-of-thought generation using linear probes on hidden-state activations for adaptive compute allocation.",
+        "zh": "通过隐层激活的线性探针在思维链生成早期检测推理收敛失败，用于自适应计算分配。"
+      }
+    },
+    {
+      "id": "2607.21351",
+      "title": "How Many Bits Can an Adapter Write? Measuring the Capacity and Memorization of Parameter-Efficient Fine-Tuning",
+      "category": "peft",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21351",
+      "summary": {
+        "en": "Measures LoRA adapter capacity in bits, revealing storage depends on layer placement and showing differential privacy leakage between SFT and RL.",
+        "zh": "以比特为单位测量LoRA适配器容量，揭示存储取决于层位置，并显示SFT和RL之间的差异化隐私泄露。"
+      }
+    },
+    {
+      "id": "2607.19790",
+      "title": "Trace: A Taxonomy-Guided Environment for Multidomain Visual Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19790",
+      "summary": {
+        "en": "Trace: a taxonomy-guided environment with 1,000 verifiable visual reasoning tasks enabling RLVR training for vision-language models.",
+        "zh": "Trace：包含1000个可验证视觉推理任务的分类法指导环境，支持视觉语言模型的RLVR训练。"
+      }
+    },
+    {
+      "id": "2607.21558",
+      "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+      "category": "safety",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21558",
+      "summary": {
+        "en": "Studies how LLMs balance accepting external input with maintaining principled moral judgments, framing sycophancy within social influence dynamics.",
+        "zh": "研究大语言模型如何在接受外部意见与坚持原则性道德判断之间取得平衡，将谄媚置于社会影响动力学框架内。"
+      }
+    },
+    {
+      "id": "2607.21453",
+      "title": "Test-Time Scaling via Error Localization",
+      "category": "search",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21453",
+      "summary": {
+        "en": "Inference-time algorithm using error localization and token-level credit assignment to improve test-time scaling efficiency in reasoning tasks.",
+        "zh": "推理时错误定位算法，通过token级信用分配提高测试时间缩放效率。"
+      }
+    },
+    {
+      "id": "2607.20918",
+      "title": "OPOD: On-Policy Omni Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20918",
+      "summary": {
+        "en": "On-policy distillation with modality-specific teacher routing to improve multimodal student models while maintaining cross-modal balance.",
+        "zh": "通过模态特定教师路由的在线蒸馏方法改进多模态学生模型，同时保持跨模态平衡。"
+      }
+    },
+    {
+      "id": "2607.20862",
+      "title": "CSPF: A Constrained Shared-Private Fusion Method for Non-Verifiable Preference Evaluation",
+      "category": "reward-modeling",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20862",
+      "summary": {
+        "en": "Fuses frozen reward models via shared-private decomposition to better evaluate non-verifiable tasks under human preferences.",
+        "zh": "通过共享-私有分解融合冻结奖励模型，改进非可验证任务的人类偏好评估。"
+      }
+    },
+    {
+      "id": "2607.21552",
+      "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21552",
+      "summary": {
+        "en": "RL approach for multimodal reasoning that uses model predictions across different views as self-supervision signals to improve consistency.",
+        "zh": "使用跨不同视图的模型预测作为自监督信号的强化学习方法，以改进多模态推理一致性。"
+      }
+    },
+    {
+      "id": "2607.21498",
+      "title": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+      "category": "instruction-tuning",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21498",
+      "summary": {
+        "en": "Analyzes epanorthosis overuse in LLMs caused by training distribution and RLHF; proposes LoRA and SFT mitigation strategies.",
+        "zh": "分析LLM中由训练数据分布和RLHF引起的修正法过度使用；提出LoRA和SFT缓解策略。"
+      }
+    },
+    {
+      "id": "2607.21356",
+      "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
+      "category": "safety",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21356",
+      "summary": {
+        "en": "Identifies pre-existing persona subspaces in aligned models that enable emergent misalignment during narrow fine-tuning, enabling targeted intervention.",
+        "zh": "识别对齐模型中预存的人格子空间，该子空间在窄域微调中导致新生对齐失败，支持有针对性干预。"
+      }
+    },
+    {
+      "id": "2607.21279",
+      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+      "category": "data-synthesis",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21279",
+      "summary": {
+        "en": "Constructs a unified moral-value dataset for instruction tuning by merging existing moral datasets and converting them to instruction-response format.",
+        "zh": "通过合并现有道德数据集并转换为指令-响应格式，为指令微调构建统一的道德价值数据集。"
+      }
+    },
+    {
+      "id": "2607.21273",
+      "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21273",
+      "summary": {
+        "en": "Identifies how dense prediction rewards cause policy collapse in GRPO-trained LLMs and proposes variance-profile criteria for safe reward design.",
+        "zh": "识别密集预测奖励如何导致GRPO训练的LLM策略崩溃，并提出安全奖励设计的方差特征标准。"
+      }
+    },
+    {
+      "id": "2607.20952",
+      "title": "The Weight of Silence: A Causal Case for Weights Over the Scratchpad in Latent Chess Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20952",
+      "summary": {
+        "en": "Causal analysis of latent reasoning in chess shows RL increases robustness to perturbations rather than reliance on thought vectors.",
+        "zh": "对国际象棋中潜在推理的因果分析表明，强化学习增强了对扰动的鲁棒性，而非对思维向量的依赖。"
+      }
+    },
+    {
+      "id": "2607.20935",
+      "title": "Chemical Chain-of-Thought Functions as a Hallucination-Prone Molecular Scratchpad",
+      "category": "cot-reasoning",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20935",
+      "summary": {
+        "en": "Analyzes how chemical reasoning models use chain-of-thought as a hallucination-prone scratchpad, revealing structural drafts drive generation despite inaccurate verbal claims.",
+        "zh": "分析化学推理模型如何将链式思维用作易产生幻觉的草稿纸，揭示结构草稿驱动生成尽管口头声明不准确。"
+      }
+    },
+    {
+      "id": "2607.21419",
+      "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21419",
+      "summary": {
+        "en": "Policy-centric training framework using dynamic skill scaffolding to improve weak policy exploration and sample efficiency in agentic RL.",
+        "zh": "使用动态技能脚手架改进弱策略探索和样本效率的策略中心训练框架。"
+      }
+    },
+    {
+      "id": "2607.21069",
+      "title": "From Evaluation to Optimisation: Hierarchy-Aware Training Signals for CWE Prediction in Python",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21069",
+      "summary": {
+        "en": "Uses GRPO with hierarchical penalty rewards for CWE vulnerability prediction, outperforming supervised fine-tuning under distribution shift.",
+        "zh": "使用GRPO和分层惩罚奖励进行CWE漏洞预测，在分布偏移下超越监督微调。"
+      }
+    },
+    {
+      "id": "2607.21051",
+      "title": "Sample-Efficient Learning from Agent Experience",
+      "category": "on-policy-distill",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21051",
+      "summary": {
+        "en": "Distills in-context learning from agent experience into model weights without additional environment interaction, retaining 64.8% of ICL gains.",
+        "zh": "将智能体经验中的上下文学习蒸馏到模型权重中，无需额外环境交互，保留64.8%的ICL收益。"
+      }
+    },
+    {
+      "id": "2607.21013",
+      "title": "EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21013",
+      "summary": {
+        "en": "RL-based dynamic agent framework for multimodal emotion recognition with Progressive Group-Relative Policy Optimization.",
+        "zh": "基于强化学习的动态智能体框架用于多模态情感识别，采用渐进式组相对策略优化。"
+      }
+    },
+    {
+      "id": "2607.20908",
+      "title": "Multi-turn RL with Structural and Performance Aware Rewards for CUDA Kernel Generation",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20908",
+      "summary": {
+        "en": "RL framework combining verifiable execution and structural code rewards for optimized CUDA kernel generation via offline ranking and online policy optimization.",
+        "zh": "结合可验证执行奖励和结构代码奖励的RL框架，通过离线排序和在线策略优化生成优化的CUDA核函数。"
       }
     }
   ]
