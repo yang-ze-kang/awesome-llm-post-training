@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-24",
+    "lastUpdated": "2026-07-25",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3482,6 +3482,102 @@
       "summary": {
         "en": "RL framework combining verifiable execution and structural code rewards for optimized CUDA kernel generation via offline ranking and online policy optimization.",
         "zh": "结合可验证执行奖励和结构代码奖励的RL框架，通过离线排序和在线策略优化生成优化的CUDA核函数。"
+      }
+    },
+    {
+      "id": "2607.04763",
+      "title": "Multi-Turn On-Policy Distillation with Prefix Replay",
+      "category": "on-policy-distill",
+      "date": "2026-07-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.04763",
+      "summary": {
+        "en": "Efficient multi-turn on-policy distillation using prefix replay to reduce environment interactions while addressing student-teacher distribution shift.",
+        "zh": "使用前缀重放的高效多轮在线蒸馏方法，减少环境交互同时解决学生-教师分布偏移问题。"
+      }
+    },
+    {
+      "id": "2607.21461",
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21461",
+      "summary": {
+        "en": "Recursively self-improving agent that alternates between evidence gathering and constraint-wise verification, using dense rewards and context compression for long-horizon research tasks.",
+        "zh": "递归自改进代理在证据收集和约束验证之间交替，使用密集奖励和上下文压缩处理长范围研究任务。"
+      }
+    },
+    {
+      "id": "2605.09635",
+      "title": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+      "category": "data-synthesis",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.09635",
+      "summary": {
+        "en": "Curriculum-aligned knowledge graph and supervised fine-tuning corpus for improving K-12 educational LLM performance on curriculum cognition tasks.",
+        "zh": "为改进K-12教育LLM在课程认知任务上的表现，构建课程对齐知识图谱和监督微调语料库。"
+      }
+    },
+    {
+      "id": "2607.21151",
+      "title": "V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure",
+      "category": "safety",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21151",
+      "summary": {
+        "en": "Diagnoses safety alignment failures in Video LLMs where benign queries with harmful videos bypass refusal, and proposes prompt injection interventions.",
+        "zh": "诊断视频LLM中良性查询配合有害视频导致的安全对齐失败，并提出提示注入干预方法。"
+      }
+    },
+    {
+      "id": "2607.21106",
+      "title": "AttriMem: Attribution-Guided Process Feedback for Agent Memory Learning",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21106",
+      "summary": {
+        "en": "Attribution-guided process feedback framework for learning memory-construction policies in LLM agents using fine-grained credit assignment.",
+        "zh": "使用细粒度信用分配学习LLM代理记忆构建策略的归因引导过程反馈框架。"
+      }
+    },
+    {
+      "id": "2607.21090",
+      "title": "Training Large Language Models for Self-Explanation Faithfulness",
+      "category": "rlvr",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21090",
+      "summary": {
+        "en": "Uses RL with faithfulness metrics as rewards to train models to generate self-explanations that accurately reflect their decision-making process.",
+        "zh": "使用忠实度指标作为奖励，通过强化学习训练模型生成准确反映其决策过程的自解释。"
+      }
+    },
+    {
+      "id": "2607.20914",
+      "title": "Three-Pronged Spectral Control for Federated Parameter Efficient Fine Tuning",
+      "category": "peft",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20914",
+      "summary": {
+        "en": "Spectral-control framework for robust federated parameter-efficient fine-tuning via aligned low-rank bases and nuclear norm regularization.",
+        "zh": "通过对齐的低秩基和核范数正则化实现鲁棒联邦参数高效微调的谱控制框架。"
+      }
+    },
+    {
+      "id": "2607.20690",
+      "title": "Learning to Detect UI Principle Violations via Reinforcement Learning",
+      "category": "reward-modeling",
+      "date": "2026-07-22",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20690",
+      "summary": {
+        "en": "Trains a lightweight vision-language model as a reward critic for UI quality using RL, evaluating 19 HCI principles on generated interfaces.",
+        "zh": "使用强化学习训练轻量级视觉语言模型作为UI质量奖励评论器，评估生成界面的19个人机交互原则。"
       }
     }
   ]
