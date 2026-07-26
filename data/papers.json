@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-25",
+    "lastUpdated": "2026-07-26",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3578,6 +3578,30 @@
       "summary": {
         "en": "Trains a lightweight vision-language model as a reward critic for UI quality using RL, evaluating 19 HCI principles on generated interfaces.",
         "zh": "使用强化学习训练轻量级视觉语言模型作为UI质量奖励评论器，评估生成界面的19个人机交互原则。"
+      }
+    },
+    {
+      "id": "2607.10848",
+      "title": "Predictive Divergence Masks for LLM RL",
+      "category": "rlhf-ppo",
+      "date": "2026-07-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.10848",
+      "summary": {
+        "en": "Proposes predictive divergence masks for PPO-style LLM RL, improving trust-region direction criterion by predicting divergence changes rather than using importance ratios.",
+        "zh": "为PPO风格的LLM强化学习提出预测散度掩码，通过预测散度变化而非使用重要性比率来改进置信域方向准则。"
+      }
+    },
+    {
+      "id": "2607.21557",
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "category": "tools",
+      "date": "2026-07-23",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21557",
+      "summary": {
+        "en": "Open-source framework for end-to-end training of harness-based agents using RL with decoupled inference and Kubernetes orchestration.",
+        "zh": "用于端到端训练基于harness的智能体的开源框架，通过解耦推理和Kubernetes编排实现RL优化。"
       }
     }
   ]
