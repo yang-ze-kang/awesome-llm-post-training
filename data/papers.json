@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-26",
+    "lastUpdated": "2026-07-27",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3602,6 +3602,174 @@
       "summary": {
         "en": "Open-source framework for end-to-end training of harness-based agents using RL with decoupled inference and Kubernetes orchestration.",
         "zh": "用于端到端训练基于harness的智能体的开源框架，通过解耦推理和Kubernetes编排实现RL优化。"
+      }
+    },
+    {
+      "id": "2607.22013",
+      "title": "Visual Saliency Steering Distillation for Multimodal Chain-of-Thought Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22013",
+      "summary": {
+        "en": "Distills multimodal LLM attention into steering vectors to improve small-model chain-of-thought reasoning on vision-language tasks.",
+        "zh": "将多模态大模型的注意力蒸馏为引导向量，改进小模型在视觉语言任务上的思维链推理。"
+      }
+    },
+    {
+      "id": "2607.22251",
+      "title": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+      "category": "peft",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22251",
+      "summary": {
+        "en": "Topology-aware rank allocation method for LoRA that uses information-flow centrality to optimally distribute rank budget across Transformer modules before fine-tuning.",
+        "zh": "基于信息流中心性的拓扑感知秩分配方法，在微调前优化LoRA在Transformer模块间的秩预算分配。"
+      }
+    },
+    {
+      "id": "2607.22002",
+      "title": "Learning as Reasoning Unfolds: Progressive Rollout Allocation for Efficient Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22002",
+      "summary": {
+        "en": "VIGOR allocates rollouts dynamically based on reward variance to improve training efficiency of RLVR methods like GRPO.",
+        "zh": "VIGOR根据奖励方差动态分配轨迹，提高RLVR方法（如GRPO）的训练效率。"
+      }
+    },
+    {
+      "id": "2607.22083",
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Mode",
+      "category": "rlvr",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "summary": {
+        "en": "Compact 3B agentic model using mixed-mode RLHF, length-controlled reasoning RL, and outcome/process rewards for tool-use and reasoning tasks.",
+        "zh": "使用混合模式RLHF、长度控制推理RL和结果/过程奖励的紧凑型3B智能体模型，用于工具使用和推理任务。"
+      }
+    },
+    {
+      "id": "2607.22067",
+      "title": "Benchmarking Fine-tuning and Retrieval Strategies for a Multimodal Language Model on the NRC Reactor Operator Licensing Examination",
+      "category": "instruction-tuning",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22067",
+      "summary": {
+        "en": "Benchmarks supervised fine-tuning and retrieval strategies for multimodal LLMs on nuclear operator licensing exams.",
+        "zh": "对多模态大语言模型在核电站操作员执照考试上的监督微调和检索策略进行基准测试。"
+      }
+    },
+    {
+      "id": "2607.22489",
+      "title": "\\k{appa}-LoRA: Condition Numbers Reveal Which LoRA Matrices Worth Updating",
+      "category": "peft",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22489",
+      "summary": {
+        "en": "Proposes Kappa-LoRA, which selects LoRA matrices by condition number to reduce fine-tuning cost while maintaining performance.",
+        "zh": "提出Kappa-LoRA，通过条件数选择LoRA矩阵以降低微调成本且保持性能。"
+      }
+    },
+    {
+      "id": "2607.22305",
+      "title": "A Roadmap to Impactful Pluralistic Alignment Research",
+      "category": "safety",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22305",
+      "summary": {
+        "en": "Audits pluralistic value alignment in frontier models and proposes empirical, concrete, and practical research directions for adoption.",
+        "zh": "审计前沿模型中的多元价值对齐，并提出实证、具体和实用的研究方向以促进采纳。"
+      }
+    },
+    {
+      "id": "2607.22186",
+      "title": "Deconstructing Off-Policy Ratios: Entropy-Scaled Trust Regions for Asynchronous Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22186",
+      "summary": {
+        "en": "Entropy-scaled trust regions for asynchronous RL in LLM post-training, handling off-policy instability through entropy-aware importance ratio correction.",
+        "zh": "通过熵感知的重要性比率修正，为LLM后训练的异步强化学习提供熵缩放信任域，处理离策略不稳定性。"
+      }
+    },
+    {
+      "id": "2607.21981",
+      "title": "J-CoT: Chain-of-Thought in J-Space",
+      "category": "cot-reasoning",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.21981",
+      "summary": {
+        "en": "Proposes J-CoT, a recurrent reasoning framework using vocabulary-indexed hidden states as an intermediate interface between natural language and latent reasoning.",
+        "zh": "提出J-CoT框架，使用词汇索引的隐层状态作为自然语言和隐式推理之间的中间接口，实现循环推理。"
+      }
+    },
+    {
+      "id": "2607.22334",
+      "title": "Cross-Tokenizer On-Policy Distillation via Byte-Prefix Marginalization",
+      "category": "on-policy-distill",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22334",
+      "summary": {
+        "en": "Byte-Prefix Marginalization enables cross-tokenizer on-policy distillation by aligning teacher and student vocabularies through shared byte representations.",
+        "zh": "字节前缀边际化通过共享字节表示实现跨分词器在线蒸馏，对齐教师和学生的词汇表。"
+      }
+    },
+    {
+      "id": "2607.22098",
+      "title": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+      "category": "safety",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22098",
+      "summary": {
+        "en": "Proposes REDE, a denoising framework for filtering noisy steps in reasoning traces to improve hallucination detection in large reasoning models.",
+        "zh": "提出REDE框架，通过过滤推理轨迹中的噪声步骤来改进大型推理模型的幻觉检测。"
+      }
+    },
+    {
+      "id": "2607.22529",
+      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+      "category": "rlvr",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22529",
+      "summary": {
+        "en": "Co-evolutionary framework using skills as verifiable abstractions to balance task diversity and reward reliability in self-play RL training.",
+        "zh": "利用技能作为可验证抽象的共进化框架，在自我对弈RL训练中平衡任务多样性和奖励可靠性。"
+      }
+    },
+    {
+      "id": "2607.22039",
+      "title": "Enough is as good as a feast: A Comprehensive Analysis of How Reinforcement Learning Mitigates Task Conflicts in LLMs",
+      "category": "rlhf-ppo",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22039",
+      "summary": {
+        "en": "Empirically shows RL-trained LLMs exhibit reduced task conflicts during model merging compared to SFT, analyzing gradient dynamics and optimization objectives.",
+        "zh": "实证研究表明相比SFT，RL训练的LLM在模型合并时任务冲突更少，分析了梯度动态和优化目标。"
+      }
+    },
+    {
+      "id": "2607.22376",
+      "title": "A Factorial Study of Synthetic Data Generation for Low-Resource Machine Translation using Grammar Books",
+      "category": "data-synthesis",
+      "date": "2026-07-24",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22376",
+      "summary": {
+        "en": "Uses LLMs to extract grammar rules from linguistic documentation and generate synthetic parallel data for low-resource machine translation fine-tuning.",
+        "zh": "使用LLMs从语言学文献中提取语法规则，生成合成平行数据用于低资源机器翻译微调。"
       }
     }
   ]
