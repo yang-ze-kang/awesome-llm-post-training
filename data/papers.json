@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-27",
+    "lastUpdated": "2026-07-28",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3770,6 +3770,186 @@
       "summary": {
         "en": "Uses LLMs to extract grammar rules from linguistic documentation and generate synthetic parallel data for low-resource machine translation fine-tuning.",
         "zh": "使用LLMs从语言学文献中提取语法规则，生成合成平行数据用于低资源机器翻译微调。"
+      }
+    },
+    {
+      "id": "2607.23802",
+      "title": "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement",
+      "category": "rlvr",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23802",
+      "summary": {
+        "en": "Extends verifiable reward RL to open-ended tasks via task transformation into self-play environments with deterministic reward signals.",
+        "zh": "通过将开放式任务转化为自博弈环境，将可验证奖励强化学习扩展到开放式任务。"
+      }
+    },
+    {
+      "id": "2607.24720",
+      "title": "The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24720",
+      "summary": {
+        "en": "Studies multi-turn planning via pre-training and post-training using GRPO, OPD, and multi-teacher on-policy distillation (MOPD).",
+        "zh": "通过GRPO、OPD和多教师在线策略蒸馏(MOPD)研究多轮规划的预训练和后训练。"
+      }
+    },
+    {
+      "id": "2607.24312",
+      "title": "CONSISTRE: A Unified Consistency-Aware Framework for Document-Level Relation Extraction with Large Language Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24312",
+      "summary": {
+        "en": "Consistency-aware framework for document-level relation extraction combining constraint-based prompting with distillation and GRPO alignment.",
+        "zh": "一致性感知的文档级关系抽取框架,结合约束提示、蒸馏和GRPO对齐。"
+      }
+    },
+    {
+      "id": "2607.23771",
+      "title": "Training Language Models to Cooperate with Inference-Time Controllers",
+      "category": "rlvr",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23771",
+      "summary": {
+        "en": "Post-training framework optimizing LLMs to cooperate with diverse inference-time controllers via multi-task RL over controller protocols.",
+        "zh": "通过多任务RL优化LLM与多种推理时控制器协作的后训练框架，支持多种推理工作流。"
+      }
+    },
+    {
+      "id": "2607.24280",
+      "title": "From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search",
+      "category": "on-policy-distill",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24280",
+      "summary": {
+        "en": "Multi-agent protocol distillation framework combining dense knowledge distillation from proprietary models with sparse RL for agentic search tasks.",
+        "zh": "多智能体协议蒸馏框架，结合来自专有模型的稠密知识蒸馏和稀疏强化学习用于智能体搜索任务。"
+      }
+    },
+    {
+      "id": "2607.23711",
+      "title": "The Intruder Threshold: A Spectral Law for LoRA Fine-Tuning",
+      "category": "peft",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23711",
+      "summary": {
+        "en": "Derives a spectral law predicting when LoRA fine-tuning creates intruder dimensions causing catastrophic forgetting, enabling threshold-based adaptation.",
+        "zh": "推导光谱规律预测LoRA微调何时产生导致灾难性遗忘的入侵维度，实现基于阈值的自适应调整。"
+      }
+    },
+    {
+      "id": "2607.23740",
+      "title": "Zing: Social Mind for LLMs",
+      "category": "on-policy-distill",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23740",
+      "summary": {
+        "en": "Framework for social intelligence in LLMs using supervised fine-tuning, on-policy distillation, and RL with runtime grounding.",
+        "zh": "通过监督微调、在线蒸馏和强化学习实现LLM社交智能的框架，包含运行时知识注入。"
+      }
+    },
+    {
+      "id": "2607.23731",
+      "title": "Outcome-Confounded Local Supervision in On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23731",
+      "summary": {
+        "en": "Diagnoses outcome-confounded local supervision in on-policy distillation, showing agreement-on-failure dominates token-level signals.",
+        "zh": "诊断了策略蒸馏中结果混淆的局部监督问题，揭示一致-失败现象主导令牌级信号。"
+      }
+    },
+    {
+      "id": "2607.24484",
+      "title": "What do Reward Models Memorize?",
+      "category": "reward-modeling",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24484",
+      "summary": {
+        "en": "Analyzes memorization biases in discriminative reward models, showing they exploit shortcuts and heuristics rather than learning genuine preference judgments.",
+        "zh": "分析判别式奖励模型的记忆偏差，表明其利用捷径和启发式方法而非学习真实的偏好判断。"
+      }
+    },
+    {
+      "id": "2607.24341",
+      "title": "Simulating Tenant Responses to Energy Policy Interventions with Transaction-Cost-Aware LLM Age",
+      "category": "instruction-tuning",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24341",
+      "summary": {
+        "en": "Fine-tunes LLMs with transaction-cost-aware personas for improved policy simulation, comparing SFT and GRPO approaches.",
+        "zh": "使用交易成本感知人设微调LLM以改进政策模拟，比较SFT和GRPO方法。"
+      }
+    },
+    {
+      "id": "2607.24653",
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "category": "rlvr",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24653",
+      "summary": {
+        "en": "2.8T MoE model with reinforcement learning across general, agentic, and coding domains with multiple reasoning-effort levels.",
+        "zh": "2.8T MoE模型，通过多个推理难度级别的强化学习实现通用、智能体和编码任务的优化。"
+      }
+    },
+    {
+      "id": "2607.23837",
+      "title": "Latent-LoRA: Compact Latent-Space Adapters with Gradient-Free Routing for Continual Learning",
+      "category": "peft",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23837",
+      "summary": {
+        "en": "Gradient-free task routing via GMM on frozen embeddings enables compact multi-task LoRA adapters with minimal catastrophic forgetting.",
+        "zh": "通过冻结嵌入层上的高斯混合模型实现无梯度任务路由，支持紧凑的多任务LoRA适配器，灾难性遗忘最小。"
+      }
+    },
+    {
+      "id": "2607.23809",
+      "title": "ACM: Agentic Context Management for Long Horizon Tasks",
+      "category": "on-policy-distill",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23809",
+      "summary": {
+        "en": "Framework for autonomous context management in long-horizon agentic tasks using external memory and post-training demonstrations.",
+        "zh": "为长视野智能体任务提供自主上下文管理框架，利用外部记忆和后训练演示。"
+      }
+    },
+    {
+      "id": "2607.23700",
+      "title": "Offline-Online Curriculum RL for Multimodal Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.23700",
+      "summary": {
+        "en": "Curriculum RL framework for multimodal reasoning that identifies critical steps offline then refines reasoning online with step-level supervision.",
+        "zh": "离线-在线课程强化学习框架，通过识别关键推理步骤并进行步骤级监督来优化多模态推理。"
+      }
+    },
+    {
+      "id": "2607.20465",
+      "title": "DataPrep-Bench: Benchmarking LLMs as Training Data Preparators",
+      "category": "data-synthesis",
+      "date": "2026-05-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20465",
+      "summary": {
+        "en": "Benchmarks LLM-driven data preparation capabilities: data construction from raw sources and quality evaluation predicting training utility.",
+        "zh": "基准测试LLM驱动的数据准备能力：从原始数据构建监督训练数据和评估质量预测训练效果。"
       }
     }
   ]
