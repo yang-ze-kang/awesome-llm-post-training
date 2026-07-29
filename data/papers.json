@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-28",
+    "lastUpdated": "2026-07-29",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -3950,6 +3950,222 @@
       "summary": {
         "en": "Benchmarks LLM-driven data preparation capabilities: data construction from raw sources and quality evaluation predicting training utility.",
         "zh": "基准测试LLM驱动的数据准备能力：从原始数据构建监督训练数据和评估质量预测训练效果。"
+      }
+    },
+    {
+      "id": "2607.25063",
+      "title": "Similar Models Learn Differently: Final-Window Pretraining Shapes Post-Training Beyond SFT",
+      "category": "data-synthesis",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25063",
+      "summary": {
+        "en": "Final pretraining window composition shapes post-training alignment outcomes despite identical SFT performance, revealing hidden pretraining effects on preference optimization.",
+        "zh": "最后预训练窗口的数据组成决定了后训练对齐效果，尽管SFT性能相同，揭示了隐藏的预训练对后续偏好优化的影响。"
+      }
+    },
+    {
+      "id": "2607.25182",
+      "title": "TabRank: Chain-of-Thought Distillation for Table Re-Rankers",
+      "category": "on-policy-distill",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25182",
+      "summary": {
+        "en": "Distills chain-of-thought reasoning from teacher LRMs into compact student rerankers for table retrieval, with comprehensive reasoning trace dataset.",
+        "zh": "将教师大型推理模型的思维链推理蒸馏到紧凑的学生重排器中用于表格检索，包含完整的推理轨迹数据集。"
+      }
+    },
+    {
+      "id": "2607.25369",
+      "title": "ODYSSE: Episode-wise Policy Optimization for Personalized Agentic Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25369",
+      "summary": {
+        "en": "Episode-wise GRPO variant for personalized agentic reasoning with long horizons, using episodic rewards and advantage estimation.",
+        "zh": "针对长序列个性化智能体推理的分段级GRPO变体，采用分段奖励和优势估计。"
+      }
+    },
+    {
+      "id": "2607.25299",
+      "title": "Retraction-Free Optimization over the Stiefel Manifold for the LoRA Fine-Tuning",
+      "category": "peft",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25299",
+      "summary": {
+        "en": "Proposes retraction-free manifold optimization for LoRA fine-tuning, improving training efficiency through geometry-aware acceleration.",
+        "zh": "提出无回缩流形优化方法用于LoRA微调，通过几何加速提高训练效率。"
+      }
+    },
+    {
+      "id": "2607.25136",
+      "title": "Less Data, Better Alignment: Data-Centric Multi-Evaluator Agreement for Preference Optimization",
+      "category": "data-synthesis",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25136",
+      "summary": {
+        "en": "High-confidence data curation via multi-evaluator consensus improves preference optimization efficiency with minimal training data.",
+        "zh": "通过多评估器共识进行高置信度数据筛选，以最少训练数据改进偏好优化效率。"
+      }
+    },
+    {
+      "id": "2607.22639",
+      "title": "TRACE: Business Rule-Grounded Reasoning Curriculum for Knowledge-Preserving Parametric Tool Retrieval in Enterprise LLMs",
+      "category": "instruction-tuning",
+      "date": "2026-06-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22639",
+      "summary": {
+        "en": "Curriculum learning approach for tool retrieval in enterprise LLMs using reasoning traces and business rules while preserving parametric knowledge.",
+        "zh": "企业LLM中使用推理轨迹和业务规则进行工具检索的课程学习方法，同时保留参数知识。"
+      }
+    },
+    {
+      "id": "2607.25069",
+      "title": "DS@GT ARC at CheckThat! 2026: LLM-Based Trace Ranking and Grouped Reward Modeling for Multilingual Numerical Claim Verification",
+      "category": "reward-modeling",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25069",
+      "summary": {
+        "en": "Compares LLM-based and lightweight reward models for ranking reasoning traces in multilingual numerical claim verification.",
+        "zh": "比较基于LLM和轻量级奖励模型在多语言数值声明验证中排序推理轨迹的方法。"
+      }
+    },
+    {
+      "id": "2607.22561",
+      "title": "Codifying the Judge: Scalable Evaluation via Program Distillation",
+      "category": "reward-modeling",
+      "date": "2026-05-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.22561",
+      "summary": {
+        "en": "Distills LLM judge decisions into interpretable programs for scalable, cost-efficient evaluation and reward modeling.",
+        "zh": "将LLM评判器的决策蒸馏为可解释的程序，实现可扩展、低成本的评估和奖励建模。"
+      }
+    },
+    {
+      "id": "2607.25091",
+      "title": "Towards Robust Reinforcement Learning for Small-Scale Language Model Agents",
+      "category": "rlhf-ppo",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25091",
+      "summary": {
+        "en": "Identifies and resolves three failure modes in PPO-based alignment of 70-500M parameter models through adapter techniques and safety mechanisms.",
+        "zh": "通过适配器技术和安全机制识别并解决PPO在70-500M参数模型对齐中的三个失败模式。"
+      }
+    },
+    {
+      "id": "2607.26057",
+      "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26057",
+      "summary": {
+        "en": "Relay-OPD improves on-policy distillation by having teachers redirect student trajectories at detected failure points, reducing compute waste and training length.",
+        "zh": "Relay-OPD通过让教师在检测到失败点时接管学生轨迹来改进在线策略蒸馏，减少计算浪费和训练长度。"
+      }
+    },
+    {
+      "id": "2607.26052",
+      "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+      "category": "peft",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26052",
+      "summary": {
+        "en": "Confidence-adaptive routing for MoE-LoRA that dynamically allocates experts based on token uncertainty, improving efficiency and performance.",
+        "zh": "基于令牌不确定性的自适应专家路由MoE-LoRA方法，动态分配专家以提高效率和性能。"
+      }
+    },
+    {
+      "id": "2607.25956",
+      "title": "Large Language Model for Operations Research Formulation Selection in Multi-Warehouse Inventory Allocation",
+      "category": "rlvr",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25956",
+      "summary": {
+        "en": "LLM selector for OR formulations trained with SFT, IPO, and GRPO using solver-verified rewards on inventory allocation.",
+        "zh": "使用求解器验证奖励的SFT、IPO和GRPO训练的OR公式选择LLM在库存分配中的应用。"
+      }
+    },
+    {
+      "id": "2607.25915",
+      "title": "Penelope: Localized Latent Recurrence for Efficient Structured Reasoning",
+      "category": "search",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25915",
+      "summary": {
+        "en": "Localizes recurrent computation within decoder layers for efficient latent reasoning, reducing inference latency while maintaining accuracy.",
+        "zh": "通过在解码器层内部本地化循环计算实现高效隐式推理，降低推理延迟同时保持精度。"
+      }
+    },
+    {
+      "id": "2607.25886",
+      "title": "RSIBench-Data: Benchmarking Data-Centric Research for Recursive Self-Improvement",
+      "category": "data-synthesis",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25886",
+      "summary": {
+        "en": "Benchmark for evaluating LLM agents as data-centric researchers automating iterative training-data strategy refinement for post-training.",
+        "zh": "评估LLM代理作为数据驱动研究员自动迭代优化后训练数据策略的基准。"
+      }
+    },
+    {
+      "id": "2607.25614",
+      "title": "MemSFT: Mitigating Alignment Tax with an External Parametric Memory",
+      "category": "peft",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25614",
+      "summary": {
+        "en": "Mitigates alignment tax during domain specialization by decoupling knowledge in a plug-and-play parametric memory with learned routing.",
+        "zh": "通过可插拔参数化记忆和学习路由解耦知识，减轻域适配过程中的对齐税。"
+      }
+    },
+    {
+      "id": "2607.25583",
+      "title": "How Small Can You Go? A Controlled Study of LoRA Rank, Target Modules, and Quantization Trade-offs for Text-to-SQL on a 60M-Parameter Model",
+      "category": "peft",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25583",
+      "summary": {
+        "en": "Controlled study of LoRA rank, target modules, and quantization trade-offs on T5-small for text-to-SQL, establishing practical efficiency boundaries.",
+        "zh": "在T5-small上对LoRA秩、目标模块和量化进行的对照研究，确定文本转SQL任务的实际效率边界。"
+      }
+    },
+    {
+      "id": "2607.25554",
+      "title": "Distilling Temporal Search and Reasoning: Evolving LLMs for Future Prediction via Harness-Assisted Efficient Data Synthesis",
+      "category": "on-policy-distill",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25554",
+      "summary": {
+        "en": "Distills temporal reasoning into LLMs via harness-assisted data synthesis that enforces temporal cutoffs to reduce leakage and improve forecasting.",
+        "zh": "通过带时间截断的辅助工具合成数据，将时间推理蒸馏到LLM中，减少泄漏并改进预测。"
+      }
+    },
+    {
+      "id": "2607.25308",
+      "title": "CAST: Game Solvers as Turn-Level Teachers for LLM Agents",
+      "category": "on-policy-distill",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25308",
+      "summary": {
+        "en": "Uses game solver value changes as turn-level reward signals for RL training, bridging process rewards and on-policy distillation.",
+        "zh": "利用游戏求解器的价值变化作为逐步奖励信号进行强化学习训练，连接过程奖励和在线蒸馏。"
       }
     }
   ]
