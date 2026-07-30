@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-29",
+    "lastUpdated": "2026-07-30",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -4166,6 +4166,234 @@
       "summary": {
         "en": "Uses game solver value changes as turn-level reward signals for RL training, bridging process rewards and on-policy distillation.",
         "zh": "利用游戏求解器的价值变化作为逐步奖励信号进行强化学习训练，连接过程奖励和在线蒸馏。"
+      }
+    },
+    {
+      "id": "2607.27081",
+      "title": "On-Policy Distillation for LLM Safety: A Routing Approach to Template-Robust Realignment",
+      "category": "on-policy-distill",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27081",
+      "summary": {
+        "en": "Routing-based on-policy distillation framework for robust LLM safety realignment that preserves capabilities while defending against template-mismatch jailbreaks.",
+        "zh": "基于路由的在线策略蒸馏框架，用于鲁棒的LLM安全重新对齐，同时保持能力并防御模板不匹配的越狱攻击。"
+      }
+    },
+    {
+      "id": "2607.26432",
+      "title": "FAS-R1: A Unified Multi-Task MLLM for Reasoning Face Anti-Spoofing",
+      "category": "rlvr",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26432",
+      "summary": {
+        "en": "Reasoning-oriented MLLM for face anti-spoofing using long-CoT data and difficulty-aware GRPO with augmentation.",
+        "zh": "使用长链式思维数据和难度感知GRPO增强的人脸防欺骗推理型多模态大模型。"
+      }
+    },
+    {
+      "id": "2607.26891",
+      "title": "DIRECT: Direct Decoding for Efficient and Aligned Sequence Labeling with Large Language Models",
+      "category": "dpo",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26891",
+      "summary": {
+        "en": "Applies DPO after SFT for sequence labeling alignment, with controlled decoding and KV cache optimization for efficiency.",
+        "zh": "在序列标注任务中应用DPO进行对齐，结合受控解码和KV缓存优化以提高效率。"
+      }
+    },
+    {
+      "id": "2607.26654",
+      "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
+      "category": "rlaif",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26654",
+      "summary": {
+        "en": "Constitutional midtraining embeds principled values into model training, improving alignment durability across downstream fine-tuning stages.",
+        "zh": "宪法中期训练将原则性价值观嵌入模型训练，提高对齐的持久性。"
+      }
+    },
+    {
+      "id": "2607.26621",
+      "title": "WhisperRec: Latent Reasoning for Efficient Foundation Recommendation Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26621",
+      "summary": {
+        "en": "Compresses teacher Chain-of-Thought into latent tokens via multi-stage alignment, enabling efficient reasoning without verbose rationale generation.",
+        "zh": "通过多阶段对齐将教师思维链压缩为潜在tokens，实现高效推理而无需生成冗长的解释。"
+      }
+    },
+    {
+      "id": "2607.26358",
+      "title": "Post-Training at the Edge of Detectability: A Game-Theoretic Approach to Fine-Tuning",
+      "category": "rlhf-ppo",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26358",
+      "summary": {
+        "en": "Game-theoretic framework for principled KL-regularization coefficient selection in RL fine-tuning, optimizing reward-retention trade-offs.",
+        "zh": "用博弈论框架为RL微调中的KL正则化系数选择提供原理性方法，优化奖励-保留权衡。"
+      }
+    },
+    {
+      "id": "2607.26253",
+      "title": "Early Verdicts, Better Budgets: Sequential Adaptive Rollout Allocation for Compute-Efficient RLVR",
+      "category": "rlvr",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26253",
+      "summary": {
+        "en": "Sequential adaptive rollout allocation (SARA) reduces compute waste in RLVR by early stopping saturated prompts and reallocating budget, achieving 22% fewer rollouts than dynamic sampling.",
+        "zh": "Sequential Adaptive Rollout Allocation (SARA)通过提前停止饱和提示并重新分配预算来减少RLVR中的计算浪费，比动态采样少使用22%的rollouts。"
+      }
+    },
+    {
+      "id": "2607.26981",
+      "title": "OptimismBench: Forecasting Bias and the Alignment Effect in Language Model Judgment",
+      "category": "safety",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26981",
+      "summary": {
+        "en": "Detects directional bias in LLM probability judgments, revealing post-training induces systematic optimism across models.",
+        "zh": "检测LLM概率判断中的方向性偏差，揭示后训练在模型中引入系统性乐观主义。"
+      }
+    },
+    {
+      "id": "2607.26873",
+      "title": "SERPO: Self-Evolving Rubric Policy Optimization for Open-Ended Test-Time Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26873",
+      "summary": {
+        "en": "Self-evolving rubrics and policy optimization for test-time RL in open-ended generation without external rewards.",
+        "zh": "针对开放式生成的自演进评分标准与策略优化，实现无外部奖励的测试时强化学习。"
+      }
+    },
+    {
+      "id": "2607.26862",
+      "title": "ReCo: Reweighting GRPO Against Distributional Concentration",
+      "category": "rlvr",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26862",
+      "summary": {
+        "en": "ReCo reweights GRPO to prevent distributional concentration, improving coverage of reasoning paths via response and token-level reweighting.",
+        "zh": "ReCo通过响应和token级别的重加权改进GRPO，防止分布集中，提高推理路径覆盖。"
+      }
+    },
+    {
+      "id": "2607.26247",
+      "title": "Between Gradient and Natural Gradient: A Continuum of LoRA Initializations",
+      "category": "peft",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26247",
+      "summary": {
+        "en": "Unifies LoRA initialization methods via preconditioned gradients, showing task-dependent optimal preconditioning lies within a principled design space.",
+        "zh": "通过预处理梯度统一LoRA初始化方法，展示最优预处理强度取决于任务且位于设计空间内部。"
+      }
+    },
+    {
+      "id": "2607.26173",
+      "title": "Shared SFT Lessons Across Alignment, Model Organisms, and Toy Models",
+      "category": "instruction-tuning",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26173",
+      "summary": {
+        "en": "Studies how SFT lessons transfer across alignment, model organisms, and toy models, addressing behavior generalization, capability preservation, and robustness.",
+        "zh": "研究监督微调经验如何在对齐、模型生物体和玩具模型间迁移，涉及行为泛化、能力保留和鲁棒性。"
+      }
+    },
+    {
+      "id": "2607.27172",
+      "title": "Improving Item Discoverability in e-Commerce Search via Related Intent Generation",
+      "category": "distillation",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27172",
+      "summary": {
+        "en": "Scalable e-commerce search system using LLM intent generation and teacher-student distillation via LoRA for cost-effective discovery augmentation.",
+        "zh": "使用LLM意图生成和通过LoRA进行师生蒸馏的可扩展电商搜索系统，用于成本高效的发现增强。"
+      }
+    },
+    {
+      "id": "2607.26952",
+      "title": "Credit Cards, Confusion, Computation, and Consequences: What Can We Uncover About Language Model Reasoning?",
+      "category": "benchmarks",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26952",
+      "summary": {
+        "en": "Financial literacy benchmark for evaluating numerical reasoning in LLMs using real credit card agreements and CoT/PoT prompting.",
+        "zh": "使用真实信用卡协议评估LLM数值推理能力的金融素养基准，采用CoT/PoT提示方法。"
+      }
+    },
+    {
+      "id": "2607.26845",
+      "title": "Thinking Under Uncertainty: Evidence Use and Information-Seeking in Language Models",
+      "category": "cot-reasoning",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26845",
+      "summary": {
+        "en": "Analyzes how inference-time thinking improves LLM decision-making through better evidence use and metacognitive monitoring in uncertainty settings.",
+        "zh": "分析推理时思考如何通过更好地利用证据和元认知监控来改进LLM在不确定性环境中的决策。"
+      }
+    },
+    {
+      "id": "2607.26594",
+      "title": "A Physics-Informed Framework for PID Tuning of Chemical Processes Using Large Language Model Agents",
+      "category": "rlvr",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26594",
+      "summary": {
+        "en": "Physics-informed GRPO framework for LLM-based PID tuning with verifiable stability and performance rewards.",
+        "zh": "基于物理信息的GRPO框架，用于LLM辅助的PID调谐，具有可验证的稳定性和性能奖励。"
+      }
+    },
+    {
+      "id": "2607.26389",
+      "title": "Misalignment Has a Personality: A Big Five Account of Emergent Misalignment",
+      "category": "safety",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26389",
+      "summary": {
+        "en": "Uses calibrated Big Five personality vectors to diagnose and characterize model misalignment as interpretable personality shifts.",
+        "zh": "使用校准的大五人格向量将模型错位诊断为可解释的人格转变。"
+      }
+    },
+    {
+      "id": "2607.26246",
+      "title": "Weak-to-Strong On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26246",
+      "summary": {
+        "en": "On-policy distillation framework that improves students by distilling from multiple weaker models via constructed proxy teachers in logit space.",
+        "zh": "通过在logit空间构造代理教师，使用多个较弱模型进行蒸馏来改进学生模型的在策略蒸馏框架。"
+      }
+    },
+    {
+      "id": "2607.26865",
+      "title": "Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents",
+      "category": "search",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26865",
+      "summary": {
+        "en": "Framework for edge LLM agents that combines early-stopping reasoning with uncertainty-aware deferral to cloud models, reducing compute while maintaining performance guarantees.",
+        "zh": "面向边缘LLM智能体的框架，结合早停推理与不确定性感知的云端转移机制，在降低计算的同时保证性能。"
       }
     }
   ]
