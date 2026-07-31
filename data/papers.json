@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-30",
+    "lastUpdated": "2026-07-31",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -4394,6 +4394,258 @@
       "summary": {
         "en": "Framework for edge LLM agents that combines early-stopping reasoning with uncertainty-aware deferral to cloud models, reducing compute while maintaining performance guarantees.",
         "zh": "面向边缘LLM智能体的框架，结合早停推理与不确定性感知的云端转移机制，在降低计算的同时保证性能。"
+      }
+    },
+    {
+      "id": "2607.28449",
+      "title": "Lightning OPD 2.0: Mitigating Style Bias in Cross-Teacher On-Policy Distillation for Large Reasoning Models",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28449",
+      "summary": {
+        "en": "Addresses style bias in cross-teacher on-policy distillation using cross-fitted style residualization to improve reasoning model fine-tuning.",
+        "zh": "通过交叉拟合风格残差化解决跨教师在策略蒸馏中的风格偏差，改进推理模型微调。"
+      }
+    },
+    {
+      "id": "2607.28154",
+      "title": "OPLD: On-Policy Latent Distillation for Multimodal Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28154",
+      "summary": {
+        "en": "Transfers multimodal CoT reasoning into latent representations via on-policy distillation, enabling abstract visual reasoning without external traces.",
+        "zh": "通过在线策略蒸馏将多模态CoT推理转移到潜在表示中,实现无需外部轨迹的抽象视觉推理。"
+      }
+    },
+    {
+      "id": "2607.28026",
+      "title": "Contrastive Reinforced Policy Optimization via Privileged Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28026",
+      "summary": {
+        "en": "Contrastive learning framework for on-policy self-distillation that mitigates exposure bias and reasoning route convergence in agentic settings.",
+        "zh": "用对比学习框架改进在线自蒸馏，缓解代理设置中的暴露偏差和推理路径收敛问题。"
+      }
+    },
+    {
+      "id": "2607.27888",
+      "title": "Not All Tokens Deserve Equal Credit: Counterfactual Sensitivity Credit Reallocation for Long-CoT Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27888",
+      "summary": {
+        "en": "Improves RLVR for long-CoT reasoning by reallocating credit away from highly sensitive tokens toward more learning-relevant reasoning tokens.",
+        "zh": "通过将学习信号从高敏感性token重新分配到更具推理意义的token，改进长链式推理的RLVR方法。"
+      }
+    },
+    {
+      "id": "2607.28460",
+      "title": "Cybersecurity Detection Classification with Reasoning-enabled Language Models",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28460",
+      "summary": {
+        "en": "Trains CoT reasoning classifiers for security alert triage using RL with verifiable rewards and calibration.",
+        "zh": "使用可验证奖励的强化学习和校准训练链式思考推理分类器进行安全告警分诊。"
+      }
+    },
+    {
+      "id": "2607.28301",
+      "title": "HARGO: Heterogeneity-Aware Reward-Guided Optimization for RL Post-Training of LLMs on HPC Tasks",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28301",
+      "summary": {
+        "en": "Proposes HARGO, a heterogeneity-aware RL method using confidence-modulated advantage weighting to optimize diverse HPC tasks with varying reward distributions.",
+        "zh": "提出HARGO，一种异质性感知的RL方法，使用置信度调制的优势加权来优化具有不同奖励分布的多样化HPC任务。"
+      }
+    },
+    {
+      "id": "2607.16955",
+      "title": "CADENCE: Closing the Reasoning Gap via Coverage-Adaptive On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16955",
+      "summary": {
+        "en": "On-policy distillation framework with coverage-adaptive scheduling and dense rewards for efficient reasoning transfer from large teachers to small students.",
+        "zh": "具有覆盖自适应调度和密集奖励的在线蒸馏框架，用于从大型教师向小型学生高效转移推理能力。"
+      }
+    },
+    {
+      "id": "2607.28077",
+      "title": "LEEPS: Latent-Guided Explore-Exploit Prompt Sampling for Efficient RLVR in Large Language Models",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28077",
+      "summary": {
+        "en": "LEEPS improves RLVR efficiency by adaptively balancing exploit-explore prompt sampling to maximize informative rollouts.",
+        "zh": "LEEPS通过自适应平衡利用-探索提示采样来提高RLVR效率，最大化信息丰富的rollouts。"
+      }
+    },
+    {
+      "id": "2607.28006",
+      "title": "MMLDSum-LLM: Multimodal Long-Document Summarization with Visual-Alignment and Keyword-Aware",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28006",
+      "summary": {
+        "en": "Two-stage multimodal summarization framework using SFT with weighted losses and GRPO with multi-objective rewards for long documents.",
+        "zh": "两阶段多模态摘要框架，结合加权损失的有监督微调和多目标奖励的GRPO用于长文档。"
+      }
+    },
+    {
+      "id": "2607.28022",
+      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28022",
+      "summary": {
+        "en": "On-policy distillation method using evolving contexts to capture task preferences in open-ended domains without verifiable rewards.",
+        "zh": "使用演变上下文在无可验证奖励的开放式任务中捕获任务偏好的在策略蒸馏方法。"
+      }
+    },
+    {
+      "id": "2607.28609",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "category": "reward-modeling",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28609",
+      "summary": {
+        "en": "Benchmark and open reward models for evaluating computer-use agent trajectories, addressing VLM judge reliability and cost.",
+        "zh": "用于评估计算机使用代理轨迹的基准和开放奖励模型,解决VLM评判器的可靠性和成本问题。"
+      }
+    },
+    {
+      "id": "2607.28457",
+      "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28457",
+      "summary": {
+        "en": "Self-verifying refinement framework using GRPO to learn adaptive test-time compute allocation via self-generated correctness verdicts and confidence scores.",
+        "zh": "使用GRPO学习自验证的自适应推理时计算分配框架，通过模型生成的正确性判断和置信度控制答案保留。"
+      }
+    },
+    {
+      "id": "2607.28076",
+      "title": "Group-Reflective Self-Distillation for Agentic Reinforcement Learning",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28076",
+      "summary": {
+        "en": "Self-distillation method deriving capability-aligned guidance from policy's own verified rollouts to improve credit assignment in agentic RL.",
+        "zh": "从策略自身验证过的轨迹中获取能力对齐指导的自蒸馏方法,改进代理强化学习中的信用分配。"
+      }
+    },
+    {
+      "id": "2607.28568",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28568",
+      "summary": {
+        "en": "Post-trains a 35B model via execution-grounded SFT and RL with program-evolution operators for recursive self-improvement in ML engineering.",
+        "zh": "通过执行反馈的SFT和RL训练35B模型，使用程序演化算子实现机器学习工程中的递归自改进。"
+      }
+    },
+    {
+      "id": "2607.28374",
+      "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+      "category": "search",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28374",
+      "summary": {
+        "en": "Multimodal agent framework with provenance-constrained reasoning and structured evidence ledger for grounded VQA trajectories.",
+        "zh": "多模态智能体框架，通过溯源约束推理和结构化证据账本实现有根据的视觉问答轨迹。"
+      }
+    },
+    {
+      "id": "2607.28590",
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28590",
+      "summary": {
+        "en": "Visual Attribution Distillation (VAD) uses counterfactual analysis to isolate visually-supported corrections in multimodal on-policy distillation, improving student learning from privileged teachers.",
+        "zh": "视觉归因蒸馏(VAD)通过反事实分析在多模态在线策略蒸馏中隔离视觉支持的修正,改进学生从特权教师的学习。"
+      }
+    },
+    {
+      "id": "2607.28582",
+      "title": "$β$-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28582",
+      "summary": {
+        "en": "β-OPSD generalizes on-policy self-distillation as policy optimization with controllable KL regularization, using efficient logit mixing to approximate the optimal policy.",
+        "zh": "β-OPSD将自蒸馏泛化为可控KL正则化的策略优化，通过高效的logit混合近似最优策略。"
+      }
+    },
+    {
+      "id": "2607.28336",
+      "title": "Correcting What You Cannot See: Credit Assignment for Perception Distillation in Multimodal Reasoners",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28336",
+      "summary": {
+        "en": "Perception-Correction Distillation (PCD) improves multimodal reasoner training by identifying correctable perception failures using downstream failure and teacher-student disagreement signals.",
+        "zh": "感知纠正蒸馏(PCD)通过下游失败和师生分歧信号识别可纠正的感知失败，改进多模态推理器训练。"
+      }
+    },
+    {
+      "id": "2607.27937",
+      "title": "From Scoring to Acting: Outcome-Verified Comparative Self-Distillation for LLM Agents",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27937",
+      "summary": {
+        "en": "Self-distillation for LLM agents using outcome-verified teacher supervision and comparative learning to transfer completion behavior.",
+        "zh": "使用结果验证的教师监督和比较学习来转移完成行为的LLM代理自蒸馏方法。"
+      }
+    },
+    {
+      "id": "2607.27917",
+      "title": "One Anchor for All: Unified Multilingual and Multimodal Safety Alignment for LVLMs",
+      "category": "safety",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27917",
+      "summary": {
+        "en": "Identifies shared safety neurons across languages and modalities to efficiently align vision-language models against multilingual and multimodal attacks.",
+        "zh": "通过识别跨语言和跨模态的共享安全神经元，高效对齐视觉语言模型以防御多语言多模态攻击。"
+      }
+    },
+    {
+      "id": "2607.28595",
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28595",
+      "summary": {
+        "en": "RL framework for multimodal models that adaptively decides when to use tools, optimizing both performance gains and computational efficiency.",
+        "zh": "多模态模型的强化学习框架，自适应地决定何时使用工具，优化性能提升和计算效率。"
       }
     }
   ]
