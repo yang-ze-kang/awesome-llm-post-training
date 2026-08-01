@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-31",
+    "lastUpdated": "2026-08-01",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -4646,6 +4646,90 @@
       "summary": {
         "en": "RL framework for multimodal models that adaptively decides when to use tools, optimizing both performance gains and computational efficiency.",
         "zh": "多模态模型的强化学习框架，自适应地决定何时使用工具，优化性能提升和计算效率。"
+      }
+    },
+    {
+      "id": "2607.28607",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "category": "safety",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28607",
+      "summary": {
+        "en": "Shows safety fine-tuning suppresses mind attribution across entities; mechanistic steering recovers human-aligned beliefs without harming reasoning.",
+        "zh": "表明安全微调抑制跨实体的心智归因；机制性转向恢复人类一致的信念，不影响推理能力。"
+      }
+    },
+    {
+      "id": "2607.28050",
+      "title": "IndustryForge-27B: A Domain-Enhanced Multimodal Foundation Model for Industrial CAD",
+      "category": "instruction-tuning",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28050",
+      "summary": {
+        "en": "Domain-specific instruction tuning of Qwen3.5-VL-27B on 52k industrial CAD samples across six sub-tasks for engineering automation.",
+        "zh": "在六个工业CAD子任务的52k样本上对Qwen3.5-VL-27B进行领域特定指令微调，用于工程自动化。"
+      }
+    },
+    {
+      "id": "2607.28048",
+      "title": "SKILL-KD: Contrastive Skill Distillation for LLM Agents",
+      "category": "distillation",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28048",
+      "summary": {
+        "en": "Contrastive framework distilling actionable discrepancies between teacher and student agent trajectories into iteratively refined textual skill patches.",
+        "zh": "将师生代理轨迹间的可操作差异蒸馏为迭代精化的文本技能补丁的对比框架。"
+      }
+    },
+    {
+      "id": "2607.28037",
+      "title": "ClawTrack: Towards Trace-Level Evaluation and Improvement of Real-World Autonomous Agents",
+      "category": "benchmarks",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28037",
+      "summary": {
+        "en": "Benchmark for evaluating agent reasoning quality via process-level scoring across four dimensions, enabling better post-training data curation.",
+        "zh": "通过四个维度的过程级评分来评估代理推理质量的基准，实现更好的后训练数据策展。"
+      }
+    },
+    {
+      "id": "2607.28272",
+      "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28272",
+      "summary": {
+        "en": "Reconstructs retrieved memories contextually via GRPO training, enabling agents to adapt past experiences to current states rather than replaying verbatim.",
+        "zh": "通过GRPO训练重构检索到的记忆，使智能体能够根据当前状态适应过去经验，而不是逐字重放。"
+      }
+    },
+    {
+      "id": "2607.26115",
+      "title": "GPT-Red: Automated Red Teaming via Self-Play at Scale",
+      "category": "safety",
+      "date": "2026-07-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26115",
+      "summary": {
+        "en": "Self-play red-teaming algorithm that trains adversarial agents to discover prompt injection attacks and improve model robustness through large-scale RL.",
+        "zh": "自对弈红队算法，通过大规模强化学习训练对抗智能体发现提示注入攻击，提高模型鲁棒性。"
+      }
+    },
+    {
+      "id": "2607.28263",
+      "title": "Understanding Is Done Early: A Depth Division of Labor in Large Language Models and Its Use for Unbounded-Context Memory",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28263",
+      "summary": {
+        "en": "CoMem leverages layer-wise division of labor with self-distillation LoRA to enable efficient unbounded-context memory retrieval.",
+        "zh": "CoMem利用层级分工和自蒸馏LoRA实现高效的无界上下文记忆检索。"
       }
     }
   ]
