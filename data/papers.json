@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-01",
+    "lastUpdated": "2026-08-02",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -4730,6 +4730,30 @@
       "summary": {
         "en": "CoMem leverages layer-wise division of labor with self-distillation LoRA to enable efficient unbounded-context memory retrieval.",
         "zh": "CoMem利用层级分工和自蒸馏LoRA实现高效的无界上下文记忆检索。"
+      }
+    },
+    {
+      "id": "2607.27973",
+      "title": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27973",
+      "summary": {
+        "en": "Combines policy optimization with action-conditioned next-observation prediction to enhance LLM agents' sensitivity to environment dynamics.",
+        "zh": "结合策略优化与动作条件的下一步观察预测，增强LLM代理对环境动态的敏感性。"
+      }
+    },
+    {
+      "id": "2607.27968",
+      "title": "Beyond Binary Rewards: A Comparative Study of Reward Design for Reinforcement Unlearning",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27968",
+      "summary": {
+        "en": "Studies reward design for machine unlearning via RL with verifiable rewards, proposing graded and semantic-weighted rewards to improve efficiency.",
+        "zh": "研究通过可验证奖励RL进行机器遗忘的奖励设计，提出分级和语义加权奖励以提高效率。"
       }
     }
   ]
