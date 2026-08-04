@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-02",
+    "lastUpdated": "2026-08-04",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -4754,6 +4754,258 @@
       "summary": {
         "en": "Studies reward design for machine unlearning via RL with verifiable rewards, proposing graded and semantic-weighted rewards to improve efficiency.",
         "zh": "研究通过可验证奖励RL进行机器遗忘的奖励设计，提出分级和语义加权奖励以提高效率。"
+      }
+    },
+    {
+      "id": "2608.02087",
+      "title": "Instruction-Conditioned Exploration with Asymmetric Reinforcement Learning and Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02087",
+      "summary": {
+        "en": "Proposes Instruction-Conditioned Exploration with asymmetric RL and self-distillation to improve LLM reasoning through diverse training-time behaviors.",
+        "zh": "提出指令条件化探索与非对称强化学习和自蒸馏方法，通过多样化训练时行为改进LLM推理。"
+      }
+    },
+    {
+      "id": "2607.29209",
+      "title": "SAF-OPD: Stable Advantage Fusion for On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29209",
+      "summary": {
+        "en": "Proposes SAF, a stable advantage fusion framework combining RLVR and on-policy distillation by addressing magnitude and temporal misalignments.",
+        "zh": "提出SAF框架，通过解决幅度和时间失配问题稳定融合RLVR和在线策略蒸馏。"
+      }
+    },
+    {
+      "id": "2608.02585",
+      "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+      "category": "search",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02585",
+      "summary": {
+        "en": "Test-time latent reasoning via gradient-based optimization of continuous states inserted in Transformer layers, enabling direct credit assignment and interpretable reasoning.",
+        "zh": "通过在Transformer层中插入可优化的连续状态进行梯度优化，实现直接的信用分配和可解释的推理的测试时潜在推理方法。"
+      }
+    },
+    {
+      "id": "2608.01837",
+      "title": "PCSD: Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning",
+      "category": "on-policy-distill",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01837",
+      "summary": {
+        "en": "Persistent Consistency Self-Distillation (PCSD) improves on-policy distillation in agentic RL by weighting token-level guidance based on persistent teacher-favoring signals.",
+        "zh": "持久一致性自蒸馏 (PCSD) 通过基于持久教师支持信号的权重来改进代理强化学习中的在线蒸馏。"
+      }
+    },
+    {
+      "id": "2608.02407",
+      "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02407",
+      "summary": {
+        "en": "Compact models trained via SFT and RL with verifiable rewards for agentic code vulnerability detection.",
+        "zh": "通过SFT和可验证奖励RL训练的紧凑模型，用于代理代码漏洞检测。"
+      }
+    },
+    {
+      "id": "2608.02391",
+      "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02391",
+      "summary": {
+        "en": "Cooperative coevolutionary method for memory-efficient full-parameter post-training of tool-using LLM agents under GPU constraints.",
+        "zh": "用于资源受限下工具使用LLM代理内存高效全参数后训练的协作协进化方法。"
+      }
+    },
+    {
+      "id": "2608.02139",
+      "title": "Self-Improving Large Language Models via Progressive Experience Evolution",
+      "category": "on-policy-distill",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02139",
+      "summary": {
+        "en": "Unified post-training framework combining experience evolution, on-policy distillation, and RL for self-improving LLMs on reasoning tasks.",
+        "zh": "统一后训练框架，结合经验演进、在线策略蒸馏和强化学习实现自我改进的LLM推理能力。"
+      }
+    },
+    {
+      "id": "2608.02026",
+      "title": "HPFA: Hypergraph-Based Paired Failure Attribution for LLM Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02026",
+      "summary": {
+        "en": "Hypergraph-based framework for attributing reasoning failures to specific steps, enabling scalable synthesis of reflection training data.",
+        "zh": "基于超图的推理失败归因框架，用于识别失败步骤，支持反思训练数据的可扩展合成。"
+      }
+    },
+    {
+      "id": "2608.01980",
+      "title": "AdaThinkV: Adaptive Thinking for Token-Efficient Video Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01980",
+      "summary": {
+        "en": "Adaptive framework using RL to learn when to apply explicit reasoning for efficient video QA, introducing Variance Recovery Policy Optimization.",
+        "zh": "使用强化学习自适应地决定何时应用显式推理以实现高效视频问答的框架，引入方差恢复策略优化。"
+      }
+    },
+    {
+      "id": "2608.01862",
+      "title": "Wnuan: Staged Post-Training for Question Answering over Proprietary Enterprise Knowledge",
+      "category": "instruction-tuning",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01862",
+      "summary": {
+        "en": "Three-stage post-training pipeline for enterprise QA: SFT with data replay and RL on residual errors, balancing domain adaptation with general capability retention.",
+        "zh": "企业QA的三阶段后训练管道：使用数据重放进行SFT，并在残差错误上应用RL，平衡领域适配与通用能力保留。"
+      }
+    },
+    {
+      "id": "2608.01835",
+      "title": "Rewriting or Reweighting? A Geometric Account in Language Models",
+      "category": "instruction-tuning",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01835",
+      "summary": {
+        "en": "Mechanistic analysis revealing SFT rewrites behavioral geometry while reward optimization reweights it, using behavioral manifold analysis.",
+        "zh": "通过行为流形分析表明，监督微调重写行为几何结构，而奖励优化则重新加权它。"
+      }
+    },
+    {
+      "id": "2608.01755",
+      "title": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
+      "category": "rlvr",
+      "date": "2026-08-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01755",
+      "summary": {
+        "en": "Uses verifiable rewards and multiple-choice questions to train autonomous driving VLMs with deferred trajectory exposure, reducing hallucination and anchoring bias.",
+        "zh": "通过延迟轨迹暴露和多选题，用可验证的奖励训练自动驾驶VLM，减少幻觉和锚定偏差。"
+      }
+    },
+    {
+      "id": "2608.02442",
+      "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+      "category": "benchmarks",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02442",
+      "summary": {
+        "en": "Identifies solution hacking—reaching correct answers via shortcuts—as a systematic failure mode in LLM reasoning benchmarks, showing answer-only evaluation overestimates capabilities.",
+        "zh": "识别解决方案黑客——通过捷径获得正确答案——为LLM推理基准中的系统性失败模式，表明仅答案评估高估了模型能力。"
+      }
+    },
+    {
+      "id": "2608.02291",
+      "title": "Shared Prefixes, Better Credit: Adaptive Routing for Multi-Agent Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02291",
+      "summary": {
+        "en": "TreeCredit assigns credit to operators in multi-agent reasoning via state-matched comparisons, improving accuracy-cost trade-offs.",
+        "zh": "TreeCredit通过状态匹配比较为多智能体推理中的操作符分配信用，改进准确性-成本权衡。"
+      }
+    },
+    {
+      "id": "2608.02181",
+      "title": "Start Classifying: Categorical Critics for LLM Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02181",
+      "summary": {
+        "en": "Replaces scalar MSE critic with categorical classification head in PPO, improving value estimation for reasoning tasks with sparse rewards.",
+        "zh": "用分类目标替换PPO中的标量MSE critic，改进稀疏奖励推理任务的价值估计。"
+      }
+    },
+    {
+      "id": "2608.01953",
+      "title": "Look Ahead Before You Distill: Future Trajectory Validation of Teacher Guidance for Agentic On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01953",
+      "summary": {
+        "en": "Improves on-policy distillation for agentic tasks by validating teacher guidance on future trajectories to reduce distribution drift.",
+        "zh": "通过验证教师指导对未来轨迹的影响来改进智能体任务的在线蒸馏，减少分布漂移。"
+      }
+    },
+    {
+      "id": "2608.01881",
+      "title": "Hear, Invoke, and Understand: A Skill-Calling Multimodal Agent for Large Audio Language Models",
+      "category": "on-policy-distill",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01881",
+      "summary": {
+        "en": "Audio agent trained via supervised fine-tuning on interaction trajectories, then improved through multi-turn RL for tool coordination and reasoning.",
+        "zh": "音频智能体通过交互轨迹监督微调，再通过多轮强化学习改进工具协调和推理能力。"
+      }
+    },
+    {
+      "id": "2608.01804",
+      "title": "LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01804",
+      "summary": {
+        "en": "Efficient multi-turn RL framework for CUDA kernel generation using adaptive pruning and rank-based rewards to handle sparse binary feedback.",
+        "zh": "针对CUDA核心生成的高效多轮强化学习框架，采用自适应剪枝和排名奖励处理稀疏二值反馈。"
+      }
+    },
+    {
+      "id": "2608.02528",
+      "title": "Uncertainty Is Not Enough: Value-of-Information Routing for Mixtures of LoRA Experts",
+      "category": "peft",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02528",
+      "summary": {
+        "en": "Value-of-information routing for mixture-of-LoRA experts that allocates compute budget based on certified risk reduction rather than uncertainty.",
+        "zh": "基于认证风险降低而非不确定性的LoRA专家混合体值信息路由方法，用于参数高效微调。"
+      }
+    },
+    {
+      "id": "2608.02149",
+      "title": "Beyond the Mean: Multi-Moment Policy Optimization for LLM Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02149",
+      "summary": {
+        "en": "Policy optimization framework using moment-based objectives to improve LLM reasoning by minimizing multiple moments of failure-probability distributions.",
+        "zh": "基于矩的策略优化框架，通过最小化失败概率分布的多个矩来改进语言模型推理能力。"
+      }
+    },
+    {
+      "id": "2608.01922",
+      "title": "TRAM: Enhancing Multimodal Reasoning with Trajectory-Derived Auxiliary Memory",
+      "category": "search",
+      "date": "2026-08-03",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01922",
+      "summary": {
+        "en": "Training-free decoding method using trajectory-derived auxiliary memory to improve multimodal reasoning by retaining task-specific information across long reasoning steps.",
+        "zh": "无需训练的解码方法，通过轨迹导出的辅助记忆保留任务特定信息，改进长推理步骤中的多模态推理性能。"
       }
     }
   ]
