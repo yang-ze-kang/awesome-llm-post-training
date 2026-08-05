@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-04",
+    "lastUpdated": "2026-08-05",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5006,6 +5006,246 @@
       "summary": {
         "en": "Training-free decoding method using trajectory-derived auxiliary memory to improve multimodal reasoning by retaining task-specific information across long reasoning steps.",
         "zh": "无需训练的解码方法，通过轨迹导出的辅助记忆保留任务特定信息，改进长推理步骤中的多模态推理性能。"
+      }
+    },
+    {
+      "id": "2608.04001",
+      "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+      "category": "search",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04001",
+      "summary": {
+        "en": "Systematic framework for test-time scaling in reasoning LLMs, formalizing inference regimes and establishing reproducible evaluation protocols.",
+        "zh": "推理LLM测试时间缩放的系统框架，形式化推理系统并建立可重现的评估协议。"
+      }
+    },
+    {
+      "id": "2608.04007",
+      "title": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04007",
+      "summary": {
+        "en": "Turn-level hindsight self-distillation framework for tool-integrated reasoning that uses execution-conditioned supervision with cross-horizon agreement.",
+        "zh": "针对工具集成推理的逐轮回溯自蒸馏框架，采用执行条件下的监督信号和跨视界一致性选择。"
+      }
+    },
+    {
+      "id": "2608.03961",
+      "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
+      "category": "search",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03961",
+      "summary": {
+        "en": "Adaptive fuzzy control dynamically allocates per-query sampling budgets based on prompt complexity and model confidence for efficient test-time scaling.",
+        "zh": "使用自适应模糊控制根据提示复杂性和模型置信度动态分配每个查询的采样预算，以实现高效的测试时扩展。"
+      }
+    },
+    {
+      "id": "2608.03952",
+      "title": "TACT: Taxonomy-Aligned Post-Training for Pedagogically Adaptive English Tutoring",
+      "category": "rlhf-ppo",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03952",
+      "summary": {
+        "en": "Post-trains ESL tutors using taxonomy-aligned Group Relative Policy Optimization to optimize pedagogical scaffolding quality.",
+        "zh": "使用分类对齐的组相对策略优化来训练ESL导师，优化教学支架质量。"
+      }
+    },
+    {
+      "id": "2608.03660",
+      "title": "Taming the Implicit: Dual-Channel Risk-Aware Reinforcement Fine-Tuning for Continual Multimodal Post-Training",
+      "category": "rlhf-ppo",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03660",
+      "summary": {
+        "en": "Risk-aware policy optimization framework mitigating catastrophic forgetting in continual multimodal LLM reinforcement fine-tuning.",
+        "zh": "风险感知策略优化框架，缓解持续多模态大语言模型强化微调中的灾难性遗忘。"
+      }
+    },
+    {
+      "id": "2608.01735",
+      "title": "DAPD: Dual-Anchored Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01735",
+      "summary": {
+        "en": "DAPD resolves privilege illusion in on-policy distillation by aligning teacher-student information asymmetry through dual-anchored paths.",
+        "zh": "DAPD通过双锚定路径对齐师生信息不对称，解决自蒸馏中的特权幻觉问题。"
+      }
+    },
+    {
+      "id": "2608.03887",
+      "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+      "category": "peft",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03887",
+      "summary": {
+        "en": "Omega-S: a lightweight regularizer for LoRA fine-tuning that prevents catastrophic forgetting by penalizing weight matrix degree variance.",
+        "zh": "Omega-S：一种轻量级正则化器，通过惩罚权重矩阵度数方差来防止LoRA微调中的灾难性遗忘。"
+      }
+    },
+    {
+      "id": "2608.03467",
+      "title": "When Correct Solutions Repeat: Rarity-Aware Credit Redistribution for GRPO",
+      "category": "rlvr",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03467",
+      "summary": {
+        "en": "Improves GRPO by redistributing credit based on solution rarity, avoiding over-weighting frequent correct forms in reasoning tasks.",
+        "zh": "通过根据解决方案稀有度重新分配奖励来改进GRPO，避免过度加权推理任务中频繁出现的正确形式。"
+      }
+    },
+    {
+      "id": "2608.00146",
+      "title": "DiffusionGemma Technical Report",
+      "category": "on-policy-distill",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.00146",
+      "summary": {
+        "en": "Fine-tunes Gemma 4 with discrete diffusion and RL, achieving parallel token generation and 1,500 tokens/sec on H100.",
+        "zh": "使用离散扩散和强化学习微调Gemma 4，实现并行token生成，H100上达到1,500 tokens/sec。"
+      }
+    },
+    {
+      "id": "2608.03979",
+      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+      "category": "rlvr",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03979",
+      "summary": {
+        "en": "Multimodal agent trained with SFT and GRPO for video-based reasoning with tool-augmented exploration and visual grounding.",
+        "zh": "使用SFT和GRPO训练的多模态智能体，用于基于视频的推理、工具增强探索和视觉接地。"
+      }
+    },
+    {
+      "id": "2608.03972",
+      "title": "ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03972",
+      "summary": {
+        "en": "Framework learning from failed expert trajectories via reflection, then transferring reflective reasoning back to direct reasoning during on-policy training.",
+        "zh": "通过反思失败的专家轨迹，然后在在线策略训练中将反思推理转移回直接推理的框架。"
+      }
+    },
+    {
+      "id": "2608.03796",
+      "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+      "category": "distillation",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03796",
+      "summary": {
+        "en": "Efficient knowledge distillation via offline top-K logits caching and fused chunked KL loss for training smaller LMs.",
+        "zh": "通过离线Top-K logits缓存和融合分块KL损失实现高效知识蒸馏来训练较小的语言模型。"
+      }
+    },
+    {
+      "id": "2608.03673",
+      "title": "CausalOPD: First-Wrong-Step Supervision for Distilling Causal Chain Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03673",
+      "summary": {
+        "en": "Curriculum online process distillation for causal reasoning, using first-wrong-step supervision and RL to correct student errors on-policy.",
+        "zh": "使用第一步错误监督和强化学习进行因果推理的课程在线过程蒸馏，在学生自身分布上纠正错误。"
+      }
+    },
+    {
+      "id": "2608.03632",
+      "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03632",
+      "summary": {
+        "en": "Filters spurious token-level signals in on-policy distillation by detecting low input-groundedness to improve student learning.",
+        "zh": "通过检测低输入依赖性来过滤在线蒸馏中的虚假信号，改进学生学习效果。"
+      }
+    },
+    {
+      "id": "2608.03545",
+      "title": "Hi-TTRL: Regulating Consensus with Hints for Test-Time Reinforcement Learning",
+      "category": "search",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03545",
+      "summary": {
+        "en": "Test-time RL framework using MCMC-guided hints to regulate consensus strength and improve reasoning without labeled data.",
+        "zh": "使用MCMC引导提示调节共识强度的测试时强化学习框架,在无标注数据下改进推理能力。"
+      }
+    },
+    {
+      "id": "2608.03506",
+      "title": "When Many Answers Are Valid, Voting Fails: Symbolic Verification for Best-of-K Causal Reasoning in LLMs",
+      "category": "search",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03506",
+      "summary": {
+        "en": "Symbolic verifier for causal reasoning that scores candidate answers against Pearl's causal criteria, outperforming voting and reward models on multi-valid-answer problems.",
+        "zh": "因果推理的符号验证器，根据Pearl因果标准评分候选答案，在多有效答案问题上超越投票和奖励模型。"
+      }
+    },
+    {
+      "id": "2608.03838",
+      "title": "LatentGuard: Efficient and Inspectable Latent Reasoning for LLM Safeguards",
+      "category": "safety",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03838",
+      "summary": {
+        "en": "Efficient safeguard framework using latent reasoning to compress safety rationales into continuous states with on-demand audit decoding.",
+        "zh": "使用潜在推理将安全理由压缩为连续状态的高效防护框架，支持按需审计解码。"
+      }
+    },
+    {
+      "id": "2608.03745",
+      "title": "Risky Business: Measuring The Faithfulness-Safety Tension",
+      "category": "safety",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03745",
+      "summary": {
+        "en": "Identifies faithfulness-safety tension in reasoning models and proposes representation steering to improve safety while maintaining interpretability.",
+        "zh": "识别推理模型中的忠实性-安全性张力,提出表示steering改进安全性同时保持可解释性。"
+      }
+    },
+    {
+      "id": "2608.03605",
+      "title": "FraQ: Efficient Coordinate-Space Recompression for Federated Low-Rank Adaptation",
+      "category": "peft",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03605",
+      "summary": {
+        "en": "Efficient federated LoRA fine-tuning via coordinate-space recompression, solving aggregation mismatch across clients.",
+        "zh": "通过坐标空间重压缩实现高效的联邦LoRA微调，解决客户端间的聚合不匹配问题。"
+      }
+    },
+    {
+      "id": "2608.03573",
+      "title": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
+      "category": "rlhf-ppo",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.03573",
+      "summary": {
+        "en": "Analyzes why RL enables stable multi-task learning while SFT suffers conflicts, proposing Parallel-RL for decoupled training.",
+        "zh": "分析RL相比SFT在多任务学习中稳定性优势的机制，提出并行RL解耦训练范式。"
       }
     }
   ]
