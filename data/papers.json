@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-05",
+    "lastUpdated": "2026-08-06",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5246,6 +5246,234 @@
       "summary": {
         "en": "Analyzes why RL enables stable multi-task learning while SFT suffers conflicts, proposing Parallel-RL for decoupled training.",
         "zh": "分析RL相比SFT在多任务学习中稳定性优势的机制，提出并行RL解耦训练范式。"
+      }
+    },
+    {
+      "id": "2608.04794",
+      "title": "Privileged, but Biased: How PI-Conditioned Teachers Break Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04794",
+      "summary": {
+        "en": "Shows self-distillation with privileged information fails on hard tasks due to reference-solution bias decoupling loss from correctness.",
+        "zh": "揭示特权信息自蒸馏在难任务上失败的原因：参考解偏差使损失与正确性脱钩。"
+      }
+    },
+    {
+      "id": "2608.04698",
+      "title": "Teaching MLLMs to Say No: Generalized Referring Expression Comprehension via Refusal Calibrated GRPO",
+      "category": "rlvr",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04698",
+      "summary": {
+        "en": "Proposes RC-GRPO, a calibrated RL method for MLLMs to balance object localization with refusal of nonexistent objects via verifiable rewards.",
+        "zh": "提出RC-GRPO，一种校准的强化学习方法，通过可验证的奖励平衡MLLMs的目标定位和拒绝不存在对象的能力。"
+      }
+    },
+    {
+      "id": "2608.04347",
+      "title": "Looking in the Mirror: Introspecting Side-Effect Misalignments Induced by Fine-Tuning",
+      "category": "safety",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04347",
+      "summary": {
+        "en": "Detects unintended alignment degradation from fine-tuning using Delta-Aware Introspection Adapters to identify side-effect misalignments.",
+        "zh": "使用Delta感知内省适配器检测微调引起的意外对齐退化，识别副作用失对齐问题。"
+      }
+    },
+    {
+      "id": "2607.28661",
+      "title": "Are the Financial Reasoning from LLMs Credible? A Real World Test over Long-Horizon Statements",
+      "category": "data-synthesis",
+      "date": "2026-07-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28661",
+      "summary": {
+        "en": "Introduces FinIndices benchmark exposing LLM reasoning vulnerabilities in financial analysis; demonstrates SFT improves structured reasoning on long-context tasks.",
+        "zh": "推出FinIndices基准测试，暴露LLM在财务分析中的推理缺陷；证明SFT改进长上下文任务的结构化推理能力。"
+      }
+    },
+    {
+      "id": "2608.00782",
+      "title": "Distill Where You Fail: Recovering Learning Signals of Negative RL-Groups from Adaptive Teacher Guidance",
+      "category": "on-policy-distill",
+      "date": "2026-07-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.00782",
+      "summary": {
+        "en": "Combines GRPO with selective on-policy distillation and SFT to recover learning signals in sparse-reward RL settings.",
+        "zh": "结合GRPO与选择性在线蒸馏和SFT，在稀疏奖励RL设置中恢复学习信号。"
+      }
+    },
+    {
+      "id": "2608.04436",
+      "title": "ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation",
+      "category": "rlvr",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04436",
+      "summary": {
+        "en": "Post-trains multimodal models via SFT and GRPO to orchestrate reasoning, tool use, and image generation under unified agentic policy.",
+        "zh": "通过SFT和GRPO对多模态模型进行后训练，使其能在统一的智能体策略下协调推理、工具使用和图像生成。"
+      }
+    },
+    {
+      "id": "2608.05131",
+      "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+      "category": "on-policy-distill",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05131",
+      "summary": {
+        "en": "Visual OPSD method addressing modality imbalance in MLLMs through modality-balance trust regions for selective token distillation.",
+        "zh": "通过模态平衡信任区域解决多模态大语言模型中模态不平衡问题的视觉自蒸馏方法。"
+      }
+    },
+    {
+      "id": "2608.05148",
+      "title": "Reasoning Core: Designing Broad Procedural Data for Completion-Supervised Reasoning Training",
+      "category": "data-synthesis",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05148",
+      "summary": {
+        "en": "Procedural generator collection for creating verifiable reasoning training data across math, logic, planning, and code domains.",
+        "zh": "用于在数学、逻辑、规划和代码领域生成可验证推理训练数据的程序生成器集合。"
+      }
+    },
+    {
+      "id": "2608.05045",
+      "title": "Gradient Immunity: Null-Space Resistance to Malicious Fine-Tuning",
+      "category": "safety",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05045",
+      "summary": {
+        "en": "Proposes Unidirectional Safety Gate to prevent malicious fine-tuning by blocking gradients in protected representation spaces.",
+        "zh": "提出单向安全门机制，通过在受保护表示空间中阻止梯度来防止恶意微调。"
+      }
+    },
+    {
+      "id": "2608.04980",
+      "title": "Protoreasoning in Tiny Transformers",
+      "category": "cot-reasoning",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04980",
+      "summary": {
+        "en": "Demonstrates that tiny transformers can learn chain-of-thought reasoning on formal tasks, enabling detailed analysis of reasoning generalization.",
+        "zh": "展示微型Transformer可在形式语言任务上学习链式思维推理，支持详细的推理泛化分析。"
+      }
+    },
+    {
+      "id": "2608.04788",
+      "title": "Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04788",
+      "summary": {
+        "en": "Calibrates on-policy self-distillation for RL agents by contrasting replay views to derive observation-specific token-level supervision.",
+        "zh": "通过对比回放视图来校准在策略自蒸馏,为强化学习智能体提供观察特定的token级监督。"
+      }
+    },
+    {
+      "id": "2608.04771",
+      "title": "Fewer Tokens, Smaller Cache: Reward-Coordinated Efficient Reasoning",
+      "category": "search",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04771",
+      "summary": {
+        "en": "Uses process rewards to coordinate KV-cache compression and token generation, reducing reasoning latency by 2.08x–2.35x.",
+        "zh": "使用过程奖励协调KV缓存压缩和令牌生成，将推理延迟降低2.08倍-2.35倍。"
+      }
+    },
+    {
+      "id": "2608.04419",
+      "title": "SPOT: Sparse Probing and Outcome Calibration for On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04419",
+      "summary": {
+        "en": "Sparse Probing and Outcome Calibration for On-Policy Distillation: selectively distills high-value teacher knowledge on student trajectories using outcome-based target calibration.",
+        "zh": "稀疏探测和结果校准的在线蒸馏方法：通过基于结果的目标校准，有选择地在学生轨迹上蒸馏高价值教师知识。"
+      }
+    },
+    {
+      "id": "2608.04408",
+      "title": "Not Every Divergence Should Be Suppressed: Counterfactual Recoverability in On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04408",
+      "summary": {
+        "en": "Introduces counterfactual recoverability to guide selective supervision in on-policy distillation, improving reasoning performance on AIME and GPQA benchmarks.",
+        "zh": "引入反事实可恢复性指导在线策略蒸馏中的选择性监督，提升AIME和GPQA基准上的推理性能。"
+      }
+    },
+    {
+      "id": "2608.05139",
+      "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05139",
+      "summary": {
+        "en": "RL framework using skill entropy as training signal to improve multi-step reasoning by aligning predicted and gold skill sequences.",
+        "zh": "使用技能熵作为训练信号的强化学习框架，通过对齐预测和真实技能序列来改进多步推理。"
+      }
+    },
+    {
+      "id": "2608.04505",
+      "title": "K-EXAONE 2.0 Technical Report",
+      "category": "survey",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04505",
+      "summary": {
+        "en": "Technical report on K-EXAONE 2.0, a 750B MoE multilingual model combining continual pre-training, mid-training, and post-training for reasoning and safety.",
+        "zh": "K-EXAONE 2.0技术报告，一个750B混合专家多语言模型，结合持续预训练、中间训练和后训练以增强推理和安全性。"
+      }
+    },
+    {
+      "id": "2608.05124",
+      "title": "Chained Recursive Language Models for Multi-Iteration Reasoning",
+      "category": "search",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05124",
+      "summary": {
+        "en": "Inference-time architecture using chained recursive model calls with artifact handoff to improve multi-step reasoning.",
+        "zh": "通过链式递归模型调用和工件传递的推理时架构来改进多步骤推理。"
+      }
+    },
+    {
+      "id": "2608.04735",
+      "title": "Chain-of-Thought Monitoring Can Be Unreliable in Implicit-Influence Settings",
+      "category": "safety",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04735",
+      "summary": {
+        "en": "Shows chain-of-thought monitoring reliability degrades under implicit influence, raising concerns about safety evaluation methods for reasoning models.",
+        "zh": "表明思维链监测在隐性影响下可靠性下降，引发对推理模型安全评估方法的担忧。"
+      }
+    },
+    {
+      "id": "2608.04646",
+      "title": "Evaluating Theory of Mind in Reasoning Models: Robustness over Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04646",
+      "summary": {
+        "en": "Analyzes reasoning models trained with verifiable rewards, showing robustness improvements in Theory of Mind tasks stem from general robustness rather than ToM-specific abilities.",
+        "zh": "分析通过可验证奖励训练的推理模型，表明心智理论任务中的鲁棒性改进来自一般鲁棒性而非ToM特定能力。"
       }
     }
   ]
