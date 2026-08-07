@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-06",
+    "lastUpdated": "2026-08-07",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5474,6 +5474,258 @@
       "summary": {
         "en": "Analyzes reasoning models trained with verifiable rewards, showing robustness improvements in Theory of Mind tasks stem from general robustness rather than ToM-specific abilities.",
         "zh": "分析通过可验证奖励训练的推理模型，表明心智理论任务中的鲁棒性改进来自一般鲁棒性而非ToM特定能力。"
+      }
+    },
+    {
+      "id": "2608.06246",
+      "title": "A Six-Dimensional Taxonomy of Post-Training Adaptation Techniques with Applications in AI Governance",
+      "category": "survey",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06246",
+      "summary": {
+        "en": "Comprehensive taxonomy of post-training adaptation techniques across six dimensions, unifying fragmented literature on fine-tuning, alignment, and model modification.",
+        "zh": "从六个维度系统分类后训练适配技术，统一微调、对齐和模型修改等领域的碎片化文献。"
+      }
+    },
+    {
+      "id": "2608.06243",
+      "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06243",
+      "summary": {
+        "en": "DASH improves on-policy self-distillation for reasoning models by adaptively weighting token-level supervision based on divergence evolution during generation.",
+        "zh": "DASH通过根据生成过程中的分歧演变自适应加权token级监督来改进推理模型的在策略自蒸馏。"
+      }
+    },
+    {
+      "id": "2608.05631",
+      "title": "ChronoVision: Temporal Reasoning via Latent State Reconstruction",
+      "category": "rlvr",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05631",
+      "summary": {
+        "en": "Multimodal framework using latent state reconstruction and process-grounded RL for temporal visual reasoning tasks.",
+        "zh": "使用潜在状态重建和过程接地RL进行时间视觉推理的多模态框架。"
+      }
+    },
+    {
+      "id": "2608.05802",
+      "title": "On-Policy Delta Distillation for Multilingual Math Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05802",
+      "summary": {
+        "en": "On-Policy Delta Distillation improves multilingual math reasoning by using probability gaps between teacher and base models as learning signals.",
+        "zh": "On-Policy Delta Distillation通过使用教师模型和基础模型之间的概率差作为学习信号来改进多语言数学推理。"
+      }
+    },
+    {
+      "id": "2608.06347",
+      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06347",
+      "summary": {
+        "en": "On-policy self-distillation method for multilingual reasoning that concentrates supervision on reasoning pivots to improve cross-lingual transfer.",
+        "zh": "针对多语言推理的on-policy自蒸馏方法，通过在推理枢纽上集中监督来改进跨语言迁移。"
+      }
+    },
+    {
+      "id": "2608.05643",
+      "title": "Refining Over Resampling: Test-Time Self-Correction for LLM Reasoning",
+      "category": "search",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05643",
+      "summary": {
+        "en": "Test-time refinement framework combining breadth (diverse rollouts) and depth (iterative self-correction) to improve LLM reasoning without external verifiers.",
+        "zh": "结合广度（多样化推理路径）和深度（迭代自我纠正）的测试时间精炼框架，无需外部验证器即可改进LLM推理。"
+      }
+    },
+    {
+      "id": "2608.05541",
+      "title": "Hyper-ES: Effective Evolution Strategies for LLM Reasoning via Descent Direction Merging",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05541",
+      "summary": {
+        "en": "Evolution strategies for LLM reasoning via subspace optimization using gradient-based descent directions and CMA-ES coefficient merging.",
+        "zh": "通过基于梯度下降方向和CMA-ES系数合并的子空间优化，用进化策略改进LLM推理。"
+      }
+    },
+    {
+      "id": "2608.05987",
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05987",
+      "summary": {
+        "en": "Recursive self-distillation method for turn-level credit assignment in agentic RL with verifiable rewards, outperforming GRPO baselines.",
+        "zh": "用于智能体RL中逐轮级信用分配的递归自蒸馏方法，优于GRPO基准。"
+      }
+    },
+    {
+      "id": "2608.06377",
+      "title": "Learning When to Trust via Selective Context Preference Optimization",
+      "category": "dpo",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06377",
+      "summary": {
+        "en": "SCOPE uses DPO with balanced preference pairs across context conditions to train models for selective trust in external signals.",
+        "zh": "SCOPE通过DPO在平衡的偏好对上训练模型，使其能够选择性地信任外部信号。"
+      }
+    },
+    {
+      "id": "2608.06310",
+      "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
+      "category": "reward-modeling",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06310",
+      "summary": {
+        "en": "Proposes RRC to enable generative reward models in RL by deriving scalar rewards from ranking-based comparisons rather than direct scoring.",
+        "zh": "提出RRC方法，通过基于排序的比较而非直接评分，使生成式奖励模型能够在强化学习中有效应用。"
+      }
+    },
+    {
+      "id": "2608.06296",
+      "title": "On-Policy Self-Distillation without Any Supervision",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06296",
+      "summary": {
+        "en": "Unsupervised on-policy self-distillation using majority-vote consistency to correct model errors without external supervision.",
+        "zh": "基于多数投票一致性的无监督在线自蒸馏方法，无需外部监督即可纠正模型错误。"
+      }
+    },
+    {
+      "id": "2608.06179",
+      "title": "SAGA: Score-Weighted Adaptive Generation Alignment for Low-Resource Nordic Language Models",
+      "category": "data-synthesis",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06179",
+      "summary": {
+        "en": "Parser-guided preference optimization framework replacing human labels with dependency-parser supervision for low-resource language alignment.",
+        "zh": "使用依存句法分析器监督替代人类标注的偏好优化框架，用于低资源语言对齐。"
+      }
+    },
+    {
+      "id": "2608.05587",
+      "title": "StepReflect: Structured UI Transition Reflection for Mobile GUI Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05587",
+      "summary": {
+        "en": "Structured GUI reflection for mobile agents via supervised fine-tuning, distillation, and preference-based refinement.",
+        "zh": "通过有监督微调、蒸馏和偏好优化实现移动代理的结构化GUI反射。"
+      }
+    },
+    {
+      "id": "2608.05734",
+      "title": "Subliminal Learning is Non-Semantic Distillation",
+      "category": "distillation",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05734",
+      "summary": {
+        "en": "Investigates subliminal learning in distillation, showing non-semantic weight structures enable hidden bias transfer between models.",
+        "zh": "研究蒸馏中的潜意识学习,揭示非语义权重结构如何实现模型间隐藏偏差转移。"
+      }
+    },
+    {
+      "id": "2608.05102",
+      "title": "ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment",
+      "category": "rlvr",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05102",
+      "summary": {
+        "en": "Answer-backtracked credit assignment framework converting sparse trajectory outcomes into dense step-level rewards for training long-horizon search agents.",
+        "zh": "答案回溯信用分配框架，将稀疏轨迹级结果转换为密集步级奖励，用于训练长视野搜索智能体。"
+      }
+    },
+    {
+      "id": "2608.05466",
+      "title": "Recursive Synthesis for Long-Horizon Terminal Tasks",
+      "category": "data-synthesis",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05466",
+      "summary": {
+        "en": "Recursive framework for synthesizing long-horizon terminal tasks at scale with verified consistency, enabling cost-effective training data generation.",
+        "zh": "递归框架用于大规模合成长视地平线终端任务，具有验证一致性，实现成本效益的训练数据生成。"
+      }
+    },
+    {
+      "id": "2608.06216",
+      "title": "Continual Learning in Transition",
+      "category": "on-policy-distill",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06216",
+      "summary": {
+        "en": "Survey examining continual learning's transition from parameter-centric to system-level adaptation across pre/post-training and inference stages.",
+        "zh": "调查持续学习从参数中心向系统级适应的转变，涵盖预训练、后训练和推理阶段。"
+      }
+    },
+    {
+      "id": "2608.06128",
+      "title": "Contextual Information Policy Optimization for Search Agents",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06128",
+      "summary": {
+        "en": "RL framework for search agents that assigns dense credits based on evidence use, reducing confirmation bias in multi-step reasoning.",
+        "zh": "为搜索代理设计的强化学习框架，通过基于证据使用的密集奖励来减少多步推理中的确认偏差。"
+      }
+    },
+    {
+      "id": "2608.05832",
+      "title": "Enhancing Social Intelligence in LLMs with Hierarchical Reasoning and Utterance-Level Goal Rewarding",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05832",
+      "summary": {
+        "en": "Hierarchical RL framework with variance-gated reward routing for social dialogue, achieving SOTA on SOTOPIA negotiation tasks.",
+        "zh": "具有方差门控奖励路由的分层强化学习框架用于社交对话，在SOTOPIA谈判任务中达到最优。"
+      }
+    },
+    {
+      "id": "2608.05813",
+      "title": "Cautious Context Steering for Language Model Personalization",
+      "category": "peft",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05813",
+      "summary": {
+        "en": "Lightweight adapter for dynamic context steering in personalized LM generation, improving generalization across users and domains.",
+        "zh": "用于个性化LM生成的轻量级适配器，动态控制上下文影响，提高跨用户和领域的泛化能力。"
+      }
+    },
+    {
+      "id": "2608.05660",
+      "title": "Reasoning Errors Have a Region and a Direction in the Residual-Stream Trajectory of LLMs",
+      "category": "reward-modeling",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05660",
+      "summary": {
+        "en": "Detects reasoning errors by analyzing residual-stream motion and state context, improving accuracy on unseen reasoning benchmarks.",
+        "zh": "通过分析残差流运动和状态上下文来检测推理错误，提高了未见过的推理基准上的准确性。"
       }
     }
   ]
