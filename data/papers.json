@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-07",
+    "lastUpdated": "2026-08-08",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5726,6 +5726,30 @@
       "summary": {
         "en": "Detects reasoning errors by analyzing residual-stream motion and state context, improving accuracy on unseen reasoning benchmarks.",
         "zh": "通过分析残差流运动和状态上下文来检测推理错误，提高了未见过的推理基准上的准确性。"
+      }
+    },
+    {
+      "id": "2608.05886",
+      "title": "CodeGrep: An RL-Trained Retrieval Agent for LLM Coding Agents",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05886",
+      "summary": {
+        "en": "GRPO-trained retrieval agent for coding tasks, optimizing token efficiency in LLM agent trajectories via verifiable rewards.",
+        "zh": "使用GRPO训练的检索代理，通过可验证的奖励优化编码任务中LLM代理的token效率。"
+      }
+    },
+    {
+      "id": "2608.05714",
+      "title": "RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation",
+      "category": "rlvr",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05714",
+      "summary": {
+        "en": "State-aware text-to-CAD agent using Generate-Execute-Critique-Rewrite loop with trajectory-level reward optimization for learnable critique.",
+        "zh": "采用生成-执行-评критика-改写循环的状态感知文本转CAD代理，使用轨迹级奖励优化实现可学习的评kritika。"
       }
     }
   ]
