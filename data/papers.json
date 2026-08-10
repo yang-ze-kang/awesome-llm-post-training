@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-09",
+    "lastUpdated": "2026-08-10",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5798,6 +5798,162 @@
       "summary": {
         "en": "Autonomous system for synthesizing calibrated terminal tasks via adversarial solver feedback to improve agent training data quality.",
         "zh": "通过对抗性求解器反馈自动合成校准的终端任务，以提高智能体训练数据质量的系统。"
+      }
+    },
+    {
+      "id": "2608.07147",
+      "title": "DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training",
+      "category": "rlvr",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07147",
+      "summary": {
+        "en": "DiDPO enables fine-grained credit assignment for coding agents by constructing reward signals directly from code diff structures.",
+        "zh": "DiDPO通过从代码差异结构直接构建奖励信号，实现编码智能体的细粒度信用分配。"
+      }
+    },
+    {
+      "id": "2608.07068",
+      "title": "MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07068",
+      "summary": {
+        "en": "On-policy distillation method for long-horizon agents that maintains state alignment during memory compression via reconstructed invocations.",
+        "zh": "为长期代理设计的在线蒸馏方法，通过重构调用在内存压缩期间保持状态对齐。"
+      }
+    },
+    {
+      "id": "2608.07424",
+      "title": "CoBa: Cost-Effective Test-Time Scaling via Compute-Balanced Routing",
+      "category": "search",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07424",
+      "summary": {
+        "en": "Compute-balanced routing policy that optimally allocates inference budget across generation, verification, and stopping for test-time reasoning.",
+        "zh": "计算均衡路由策略，在生成、验证和停止之间最优分配推理时的计算预算。"
+      }
+    },
+    {
+      "id": "2608.06819",
+      "title": "FutureBridge: Token Selection Beyond Local Preference in Collaborative Decoding",
+      "category": "on-policy-distill",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06819",
+      "summary": {
+        "en": "Token reranker for collaborative decoding selects tokens that help smaller models continue reasoning, improving math reasoning by 35.1%.",
+        "zh": "协作解码中的令牌重排器选择能帮助较小模型继续推理的令牌，数学推理性能提升35.1%。"
+      }
+    },
+    {
+      "id": "2608.06802",
+      "title": "Simple-OPD: Demystifying Warm-up for On-policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06802",
+      "summary": {
+        "en": "Demystifies warm-up for on-policy distillation, showing teacher-compatible CoT and LoRA initialization improve student training efficiency.",
+        "zh": "阐明在策略蒸馏的预热阶段，证明教师兼容的思维链和LoRA初始化能提高学生训练效率。"
+      }
+    },
+    {
+      "id": "2608.07371",
+      "title": "Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning",
+      "category": "on-policy-distill",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07371",
+      "summary": {
+        "en": "Trajectory-relative hindsight distillation framework that allocates dense supervision across decision turns for agentic RL tasks.",
+        "zh": "轨迹相对反事实蒸馏框架，通过跨决策轮次分配密集监督来改进智能体强化学习任务。"
+      }
+    },
+    {
+      "id": "2608.06778",
+      "title": "Retrieval-Constrained Policy Optimization for Attack Technique Extraction from Cyber Threat Intelligence",
+      "category": "rlvr",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06778",
+      "summary": {
+        "en": "Two-stage framework combining retrieval-augmented SFT with Group Relative Policy Optimization using verifiable rewards for cyber threat technique extraction.",
+        "zh": "结合检索增强监督微调与基于可验证奖励的组相对策略优化的两阶段框架，用于网络威胁技术提取。"
+      }
+    },
+    {
+      "id": "2608.06714",
+      "title": "The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows",
+      "category": "search",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06714",
+      "summary": {
+        "en": "Agent-driven optimization framework that autonomously searches prompts, programs, and ML workflows through reasoning and tool use.",
+        "zh": "自主搜索提示词、程序和ML工作流的智能体驱动优化框架，通过推理和工具使用实现。"
+      }
+    },
+    {
+      "id": "2608.07110",
+      "title": "Modular TTT: Rethinking Test-Time Training as Composable Modules",
+      "category": "search",
+      "date": "2026-08-06",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07110",
+      "summary": {
+        "en": "Framework for composable test-time training modules with systematic ablations of fast-weight networks, loss functions, and architectural components.",
+        "zh": "可组合测试时训练模块框架，系统地消融快权重网络、损失函数和架构组件。"
+      }
+    },
+    {
+      "id": "2608.07169",
+      "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+      "category": "on-policy-distill",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07169",
+      "summary": {
+        "en": "Transfers structured knowledge from teacher agents to small LLM agents through hierarchical memory without additional training.",
+        "zh": "通过分层记忆将教师智能体的结构化知识转移到小型LLM智能体，无需额外训练。"
+      }
+    },
+    {
+      "id": "2608.07460",
+      "title": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+      "category": "instruction-tuning",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07460",
+      "summary": {
+        "en": "Instruction-tuning method that balances creativity and quality by learning special tokens, improving diversity in generation and RL downstream tasks.",
+        "zh": "指令调优方法通过学习特殊标记来平衡创意性和质量，提高生成多样性和强化学习下游任务性能。"
+      }
+    },
+    {
+      "id": "2608.07419",
+      "title": "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration",
+      "category": "instruction-tuning",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07419",
+      "summary": {
+        "en": "Bilevel optimization framework to improve LLM calibration during training by maximizing predictive entropy, with better out-of-domain generalization.",
+        "zh": "通过bilevel优化框架在训练过程中最大化预测熵来改进LLM校准，具有更好的域外泛化性能。"
+      }
+    },
+    {
+      "id": "2608.07077",
+      "title": "Transformers Struggle to Use Their Emergent World Models: Revisiting the Tower of Hanoi, and the Illusion of Thinking",
+      "category": "cot-reasoning",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07077",
+      "summary": {
+        "en": "Shows frontier reasoning models encode world models during CoT but fail due to representation decay, not absence.",
+        "zh": "表明前沿推理模型在思维链中编码世界模型，但因表示衰减而非缺失而失败。"
       }
     }
   ]
