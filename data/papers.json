@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-10",
+    "lastUpdated": "2026-08-11",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -5954,6 +5954,270 @@
       "summary": {
         "en": "Shows frontier reasoning models encode world models during CoT but fail due to representation decay, not absence.",
         "zh": "表明前沿推理模型在思维链中编码世界模型，但因表示衰减而非缺失而失败。"
+      }
+    },
+    {
+      "id": "2608.09819",
+      "title": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA",
+      "category": "peft",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09819",
+      "summary": {
+        "en": "Open agent system using Mixture-of-LoRA architecture for continual learning and specialization across chat, coding, and agentic tasks.",
+        "zh": "使用混合LoRA架构实现持续学习和跨对话、编码、智能体任务专业化的开放智能体系统。"
+      }
+    },
+    {
+      "id": "2608.09805",
+      "title": "Parameter Exploration for RLVR via Variational Learning",
+      "category": "rlvr",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09805",
+      "summary": {
+        "en": "Proposes parameter-space exploration via policy sampling for LLM RL, improving GRPO performance on reasoning and code generation tasks.",
+        "zh": "提出通过策略采样进行参数空间探索的方法，改进了推理和代码生成任务上的GRPO性能。"
+      }
+    },
+    {
+      "id": "2608.09818",
+      "title": "MedPixel: A Unified Pixel-Language Model for Medical Reasoning and Segmentation",
+      "category": "dpo",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09818",
+      "summary": {
+        "en": "Unified medical pixel-language model trained with SFT and Pixel-Level Preference Optimization using ground-truth masks as offline verifiers.",
+        "zh": "统一的医学像素-语言模型，采用SFT和基于像素级偏好优化的训练，使用真实掩码作为离线验证器。"
+      }
+    },
+    {
+      "id": "2608.09119",
+      "title": "Motif 3: Technical Report",
+      "category": "on-policy-distill",
+      "date": "2026-08-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09119",
+      "summary": {
+        "en": "Mixture-of-Experts model using multi-teacher on-policy distillation combining RL-trained specialists with supervised fine-tuning.",
+        "zh": "使用多教师在线蒸馏的混合专家模型，结合RL训练的专家和监督微调。"
+      }
+    },
+    {
+      "id": "2608.09568",
+      "title": "Se-DPO: Self-Evolving Token Credit for Direct Preference Optimization",
+      "category": "dpo",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09568",
+      "summary": {
+        "en": "Improves DPO by dynamically calibrating token-level credit weights based on evolving reward signals during training.",
+        "zh": "通过在训练过程中根据演变的奖励信号动态校准token级权重来改进DPO。"
+      }
+    },
+    {
+      "id": "2608.09227",
+      "title": "Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models",
+      "category": "peft",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09227",
+      "summary": {
+        "en": "Uses GRPO to optimize rank allocation in LoRA adapters for efficient multimodal compression while preserving cross-modal coherence.",
+        "zh": "使用GRPO优化LoRA适配器中的秩分配，以实现高效的多模态压缩同时保持跨模态连贯性。"
+      }
+    },
+    {
+      "id": "2608.09898",
+      "title": "Consilience for Verifier-Free Test-Time Scaling",
+      "category": "search",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09898",
+      "summary": {
+        "en": "Proposes consilience, a verifier-free test-time scaling method using confidence trajectories to improve LLM reasoning without external verifiers.",
+        "zh": "提出consilience方法，通过置信度轨迹进行无验证器的测试时间缩放，改进LLM推理能力。"
+      }
+    },
+    {
+      "id": "2608.09836",
+      "title": "Mismatch Matters: On-Policy Distillation Beyond Token Agreement",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09836",
+      "summary": {
+        "en": "Addresses degenerate agreement in on-policy distillation by correcting student-excess and student-deficit token mismatches using bounded shaping and teacher injection.",
+        "zh": "通过有界整形和教师注入纠正学生过量和学生缺陷的token不匹配，解决在线蒸馏中的退化一致性问题。"
+      }
+    },
+    {
+      "id": "2608.09826",
+      "title": "Distill Skills into Weights, Not Prompts: Abstract Skills as Privileged Signals for On-Policy Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09826",
+      "summary": {
+        "en": "On-policy self-distillation framework using abstract skill cards as privileged signals to improve reasoning in low-variance RL settings.",
+        "zh": "使用抽象技能卡作为特权信号的在线自蒸馏框架，在低方差强化学习设置中改进推理能力。"
+      }
+    },
+    {
+      "id": "2608.09432",
+      "title": "ZetaGPT: A Reference Implementation of Positional--Encoding--Free State--Space--Attention Language Models",
+      "category": "tools",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09432",
+      "summary": {
+        "en": "Open-source reference implementation of positional-encoding-free language models with end-to-end post-training pipeline including SFT, RLHF, and CoT reasoning.",
+        "zh": "位置编码无关语言模型的开源参考实现，包含SFT、RLHF和CoT推理的端到端后训练管道。"
+      }
+    },
+    {
+      "id": "2608.09351",
+      "title": "Test-Time Augmentation for LLMs: When Input Diversity Beats Output Diversity at Matched Compute",
+      "category": "search",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09351",
+      "summary": {
+        "en": "Test-time augmentation via input perturbation achieves better compute-efficiency than self-consistency for LLM inference.",
+        "zh": "通过输入扰动的测试时增强相比自洽性在推理计算效率上表现更优。"
+      }
+    },
+    {
+      "id": "2608.09217",
+      "title": "Beyond Solvability: Task Learnability as a Static Prior for LLM RL Post-Training",
+      "category": "rlvr",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09217",
+      "summary": {
+        "en": "Proposes TrajVal, a lightweight method to estimate per-task learnability as a static prior for efficient RL task sampling in reasoning post-training.",
+        "zh": "提出TrajVal方法，从短探针运行估计任务可学性，用作推理后训练中RL任务采样的静态先验。"
+      }
+    },
+    {
+      "id": "2608.09189",
+      "title": "EmoS: A Theory-Grounded Framework for Evaluating and Aligning Emotional Intelligence in Spoken Language Models",
+      "category": "rlvr",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09189",
+      "summary": {
+        "en": "EmoSBench and EmoS: evaluating and aligning emotional intelligence in spoken language models via SFT and GRPO with verifiable reward mechanisms.",
+        "zh": "EmoSBench和EmoS：通过SFT和GRPO使用可验证奖励机制评估和对齐语音语言模型中的情感智能。"
+      }
+    },
+    {
+      "id": "2608.06013",
+      "title": "OneEmo: A Unified Multimodal Reasoning Model for Emotion Perception, Understanding, and Interaction",
+      "category": "rlvr",
+      "date": "2026-08-05",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06013",
+      "summary": {
+        "en": "Unified multimodal emotion model with multi-task SFT on reasoning data and RL optimization via unified reward allocation.",
+        "zh": "统一的多模态情感模型，采用多任务监督微调和统一奖励分配的强化学习优化。"
+      }
+    },
+    {
+      "id": "2608.05219",
+      "title": "When Privileged Guidance Misaligns: State-Matched Routing and Contextualized Self-Distillation for Multi-Turn Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-04",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05219",
+      "summary": {
+        "en": "State-matched routing and contextualized distillation improve on-policy student learning by aligning privileged teacher guidance with student's actual execution states.",
+        "zh": "通过状态匹配路由和上下文自蒸馏，使特权教师指导与学生实际执行状态对齐，改进在线策略学习。"
+      }
+    },
+    {
+      "id": "2608.09880",
+      "title": "Financial Numerical Prediction and Allocation as Token Generation",
+      "category": "rlvr",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09880",
+      "summary": {
+        "en": "Unified token-generation interface for financial forecasting and allocation using ordinal supervision, GRPO, and verifiable reward optimization.",
+        "zh": "使用序数监督、GRPO和可验证奖励优化的统一令牌生成接口进行金融预测和资产配置。"
+      }
+    },
+    {
+      "id": "2608.09745",
+      "title": "SR-OPSD: Self-Referenced On-Policy Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09745",
+      "summary": {
+        "en": "SR-OPSD improves on-policy self-distillation by using geometric interpolation between teacher and reference policies with Rényi divergence for stable optimization.",
+        "zh": "SR-OPSD通过几何插值和Rényi散度改进on-policy自蒸馏，实现更稳定的优化。"
+      }
+    },
+    {
+      "id": "2608.09542",
+      "title": "Dual-Adversarial Safety Alignment: Cultivating Intrinsic Threat Comprehension in LRMs",
+      "category": "safety",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09542",
+      "summary": {
+        "en": "Dual-adversarial framework that synthesizes jailbreak prompts and extracts safety rationales to align large reasoning models with improved robustness.",
+        "zh": "双对抗框架通过合成越狱提示并提取安全理由来对齐大型推理模型,提高其鲁棒性。"
+      }
+    },
+    {
+      "id": "2608.09447",
+      "title": "WDL-OPD: Weak-Driven On-Policy Distillation via Mixture-Constrained Co-Training",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09447",
+      "summary": {
+        "en": "Mixture-constrained co-training method stabilizing on-policy distillation by jointly optimizing anchor and auxiliary policies against a frozen teacher.",
+        "zh": "通过联合优化锚策略和辅助策略来稳定在线策略蒸馏的混合约束协同训练方法。"
+      }
+    },
+    {
+      "id": "2608.09324",
+      "title": "CoRE: Consensus Rewards via Equilibrium for Test-Time Reinforcement Learning",
+      "category": "search",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09324",
+      "summary": {
+        "en": "Uses graph-based replicator dynamics to derive graded consensus rewards from model rollouts at test time, improving upon majority voting.",
+        "zh": "使用基于图的复制子动力学从模型推理中提取分级共识奖励，改进多数投票方法。"
+      }
+    },
+    {
+      "id": "2608.09271",
+      "title": "SoftmaxGRPO: Learning to Reason using Softmax Advantage Group Estimation",
+      "category": "rlvr",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09271",
+      "summary": {
+        "en": "Improves GRPO with softmax advantage normalization for better learning signal allocation across prompt difficulties.",
+        "zh": "通过softmax优势归一化改进GRPO，在不同难度提示间实现更好的学习信号分配。"
+      }
+    },
+    {
+      "id": "2608.09263",
+      "title": "Privileged Likelihood Is Not Automatically Value: Three Checks for Token Credit in On-Policy Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09263",
+      "summary": {
+        "en": "Empirically validates that token likelihood changes don't automatically constitute credit signals in on-policy self-distillation, proposing three diagnostic checks.",
+        "zh": "实证验证了在在线策略自蒸馏中令牌似然变化不自动构成信用信号，提出三项诊断检查。"
       }
     }
   ]
