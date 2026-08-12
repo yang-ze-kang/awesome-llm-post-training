@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-11",
+    "lastUpdated": "2026-08-12",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6218,6 +6218,162 @@
       "summary": {
         "en": "Empirically validates that token likelihood changes don't automatically constitute credit signals in on-policy self-distillation, proposing three diagnostic checks.",
         "zh": "实证验证了在在线策略自蒸馏中令牌似然变化不自动构成信用信号，提出三项诊断检查。"
+      }
+    },
+    {
+      "id": "2608.10964",
+      "title": "CARE: Confidence-Aware Reasoning for Reliable Medical VQA",
+      "category": "rlvr",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10964",
+      "summary": {
+        "en": "Medical VQA framework using GRPO with confidence-aware rewards to jointly optimize diagnostic accuracy and calibration.",
+        "zh": "医学VQA框架，使用带置信度感知奖励的GRPO联合优化诊断准确性和校准。"
+      }
+    },
+    {
+      "id": "2608.10928",
+      "title": "ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling",
+      "category": "search",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10928",
+      "summary": {
+        "en": "Retrieval-augmented test-time scaling that injects relevant solved examples into reasoning traces to improve chain-of-thought performance.",
+        "zh": "检索增强的测试时间缩放方法，通过将相关示例注入推理轨迹来改进链式思维性能。"
+      }
+    },
+    {
+      "id": "2608.08021",
+      "title": "Evidence-RL: Towards Evidence-intensive Visual Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08021",
+      "summary": {
+        "en": "Evidence-RL uses counterfactual evidence disentanglement with GRPO to train VLMs to ground answers in concrete image evidence rather than shortcuts.",
+        "zh": "Evidence-RL通过反事实证据解纠缠与GRPO训练视觉语言模型基于具体图像证据而非捷径来回答问题。"
+      }
+    },
+    {
+      "id": "2608.10812",
+      "title": "Reference-Free Post-Training of Open Large Language Models for Multilingual Machine Translation",
+      "category": "rlvr",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10812",
+      "summary": {
+        "en": "Applies GRPO with reference-free rewards to improve multilingual machine translation across 46 languages, outperforming strong baselines.",
+        "zh": "使用无参考奖励的GRPO改进46种语言的多语言机器翻译，超越强基线。"
+      }
+    },
+    {
+      "id": "2608.11047",
+      "title": "V-FiLLM: Verified Financial LLM Reasoning Benchmark",
+      "category": "benchmarks",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11047",
+      "summary": {
+        "en": "Verified financial reasoning benchmark with executable computation trees; demonstrates LoRA fine-tuning improves accuracy on financial QA tasks.",
+        "zh": "基于可执行计算树的验证型金融推理基准；展示LoRA微调提升金融问答准确率。"
+      }
+    },
+    {
+      "id": "2608.02831",
+      "title": "Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-02",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02831",
+      "summary": {
+        "en": "RL framework using self-evolving, audio-grounded rubric rewards to supervise audio reasoning with adaptive, per-sample criteria.",
+        "zh": "使用自进化、音频基础的评分标准奖励来监督音频推理的强化学习框架，具有自适应的逐样本标准。"
+      }
+    },
+    {
+      "id": "2608.11025",
+      "title": "Data Attribution of Emergent Misalignment with Persona Features",
+      "category": "safety",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11025",
+      "summary": {
+        "en": "Investigates emergent misalignment through persona features using SAEs, showing steering controls misalignment and synthetic data matters more than semantic relevance.",
+        "zh": "通过SAE调查突现失配中的角色特征，证明特征转向可控制失配，合成数据比语义相关性更重要。"
+      }
+    },
+    {
+      "id": "2608.10916",
+      "title": "FaithformBench: Benchmarking Faithfulness of Mathematical Chain-of-Thought Autoformalisation",
+      "category": "benchmarks",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10916",
+      "summary": {
+        "en": "Benchmark for evaluating faithfulness of autoformalisation systems using automatically perturbed reasoning steps.",
+        "zh": "使用自动扰动推理步骤评估自形式化系统忠实性的基准。"
+      }
+    },
+    {
+      "id": "2608.10827",
+      "title": "MIRA: Medical Image Reflection for Agentic Diagnosis",
+      "category": "rlvr",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10827",
+      "summary": {
+        "en": "Medical visual agent framework using MCTS for evidence search and RL with reflective principle evolution for diagnostic reasoning.",
+        "zh": "医学视觉智能体框架，使用MCTS进行证据搜索，通过反思性原则演化的RL改进诊断推理。"
+      }
+    },
+    {
+      "id": "2608.10775",
+      "title": "SkillLens: Visual Skill Cards for Retrieval-Augmented GUI Action Prediction and On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10775",
+      "summary": {
+        "en": "Visual Skill Cards enable retrieval-augmented GUI action prediction and on-policy distillation for computer-using agents.",
+        "zh": "视觉技能卡片支持检索增强的GUI动作预测和在线蒸馏，用于计算机使用代理。"
+      }
+    },
+    {
+      "id": "2608.09888",
+      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-08-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09888",
+      "summary": {
+        "en": "Reasoning model combining in-context learning with recurrent latent reasoning for efficient problem-solving without verbalizing intermediate steps.",
+        "zh": "结合上下文学习和循环潜在推理的推理模型，无需显式推理过程即可高效解决问题。"
+      }
+    },
+    {
+      "id": "2608.08786",
+      "title": "SymDiag: Explainable Diagnosis for LLM Reasoning via Neuro-Symbolic Verification",
+      "category": "reward-modeling",
+      "date": "2026-08-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08786",
+      "summary": {
+        "en": "Neuro-symbolic framework for step-level reasoning verification that diagnoses faithfulness failures in CoT via symbolic constraint checking.",
+        "zh": "神经符号框架，通过符号约束检查诊断推理链中的忠实性失败，实现步骤级验证。"
+      }
+    },
+    {
+      "id": "2608.10996",
+      "title": "ConRub-Med: Reinforcement Learning with Consensus Rubrics for Open-Ended Medical Question Answering",
+      "category": "rlvr",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10996",
+      "summary": {
+        "en": "RL with consensus-generated medical rubrics and three-state scoring for open-ended medical QA, validated by physician review.",
+        "zh": "使用共识生成的医学rubric和三态评分的强化学习方法用于开放式医学问答，经医生验证。"
       }
     }
   ]
