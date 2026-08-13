@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-12",
+    "lastUpdated": "2026-08-13",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6374,6 +6374,174 @@
       "summary": {
         "en": "RL with consensus-generated medical rubrics and three-state scoring for open-ended medical QA, validated by physician review.",
         "zh": "使用共识生成的医学rubric和三态评分的强化学习方法用于开放式医学问答，经医生验证。"
+      }
+    },
+    {
+      "id": "2608.12220",
+      "title": "SCOUT: Unlocking Enhanced Spatial Reasoning via Structured Chain-of-Thought and Multi-Objective Process Reward",
+      "category": "rlvr",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12220",
+      "summary": {
+        "en": "Spatial reasoning VLM using structured CoT with multi-objective process rewards for fine-grained credit assignment in RL training.",
+        "zh": "使用结构化CoT和多目标过程奖励的空间推理VLM，用于RL训练中的细粒度信用分配。"
+      }
+    },
+    {
+      "id": "2608.11829",
+      "title": "Towards Understanding On-Policy Distillation through the Lens of Test-Time Scaling",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11829",
+      "summary": {
+        "en": "Analyzes on-policy distillation through test-time scaling, revealing it improves sampling efficiency rather than expanding reasoning capabilities.",
+        "zh": "通过测试时缩放分析在线蒸馏，揭示其主要改进采样效率而非扩展推理能力。"
+      }
+    },
+    {
+      "id": "2608.11715",
+      "title": "When the API Speaks the Wrong Language: Revisiting Post-Training for Multilingual Tool Use",
+      "category": "instruction-tuning",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11715",
+      "summary": {
+        "en": "Compares SFT and RL approaches for multilingual tool use, showing SFT effectively mitigates argument language mismatch in API calling.",
+        "zh": "比较SFT和RL方法在多语言工具使用中的效果，显示SFT能有效缓解API调用中的参数语言不匹配问题。"
+      }
+    },
+    {
+      "id": "2608.12307",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12307",
+      "summary": {
+        "en": "Test-time harness design transfers capabilities from stronger to weaker models via inference-time scaffolding without parameter updates.",
+        "zh": "通过推理时间支架设计，在不更新参数的情况下将强模型能力转移到弱模型。"
+      }
+    },
+    {
+      "id": "2608.11994",
+      "title": "Claim-Level Reliability Assessment for Efficient Test-Time Reasoning",
+      "category": "search",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11994",
+      "summary": {
+        "en": "Training-free test-time scaling via claim-level falsification and reliability assessment to compress reasoning traces and suppress erroneous consensus.",
+        "zh": "通过声明级别伪造和可靠性评估进行无训练测试时扩展，以压缩推理轨迹并抑制错误共识。"
+      }
+    },
+    {
+      "id": "2608.11691",
+      "title": "LEMUR: Latent Entropy-aware Multimodal Unlearning via Visual-anchored Reasoning Redirection",
+      "category": "safety",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11691",
+      "summary": {
+        "en": "Training-free unlearning framework for RL-trained multimodal models using entropy dynamics to suppress privacy leakage in reasoning traces.",
+        "zh": "使用熵动力学抑制推理轨迹隐私泄漏的RL训练多模态模型免训练遗忘框架。"
+      }
+    },
+    {
+      "id": "2608.11631",
+      "title": "CLAIM: Leading Open-domain Active Clarification of Large Language Models with Uncertainty Measurement",
+      "category": "rlvr",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11631",
+      "summary": {
+        "en": "Uncertainty-driven framework for active clarification in LLMs using entropy-based synthetic data and GRPO training without human annotations.",
+        "zh": "基于熵的不确定性驱动框架，使用合成数据和GRPO训练实现LLM主动澄清，无需人工标注。"
+      }
+    },
+    {
+      "id": "2608.11967",
+      "title": "LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11967",
+      "summary": {
+        "en": "Combines global distillation and outcome-based RL to train reflection and backtracking policies in long-horizon reasoning agents.",
+        "zh": "结合全局蒸馏和基于结果的强化学习来训练长期推理代理中的反思和回溯策略。"
+      }
+    },
+    {
+      "id": "2608.11716",
+      "title": "Chain-of-Thought Shows the Path to a Tree: Realizing Branching Complexity",
+      "category": "cot-reasoning",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11716",
+      "summary": {
+        "en": "Characterizes Chain-of-Thought expressiveness through explicit constructions of graph algorithms (DFS, Dijkstra) in bounded-depth Transformers, proving CoT's power for tree complexity measures.",
+        "zh": "通过在有界深度Transformer中显式构造图算法(DFS、Dijkstra),刻画链式思维的表达能力,证明CoT对树复杂性度量的计算能力。"
+      }
+    },
+    {
+      "id": "2608.11698",
+      "title": "REOPD: Reliability-Adaptive Reward Extrapolation for On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11698",
+      "summary": {
+        "en": "Token-level adaptive reward extrapolation for on-policy distillation that prevents reward hacking through reliability-weighted coefficients.",
+        "zh": "通过可靠性加权系数实现令牌级自适应奖励外推的在线蒸馏方法,防止奖励黑客攻击。"
+      }
+    },
+    {
+      "id": "2608.11878",
+      "title": "ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents",
+      "category": "safety",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11878",
+      "summary": {
+        "en": "Synthesizes adversarial environments to evaluate LLM agent vulnerabilities to prompt injection and improves alignment through generated security data.",
+        "zh": "综合生成对抗环境评估LLM智能体对提示注入的脆弱性，并通过生成的安全数据改进对齐。"
+      }
+    },
+    {
+      "id": "2608.11616",
+      "title": "MBA: Multimodal Benchmark and Agents for Real-World Business Ideation",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11616",
+      "summary": {
+        "en": "Multimodal benchmark for business ideation agents trained via supervised LoRA fine-tuning and group relative policy optimization with creativity and feasibility rewards.",
+        "zh": "通过监督LoRA微调和具有创意性与可行性奖励的群体相对策略优化训练的多模态商业创意代理基准。"
+      }
+    },
+    {
+      "id": "2608.12062",
+      "title": "Preference Tree Optimization: Enhancing Goal-Oriented Dialogue with Look-Ahead Simulations",
+      "category": "dpo",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12062",
+      "summary": {
+        "en": "Preference Tree Optimization generates synthetic preference data via look-ahead simulations for goal-oriented dialogue, optimized with DPO.",
+        "zh": "偏好树优化通过前瞻模拟生成合成偏好数据用于目标导向对话，并使用DPO进行优化。"
+      }
+    },
+    {
+      "id": "2608.11787",
+      "title": "GRPO for Financial Advice Generation: Outperforming Commercial LLMs under CATE Evaluation",
+      "category": "rlvr",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11787",
+      "summary": {
+        "en": "Fine-tunes open-weight LLMs using GRPO with LLM-judge rewards and causal auditing for financial advice generation.",
+        "zh": "使用GRPO和LLM评判奖励对开源LLM进行微调，用因果审计生成财务建议。"
       }
     }
   ]
