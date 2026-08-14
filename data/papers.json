@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-08-14",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6542,6 +6542,54 @@
       "summary": {
         "en": "Fine-tunes open-weight LLMs using GRPO with LLM-judge rewards and causal auditing for financial advice generation.",
         "zh": "使用GRPO和LLM评判奖励对开源LLM进行微调，用因果审计生成财务建议。"
+      }
+    },
+    {
+      "id": "2608.13505",
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "category": "on-policy-distill",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13505",
+      "summary": {
+        "en": "Scientific foundation model with unified post-training pipeline combining SFT, multi-task RL, agentic RL, and on-policy distillation for multimodal reasoning.",
+        "zh": "科学基础模型，统一后训练流程结合监督微调、多任务强化学习、智能体RL和在线蒸馏用于多模态推理。"
+      }
+    },
+    {
+      "id": "2608.10628",
+      "title": "InSight-doc: Agentic Visual Perception for Long-Document Understanding",
+      "category": "on-policy-distill",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.10628",
+      "summary": {
+        "en": "Agentic framework for long-document understanding via adaptive visual resolution, trained with SFT and hard RL examples.",
+        "zh": "通过自适应视觉分辨率进行长文档理解的智能体框架，采用SFT和硬RL样本训练。"
+      }
+    },
+    {
+      "id": "2608.08888",
+      "title": "Full-bandwidth transformer",
+      "category": "cot-reasoning",
+      "date": "2026-08-08",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08888",
+      "summary": {
+        "en": "Widens vertical feedback in autoregressive transformers via latent hidden-state feedback, improving reasoning and generation with minimal overhead.",
+        "zh": "通过潜在隐状态反馈扩展自回归Transformer的纵向通道，改进推理和生成，开销最小。"
+      }
+    },
+    {
+      "id": "2608.08107",
+      "title": "NeuPAT: Neuron-aware Plasticity Allocation Tuning for Language-Preserving MLLMs",
+      "category": "peft",
+      "date": "2026-08-07",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08107",
+      "summary": {
+        "en": "Neuron-aware framework that selectively protects language-critical neurons while adapting plastic neurons during multimodal instruction tuning.",
+        "zh": "神经元感知框架，在多模态指令调优中选择性地保护语言关键神经元同时适应可塑性神经元。"
       }
     }
   ]
