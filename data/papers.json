@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-14",
+    "lastUpdated": "2026-08-15",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6590,6 +6590,186 @@
       "summary": {
         "en": "Neuron-aware framework that selectively protects language-critical neurons while adapting plastic neurons during multimodal instruction tuning.",
         "zh": "神经元感知框架，在多模态指令调优中选择性地保护语言关键神经元同时适应可塑性神经元。"
+      }
+    },
+    {
+      "id": "2608.12957",
+      "title": "I-SDPO: Instance-Level Adaptive Self-Distillation Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12957",
+      "summary": {
+        "en": "Adaptive self-distillation policy optimization that routes between privileged distillation and GRPO based on per-instance success, improving reasoning on scientific tasks.",
+        "zh": "自适应自蒸馏策略优化，根据实例级成功情况在特权蒸馏和GRPO之间动态路由，改进科学推理任务性能。"
+      }
+    },
+    {
+      "id": "2608.13069",
+      "title": "Behavioral Reprogramming of Open-Weights Models: Cognitive Plasticity and Alignment Bounds",
+      "category": "peft",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13069",
+      "summary": {
+        "en": "Empirical study of parameter-efficient fine-tuning bounds and behavioral reprogramming of open-weight LLMs through LoRA and DPO.",
+        "zh": "通过LoRA和DPO对开源LLM进行参数高效微调和行为重编程的实证研究，确定微调边界。"
+      }
+    },
+    {
+      "id": "2608.13040",
+      "title": "Latent On-Policy Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13040",
+      "summary": {
+        "en": "Learns privileged context end-to-end for on-policy self-distillation, enabling scalable agent self-improvement without hand-crafted supervision.",
+        "zh": "端到端学习特权上下文用于在线自蒸馏，实现可扩展的智能体自我改进而无需手工监督。"
+      }
+    },
+    {
+      "id": "2608.13344",
+      "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
+      "category": "dpo",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13344",
+      "summary": {
+        "en": "Benchmarks long-horizon Earth observation reasoning and applies group relative policy optimization with structured rewards to vision-language models.",
+        "zh": "为长视野地球观测推理建立基准，并将分组相对策略优化与结构化奖励应用于视觉语言模型。"
+      }
+    },
+    {
+      "id": "2608.13250",
+      "title": "Follow the Norm: Accounting for Fine-Tuning and Prompt Effects on Model Rationales",
+      "category": "safety",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13250",
+      "summary": {
+        "en": "Demonstrates how norm-breaking fine-tuning shifts model rationales toward self-interest and shows system prompts can override alignment effects.",
+        "zh": "展示规范违反微调如何将模型理由转向自利，以及系统提示如何能覆盖对齐效果。"
+      }
+    },
+    {
+      "id": "2608.08020",
+      "title": "Thought-Level Beam Search for Reasoning",
+      "category": "search",
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08020",
+      "summary": {
+        "en": "Gambit: thought-level beam search algorithm for efficient test-time compute allocation in reasoning models, pruning weak trajectories and concentrating compute on promising paths.",
+        "zh": "Gambit：思维级别束搜索算法，通过修剪弱轨迹并集中计算到有前景的路径，实现推理模型的高效测试时计算分配。"
+      }
+    },
+    {
+      "id": "2608.13430",
+      "title": "Are You Sure You're Sure? On the Impact of Instruction Tuning on Confidence and Lexical Diversity",
+      "category": "instruction-tuning",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13430",
+      "summary": {
+        "en": "Analyzes how instruction tuning affects model confidence calibration and lexical diversity of answer rationales in QA tasks.",
+        "zh": "分析指令微调如何影响模型在问答任务中的置信度校准和答案理由的词汇多样性。"
+      }
+    },
+    {
+      "id": "2608.13387",
+      "title": "CROP: Task Relevance via Counterfactuals for Selective On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13387",
+      "summary": {
+        "en": "CROP improves on-policy distillation by selectively allocating token-level supervision based on task relevance via counterfactual sensitivity.",
+        "zh": "CROP通过反事实敏感性度量任务相关性，改进选择性在线蒸馏中的令牌级监督分配。"
+      }
+    },
+    {
+      "id": "2608.13221",
+      "title": "TsuGO: Probing Search Efficiency in LLM Reasoning via Go Life-and-Death Problems",
+      "category": "search",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13221",
+      "summary": {
+        "en": "Benchmark for evaluating search efficiency and reasoning-resource allocation in LLM reasoning via Go life-and-death problems with structured solution spaces.",
+        "zh": "通过围棋死活问题的基准测试，评估LLM推理中的搜索效率和推理资源分配。"
+      }
+    },
+    {
+      "id": "2608.12821",
+      "title": "HiRoute: Hierarchical Routed Prompt Tuning for Safety Alignment of Large Language Models",
+      "category": "peft",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12821",
+      "summary": {
+        "en": "Parameter-efficient safety alignment via hierarchical prompt tuning with input-adaptive routing and preference optimization.",
+        "zh": "通过分层提示调优与输入自适应路由和偏好优化实现参数高效的安全对齐。"
+      }
+    },
+    {
+      "id": "2608.12764",
+      "title": "Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12764",
+      "summary": {
+        "en": "Step-level self-distillation with evidence anchors and advantage weighting improves credit assignment in deep search agents beyond outcome rewards.",
+        "zh": "通过证据锚点和优势加权的步级自蒸馏，改进深度搜索代理中超越结果奖励的学分分配。"
+      }
+    },
+    {
+      "id": "2607.29211",
+      "title": "Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29211",
+      "summary": {
+        "en": "Uses RL with capability-aligned rewards to train models to refuse tasks beyond their abilities instead of generating futile reasoning.",
+        "zh": "通过能力对齐的强化学习训练模型在超出能力范围的任务上拒绝回答，而非生成虚假推理。"
+      }
+    },
+    {
+      "id": "2608.12836",
+      "title": "From Atomic Evidence to Logical Composition: Structured Compositional Reasoning over Compound Answer Options",
+      "category": "cot-reasoning",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12836",
+      "summary": {
+        "en": "Decompose compound answer options into atomic judgments and compose scores via integer linear programs to improve logical reasoning.",
+        "zh": "将复合答案选项分解为原子判断，通过整数线性规划合成得分以改进逻辑推理。"
+      }
+    },
+    {
+      "id": "2608.13179",
+      "title": "Teach the Magnitude, Not the Direction: Verifier-Bounded Credit Assignment for Multi-Turn Multi-step LLM Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13179",
+      "summary": {
+        "en": "Hierarchical credit assignment framework combining verifiable rewards and self-teacher distillation for multi-turn agent training.",
+        "zh": "结合可验证奖励和自蒸馏的分层信用分配框架，用于多轮智能体训练。"
+      }
+    },
+    {
+      "id": "2608.13129",
+      "title": "Numeracy in Large Language Models: Fundamental Limitations and Paths to Improvement",
+      "category": "data-synthesis",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13129",
+      "summary": {
+        "en": "Surveys numeracy failures in LLMs and evaluates mitigation strategies including fine-tuning, reasoning scaffolds, and external tools.",
+        "zh": "调查LLM的数值理解失败，评估微调、推理支架和外部工具等缓解策略。"
       }
     }
   ]
