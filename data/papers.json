@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-15",
+    "lastUpdated": "2026-08-16",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6770,6 +6770,42 @@
       "summary": {
         "en": "Surveys numeracy failures in LLMs and evaluates mitigation strategies including fine-tuning, reasoning scaffolds, and external tools.",
         "zh": "调查LLM的数值理解失败，评估微调、推理支架和外部工具等缓解策略。"
+      }
+    },
+    {
+      "id": "2608.13200",
+      "title": "GEM: A Generative Embedding Model Bridging Reasoning and Retrieval",
+      "category": "search",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13200",
+      "summary": {
+        "en": "Generative embedding model combining reasoning and retrieval, with test-time compute scaling for improved dense retrieval.",
+        "zh": "融合推理与检索的生成式嵌入模型，通过测试时计算扩展提升密集检索性能。"
+      }
+    },
+    {
+      "id": "2608.11660",
+      "title": "Hybrid-Policy Self-Editing for Composable Unstructured Knowledge Editing",
+      "category": "on-policy-distill",
+      "date": "2026-08-11",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11660",
+      "summary": {
+        "en": "Self-distillation method for knowledge editing that uses hybrid rollouts to improve composability of injected facts in LLMs.",
+        "zh": "一种知识编辑的自蒸馏方法，通过混合采样轨迹提高注入事实的组合性。"
+      }
+    },
+    {
+      "id": "2608.13304",
+      "title": "Refusing Intent, Not Form: Wrapper-Based Intent-Group Supervision for LLM Safety",
+      "category": "safety",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13304",
+      "summary": {
+        "en": "WIFA automatically pairs harmful and benign wrapped examples to teach models to refuse intent rather than surface forms, reducing over-refusal.",
+        "zh": "WIFA自动配对有害和无害的包装示例，教导模型拒绝意图而非表面形式，减少过度拒绝。"
       }
     }
   ]
