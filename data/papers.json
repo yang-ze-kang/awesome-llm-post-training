@@ -5,6 +5,18 @@
   },
   "papers": [
     {
+      "id": "2605.08703",
+      "title": "RewardHarness: Self-Evolving Agentic Post-Training",
+      "category": "reward-modeling",
+      "date": "2026-05-09",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.08703",
+      "summary": {
+        "en": "Self-evolving agentic reward framework that adapts tools and skills from 100 image-editing preference demonstrations and supplies scalar rewards for GRPO.",
+        "zh": "一种自演化智能体奖励框架，从 100 条图像编辑偏好示例中迭代工具与技能，并可为 GRPO 提供标量奖励。"
+      }
+    },
+    {
       "id": "2109.01652",
       "title": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
       "category": "instruction-tuning",
