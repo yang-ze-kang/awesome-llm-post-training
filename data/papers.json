@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-16",
+    "lastUpdated": "2026-08-17",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6806,6 +6806,126 @@
       "summary": {
         "en": "WIFA automatically pairs harmful and benign wrapped examples to teach models to refuse intent rather than surface forms, reducing over-refusal.",
         "zh": "WIFA自动配对有害和无害的包装示例，教导模型拒绝意图而非表面形式，减少过度拒绝。"
+      }
+    },
+    {
+      "id": "2608.14212",
+      "title": "APTER: Adaptive Post-Training with Expert-Grounded Rubrics",
+      "category": "reward-modeling",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14212",
+      "summary": {
+        "en": "Framework using expert-grounded rubrics for fine-grained evaluation and targeted post-training optimization in specialized domains.",
+        "zh": "利用专家制定的评分标准进行细粒度评估和针对性后训练优化的框架。"
+      }
+    },
+    {
+      "id": "2608.14277",
+      "title": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long-Context Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14277",
+      "summary": {
+        "en": "Tokenizer-agnostic on-policy distillation framework for transferring long-context reasoning from teachers to short-context students with stable training.",
+        "zh": "无关分词器的在策略蒸馏框架，用于从长上下文推理教师向短上下文学生稳定地转移能力。"
+      }
+    },
+    {
+      "id": "2608.14152",
+      "title": "Towards Efficient Multimodal and Multilingual Opinion Extraction for STI: A QLoRA-Based Fine-Tuning Approach",
+      "category": "peft",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14152",
+      "summary": {
+        "en": "QLoRA fine-tuning of VideoLLaMA2 for multilingual multimodal opinion extraction in science and technology intelligence.",
+        "zh": "使用QLoRA微调VideoLLaMA2进行科技情报中的多语言多模态观点提取。"
+      }
+    },
+    {
+      "id": "2608.14094",
+      "title": "P2Skill: Privacy Preserving Skill Distillation for Cloud-Local LLM Inference Systems",
+      "category": "distillation",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14094",
+      "summary": {
+        "en": "Prompt-based skill distillation method enabling local SLMs to handle PII-aware task decomposition and routing without privacy-specific fine-tuning.",
+        "zh": "无需隐私特定微调，通过提示词技能蒸馏使本地SLM能够处理PII感知的任务分解和路由。"
+      }
+    },
+    {
+      "id": "2608.13951",
+      "title": "HELIX: Model-Harness Co-evolution for Recursive Self-Improvement",
+      "category": "on-policy-distill",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13951",
+      "summary": {
+        "en": "Co-evolves agent harnesses and models through verified trajectory data, creating feedback between execution infrastructure and model training.",
+        "zh": "通过验证的轨迹数据共同演进代理执行框架和模型，在执行基础设施和模型训练之间创建反馈循环。"
+      }
+    },
+    {
+      "id": "2608.14492",
+      "title": "Approximate Muon with low-rank adapters",
+      "category": "peft",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14492",
+      "summary": {
+        "en": "sMuon adapts the Muon optimizer for parameter-efficient fine-tuning via low-rank approximation, improving over LoRA in SFT tasks.",
+        "zh": "sMuon通过低秩近似将Muon优化器适配参数高效微调，在SFT任务中超越LoRA。"
+      }
+    },
+    {
+      "id": "2608.14420",
+      "title": "More Correct Mass, Worse Answers: Why Power Sampling Can Fail and How to Fix It",
+      "category": "search",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14420",
+      "summary": {
+        "en": "Diagnoses and fixes Power Sampling's failure modes in test-time inference, proposing deformation-controlled sharpening to preserve reasoning diversity.",
+        "zh": "诊断并修复Power Sampling在测试时推理中的失效问题，提出变形控制的锐化方法以保持推理多样性。"
+      }
+    },
+    {
+      "id": "2608.14392",
+      "title": "Tripwire: Triggering Aligned Refusal via Statistically Certified Safety Neurons",
+      "category": "safety",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14392",
+      "summary": {
+        "en": "Training-free defense identifying safety neurons via hypothesis testing to trigger aligned refusal against jailbreaks with minimal utility loss.",
+        "zh": "通过假设检验识别安全神经元的无训练防御方法，触发对齐拒绝行为以抵御越狱攻击，同时最小化效用损失。"
+      }
+    },
+    {
+      "id": "2608.14221",
+      "title": "MathForm: Scaling Mathematical Autoformalization with Knowledge Retrieval and Verification-Guided Refinement",
+      "category": "data-synthesis",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14221",
+      "summary": {
+        "en": "Constructs verified autoformalization data via retrieval-guided generation and verification feedback, training MathForm-8B with SFT and RL.",
+        "zh": "通过检索引导生成和验证反馈构建验证的自形式化数据，用SFT和RL训练MathForm-8B。"
+      }
+    },
+    {
+      "id": "2608.13925",
+      "title": "CForce: Boosting Parallel Decoding for dLLMs via Consistency Forcing",
+      "category": "distillation",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13925",
+      "summary": {
+        "en": "Distillation method forcing early-stage mask predictions in diffusion LLMs to align with later stages for improved parallel decoding.",
+        "zh": "通过蒸馏方法使扩散LLM中早期阶段的掩码预测与后期阶段对齐，改进并行解码。"
       }
     }
   ]
