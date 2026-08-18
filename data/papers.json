@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-17",
+    "lastUpdated": "2026-08-18",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -6926,6 +6926,198 @@
       "summary": {
         "en": "Distillation method forcing early-stage mask predictions in diffusion LLMs to align with later stages for improved parallel decoding.",
         "zh": "通过蒸馏方法使扩散LLM中早期阶段的掩码预测与后期阶段对齐，改进并行解码。"
+      }
+    },
+    {
+      "id": "2608.16333",
+      "title": "Step-Level On-Policy Distillation: Interpolating Between On-Policy Distillation and Supervised Fine-Tuning",
+      "category": "on-policy-distill",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16333",
+      "summary": {
+        "en": "Step-level on-policy distillation bridges SFT and OPD by providing trajectory-level corrections on student-generated rollouts.",
+        "zh": "步级在策蒸馏通过对学生生成的轨迹提供完整纠正，在监督微调和在策蒸馏之间架起桥梁。"
+      }
+    },
+    {
+      "id": "2608.00220",
+      "title": "Verifier-Induced Support Reshaping in On-Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-07-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.00220",
+      "summary": {
+        "en": "Analyzes how on-policy RL with verifiable rewards reduces support for successful behaviors, harming future trainability despite immediate gains.",
+        "zh": "分析可验证奖励的在线强化学习如何减少成功行为的支持，尽管立即收益但损害未来可训练性。"
+      }
+    },
+    {
+      "id": "2608.16316",
+      "title": "Deep Thought Alignment: Trajectory-Level Latent Distillation for Video Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16316",
+      "summary": {
+        "en": "Latent-OPD augments on-policy distillation with trajectory-level latent representation matching for efficient video reasoning model compression.",
+        "zh": "Latent-OPD通过轨迹级隐层表示匹配增强在线策略蒸馏，用于高效的视频推理模型压缩。"
+      }
+    },
+    {
+      "id": "2608.16553",
+      "title": "STAGE: Controlled Objective Admission for Multi-Preference LLM Alignment",
+      "category": "rlhf-ppo",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16553",
+      "summary": {
+        "en": "Proposes STAGE, a stability-guided controller for sequentially admitting reward objectives during multi-preference RLHF, improving over simultaneous scalarization.",
+        "zh": "提出STAGE方法，在多偏好RLHF中通过稳定性引导逐步引入奖励目标，优于同步标量化方法。"
+      }
+    },
+    {
+      "id": "2608.16539",
+      "title": "Listen, Reason, and Segment: Aligning LALMs with Editorial Judgment for Media Chapterization",
+      "category": "rlvr",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16539",
+      "summary": {
+        "en": "Post-training framework using GRPO with CoT reasoning to align LALMs for audio chapterization with verifiable editorial judgment boundaries.",
+        "zh": "使用GRPO和CoT推理的后训练框架，将大型音频语言模型与可验证的编辑判断边界对齐，用于音频分章。"
+      }
+    },
+    {
+      "id": "2608.16620",
+      "title": "Palmyra x6 Technical Report: An Agentic, Tool-Use Model Post-Trained via Anchored Supervised Fine-Tuning",
+      "category": "instruction-tuning",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16620",
+      "summary": {
+        "en": "Post-trains MoE model via Anchored SFT on synthetic tool-use trajectories with conservative training recipe and KL regularization.",
+        "zh": "通过锚定监督微调在合成工具使用轨迹上后训练MoE模型，采用保守训练策略和KL正则化。"
+      }
+    },
+    {
+      "id": "2608.16419",
+      "title": "PertMind: Eliciting Emergent Biological Reasoning in LLM via Reinforcement Learning on Cellular Perturbation Data",
+      "category": "rlvr",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16419",
+      "summary": {
+        "en": "RL framework using cellular perturbation data as reward signals to train LLMs for biological reasoning without manual annotation.",
+        "zh": "使用细胞扰动数据作为奖励信号的强化学习框架,无需人工标注即可训练生物推理LLM。"
+      }
+    },
+    {
+      "id": "2608.16831",
+      "title": "Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning",
+      "category": "rlaif",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16831",
+      "summary": {
+        "en": "Uses LM critic and expert feedback to iteratively improve in-context policies for rare-disease diagnosis via natural-language policy revision.",
+        "zh": "使用语言模型评论者和专家反馈迭代改进上下文内策略，用于罕见病诊断的自然语言策略修订。"
+      }
+    },
+    {
+      "id": "2608.13760",
+      "title": "Amplified Does Not Mean Predictive: Reasoning Behaviors in Thinking Models",
+      "category": "cot-reasoning",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13760",
+      "summary": {
+        "en": "Analyzes which reasoning behaviors correlate with correctness in thinking models, revealing a gap between amplified and predictive behaviors.",
+        "zh": "分析推理模型中哪些推理行为与正确性相关，揭示被放大的行为与预测性行为之间的差距。"
+      }
+    },
+    {
+      "id": "2608.16647",
+      "title": "Every Coin Has Two Sides: On the Dual Nature of Generalization in On-Policy Distillation of Large Language Models",
+      "category": "on-policy-distill",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16647",
+      "summary": {
+        "en": "Systematic study of on-policy distillation generalization across domains, showing teachers transfer reasoning behavior rather than answers.",
+        "zh": "系统研究在策略蒸馏的泛化特性，显示教师转移推理行为而非答案。"
+      }
+    },
+    {
+      "id": "2608.16554",
+      "title": "Ask, Condition or Abstain: Reinforcement Learning for Missing-Premise Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16554",
+      "summary": {
+        "en": "RL framework training models to ask, condition, or abstain on underspecified problems with verifiable reasoning graphs and structured rewards.",
+        "zh": "使用可验证推理图和结构化奖励的RL框架，训练模型在欠定问题上提问、条件化或弃权。"
+      }
+    },
+    {
+      "id": "2608.13667",
+      "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
+      "category": "search",
+      "date": "2026-08-13",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13667",
+      "summary": {
+        "en": "Training-free inference framework that parallelize reasoning during agent action-observation intervals to reduce sequential decoding latency.",
+        "zh": "无需训练的推理框架，在智能体行动-观察间隔中并行化推理以减少顺序解码延迟。"
+      }
+    },
+    {
+      "id": "2608.16742",
+      "title": "TDD-Agent: Test-Driven Reasoning for Code Generation",
+      "category": "search",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16742",
+      "summary": {
+        "en": "Uses test-driven development with iterative refinement and execution feedback to guide code generation through test-first reasoning.",
+        "zh": "通过测试优先推理和迭代细化使用执行反馈来指导代码生成。"
+      }
+    },
+    {
+      "id": "2608.16577",
+      "title": "BabelSteering: Multilingual Safety Alignment via English Steering Vectors",
+      "category": "safety",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16577",
+      "summary": {
+        "en": "Activation steering method using English safety vectors to extend refusal capabilities across eight languages at inference time.",
+        "zh": "利用英文安全向量的激活转向方法，在推理时将拒绝能力扩展到八种语言。"
+      }
+    },
+    {
+      "id": "2608.16425",
+      "title": "ParaTempo: Efficient Parallel Reasoning via Temporal Confidence",
+      "category": "search",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16425",
+      "summary": {
+        "en": "Training-free framework for parallel reasoning that uses temporal confidence to adaptively prune branches and allocate compute during generation.",
+        "zh": "无需训练的并行推理框架,通过时间置信度自适应地剪枝分支并在生成过程中分配计算资源。"
+      }
+    },
+    {
+      "id": "2608.16386",
+      "title": "Mint-Agent: Introducing Finance-Native Agentic Foundation Models",
+      "category": "on-policy-distill",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16386",
+      "summary": {
+        "en": "Finance-native models combining SFT, critical-step OPD, and RLVR with multi-teacher on-policy distillation for reliable and executable financial agents.",
+        "zh": "结合SFT、critical-step OPD和RLVR的金融专用模型，通过多教师在线策略蒸馏实现可靠和可执行的金融智能体。"
       }
     }
   ]
