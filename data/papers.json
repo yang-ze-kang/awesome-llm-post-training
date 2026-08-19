@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-18",
+    "lastUpdated": "2026-08-19",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7118,6 +7118,234 @@
       "summary": {
         "en": "Finance-native models combining SFT, critical-step OPD, and RLVR with multi-teacher on-policy distillation for reliable and executable financial agents.",
         "zh": "结合SFT、critical-step OPD和RLVR的金融专用模型，通过多教师在线策略蒸馏实现可靠和可执行的金融智能体。"
+      }
+    },
+    {
+      "id": "2608.17301",
+      "title": "SignalReasoner: Assessing the Upper Bound of 3B Models for Signal Mathematical Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17301",
+      "summary": {
+        "en": "Applies verifiable-reward RL (GRPO, GSPO, GMPO) and domain-specific CoT SFT to improve 3B models on signal processing math reasoning.",
+        "zh": "将可验证奖励RL（GRPO、GSPO、GMPO）和领域特定CoT SFT应用于信号处理数学推理3B模型的改进。"
+      }
+    },
+    {
+      "id": "2608.15869",
+      "title": "Beyond Visual CoT: Internalized Visual Thinking for Proactive Video Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-08-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.15869",
+      "summary": {
+        "en": "Post-training framework that internalizes visual reasoning during training to enable efficient video reasoning without inference-time visual synthesis.",
+        "zh": "训练框架在后训练阶段内化视觉推理，实现无需推理时视觉合成的高效视频推理。"
+      }
+    },
+    {
+      "id": "2608.17310",
+      "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17310",
+      "summary": {
+        "en": "Evolution strategies for full-parameter fine-tuning of long-horizon LLM agents with minimal GPU memory and better credit assignment.",
+        "zh": "用进化策略对长时间视野LLM智能体进行全参数微调，显著降低GPU内存需求并改进信用分配。"
+      }
+    },
+    {
+      "id": "2608.17941",
+      "title": "Efficient RLVR Scheduling via Graph-Structured Online Difficulty Estimation",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17941",
+      "summary": {
+        "en": "Graph-based online difficulty estimator for adaptive RLVR scheduling that shares feedback across related samples without dedicated probing.",
+        "zh": "基于图的在线难度估计器，用于自适应RLVR调度，在不额外探测的情况下跨相关样本共享反馈。"
+      }
+    },
+    {
+      "id": "2608.17804",
+      "title": "An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17804",
+      "summary": {
+        "en": "Empirical study of reward specification challenges in GRPO-based LLM unlearning, showing optimization success doesn't guarantee behavioral alignment.",
+        "zh": "GRPO 基础 LLM 遗忘中奖励规范设计的实证研究,揭示优化成功不等于行为对齐。"
+      }
+    },
+    {
+      "id": "2608.17776",
+      "title": "Debate Training Reduces Reward Hacking in RLAIF",
+      "category": "rlaif",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17776",
+      "summary": {
+        "en": "Debate training between generator and critic reduces reward hacking in RLAIF by preventing policy exploitation of weaker AI judges.",
+        "zh": "生成器与评论者之间的辩论训练通过防止策略利用较弱的AI评判者，减少了RLAIF中的奖励黑客攻击。"
+      }
+    },
+    {
+      "id": "2608.17638",
+      "title": "Beyond the Trace: Coupling an Interpretable Reasoning-State Readout to Native MoE Routing",
+      "category": "search",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17638",
+      "summary": {
+        "en": "Interpretable internal readout for MoE reasoning models that guides test-time decision-making and generation control via routing statistics.",
+        "zh": "为MoE推理模型设计可解释的内部读取机制，通过路由统计指导测试时决策和生成控制。"
+      }
+    },
+    {
+      "id": "2608.17411",
+      "title": "GUPO: Gradient Uncertainty-aware Policy Optimization for Post-Training Large Language Models",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17411",
+      "summary": {
+        "en": "Addresses gradient conflicts in GRPO by modeling group gradients as random variables and using uncertainty to calibrate their contributions.",
+        "zh": "通过将组梯度建模为随机变量并使用不确定性校准其贡献来解决GRPO中的梯度冲突问题。"
+      }
+    },
+    {
+      "id": "2608.17253",
+      "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17253",
+      "summary": {
+        "en": "Multi-agent RL framework where diverse model cohorts generate peer rewards, enabling unsupervised reasoning without ground-truth labels or collapse.",
+        "zh": "多智能体强化学习框架，通过多样化模型群体相互生成奖励信号，实现无监督推理而不需真值标签或训练崩溃。"
+      }
+    },
+    {
+      "id": "2608.17744",
+      "title": "Thinking in a Low-Resource Language: What SFT Builds, What RL Fixes, What Accuracy Cannot See",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17744",
+      "summary": {
+        "en": "Uses RL with verifiable rewards to fix SFT defects in low-resource language reasoning, measuring behavioral changes beyond accuracy.",
+        "zh": "使用可验证奖励的强化学习修复SFT在低资源语言推理中的缺陷，衡量准确度之外的行为变化。"
+      }
+    },
+    {
+      "id": "2608.17528",
+      "title": "Agent Lightning v1.0: Towards Harnessed Agentic RL",
+      "category": "tools",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17528",
+      "summary": {
+        "en": "Framework for harnessed agentic RL where deploy-time agent harnesses directly participate in model post-training with RL optimization.",
+        "zh": "用于代理强化学习的框架，其中部署时的代理工具直接参与模型后训练中的强化学习优化。"
+      }
+    },
+    {
+      "id": "2608.17443",
+      "title": "Structure-Internalized Rule Language Model for Faithful Knowledge Graph Reasoning",
+      "category": "rlvr",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17443",
+      "summary": {
+        "en": "Proposes SIRLM, integrating structural KG rules into LLM training (SFT/GRPO) via rule generation and neuro-symbolic reasoning for faithful knowledge graph reasoning.",
+        "zh": "提出SIRLM，通过规则生成和神经符号推理将结构化KG规则集成到LLM训练（SFT/GRPO）中，用于忠实的知识图谱推理。"
+      }
+    },
+    {
+      "id": "2608.17162",
+      "title": "OraclePhys: A Systematic Framework for LLM Fine-Tuning on Structural Mechanics",
+      "category": "data-synthesis",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17162",
+      "summary": {
+        "en": "Systematic study of how answer form and supervision design in fine-tuning datasets causally determines what models learn, using physics benchmarks with oracle grading.",
+        "zh": "系统研究微调数据集中答案形式和监督设计如何因果决定模型学习内容，使用具有预言机评分的物理基准。"
+      }
+    },
+    {
+      "id": "2608.16072",
+      "title": "Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-08-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16072",
+      "summary": {
+        "en": "Adaptive multi-reward optimization that reallocates gradient budget from saturated objectives to under-optimized ones using saturation-aware advantage reweighting.",
+        "zh": "自适应多奖励优化方法，通过饱和度感知的优势重加权将梯度预算从已饱和目标重新分配到欠优化目标。"
+      }
+    },
+    {
+      "id": "2608.18011",
+      "title": "The IOL-AI Challenge: An Open Challenge towards Advancing Linguistic Reasoning",
+      "category": "benchmarks",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18011",
+      "summary": {
+        "en": "IOL-AI Challenge: A benchmark for linguistic reasoning on unseen International Linguistics Olympiad problems, evaluating both automated and jury-based metrics.",
+        "zh": "IOL-AI挑战：基于国际语言学奥林匹克未见问题的语言推理基准，采用自动评估和评委评分两种方式。"
+      }
+    },
+    {
+      "id": "2608.17515",
+      "title": "Beyond FLOPs: Energy-Aware Knowledge Distillation for Sustainable LLMs on Code-Related Task",
+      "category": "distillation",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17515",
+      "summary": {
+        "en": "Energy-aware knowledge distillation for code LLMs using energy surrogates outperforms FLOPs-based optimization, reducing inference energy by up to 90%.",
+        "zh": "使用能量代理的代码LLM能量感知知识蒸馏优于基于FLOPs的优化，推理能耗可减少90%。"
+      }
+    },
+    {
+      "id": "2608.17379",
+      "title": "PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+      "category": "instruction-tuning",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17379",
+      "summary": {
+        "en": "Benchmark for adapting LLMs to GPU kernel optimization via PTX, with supervised fine-tuning and repair-conditioned training.",
+        "zh": "用于适配LLM进行GPU内核优化的基准测试，采用监督微调和修复条件训练。"
+      }
+    },
+    {
+      "id": "2608.15265",
+      "title": "VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?",
+      "category": "on-policy-distill",
+      "date": "2026-08-14",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.15265",
+      "summary": {
+        "en": "Benchmark and RL framework for training multimodal agents to construct 3D worlds via tool use, reward modeling, and multi-turn interaction.",
+        "zh": "用于训练多模态智能体构建3D世界的基准和RL框架，涉及工具使用、奖励建模和多轮交互。"
+      }
+    },
+    {
+      "id": "2608.16798",
+      "title": "ClawGym II: Exploring Black-Box RL on Agent Harness",
+      "category": "rlvr",
+      "date": "2026-08-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16798",
+      "summary": {
+        "en": "Black-box RL framework for optimizing agents through complex harnesses using PPO and GRPO with prefix-tree trajectory reconstruction.",
+        "zh": "用于通过复杂工具优化代理的黑盒强化学习框架，采用PPO和GRPO与前缀树轨迹重建。"
       }
     }
   ]
