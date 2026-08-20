@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-19",
+    "lastUpdated": "2026-08-20",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7346,6 +7346,210 @@
       "summary": {
         "en": "Black-box RL framework for optimizing agents through complex harnesses using PPO and GRPO with prefix-tree trajectory reconstruction.",
         "zh": "用于通过复杂工具优化代理的黑盒强化学习框架，采用PPO和GRPO与前缀树轨迹重建。"
+      }
+    },
+    {
+      "id": "2608.19181",
+      "title": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+      "category": "on-policy-distill",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19181",
+      "summary": {
+        "en": "Group-calibrated on-policy distillation aligns dense token guidance with verifier rewards for improved long-context reasoning.",
+        "zh": "组别校准的在线策略蒸馏将密集令牌指导与验证器奖励对齐，改进长上下文推理。"
+      }
+    },
+    {
+      "id": "2608.18574",
+      "title": "Continual Reasoning Gym: Diagnosing and Harnessing Shared Reasoning in Continual RLVR",
+      "category": "rlvr",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18574",
+      "summary": {
+        "en": "Studies continual RLVR for reasoning models, identifies shared reasoning structure, and proposes Continual Prompt Replay to match multitask performance.",
+        "zh": "研究推理模型的持续RLVR，识别共享推理结构，提出持续提示重放方法以匹配多任务性能。"
+      }
+    },
+    {
+      "id": "2608.18931",
+      "title": "Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck",
+      "category": "search",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18931",
+      "summary": {
+        "en": "Analyzes test-time scaling bottlenecks across open-ended tasks, showing exploitation (selection/ranking) rather than exploration limits gains.",
+        "zh": "分析开放式任务中的测试时缩放瓶颈，揭示利用（选择/排序）而非探索限制了性能提升。"
+      }
+    },
+    {
+      "id": "2608.18524",
+      "title": "DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents",
+      "category": "on-policy-distill",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18524",
+      "summary": {
+        "en": "Self-distillation framework for multi-turn tool-calling agents that uses topology-aware localized supervision to preserve policy diversity.",
+        "zh": "用于多轮工具调用代理的自蒸馏框架，通过拓扑感知的局部监督来保留策略多样性。"
+      }
+    },
+    {
+      "id": "2608.17512",
+      "title": "Embodied-Navigator: Point, Think, Memorize, and Align for Efficient Navigation",
+      "category": "rlvr",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17512",
+      "summary": {
+        "en": "Embodied navigation framework using VLMs with pixel-to-3D actions, selective reasoning, memory compression, and Group Relative Policy Optimization for efficient alignment.",
+        "zh": "使用VLM的具身导航框架，结合像素到3D动作、选择性推理、内存压缩和组相对策略优化实现高效对齐。"
+      }
+    },
+    {
+      "id": "2608.18884",
+      "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+      "category": "search",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18884",
+      "summary": {
+        "en": "Training-free inference-time self-reflection protocol with cost-bounded early stopping for reasoning verification on frozen LLMs.",
+        "zh": "无需训练的推理时自反思协议，具有成本受限的早停机制，用于冻结模型的推理验证。"
+      }
+    },
+    {
+      "id": "2608.18324",
+      "title": "Governance Records as Supervision: Verifier-Selected Self-Training for Structured Workflow Repair",
+      "category": "reward-modeling",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18324",
+      "summary": {
+        "en": "Uses verifier-generated governance records as supervision signals to fine-tune smaller models on structured workflow tasks without oracle targets.",
+        "zh": "使用验证器生成的治理记录作为监督信号，在结构化工作流任务上微调小型模型，无需预言机目标。"
+      }
+    },
+    {
+      "id": "2608.18271",
+      "title": "Rethinking Privileged Information in On-Policy Self-Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18271",
+      "summary": {
+        "en": "Investigates whether on-policy self-distillation gains come from learning privileged reference information or recovering base model reasoning behavior.",
+        "zh": "调查在线自蒸馏的性能提升是来自学习特权参考信息，还是恢复基础模型推理行为。"
+      }
+    },
+    {
+      "id": "2608.18242",
+      "title": "ClosureBench: A Constructive Benchmark for Compositional Graph Reasoning",
+      "category": "benchmarks",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18242",
+      "summary": {
+        "en": "Constructive benchmark for compositional graph reasoning with programmatic verification, revealing memorization gaps and program synthesis advantages.",
+        "zh": "用于组合图推理的构造性基准，具有程序验证，揭示记忆化差距和程序合成优势。"
+      }
+    },
+    {
+      "id": "2608.19098",
+      "title": "Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19098",
+      "summary": {
+        "en": "Diagnoses and fixes capability imbalance in multi-teacher on-policy distillation through token-share balancing and dynamic budget allocation.",
+        "zh": "通过token共享平衡和动态预算分配诊断并修复多教师在线蒸馏中的能力不平衡问题。"
+      }
+    },
+    {
+      "id": "2608.19072",
+      "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
+      "category": "tools",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19072",
+      "summary": {
+        "en": "Empirical analysis of AI agents' post-training capabilities, identifying that agents lack mechanisms for dynamic strategy reevaluation during execution.",
+        "zh": "对AI代理后训练能力的实证分析，发现代理缺乏在执行期间动态重新评估策略的机制。"
+      }
+    },
+    {
+      "id": "2608.18952",
+      "title": "rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation",
+      "category": "distillation",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18952",
+      "summary": {
+        "en": "Distills LLM reasoning into editable memory channels for efficient, lightweight recommendation ranking without repeated teacher inference.",
+        "zh": "将LLM推理蒸馏到可编辑内存通道中，实现高效轻量级推荐排序，无需重复调用教师模型。"
+      }
+    },
+    {
+      "id": "2608.18628",
+      "title": "When Safety Overrides Vision: Exploring Dynamics between Vision Influence and Safety Alignment in Vision-Language Models",
+      "category": "safety",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18628",
+      "summary": {
+        "en": "Investigates how safety alignment in VLMs causes abstention by altering late-stage decoding dynamics while preserving visual grounding internally.",
+        "zh": "研究VLM中安全对齐如何通过改变解码动态导致拒答，同时保留内部视觉理解。"
+      }
+    },
+    {
+      "id": "2608.18531",
+      "title": "Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson",
+      "category": "dpo",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18531",
+      "summary": {
+        "en": "Compares pairwise ranking against single-action RL (PPO, GRPO, DPO) for offline explanation selection, showing learning-to-rank outperforms RL methods.",
+        "zh": "比较成对排序与单动作强化学习(PPO、GRPO、DPO)用于离线解释选择，证明学习排序优于RL方法。"
+      }
+    },
+    {
+      "id": "2608.18379",
+      "title": "Selection, Recombination, or a Fresh Solve? A Candidate-Free Control for Single-Pass Test-Time Aggregation",
+      "category": "search",
+      "date": "2026-08-18",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18379",
+      "summary": {
+        "en": "Investigates whether test-time aggregation of wrong candidates helps or hurts reasoning; introduces candidate-free control baseline.",
+        "zh": "研究错误候选的测试时聚合是否有益；引入无候选对照基线。"
+      }
+    },
+    {
+      "id": "2608.18933",
+      "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+      "category": "on-policy-distill",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18933",
+      "summary": {
+        "en": "Self-distillation framework that synthesizes project-specific issues to teach LLM agents repository-grounded skills before solving real issues.",
+        "zh": "自蒸馏框架，通过合成项目特定问题教会LLM代理仓库知识，在解决真实问题前获取可复用技能。"
+      }
+    },
+    {
+      "id": "2608.18580",
+      "title": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+      "category": "data-synthesis",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18580",
+      "summary": {
+        "en": "Framework for synthesizing high-quality terminal tasks with executable verification by preserving source intent and maintaining consistent environment state across task artifacts.",
+        "zh": "通过保留源意图和维护任务工件间的一致环境状态，合成高质量终端任务及其可执行验证的框架。"
       }
     }
   ]
