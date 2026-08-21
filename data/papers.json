@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-20",
+    "lastUpdated": "2026-08-21",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7550,6 +7550,198 @@
       "summary": {
         "en": "Framework for synthesizing high-quality terminal tasks with executable verification by preserving source intent and maintaining consistent environment state across task artifacts.",
         "zh": "通过保留源意图和维护任务工件间的一致环境状态，合成高质量终端任务及其可执行验证的框架。"
+      }
+    },
+    {
+      "id": "2608.19598",
+      "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
+      "category": "dpo",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19598",
+      "summary": {
+        "en": "Extends DPO to multimodal LLMs by incorporating visual preference signals to mitigate visual insensitivity and hallucinations.",
+        "zh": "通过融入视觉偏好信号将DPO扩展到多模态LLM，以减轻视觉不敏感性和幻觉问题。"
+      }
+    },
+    {
+      "id": "2608.20256",
+      "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
+      "category": "rlvr",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20256",
+      "summary": {
+        "en": "Trains models to adaptively allocate reasoning tokens via GRPO, learning to choose between three reasoning modes based on problem difficulty.",
+        "zh": "通过GRPO训练模型自适应分配推理tokens，学习根据问题难度在三种推理模式间选择。"
+      }
+    },
+    {
+      "id": "2608.19800",
+      "title": "LoRA-GA$^2$: Low Rank Adaptation with Multi-step Gradient Adaptive Alignment",
+      "category": "peft",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19800",
+      "summary": {
+        "en": "Improves LoRA by leveraging multi-step gradient information for better rank allocation and initialization, reducing the performance gap with full fine-tuning.",
+        "zh": "通过利用多步梯度信息改进LoRA的秩分配和初始化，缩小与全量微调的性能差距。"
+      }
+    },
+    {
+      "id": "2608.19748",
+      "title": "Truncate Bad, Upweight Good: BoN-Style Distillation via Rank-Based Classification",
+      "category": "on-policy-distill",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19748",
+      "summary": {
+        "en": "Distills Best-of-N inference via truncation and rank-based reweighting, removing low-ranked completions while upweighting retained high-ranked ones.",
+        "zh": "通过截断和基于排名的重新加权来蒸馏Best-of-N推理，移除低排名完成而增加保留的高排名完成的权重。"
+      }
+    },
+    {
+      "id": "2608.19408",
+      "title": "Beyond Imitation: Filtering On-Policy Distillation by Reasoning Progress",
+      "category": "on-policy-distill",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19408",
+      "summary": {
+        "en": "Filters on-policy distillation rewards by detecting conflicts between teacher guidance and genuine reasoning progress, improving reasoning via selective supervision.",
+        "zh": "通过检测教师指导与真实推理进展之间的冲突来过滤在线蒸馏奖励，通过选择性监督改进推理能力。"
+      }
+    },
+    {
+      "id": "2608.20290",
+      "title": "Phantom Gains: Auditing Self-Improvement Against a Measured Null",
+      "category": "benchmarks",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20290",
+      "summary": {
+        "en": "Audits self-training measurement artifacts using rigorous statistical controls, revealing false improvements and proposing exact tests for transition-level evaluation.",
+        "zh": "使用严格的统计对照审计自训练测量偏差，揭示虚假改进并提出精确的转移级评估方法。"
+      }
+    },
+    {
+      "id": "2608.20281",
+      "title": "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization",
+      "category": "data-synthesis",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20281",
+      "summary": {
+        "en": "Three-stage post-training framework for internalizing document knowledge into LLMs via structured injection, QA alignment, and capability recovery.",
+        "zh": "通过结构化注入、QA对齐和能力恢复将文档知识内化到LLM的三阶段后训练框架。"
+      }
+    },
+    {
+      "id": "2608.20331",
+      "title": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
+      "category": "reward-modeling",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20331",
+      "summary": {
+        "en": "Proposes G-CARL, a checklist-aligned RL framework for medical report interpretation combining retrieval-based factuality verification with instance-specific reward modeling.",
+        "zh": "提出G-CARL框架，结合检索式事实验证和实例特定的奖励建模，用于医学报告解释的对齐强化学习。"
+      }
+    },
+    {
+      "id": "2608.20318",
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "category": "benchmarks",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20318",
+      "summary": {
+        "en": "Benchmark for evaluating LLM agents' ability to design and optimize training algorithms for recursive self-improvement.",
+        "zh": "评估LLM智能体设计和优化训练算法以实现递归自我改进能力的基准测试。"
+      }
+    },
+    {
+      "id": "2608.20314",
+      "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+      "category": "data-synthesis",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20314",
+      "summary": {
+        "en": "Open corpus pipeline synthesizing tool-use data from APIs and documents for mid-training agentic LLM capabilities.",
+        "zh": "从API和文档合成工具使用数据的开放语料库流程，用于中期训练智能体LLM能力。"
+      }
+    },
+    {
+      "id": "2608.19825",
+      "title": "Towards Clinically Faithful Medical Image Captioning via Enhanced Vision-Language Alignment",
+      "category": "rlvr",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19825",
+      "summary": {
+        "en": "Combines inference reranking and RL-based reward optimization to improve clinical alignment in medical image captioning.",
+        "zh": "结合推理时重排序和基于奖励的强化学习优化来提升医学图像字幕的临床对齐。"
+      }
+    },
+    {
+      "id": "2608.18171",
+      "title": "Looped Language Models Improve Compositional Tool Calling",
+      "category": "search",
+      "date": "2026-08-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18171",
+      "summary": {
+        "en": "Looped language models with recurrent computation improve compositional tool calling and multi-step API coordination through adaptive inference.",
+        "zh": "循环语言模型通过自适应推理改进组合工具调用和多步API协调。"
+      }
+    },
+    {
+      "id": "2608.15964",
+      "title": "LLMs Get Smarter from Targeted Synthetic Multilingual Data",
+      "category": "data-synthesis",
+      "date": "2026-08-15",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.15964",
+      "summary": {
+        "en": "Data generation framework that probes multilingual weaknesses and synthesizes targeted training data to improve cross-lingual model performance.",
+        "zh": "数据生成框架，通过探测多语言弱点并合成有针对性的训练数据来改进跨语言模型性能。"
+      }
+    },
+    {
+      "id": "2608.20123",
+      "title": "Discrete Diffusion Inference-Time Control with Nested Sequential Monte Carlo",
+      "category": "search",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20123",
+      "summary": {
+        "en": "Nested SMC methods for inference-time steering of discrete diffusion language models toward sequence-level rewards without retraining.",
+        "zh": "使用嵌套SMC方法在推理时引导离散扩散语言模型朝向序列级奖励，无需重新训练。"
+      }
+    },
+    {
+      "id": "2608.20099",
+      "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
+      "category": "reward-modeling",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20099",
+      "summary": {
+        "en": "Applies reward modeling and RL fine-tuning to optimize multi-agent communication topologies for efficiency while maintaining task performance.",
+        "zh": "应用奖励建模和强化学习微调来优化多智能体通信拓扑，在保持任务性能的同时提高效率。"
+      }
+    },
+    {
+      "id": "2608.19842",
+      "title": "SAPO: Single-Rollout Autoregressive Policy Optimization for Agentic Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19842",
+      "summary": {
+        "en": "Single-rollout policy optimization framework with shared autoregressive backbone for memory-efficient agentic RL fine-tuning.",
+        "zh": "具有共享自回归骨干的单轨迹策略优化框架，用于内存高效的智能体RL微调。"
       }
     }
   ]
