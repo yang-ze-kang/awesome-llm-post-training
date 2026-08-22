@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-21",
+    "lastUpdated": "2026-08-22",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7742,6 +7742,42 @@
       "summary": {
         "en": "Single-rollout policy optimization framework with shared autoregressive backbone for memory-efficient agentic RL fine-tuning.",
         "zh": "具有共享自回归骨干的单轨迹策略优化框架，用于内存高效的智能体RL微调。"
+      }
+    },
+    {
+      "id": "2608.20129",
+      "title": "Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving",
+      "category": "rlvr",
+      "date": "2026-08-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20129",
+      "summary": {
+        "en": "Hybrid autonomous driving framework combining PPO-trained RL with LLM-based reasoning to iteratively refine reward functions.",
+        "zh": "混合自动驾驶框架，结合PPO训练的强化学习和基于LLM的推理来迭代优化奖励函数。"
+      }
+    },
+    {
+      "id": "2608.19197",
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "category": "rlvr",
+      "date": "2026-08-19",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19197",
+      "summary": {
+        "en": "Self-play RL framework where an LLM designs adaptive training environments while learning to solve them, improving reasoning and tool-use.",
+        "zh": "自玩强化学习框架，LLM同时设计自适应训练环境和学习解决，改进推理和工具使用能力。"
+      }
+    },
+    {
+      "id": "2608.18027",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "category": "search",
+      "date": "2026-08-17",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18027",
+      "summary": {
+        "en": "Studies how LLMs improve through iterative test-time feedback loops, combining self-feedback and environmental signals for continual inference-time learning.",
+        "zh": "研究LLM如何通过迭代测试时反馈循环改进，结合自反馈和环境信号实现持续推理时学习。"
       }
     }
   ]
