@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-22",
+    "lastUpdated": "2026-08-23",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7778,6 +7778,18 @@
       "summary": {
         "en": "Studies how LLMs improve through iterative test-time feedback loops, combining self-feedback and environmental signals for continual inference-time learning.",
         "zh": "研究LLM如何通过迭代测试时反馈循环改进，结合自反馈和环境信号实现持续推理时学习。"
+      }
+    },
+    {
+      "id": "2608.13120",
+      "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "category": "data-synthesis",
+      "date": "2026-08-12",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13120",
+      "summary": {
+        "en": "Multi-turn user simulation generates trustworthy feedback for iterative skill evolution with active governance to prevent degradation.",
+        "zh": "多轮用户模拟生成可信反馈用于迭代技能演化，配合主动治理防止性能退化。"
       }
     }
   ]
