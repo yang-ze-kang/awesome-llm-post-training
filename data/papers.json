@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-08-24",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -7790,6 +7790,126 @@
       "summary": {
         "en": "Multi-turn user simulation generates trustworthy feedback for iterative skill evolution with active governance to prevent degradation.",
         "zh": "多轮用户模拟生成可信反馈用于迭代技能演化，配合主动治理防止性能退化。"
+      }
+    },
+    {
+      "id": "2608.21265",
+      "title": "Memory Augmentation Unlocks Efficient Chain-of-Thought Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21265",
+      "summary": {
+        "en": "Training-free memory augmentation framework that compresses Chain-of-Thought reasoning by retrieving reusable reasoning patterns as prefill scaffolds.",
+        "zh": "训练无关的记忆增强框架，通过检索可复用推理模式作为预填充支架来压缩链式思维推理。"
+      }
+    },
+    {
+      "id": "2608.21030",
+      "title": "COMET: Contrastive Motion-Enhanced Temporal Reasoning for Video Multimodal Large Language Models",
+      "category": "rlvr",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21030",
+      "summary": {
+        "en": "Temporal reasoning for video MLLMs via motion-enhanced features and forward-reverse TC-GRPO optimization with directional signals.",
+        "zh": "通过运动增强特征和前向反向TC-GRPO优化增强视频MLLM的时间推理能力。"
+      }
+    },
+    {
+      "id": "2608.20794",
+      "title": "Knowing but Not Saying: Preventing Factual Access Failures in LLM SFT via Recall-Anchored Distillation",
+      "category": "distillation",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20794",
+      "summary": {
+        "en": "Recall-Anchored Distillation preserves out-of-distribution factual knowledge during SFT by aligning adapted models with base model soft distributions.",
+        "zh": "回忆锚定蒸馏通过将适配模型与基础模型的软分布对齐，在SFT期间保留分布外的事实知识。"
+      }
+    },
+    {
+      "id": "2608.12781",
+      "title": "Beyond Correctness: Benchmarking and Aligning Response Behaviors in Hybrid-Thinking MLLMs",
+      "category": "reward-modeling",
+      "date": "2026-08-16",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12781",
+      "summary": {
+        "en": "Introduces PatternRM and PatternRL to align response behaviors between thinking and non-thinking modes in hybrid MLLMs using pattern-specific reward penalties.",
+        "zh": "提出PatternRM和PatternRL，使用模式特定的奖励惩罚来对齐混合思维多模态大模型的思维和非思维模式间的响应行为。"
+      }
+    },
+    {
+      "id": "2608.21278",
+      "title": "CLEAR: Continuous Latent Adapter Routing for Utility-Preserving LLM Safety Alignment",
+      "category": "safety",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21278",
+      "summary": {
+        "en": "Conditional safety adapter routing framework using lightweight gating to balance safety improvements with utility preservation during LLM alignment.",
+        "zh": "使用轻量级门控的条件安全适配器路由框架，在LLM对齐过程中平衡安全性改进与实用性保持。"
+      }
+    },
+    {
+      "id": "2608.21170",
+      "title": "Is Visual Prompting All You Need? Studying VLM Spatial Reasoning under Progressive Visual Scaffolds",
+      "category": "cot-reasoning",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21170",
+      "summary": {
+        "en": "Shows visual scaffolds improve VLM spatial reasoning and complement GRPO training by reducing grounding errors.",
+        "zh": "展示视觉脚手架改进VLM空间推理并通过减少接地错误来补充GRPO训练。"
+      }
+    },
+    {
+      "id": "2608.20831",
+      "title": "STAR-OPD: Structured Aspect-Cascade-Aware On-Policy Reward Distillation for ABSA Quadruple Extraction",
+      "category": "on-policy-distill",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20831",
+      "summary": {
+        "en": "On-policy distillation with structured rewards for ABSA quadruple extraction, addressing student-induced structural errors in cascade models.",
+        "zh": "针对ABSA四元组提取的结构化奖励在线蒸馏方法，解决级联模型中学生诱导的结构错误。"
+      }
+    },
+    {
+      "id": "2608.20771",
+      "title": "CAS: Conformalized Agentic Search via Adaptive Retrieval and Policy Weighting",
+      "category": "rlvr",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20771",
+      "summary": {
+        "en": "Uses conformal prediction to improve reliability of search agents during RL fine-tuning via adaptive retrieval and confidence-weighted policy optimization.",
+        "zh": "通过自适应检索和置信度加权的策略优化，使用共形预测提高搜索智能体在RL微调中的可靠性。"
+      }
+    },
+    {
+      "id": "2608.20717",
+      "title": "DirEAG: Dirichlet Evidence Aggregation for Calibrating Verbalized Confidence in Mathematical Reasoning",
+      "category": "reward-modeling",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20717",
+      "summary": {
+        "en": "Calibrates verbalized confidence in LLM reasoning by aggregating multiple confidence-steering prompts using Dirichlet evidence aggregation.",
+        "zh": "通过Dirichlet证据聚合方法聚合多个置信度引导提示，以校准LLM推理中的言语置信度。"
+      }
+    },
+    {
+      "id": "2608.20953",
+      "title": "Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs",
+      "category": "distillation",
+      "date": "2026-08-21",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20953",
+      "summary": {
+        "en": "Quantization-Aware Healing distills compressed 4-bit models from original uncompressed teachers, recovering reasoning and task performance efficiently.",
+        "zh": "量化感知恢复通过从原始未压缩模型蒸馏压缩的4比特模型，高效恢复推理和任务性能。"
       }
     }
   ]
