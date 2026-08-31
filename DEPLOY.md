@@ -1,86 +1,85 @@
 # Deployment guide
 
-One-time setup to get the site live and the daily crawler running.
+One-time setup for the GitHub Pages site, daily GPT-5.6 crawler, and crawl-usage dashboard.
 
-## 1. Push to GitHub
+## 1. Push the repository
 
 ```bash
-cd awesome-llm-post-training
 git init
 git add .
-git commit -m "Initial commit: Awesome LLM Post-Training site + crawler"
+git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/<you>/<repo>.git
 git push -u origin main
 ```
 
+If this is a fork, the remote is already configured.
+
 ## 2. Enable GitHub Pages
 
-1. Repo → **Settings** → **Pages**.
+1. Open **Settings → Pages** in the repository.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Run **Deploy to GitHub Pages** once from the Actions tab, or push to `main`.
 
-The `pages.yml` workflow deploys on every push to `main`. After the first run,
-your site is at `https://<you>.github.io/<repo>/`.
+The site will be available at `https://<you>.github.io/<repo>/`.
 
-## 3. Add crawler secrets
+## 3. Configure the crawler
 
-The daily crawler calls Claude. Add these under
-**Settings → Secrets and variables → Actions**:
+Open **Settings → Secrets and variables → Actions**.
 
-**Secrets** (encrypted):
+### Required secret
 
-| Name                   | Value                                                        |
-| ---------------------- | ------------------------------------------------------------ |
-| `ANTHROPIC_AUTH_TOKEN` | Your API key / token.                                        |
-| `ANTHROPIC_BASE_URL`   | Your endpoint, e.g. `https://api.anthropic.com` or a proxy.  |
+| Name | Value |
+| --- | --- |
+| `OPENAI_API_KEY` | An OpenAI API key with access to the selected model. |
 
-**Variables** (optional, not secret):
+### Optional variables
 
-| Name              | Value                              |
-| ----------------- | ---------------------------------- |
-| `ANTHROPIC_MODEL` | e.g. `claude-haiku-4-5` (default). |
+| Name | Default | Notes |
+| --- | --- | --- |
+| `OPENAI_MODEL` | `gpt-5.6-terra` | Use `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`, or another supported model. |
+| `OPENAI_REASONING_EFFORT` | `low` | One of `none`, `low`, `medium`, `high`, `xhigh`, `max`. |
+| `OPENAI_BASE_URL` | `https://api.openai.com/v1` | Only needed for an OpenAI-compatible Responses API endpoint. |
 
-> The crawler sends requests to `${ANTHROPIC_BASE_URL}/v1/messages` using the
-> standard Anthropic Messages API with an `x-api-key` header. Any
-> Anthropic-compatible endpoint works.
+Undefined GitHub variables are passed as empty strings; the crawler treats them as unset and keeps its defaults.
 
-## 4. Test the crawler manually
+The implementation uses `POST /v1/responses`, bearer authentication, and structured JSON output. The official [GPT-5.6 Terra documentation](https://developers.openai.com/api/docs/models/gpt-5.6-terra) lists the model ID, endpoint support, token prices, and reasoning levels.
 
-Repo → **Actions** → **Daily paper crawl** → **Run workflow**. Check the run log;
-if new papers are found it commits to `main`, which triggers a Pages redeploy.
+## 4. Test manually
 
-## Schedule
+1. Open **Actions → Daily paper crawl → Run workflow**.
+2. Inspect the job summary. It reports model, evaluated and added papers, token totals, errors, and estimated API cost.
+3. Confirm that the bot commit updates `data/crawl-stats.json` and, when papers are accepted, `data/papers.json`.
+4. Wait for the chained Pages deployment, then open **Crawl stats / 爬取统计** on the site.
 
-- **Crawl**: daily at 01:17 UTC (`.github/workflows/crawl.yml`). Adjust the
-  `cron` there if you want a different time.
-- **Deploy**: `.github/workflows/pages.yml` runs on (a) any direct push to
-  `main`, (b) manual dispatch, and (c) **after the daily crawl completes**.
+Statistics start with the first run of this version. Empty, dry-run, and failed model executions are also recorded when the crawler reaches its finalization step.
 
-### Why the crawl → deploy chaining is explicit
+## Schedule and data flow
 
-The crawler commits with the built-in `GITHUB_TOKEN`. GitHub deliberately does
-**not** fire `push`-triggered workflows for commits made by `GITHUB_TOKEN` (it
-prevents infinite loops). So the deploy is chained via a `workflow_run` trigger
-that listens for the "Daily paper crawl" workflow finishing successfully — that
-picks up the fresh commit and redeploys the site automatically. No manual step
-is needed once secrets and Pages are configured.
+- **Crawl:** daily at `01:17 UTC`, configured in `.github/workflows/crawl.yml`.
+- **Deploy:** on direct pushes to `main`, manual dispatches, and successful completion of the daily crawl.
+- **History:** every measured run appends one record to `data/crawl-stats.json`.
 
-> If you ever switch the crawler to push via a Personal Access Token instead of
-> `GITHUB_TOKEN`, the `push` trigger would fire on its own and you could drop the
-> `workflow_run` trigger.
+The deployment workflow listens to `workflow_run` because commits pushed by a workflow using the built-in `GITHUB_TOKEN` do not trigger another `push` workflow. This explicit chain ensures the latest papers and statistics reach Pages without a Personal Access Token.
 
-## Cost note
+## Cost accounting
 
-The crawler sends up to `MAX_CANDIDATES` (default 40) title+abstract pairs to the
-LLM per day, each a short single-turn request. Using a small model like
-`claude-haiku-4-5-20251001` keeps this cheap. Lower `MAX_CANDIDATES` or widen
-the schedule to reduce spend further.
+The crawler sums usage from every successful Responses API call, including calls whose output is later rejected or unparsable. It tracks:
+
+- input, cached-input, and cache-write tokens;
+- output and reasoning tokens;
+- total tokens and API calls;
+- estimated token cost using the model rates stored with that run.
+
+The estimate includes GPT-5.6 cache-write and long-context multipliers. It does not claim to replace the OpenAI billing dashboard: alternative service tiers, non-token tools, or future pricing can differ.
+
+Reduce `MAX_CANDIDATES` in `.github/workflows/crawl.yml`, lower `CRAWL_DAYS`, or select a lower-cost GPT-5.6 tier to control spend.
 
 ## Troubleshooting
 
-- **Pages 404**: confirm Settings → Pages source is **GitHub Actions**, and the
-  `pages.yml` run succeeded.
-- **Crawler writes nothing**: no token set (dry run), or no new relevant papers.
-  Check the run log — it prints each decision.
-- **Data won't load locally**: you opened `index.html` as a file. Serve over HTTP
-  (`python3 -m http.server`).
+- **Pages returns 404:** confirm that Pages uses **GitHub Actions** and that the deploy job succeeded.
+- **Crawler is a dry run:** `OPENAI_API_KEY` is missing or unavailable to the workflow (forked pull requests cannot read repository secrets).
+- **Every candidate errors:** verify model access, key validity, and `OPENAI_BASE_URL`; the crawl job is deliberately marked failed after recording the run.
+- **No papers are added:** this is normal when candidates are duplicates or judged out of scope. The run statistics should still update.
+- **Statistics button is empty:** run the updated crawler at least once and verify that `data/crawl-stats.json` was committed and Pages redeployed.
+- **Local page cannot load JSON:** serve the repository with `python3 -m http.server`; do not open `index.html` via `file://`.

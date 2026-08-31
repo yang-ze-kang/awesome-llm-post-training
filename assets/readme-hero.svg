@@ -1,0 +1,59 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="20" x2="1230" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171A35"/>
+      <stop offset="0.55" stop-color="#242653"/>
+      <stop offset="1" stop-color="#153D4B"/>
+    </linearGradient>
+    <linearGradient id="line" x1="772" y1="73" x2="1134" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A6A6FF"/>
+      <stop offset="1" stop-color="#63E1D7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(996 182) rotate(90) scale(225 307)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6568D8" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#6568D8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#A9AED2" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#070918" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="28" fill="url(#grid)"/>
+  <ellipse cx="996" cy="182" rx="307" ry="225" fill="url(#glow)"/>
+  <circle cx="111" cy="75" r="9" fill="#6EE7D8"/>
+  <circle cx="111" cy="75" r="17" stroke="#6EE7D8" stroke-opacity=".2"/>
+  <text x="139" y="82" fill="#AEB3D7" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="650" letter-spacing="2.2">LIVING RESEARCH INDEX</text>
+  <text x="86" y="175" fill="white" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="780" letter-spacing="-2.4">Awesome LLM</text>
+  <text x="86" y="238" fill="white" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="780" letter-spacing="-2.4">Post-Training</text>
+  <text x="89" y="286" fill="#BEC2E0" font-family="Inter, system-ui, sans-serif" font-size="19">Curated daily · Bilingual summaries · Open source</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="650">
+    <rect x="86" y="321" width="104" height="36" rx="18" fill="#FFFFFF" fill-opacity=".09" stroke="#FFFFFF" stroke-opacity=".13"/>
+    <text x="110" y="344" fill="#DDE0F3">679+ papers</text>
+    <rect x="201" y="321" width="133" height="36" rx="18" fill="#FFFFFF" fill-opacity=".09" stroke="#FFFFFF" stroke-opacity=".13"/>
+    <text x="222" y="344" fill="#DDE0F3">GPT-5.6 Terra</text>
+    <rect x="345" y="321" width="115" height="36" rx="18" fill="#FFFFFF" fill-opacity=".09" stroke="#FFFFFF" stroke-opacity=".13"/>
+    <text x="368" y="344" fill="#DDE0F3">Daily crawl</text>
+  </g>
+  <path d="M795 123C843 123 847 175 888 175H937C975 175 978 227 1019 227H1056C1096 227 1103 280 1146 280" stroke="url(#line)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 9"/>
+  <g filter="url(#shadow)" font-family="Inter, system-ui, sans-serif">
+    <rect x="705" y="79" width="178" height="82" rx="18" fill="#292C5C" stroke="#8E90F4" stroke-opacity=".52"/>
+    <circle cx="736" cy="109" r="10" fill="#9A9CFF"/>
+    <text x="757" y="115" fill="white" font-size="17" font-weight="720">SFT</text>
+    <text x="729" y="140" fill="#AFB4D7" font-size="13">Data · PEFT · Distill</text>
+    <rect x="854" y="140" width="207" height="82" rx="18" fill="#252E59" stroke="#8E90F4" stroke-opacity=".45"/>
+    <circle cx="885" cy="170" r="10" fill="#888BFA"/>
+    <text x="906" y="176" fill="white" font-size="17" font-weight="720">Preference</text>
+    <text x="878" y="201" fill="#AFB4D7" font-size="13">DPO · RLAIF · Reward</text>
+    <rect x="980" y="202" width="178" height="82" rx="18" fill="#20364F" stroke="#67D6D0" stroke-opacity=".45"/>
+    <circle cx="1011" cy="232" r="10" fill="#67D6D0"/>
+    <text x="1032" y="238" fill="white" font-size="17" font-weight="720">RL</text>
+    <text x="1004" y="263" fill="#AFBFD0" font-size="13">PPO · GRPO · RLVR</text>
+    <rect x="1079" y="264" width="154" height="82" rx="18" fill="#1C414D" stroke="#67D6D0" stroke-opacity=".52"/>
+    <circle cx="1110" cy="294" r="10" fill="#71E7DC"/>
+    <text x="1131" y="300" fill="white" font-size="17" font-weight="720">Reason</text>
+    <text x="1103" y="325" fill="#B1D1D2" font-size="13">Search · Scale</text>
+  </g>
+</svg>

@@ -1,96 +1,141 @@
-# Awesome LLM Post-Training
-
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-GitHub_Pages-6f42c1)](https://yang-ze-kang.github.io/awesome-llm-post-training/)
-[![Papers](https://img.shields.io/badge/papers-60+-blue)](data/papers.json)
-[![Auto-updated](https://img.shields.io/badge/updated-daily-brightgreen)](.github/workflows/crawl.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
-A curated, **bilingual (中文 / English)**, auto-updating website that categorizes
-papers on Large Language Model **post-training** — supervised fine-tuning, RLHF,
-preference optimization, reward modeling, RL policy optimization, reasoning /
-test-time scaling, distillation, benchmarks, safety, and tooling.
-
 <p align="center">
   <a href="https://yang-ze-kang.github.io/awesome-llm-post-training/">
-    <b>🌐 Live site → yang-ze-kang.github.io/awesome-llm-post-training</b>
+    <img src="assets/readme-hero.svg" alt="Awesome LLM Post-Training — a living research index" width="100%" />
   </a>
 </p>
 
-> The live site deploys automatically from `main` via GitHub Pages. If the link
-> 404s, the repo owner still needs to enable Pages (Settings → Pages → Source:
-> **GitHub Actions**) — see [DEPLOY.md](DEPLOY.md).
+<p align="center">
+  <a href="https://yang-ze-kang.github.io/awesome-llm-post-training/"><img src="https://img.shields.io/badge/Explore-Live_site-5b5bd6?style=flat-square" alt="Live site" /></a>
+  <a href="data/papers.json"><img src="https://img.shields.io/badge/Papers-679%2B-078a8d?style=flat-square" alt="679+ papers" /></a>
+  <a href=".github/workflows/crawl.yml"><img src="https://img.shields.io/badge/Curation-GPT--5.6_Terra-7057d9?style=flat-square" alt="GPT-5.6 Terra" /></a>
+  <a href=".github/workflows/crawl.yml"><img src="https://img.shields.io/badge/Update-Daily-16845b?style=flat-square" alt="Updated daily" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-24292f?style=flat-square" alt="MIT license" /></a>
+</p>
 
-Seeded from [mbzuai-oryx/Awesome-LLM-Post-training](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training)
-and kept fresh by a daily GitHub Action that crawls arXiv and uses Claude to
-judge relevance, classify each paper, and write a bilingual one-line summary.
+<p align="center">
+  A bilingual, auto-updating map of the LLM post-training literature.<br />
+  从监督微调到推理强化学习：持续更新、中英双语的 LLM 后训练论文地图。
+</p>
 
-## Preview
+<p align="center">
+  <a href="https://yang-ze-kang.github.io/awesome-llm-post-training/"><strong>Browse papers</strong></a>
+  · <a href="https://yang-ze-kang.github.io/awesome-llm-post-training/#explore">Explore the taxonomy</a>
+  · <a href="#crawl-observatory">Crawl observatory</a>
+  · <a href="#contributing">Contribute</a>
+</p>
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│  Awesome LLM Post-Training                    [中文] [🌙] [Source]  │
-│  A curated, auto-updating collection of LLM post-training papers.    │
-├──────────────────────┬─────────────────────────────────────────────┤
-│  🔎 Search papers... │  ▸ Supervised Fine-Tuning                    │
-│                      │    Instruction Tuning              [5]        │
-│  Supervised FT  [17] │    ┌───────────────────────────────────────┐ │
-│    Instruction   [5] │    │ Finetuned LMs Are Zero-Shot Learners  │ │
-│    PEFT          [5] │    │ Introduces instruction tuning: ...     │ │
-│    Data & Synth  [4] │    │ ICLR 2022 · 2021-09-03 · Paper →       │ │
-│    Distillation  [3] │    └───────────────────────────────────────┘ │
-│  Reinforcement  [22] │    Parameter-Efficient FT           [5]       │
-│    Reward Model  [4] │    ┌───────────────────────────────────────┐ │
-│    RLHF/PPO      [4] │    │ LoRA: Low-Rank Adaptation of LLMs     │ │
-│    DPO           [6] │    │ Freezes pretrained weights and ...     │ │
-│    RLAIF         [3] │    └───────────────────────────────────────┘ │
-│    Reasoning RL  [5] │  ▸ Reinforcement Learning                    │
-│  Test-Time       [7] │    Reward Modeling (RM/PRM/ORM)     [4]       │
-│  Resources      [14] │    ...                                        │
-└──────────────────────┴─────────────────────────────────────────────┘
-   ↑ two-level sidebar nav      ↑ papers grouped by group → category
-   Toggle 中文/EN rewrites the whole UI and every summary. Search filters live.
-```
+---
 
-## Features
+## Why this project
 
-- **Pure static site** — plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.
-- **Bilingual** — toggle the whole UI and every paper summary between 中文 and English.
-- **Category navigation** — sidebar with per-category counts.
-- **Live search** — filters across titles and both-language summaries.
-- **Dark / light theme** — remembered across visits.
-- **Daily auto-update** — arXiv + Claude crawler commits new papers to `main`.
+LLM post-training moves quickly and its vocabulary is fragmented across SFT, RLHF, DPO, GRPO, RLVR, test-time scaling, reward modeling, and alignment. This project turns that stream into a navigable research index:
 
-## Project layout
+- **Curated, not merely scraped** — each candidate is judged for relevance and assigned to a stable taxonomy.
+- **Bilingual by default** — every paper includes a concise English and Simplified Chinese summary.
+- **Fresh every day** — a GitHub Action scans arXiv and Hugging Face Daily Papers, then publishes accepted work automatically.
+- **Transparent operations** — the site exposes candidates, accepted-paper types, API tokens, and estimated cost for every measured crawl.
+- **Zero-build static site** — plain HTML, CSS, and JavaScript; easy to fork and host on GitHub Pages.
 
-```
-.
-├── index.html               # the page
-├── assets/
-│   ├── style.css            # theming + layout
-│   ├── i18n.js              # UI string translations
-│   └── app.js               # data loading + rendering
-├── data/
-│   ├── categories.json      # bilingual, hierarchical taxonomy (groups → categories)
-│   └── papers.json          # the paper database (crawler appends here)
-├── scripts/
-│   └── crawl.py             # arXiv fetch + LLM classification
-└── .github/workflows/
-    ├── crawl.yml            # daily crawl → commit to main
-    └── pages.yml            # deploy site to GitHub Pages on push
+## Research map
+
+| Layer | Topics covered |
+| --- | --- |
+| **Supervised Fine-Tuning** | Instruction tuning · PEFT / LoRA · data synthesis · knowledge distillation |
+| **Reinforcement Learning** | Reward modeling · RLHF / PPO / RLOO · DPO / IPO / KTO / SimPO · RLAIF · reasoning RL / GRPO / RLVR |
+| **Test-Time Scaling** | Chain-of-thought · inference-time compute · search / MCTS / tree methods |
+| **Resources** | Surveys · benchmarks and datasets · safety and alignment · tools and frameworks |
+
+The taxonomy lives in [`data/categories.json`](data/categories.json). Adding a category there automatically updates both the website navigation and the model’s classification choices.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[arXiv API] --> C[Merge + dedupe]
+    B[Hugging Face<br/>Daily Papers] --> C
+    C --> D[Relevance-first ranking]
+    D --> E[GPT-5.6 Terra<br/>judge + classify + summarize]
+    E -->|accepted| F[(papers.json)]
+    E --> G[(crawl-stats.json)]
+    F --> H[Static bilingual site]
+    G --> H
+    H --> I[GitHub Pages]
 ```
 
-## Local preview
+The crawler uses the OpenAI Responses API with structured JSON output. `gpt-5.6-terra` is the default model; `OPENAI_MODEL` can select another GPT-5.6 tier. The default `low` reasoning effort is a deliberate fit for short classification tasks and can be overridden.
 
-The page fetches JSON, so it must be served over HTTP (not opened as a `file://`):
+## Crawl observatory
+
+Click **Crawl stats / 爬取统计** on the website to inspect:
+
+- candidates fetched from arXiv and Hugging Face, merged, and evaluated;
+- papers accepted, rejected, errored, and added by research category;
+- input, cached-input, cache-write, output, reasoning, and total tokens;
+- API calls, run duration, selected model, and estimated USD cost;
+- daily line charts for tokens, cost, added papers, and category-level additions;
+- a per-run history table, including successful, empty, dry-run, and failed crawls.
+
+Statistics start with the first run of this version; the project intentionally does not invent historical token usage. Cost is estimated from the usage returned by the API and the standard rates stored with each run. For the default model, see the official [GPT-5.6 Terra model and pricing documentation](https://developers.openai.com/api/docs/models/gpt-5.6-terra).
+
+The append-only history is stored in [`data/crawl-stats.json`](data/crawl-stats.json), so it remains auditable and deploys with the static site.
+
+## Quick start
+
+The site fetches local JSON files, so serve it over HTTP:
 
 ```bash
+git clone https://github.com/yang-ze-kang/awesome-llm-post-training.git
+cd awesome-llm-post-training
 python3 -m http.server 8000
-# then open http://localhost:8000
 ```
 
-## Data model
+Open <http://localhost:8000>. No package installation or build step is required.
 
-Each paper in `data/papers.json`:
+### Run the crawler locally
+
+```bash
+export OPENAI_API_KEY="your-api-key"
+# Optional overrides:
+export OPENAI_MODEL="gpt-5.6-terra"
+export OPENAI_REASONING_EFFORT="low"
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+
+python3 scripts/crawl.py
+```
+
+Without `OPENAI_API_KEY`, the command performs a read-only dry run: it fetches, deduplicates, and ranks candidates without changing local data. Set `RECORD_CRAWL_STATS=1` if you explicitly want a local dry run added to the history.
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `OPENAI_MODEL` | `gpt-5.6-terra` | Responses API model used for curation |
+| `OPENAI_REASONING_EFFORT` | `low` | `none`, `low`, `medium`, `high`, `xhigh`, or `max` |
+| `OPENAI_BASE_URL` | `https://api.openai.com/v1` | OpenAI-compatible Responses API base URL |
+| `CRAWL_DAYS` | `3` | Source lookback window |
+| `MAX_CANDIDATES` | `40` | Maximum candidates evaluated per run |
+| `DISABLE_HF` | unset | Set to `1` to use arXiv only |
+
+## Project structure
+
+```text
+.
+├── index.html                    # static application shell + stats dialog
+├── assets/
+│   ├── app.js                    # search, navigation, rendering, crawl dashboard
+│   ├── i18n.js                   # English / Chinese UI strings
+│   ├── style.css                 # responsive light / dark design system
+│   └── readme-hero.svg           # GitHub README banner
+├── data/
+│   ├── categories.json           # bilingual hierarchical taxonomy
+│   ├── papers.json               # curated paper database
+│   └── crawl-stats.json          # append-only run, token, and cost history
+├── scripts/
+│   └── crawl.py                  # sources → GPT-5.6 → data + statistics
+└── .github/workflows/
+    ├── crawl.yml                 # daily crawl and data commit
+    └── pages.yml                 # GitHub Pages deployment
+```
+
+## Paper data model
 
 ```json
 {
@@ -100,75 +145,34 @@ Each paper in `data/papers.json`:
   "date": "2025-01-22",
   "venue": "arXiv",
   "url": "https://arxiv.org/abs/2501.12948",
-  "summary": { "en": "...", "zh": "..." }
+  "summary": {
+    "en": "...",
+    "zh": "..."
+  }
 }
 ```
 
-`category` must match a category `id` in `data/categories.json`, which is
-organized as a two-level hierarchy — top-level **groups** (SFT, RL, Test-Time
-Scaling, Resources), each containing **categories** (e.g. RL → Reward Modeling,
-RLHF/PPO, DPO, RLAIF, Reasoning RL). To add a category, add an entry under the
-right group (with `name`, `desc`, and `keywords` in both languages) — the UI
-and crawler pick it up automatically.
-
-### Taxonomy
-
-- **监督微调 / Supervised Fine-Tuning** — Instruction Tuning · Parameter-Efficient FT · Data & Synthetic Data · Knowledge Distillation
-- **强化学习 / Reinforcement Learning** — Reward Modeling (RM/PRM/ORM) · RLHF Policy Optimization (PPO/RLOO) · Direct Preference Optimization (DPO/IPO/KTO/SimPO/ORPO) · RLAIF & Constitutional AI · Reasoning RL / Verifiable Rewards (GRPO/R1)
-- **测试时扩展 / Test-Time Scaling** — Chain-of-Thought & Reasoning · Search (MCTS / Tree)
-- **资源 / Resources** — Surveys · Benchmarks & Datasets · Safety & Alignment · Tools & Frameworks
-
-## The crawler
-
-`scripts/crawl.py`:
-
-1. Gathers recent candidates from **two sources**:
-   - **arXiv API** — keyword + category search (`cs.CL/cs.LG/cs.AI`).
-   - **Hugging Face daily papers** — community-curated, carrying **upvote counts**.
-2. Merges and dedupes by arXiv id (across sources and against `papers.json`).
-3. Ranks candidates **relevance-first** (keyword proxy: title hits weigh more
-   than abstract hits), then by Hugging Face **upvotes**, then recency — so
-   genuinely on-topic papers are processed first within the daily budget.
-4. Sends each candidate's title + abstract to Claude, which returns JSON:
-   `{relevant, category, summary_en, summary_zh}`. Irrelevant or
-   wrong-category papers are rejected.
-5. Appends accepted papers and bumps `meta.lastUpdated`.
-
-**Failure alerting:** if there are candidates but *every one* errors out (e.g.
-the LLM endpoint is down or the token is invalid), the script exits non-zero so
-the GitHub Action run goes red and the repo owner is notified. The run summary
-shows status, count added, and any error note.
-
-Run it locally:
-
-```bash
-export ANTHROPIC_AUTH_TOKEN="your-key"
-export ANTHROPIC_BASE_URL="https://your-endpoint"   # optional; defaults to api.anthropic.com
-export ANTHROPIC_MODEL="claude-haiku-4-5"           # optional
-python3 scripts/crawl.py
-```
-
-Without a token it does a **dry run**: fetches and dedupes but writes nothing.
-
-Tunable via env vars: `CRAWL_DAYS` (lookback window, default 3),
-`MAX_CANDIDATES` (papers sent to the LLM per run, default 40),
-`ANTHROPIC_MODEL`, and `DISABLE_HF=1` (skip the Hugging Face source, arXiv only).
+Category IDs must exist in [`data/categories.json`](data/categories.json). The UI sorts papers by date at render time, so source order is not significant.
 
 ## Deployment
 
-See [DEPLOY.md](DEPLOY.md) for one-time setup: enabling GitHub Pages and adding
-the API secrets the crawler needs.
+Fork the repository, enable **Settings → Pages → GitHub Actions**, and add the `OPENAI_API_KEY` Actions secret. The included workflows take care of the rest. Full setup, optional variables, scheduling, and troubleshooting are documented in [`DEPLOY.md`](DEPLOY.md).
 
 ## Contributing
 
-Add a paper by editing `data/papers.json` (keep entries sorted-agnostic; the UI
-sorts by date). PRs welcome for new categories, better summaries, or fixes.
+Contributions are welcome for:
+
+- missing or newly released papers;
+- taxonomy improvements;
+- corrected summaries, metadata, or translations;
+- crawler sources, ranking, tests, and UI accessibility.
+
+You can edit JSON directly or open an issue with a paper link and suggested category. Please keep summaries factual and concise.
 
 ## Acknowledgements
 
-Built on the taxonomy and paper collection of
-[mbzuai-oryx/Awesome-LLM-Post-training](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training).
+Seeded from [mbzuai-oryx/Awesome-LLM-Post-training](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) and extended with an automated, bilingual curation and observability pipeline.
 
 ## License
 
-MIT
+[MIT](LICENSE)

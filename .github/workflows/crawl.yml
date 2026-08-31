@@ -28,24 +28,31 @@ jobs:
       - name: Run crawler
         id: crawl
         env:
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
-          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_REASONING_EFFORT: ${{ vars.OPENAI_REASONING_EFFORT }}
           CRAWL_DAYS: "3"
           MAX_CANDIDATES: "40"
         run: python scripts/crawl.py
 
       - name: Commit updates
+        if: always()
         run: |
-          if [[ -z "$(git status --porcelain data/papers.json)" ]]; then
+          if [[ -z "$(git status --porcelain data/papers.json data/crawl-stats.json)" ]]; then
             echo "No changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json
+          git add data/papers.json data/crawl-stats.json
           COUNT="${{ steps.crawl.outputs.added_count }}"
-          git commit -m "chore: add ${COUNT:-new} paper(s) via daily crawl [skip ci]"
+          if [[ "${COUNT:-0}" -gt 0 ]]; then
+            MESSAGE="chore: add ${COUNT} paper(s) via daily crawl [skip ci]"
+          else
+            MESSAGE="chore: record daily crawl statistics [skip ci]"
+          fi
+          git commit -m "$MESSAGE"
           git push
 
       - name: Job summary
@@ -55,8 +62,12 @@ jobs:
             echo "### Daily crawl"
             echo ""
             echo "- Status: \`${{ steps.crawl.outputs.status || 'unknown' }}\`"
+            echo "- Model: \`${{ steps.crawl.outputs.model || 'unknown' }}\`"
+            echo "- Candidates evaluated: **${{ steps.crawl.outputs.evaluated_count || 0 }}**"
             echo "- Papers added: **${{ steps.crawl.outputs.added_count || 0 }}**"
             echo "- Errored candidates: ${{ steps.crawl.outputs.error_count || 0 }}"
+            echo "- Tokens: **${{ steps.crawl.outputs.total_tokens || 0 }}** (${{ steps.crawl.outputs.input_tokens || 0 }} input / ${{ steps.crawl.outputs.output_tokens || 0 }} output)"
+            echo "- Estimated API cost: **\$${{ steps.crawl.outputs.estimated_cost_usd || 'n/a' }}**"
             if [[ -n "${{ steps.crawl.outputs.added_titles }}" ]]; then
               echo "- Added: ${{ steps.crawl.outputs.added_titles }}"
             fi
@@ -65,4 +76,3 @@ jobs:
               echo "> ⚠️ **All candidates failed to evaluate** — the LLM endpoint is likely down or the token/secret is invalid. This run is marked failed so you get notified."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
-
