@@ -1,10 +1,61 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "lastUpdated": null,
+    "lastUpdated": "2026-08-31T09:11:28.716051Z",
     "currency": "USD",
     "costLabel": "Estimated standard API token cost",
     "pricingSource": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
   },
-  "runs": []
+  "runs": [
+    {
+      "runId": "33375962335-1",
+      "date": "2026-08-31",
+      "startedAt": "2026-08-31T09:05:44.795149Z",
+      "finishedAt": "2026-08-31T09:11:28.716051Z",
+      "durationSeconds": 343.92,
+      "status": "added",
+      "model": "gpt-5.6-terra",
+      "reasoningEffort": "high",
+      "sources": {
+        "arxiv": 58,
+        "huggingFace": 15,
+        "merged": 70
+      },
+      "papers": {
+        "newCandidates": 69,
+        "evaluated": 40,
+        "added": 21,
+        "rejected": 19,
+        "errors": 0,
+        "byCategory": {
+          "benchmarks": 6,
+          "cot-reasoning": 2,
+          "data-synthesis": 2,
+          "instruction-tuning": 2,
+          "on-policy-distill": 1,
+          "peft": 1,
+          "rlhf-ppo": 1,
+          "rlvr": 5,
+          "tools": 1
+        }
+      },
+      "usage": {
+        "apiCalls": 40,
+        "inputTokens": 218599,
+        "cachedInputTokens": 82688,
+        "cacheWriteTokens": 0,
+        "outputTokens": 6766,
+        "reasoningTokens": 4149,
+        "totalTokens": 225365,
+        "estimatedCostUsd": 0.3695516
+      },
+      "pricing": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.2,
+        "cacheWritePerMillion": 2.5,
+        "outputPerMillion": 12.0,
+        "currency": "USD"
+      }
+    }
+  ]
 }
