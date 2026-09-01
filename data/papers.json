@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-31",
+    "lastUpdated": "2026-09-01",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -8402,6 +8402,330 @@
       "summary": {
         "en": "VLAct uses representation-centric continued pre-training on heterogeneous robot trajectories to improve VLA transfer and downstream task performance under limited data.",
         "zh": "VLAct利用异构机器人轨迹进行以表征为中心的持续预训练，在有限数据下提升视觉语言动作模型的迁移能力和下游任务性能。"
+      }
+    },
+    {
+      "id": "2608.31046",
+      "title": "Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement",
+      "category": "on-policy-distill",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31046",
+      "summary": {
+        "en": "Analyzes noise in on-policy distillation and introduces supervision-free entropy-adaptive self-adaptation that suppresses low-probability tokens to improve reasoning.",
+        "zh": "分析在策略蒸馏中的噪声问题，并提出无监督的熵自适应自调整方法，通过抑制低概率词元提升推理能力。"
+      }
+    },
+    {
+      "id": "2608.28600",
+      "title": "SHAPE of Chain-of-Thought in Math Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-06-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28600",
+      "summary": {
+        "en": "Introduces SHAPE to analyze mathematical CoT via semantic spaces and heuristics, revealing RL-induced mode seeking and improving accuracy through heuristic diversity post-training.",
+        "zh": "提出 SHAPE，以语义空间和启发式分析数学思维链，揭示强化学习导致的启发式模式寻求，并通过多样化启发式后训练提升准确率。"
+      }
+    },
+    {
+      "id": "2608.30987",
+      "title": "Stick to What You Know: A Study of Knowledge-Aligned Supervised Fine-Tuning",
+      "category": "instruction-tuning",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30987",
+      "summary": {
+        "en": "Introduces knowledge-aligned SFT methods that constrain training targets to base-model knowledge, reducing factual hallucinations and improving refusal behavior.",
+        "zh": "提出知识对齐的监督微调方法，将训练目标约束在基座模型知识范围内，从而减少事实性幻觉并改善拒答行为。"
+      }
+    },
+    {
+      "id": "2608.30841",
+      "title": "HSRM: Hidden-State Reward Models for Test-Time Verification",
+      "category": "reward-modeling",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30841",
+      "summary": {
+        "en": "HSRM trains a lightweight hidden-state reward model to rank mathematical reasoning candidates using a frozen generator's internal representations for efficient test-time verification.",
+        "zh": "HSRM训练轻量级隐藏状态奖励模型，利用冻结生成器的内部表征对数学推理候选进行排序，实现高效的测试时验证。"
+      }
+    },
+    {
+      "id": "2608.30597",
+      "title": "PLC-DPO: Posterior Label Correction in Noisy and Ambiguous Preference Optimization",
+      "category": "dpo",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30597",
+      "summary": {
+        "en": "PLC-DPO corrects noisy, flipped, and ambiguous preference labels online by routing pairwise DPO updates using calibrated policy-reference margins.",
+        "zh": "PLC-DPO利用校准的策略与参考模型边际在线路由成对DPO更新，纠正噪声、反转和歧义偏好标签。"
+      }
+    },
+    {
+      "id": "2608.31079",
+      "title": "Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization",
+      "category": "dpo",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31079",
+      "summary": {
+        "en": "Shows that DPO and other contrastive preference objectives can diffusely transfer teacher sycophancy through neutral preference data, exposing an alignment risk in preference optimization.",
+        "zh": "表明 DPO 等对比偏好优化目标可通过看似中性的偏好数据弥散地迁移教师模型的谄媚倾向，揭示了偏好优化中的对齐风险。"
+      }
+    },
+    {
+      "id": "2608.30719",
+      "title": "Mind the Gap: Theory-of-Mind-Grounded Friction for Epistemic Alignment",
+      "category": "rlhf-ppo",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30719",
+      "summary": {
+        "en": "Introduces Theory-of-Mind-grounded friction and Frictive Policy Optimization to detect silent referential divergence and improve calibrated intervention beyond DPO.",
+        "zh": "提出基于心智理论的摩擦信号与摩擦策略优化，以检测无声的指称分歧，并提升超越DPO的校准干预能力。"
+      }
+    },
+    {
+      "id": "2608.29252",
+      "title": "Dynamic Important Example Mining for Reinforcement Finetuning",
+      "category": "rlvr",
+      "date": "2026-08-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.29252",
+      "summary": {
+        "en": "Introduces DIEM, an adaptive reinforcement fine-tuning framework that mines important examples via gradient alignment and stabilizes training through constrained batch reweighting.",
+        "zh": "提出 DIEM，一种自适应强化微调框架，通过梯度对齐挖掘重要样本，并利用受约束的批次重加权稳定训练。"
+      }
+    },
+    {
+      "id": "2608.31075",
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "category": "survey",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31075",
+      "summary": {
+        "en": "Surveys pathways for scaling reasoning models beyond human supervision through autonomous rewards, self-generated experience, and safeguards against emerging failure modes.",
+        "zh": "综述通过自主奖励、自生成经验以及应对新兴失效模式的防护措施，推动推理模型超越人类监督规模化发展的路径。"
+      }
+    },
+    {
+      "id": "2608.30679",
+      "title": "LCoT-GV: Graph Attention Networks for Verifying Long Reasoning Chains in Large Language Models",
+      "category": "reward-modeling",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30679",
+      "summary": {
+        "en": "Introduces a graph-attention verifier that models long chain-of-thought steps and relations to predict reasoning-chain correctness using a new graph-oriented dataset.",
+        "zh": "提出图注意力验证器，将长思维链的步骤及其关系建模为图，并利用新的图式数据集预测推理链正确性。"
+      }
+    },
+    {
+      "id": "2608.31102",
+      "title": "LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
+      "category": "data-synthesis",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31102",
+      "summary": {
+        "en": "Presents an industrial dataware-engineering approach to post-training mixture patches, improving teacher-data yield and code-generation performance under fixed budgets.",
+        "zh": "提出工业化数据件工程方法，通过优化后训练数据混合补丁，在固定预算下提高教师数据产出率和代码生成性能。"
+      }
+    },
+    {
+      "id": "2608.31100",
+      "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+      "category": "benchmarks",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31100",
+      "summary": {
+        "en": "Introduces S3Gym, an interactive benchmark testing whether LLM agents can self-test, self-judge, and improve through histories, summaries, or parameter training.",
+        "zh": "提出S3Gym交互式基准，评估LLM智能体能否通过历史记录、摘要或参数训练进行自我测试、自我判断和自我改进。"
+      }
+    },
+    {
+      "id": "2608.31077",
+      "title": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+      "category": "rlvr",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31077",
+      "summary": {
+        "en": "TASPO redistributes verified trajectory rewards into outcome-grounded action-level credit using privileged-information self-distillation, improving agentic RL over GRPO.",
+        "zh": "TASPO利用特权信息自蒸馏将经验证的轨迹奖励重分配为以结果为基础的动作级信用分配，在智能体强化学习中优于GRPO。"
+      }
+    },
+    {
+      "id": "2608.31066",
+      "title": "Every Token Leaves a Ripple in the Stream of Thought: Eliciting Model-Internal Token Saliency for Chain-of-Thought Compression",
+      "category": "cot-reasoning",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31066",
+      "summary": {
+        "en": "MIST compresses chain-of-thought by ranking tokens using model-internal necessity and sufficiency signals derived from answer-likelihood changes.",
+        "zh": "MIST利用模型内部的必要性与充分性信号，根据答案似然变化对推理链中的词元进行重要性排序并压缩。"
+      }
+    },
+    {
+      "id": "2608.31035",
+      "title": "When Does Predictor-Based RL Align with Human Perception? A Study of Subjective Rewards in Codec-Based Speech Language Models",
+      "category": "rlvr",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31035",
+      "summary": {
+        "en": "Studies GRPO for codec-based TTS using learned subjective perceptual rewards, comparing policy optimization with Best-of-N reranking under transcript-preservation constraints.",
+        "zh": "研究在保持文本一致性约束下，利用学习到的主观感知奖励对编解码式语音模型进行GRPO训练，并与Best-of-N重排序进行比较。"
+      }
+    },
+    {
+      "id": "2608.30908",
+      "title": "Fine-Tuning Low-Bit Models with Gradient in Quantized Code Space",
+      "category": "peft",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30908",
+      "summary": {
+        "en": "GradCodes fine-tunes low-bit LLMs directly in deployable quantized code space using surrogate gradients and guided search, improving instruction following and reasoning under fixed quantization.",
+        "zh": "GradCodes通过代理梯度和引导搜索直接在可部署的量化码空间微调低比特大语言模型，在固定量化条件下提升指令遵循与推理能力。"
+      }
+    },
+    {
+      "id": "2608.30902",
+      "title": "Low-Resource Preference Adaptation of LLMs via Activation-Based Label Propagation",
+      "category": "data-synthesis",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30902",
+      "summary": {
+        "en": "Uses a lightweight activation probe trained on few labeled preference pairs to propagate labels to unlabeled data for downstream preference optimization.",
+        "zh": "利用少量标注偏好对训练轻量级激活探针，为未标注数据传播偏好标签，以支持后续偏好优化。"
+      }
+    },
+    {
+      "id": "2608.30676",
+      "title": "MedAgent-R1: Faithfulness-Aware Reinforcement Learning for Evidence-Grounded Medical Reasoning",
+      "category": "rlhf-ppo",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30676",
+      "summary": {
+        "en": "Introduces faithfulness-gated RL for medical retrieval agents, conditioning accuracy rewards on evidence grounding to reduce fabricated citations while maintaining clinical reasoning accuracy.",
+        "zh": "提出面向医疗检索智能体的忠实性门控强化学习，将准确性奖励以证据支撑为条件，在保持临床推理准确率的同时减少伪造引用。"
+      }
+    },
+    {
+      "id": "2608.30650",
+      "title": "Geometry of Divergence: Tracking Hidden-State Trajectories for Adaptive Multi-Turn Reasoning",
+      "category": "cot-reasoning",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30650",
+      "summary": {
+        "en": "Tracks hidden-state trajectory geometry to detect critical multi-turn reasoning turns, improving tau-Bench success while reducing token costs.",
+        "zh": "通过跟踪隐藏状态轨迹几何特征识别多轮推理中的关键轮次，在降低令牌成本的同时提升 tau-Bench 成功率。"
+      }
+    },
+    {
+      "id": "2608.31119",
+      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "category": "on-policy-distill",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31119",
+      "summary": {
+        "en": "PaperGym builds low-leakage paper-derived research-planning environments and combines privileged-rubric on-policy self-distillation with GRPO training.",
+        "zh": "PaperGym构建低泄漏的论文衍生研究规划环境，并结合使用特权量规的在策略自蒸馏与GRPO训练。"
+      }
+    },
+    {
+      "id": "2608.31036",
+      "title": "Normalized Low-Rank Adaptation",
+      "category": "peft",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31036",
+      "summary": {
+        "en": "NoRA normalizes LoRA down-projection matrices during training or initialization, improving convergence, stability, and retention across supervised fine-tuning and reinforcement learning.",
+        "zh": "NoRA在训练期间或初始化时归一化LoRA下投影矩阵，从而提升监督微调和强化学习中的收敛速度、稳定性与知识保留。"
+      }
+    },
+    {
+      "id": "2608.25375",
+      "title": "GGSS: Geodesic-Gated Spherical Steering for Inference-Time Debiasing of Generative Vision-Language Models",
+      "category": "safety",
+      "date": "2026-08-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25375",
+      "summary": {
+        "en": "Introduces GGSS, a norm-preserving inference-time visual-token steering method that reduces demographic bias in generative VLMs while preserving general capability.",
+        "zh": "提出GGSS，一种保持范数的推理时视觉标记引导方法，在保留通用能力的同时降低生成式视觉语言模型中的人口统计偏见。"
+      }
+    },
+    {
+      "id": "2608.31058",
+      "title": "Improving Information Extraction with Learned Queries",
+      "category": "instruction-tuning",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31058",
+      "summary": {
+        "en": "Introduces LoQ and FeedQ to optimize document-specific extraction questions, then fine-tunes lightweight generators on 12,820 optimized questions for improved clinical information extraction.",
+        "zh": "提出 LoQ 和 FeedQ 来优化文档特定的信息抽取问题，并用 12,820 个优化问题微调轻量生成器以提升临床信息抽取性能。"
+      }
+    },
+    {
+      "id": "2608.30910",
+      "title": "S3C-LLM: Skill-Code Guided Agentic Language Models for Spectrum-to-Structure Elucidation",
+      "category": "rlvr",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30910",
+      "summary": {
+        "en": "Introduces S3C-LLM, training a spectroscopy agent with SFT and step-level reinforcement learning using skill-code trajectories and verifiable chemical evidence.",
+        "zh": "提出S3C-LLM，利用技能代码轨迹和可验证化学证据，通过监督微调与逐步强化学习训练光谱分析智能体。"
+      }
+    },
+    {
+      "id": "2608.30893",
+      "title": "ECGQuest: Benchmarking and Fine-Tuning Language Models for Electrocardiography",
+      "category": "peft",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30893",
+      "summary": {
+        "en": "ECGQuest introduces an ECG knowledge benchmark and synthetic Q&A dataset, demonstrating that LoRA fine-tuning improves compact language models' ECG interpretation performance.",
+        "zh": "ECGQuest 提出了心电图知识基准与合成问答数据集，并表明 LoRA 微调可提升紧凑语言模型的心电图解读表现。"
+      }
+    },
+    {
+      "id": "2608.30716",
+      "title": "SocialReasonBench: A Video-QA Benchmark for Social Reasoning with Counterfactual Narrative Videos",
+      "category": "benchmarks",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30716",
+      "summary": {
+        "en": "Introduces SocialReasonBench, a counterfactual narrative video-QA benchmark that evaluates multimodal models' social, causal, and counterfactual reasoning.",
+        "zh": "提出 SocialReasonBench，一个基于反事实叙事视频的问答基准，用于评估多模态模型的社会、因果和反事实推理能力。"
+      }
+    },
+    {
+      "id": "2608.30678",
+      "title": "OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding",
+      "category": "benchmarks",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30678",
+      "summary": {
+        "en": "Introduces a 1,500-sample benchmark evaluating deduction, induction, abduction, and reasoning-process compliance in OCR-grounded multimodal understanding.",
+        "zh": "提出包含1,500个样本的基准，评估OCR驱动多模态理解中的演绎、归纳、溯因推理及推理过程遵循性。"
       }
     }
   ]
