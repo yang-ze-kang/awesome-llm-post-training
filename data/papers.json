@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-01",
+    "lastUpdated": "2026-09-02",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -8726,6 +8726,318 @@
       "summary": {
         "en": "Introduces a 1,500-sample benchmark evaluating deduction, induction, abduction, and reasoning-process compliance in OCR-grounded multimodal understanding.",
         "zh": "提出包含1,500个样本的基准，评估OCR驱动多模态理解中的演绎、归纳、溯因推理及推理过程遵循性。"
+      }
+    },
+    {
+      "id": "2609.01244",
+      "title": "Post-Training Science for Supervised Fine-Tuning",
+      "category": "instruction-tuning",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01244",
+      "summary": {
+        "en": "Systematically studies supervised fine-tuning choices across model families, scales, datasets, LoRA and full fine-tuning, evaluating transferability and downstream reliability.",
+        "zh": "系统研究不同模型家族、规模、数据集及LoRA与全参数微调下的监督微调选择，评估其可迁移性与下游效果可靠性。"
+      }
+    },
+    {
+      "id": "2609.00879",
+      "title": "Towards reliable multimodal disaster severity assessment through preference optimization and explainable vision-language reasoning",
+      "category": "dpo",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00879",
+      "summary": {
+        "en": "Introduces a HITL data pipeline combining SFT and DPO to improve multimodal disaster severity classification, explanation quality, and alignment with human judgments.",
+        "zh": "提出结合SFT与DPO的HITL数据构建流程，提升多模态灾害严重度分类、解释质量及与人类判断的一致性。"
+      }
+    },
+    {
+      "id": "2608.29464",
+      "title": "Chain-of-Thought Faithfulness of Reasoning Models Varies with Where and How Preference Cues Are Delivered",
+      "category": "benchmarks",
+      "date": "2026-08-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.29464",
+      "summary": {
+        "en": "Introduces FACE-Eval, a benchmark measuring reasoning-trace faithfulness and monitoring reliability under explicit or implicit preference cues from users and tools.",
+        "zh": "提出FACE-Eval基准，测量用户或工具提供显式、隐式偏好线索时推理轨迹的忠实性与监控可靠性。"
+      }
+    },
+    {
+      "id": "2609.01455",
+      "title": "When Safety Routing Breaks: Understanding Alignment Fragility under Benign Fine-Tuning",
+      "category": "safety",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01455",
+      "summary": {
+        "en": "Analyzes why benign fine-tuning erodes safety alignment via low-rank output-routing mechanisms and evaluates LoRA and ASAM as mitigations.",
+        "zh": "分析良性微调如何通过低秩输出路由机制削弱安全对齐，并评估LoRA与ASAM的缓解效果。"
+      }
+    },
+    {
+      "id": "2609.01274",
+      "title": "From Base Rollouts to RL Reasoning: A Budgeted Search Perspective",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01274",
+      "summary": {
+        "en": "Introduces UDF and BOPTR to show that RLVR reasoning gains often reflect more efficient sampling of trajectories already reachable by base models under search.",
+        "zh": "提出UDF与BOPTR，表明RLVR推理增益往往源于更高效地采样基础模型通过搜索本已能够到达的轨迹。"
+      }
+    },
+    {
+      "id": "2609.00925",
+      "title": "Context-Grounding Gains Are Mediated by Pre-existing Machinery: Auditing GRPO, SFT, and DPO",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00925",
+      "summary": {
+        "en": "Audits GRPO, SFT, and DPO, finding grounding improvements mainly amplify pre-existing model machinery rather than creating new capabilities.",
+        "zh": "审计GRPO、SFT和DPO，发现语境 grounding 的提升主要放大模型已有机制，而非创造新的能力。"
+      }
+    },
+    {
+      "id": "2609.00092",
+      "title": "Safin-1: Safety from Within through Memory-Native State Evolution",
+      "category": "safety",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00092",
+      "summary": {
+        "en": "Introduces Safin-1, a memory-routing architecture that enables native state evolution and test-time safety adaptation for persistent, controllable alignment.",
+        "zh": "提出Safin-1记忆路由架构，通过原生状态演化和测试时安全状态适配，实现持久且可控的对齐。"
+      }
+    },
+    {
+      "id": "2609.01422",
+      "title": "From Rollouts to Recipes: Self-Contained Post-Training for LLMs",
+      "category": "on-policy-distill",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01422",
+      "summary": {
+        "en": "Self-Routing adaptively assigns rollout samples to GRPO, on-policy self-distillation, regularization, or skipping based on correctness and confidence, improving mathematical reasoning.",
+        "zh": "Self-Routing依据正确性和置信度，将样本自适应分配给GRPO、在策略自蒸馏、正则化或跳过处理，提升数学推理能力。"
+      }
+    },
+    {
+      "id": "2609.01091",
+      "title": "Subliminal Learning as Trait-Direction Drift: A Mechanism and Targeted Control under SFT Distillation",
+      "category": "distillation",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01091",
+      "summary": {
+        "en": "Identifies trait-direction drift as the mechanism behind subliminal trait transfer during SFT distillation and introduces corridor regularization to mitigate it.",
+        "zh": "揭示SFT蒸馏中隐性特征迁移源于特征方向漂移，并提出特征空间走廊正则化以缓解该问题。"
+      }
+    },
+    {
+      "id": "2609.01572",
+      "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01572",
+      "summary": {
+        "en": "Uses axis-specific GRPO experts and two-stage SLERP merging to improve instruction following, function calling, and enterprise task performance in a self-hosted LLM.",
+        "zh": "采用分轴GRPO专家与两阶段SLERP合并，提升自托管LLM的指令遵循、函数调用和企业任务表现。"
+      }
+    },
+    {
+      "id": "2609.01354",
+      "title": "Where the Verifier Fails: A Category-Level Audit of Reward Signals in RLVR",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01354",
+      "summary": {
+        "en": "Audits four RLVR verifiers using metamorphic testing, revealing category-specific false negatives, implementation variance, and numerical tolerance failures.",
+        "zh": "利用变形测试审计四种RLVR验证器，揭示类别特定的误拒、实现差异及数值容差失效问题。"
+      }
+    },
+    {
+      "id": "2609.01117",
+      "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+      "category": "cot-reasoning",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01117",
+      "summary": {
+        "en": "Introduces Latent Recurrent Thoughts, using a small recurrent network to iteratively refine continuous reasoning states decoded by a frozen LLM.",
+        "zh": "提出潜在循环思维，利用小型循环网络迭代优化连续推理状态，再由冻结的语言模型解码答案。"
+      }
+    },
+    {
+      "id": "2609.00921",
+      "title": "VIBE-Bench: Evaluating Personalized Large Language Models When Profiles Don't Mean Preferences",
+      "category": "benchmarks",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00921",
+      "summary": {
+        "en": "Introduces VIBE-Bench, a benchmark testing personalized LLMs’ cross-concept preference reasoning when profile cues do not semantically match user preferences.",
+        "zh": "提出VIBE-Bench，用于评测个性化大语言模型在用户画像线索与偏好缺乏语义匹配时的跨概念偏好推理能力。"
+      }
+    },
+    {
+      "id": "2608.30209",
+      "title": "DICS: Exploring Data Intrinsic Consistency for Visual Instruction Selection",
+      "category": "data-synthesis",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30209",
+      "summary": {
+        "en": "Introduces DIC/DICS, a consistency-aware method for selecting high-quality visual instruction-tuning data under budget constraints, plus the DICS-6M corpus.",
+        "zh": "提出基于样本内一致性的DIC/DICS视觉指令数据选择方法，在预算约束下筛选高质量数据，并发布DICS-6M语料库。"
+      }
+    },
+    {
+      "id": "2609.01573",
+      "title": "Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs",
+      "category": "data-synthesis",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01573",
+      "summary": {
+        "en": "Introduces a near-optimal framework for allocating annotation budgets between SFT and RL, showing transferable allocation regions from small proxy models to larger LLMs.",
+        "zh": "提出在SFT与RL之间分配标注预算的近最优框架，表明小型代理模型发现的分配区域可迁移至更大型语言模型。"
+      }
+    },
+    {
+      "id": "2609.01325",
+      "title": "VerTox: Verifiable Reward-Guided Corpus Poisoning Against Neural Ranking Models",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01325",
+      "summary": {
+        "en": "Introduces VerTox, an RLVR framework that fine-tunes compact LLMs to generate verifiable, high-impact corpus-poisoning documents against neural rankers and RAG systems.",
+        "zh": "提出VerTox，一种RLVR框架，通过微调紧凑型LLM生成可验证且高影响力的语料库投毒文档，攻击神经排序器和RAG系统。"
+      }
+    },
+    {
+      "id": "2609.00892",
+      "title": "CARE: Contrastive Anchor-based Rubric Evolution for Large Language Model Post-Training",
+      "category": "reward-modeling",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00892",
+      "summary": {
+        "en": "CARE dynamically evolves rubrics using contrastive frontier-model anchors, repairing reward misspecification and sharpening high-reward discrimination during reinforcement-learning post-training.",
+        "zh": "CARE利用前沿模型锚定响应对比式动态演化评测标准，在强化学习后训练中修复奖励错配并提升高奖励区域的判别能力。"
+      }
+    },
+    {
+      "id": "2609.01597",
+      "title": "The Rise of Verbal Reinforcement Learning",
+      "category": "survey",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01597",
+      "summary": {
+        "en": "A unified survey and taxonomy of Verbal Reinforcement Learning, covering language as grounding, deliberative feedback, and parameter-updating learning signals.",
+        "zh": "系统综述并分类语言强化学习，涵盖语言作为任务 grounding、测试时思考反馈以及更新模型参数的学习信号。"
+      }
+    },
+    {
+      "id": "2609.01567",
+      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+      "category": "on-policy-distill",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01567",
+      "summary": {
+        "en": "SAGE selectively queries uncertain VLM states, uses advantage-weighted teacher actions during online RL, and distills useful guidance into autonomous policies without deployment-time VLM calls.",
+        "zh": "SAGE选择性查询不确定状态下的VLM，在线强化学习中利用基于优势的教师动作加以引导，并将有效知识蒸馏至无需部署时调用VLM的自主策略。"
+      }
+    },
+    {
+      "id": "2609.01515",
+      "title": "TempCloze: Can Video-LLMs Identify the Missing Middle?",
+      "category": "benchmarks",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01515",
+      "summary": {
+        "en": "TempCloze introduces a video cloze benchmark testing Video-LLMs’ temporal alignment, semantic inference, and event progression while reducing linguistic and visual shortcuts.",
+        "zh": "TempCloze提出视频完形填空基准，测试Video-LLM的时间对齐、语义推断与事件演进能力，同时减少语言和视觉捷径。"
+      }
+    },
+    {
+      "id": "2609.01374",
+      "title": "Behaviorally Effective LoRA Writes Are Sparse and Structured",
+      "category": "peft",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01374",
+      "summary": {
+        "en": "Analyzes LoRA write geometry, showing behaviorally important updates are sparse, structured, and concentrated in a few learned module-wise directions.",
+        "zh": "分析LoRA写入的几何结构，发现行为上重要的更新具有稀疏性和结构性，并集中于少数学习到的模块级方向。"
+      }
+    },
+    {
+      "id": "2609.01294",
+      "title": "Explore Before Committing: Hypothesis-Guided Search for Deep Research Agents",
+      "category": "search",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01294",
+      "summary": {
+        "en": "HypoSearch uses hypothesis-guided branching and evidence comparison to improve deep-research agents’ tool-use search efficiency and accuracy.",
+        "zh": "HypoSearch通过假设引导的分支探索与证据比较，提升深度研究代理的工具搜索效率和准确性。"
+      }
+    },
+    {
+      "id": "2609.01246",
+      "title": "Ready to Speak: Aligning LLMs for TTS-Friendly Text Generation",
+      "category": "dpo",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01246",
+      "summary": {
+        "en": "Introduces TTS-friendly preference datasets, evaluation metrics, and FaST preference alignment to train LLMs for more natural spoken delivery.",
+        "zh": "提出面向TTS友好文本的偏好数据集与评测指标，并通过FaST偏好对齐训练LLM生成更自然的口语化文本。"
+      }
+    },
+    {
+      "id": "2609.01111",
+      "title": "ClinTraceBench: Source-Verifiable Longitudinal Clinical Reasoning over EHR-Derived Dialogues",
+      "category": "benchmarks",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01111",
+      "summary": {
+        "en": "Introduces ClinTraceBench, a provenance-verified benchmark measuring longitudinal clinical reasoning under different EHR history representations and model backbones.",
+        "zh": "提出 ClinTraceBench，通过可溯源验证评估不同 EHR 历史表示与模型骨干下的纵向临床推理能力。"
+      }
+    },
+    {
+      "id": "2609.01073",
+      "title": "Post-hoc Alignment of LLM-judges to Human Judgment Distribution",
+      "category": "reward-modeling",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01073",
+      "summary": {
+        "en": "Introduces NAPHA, an entropy-aware post-hoc method aligning LLM judge predictions with human judgment distributions, especially improving performance on ambiguous instances.",
+        "zh": "提出NAPHA熵感知后处理方法，将LLM评审预测对齐到人类判断分布，尤其提升其在高歧义样本上的表现。"
+      }
+    },
+    {
+      "id": "2609.01058",
+      "title": "ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01058",
+      "summary": {
+        "en": "Introduces rubric-grounded agentic self-evolution RL, combining generator-solver co-training, fine-grained tool-based rewards, and reward-gated on-policy distillation.",
+        "zh": "提出基于评测标准的智能体自进化强化学习，通过生成器-求解器协同训练、细粒度工具奖励和奖励门控在线蒸馏提升性能。"
       }
     }
   ]
