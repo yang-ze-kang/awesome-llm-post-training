@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "lastUpdated": "2026-09-02T05:55:12.596133Z",
+    "lastUpdated": "2026-09-03T05:56:08.214774Z",
     "currency": "USD",
     "costLabel": "Estimated standard API token cost",
     "pricingSource": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
@@ -155,6 +155,57 @@
         "reasoningTokens": 3819,
         "totalTokens": 57817,
         "estimatedCostUsd": 0.183534
+      },
+      "pricing": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.2,
+        "cacheWritePerMillion": 2.5,
+        "outputPerMillion": 12.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "runId": "33720467413-1",
+      "date": "2026-09-03",
+      "startedAt": "2026-09-03T05:49:14.996507Z",
+      "finishedAt": "2026-09-03T05:56:08.214774Z",
+      "durationSeconds": 413.22,
+      "status": "added",
+      "model": "gpt-5.6-terra",
+      "reasoningEffort": "high",
+      "sources": {
+        "arxiv": 0,
+        "huggingFace": 63,
+        "merged": 63
+      },
+      "papers": {
+        "newCandidates": 52,
+        "evaluated": 40,
+        "added": 21,
+        "rejected": 19,
+        "errors": 0,
+        "byCategory": {
+          "benchmarks": 3,
+          "cot-reasoning": 1,
+          "data-synthesis": 3,
+          "distillation": 1,
+          "instruction-tuning": 2,
+          "on-policy-distill": 1,
+          "reward-modeling": 1,
+          "rlvr": 7,
+          "safety": 1,
+          "tools": 1
+        }
+      },
+      "usage": {
+        "apiCalls": 40,
+        "inputTokens": 96953,
+        "cachedInputTokens": 18970,
+        "cacheWriteTokens": 0,
+        "outputTokens": 7275,
+        "reasoningTokens": 4200,
+        "totalTokens": 104228,
+        "estimatedCostUsd": 0.24706
       },
       "pricing": {
         "inputPerMillion": 2.0,

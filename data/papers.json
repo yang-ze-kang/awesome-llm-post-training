@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-02",
+    "lastUpdated": "2026-09-03",
     "source": "Seeded from mbzuai-oryx/Awesome-LLM-Post-training and canonical literature; auto-updated daily via arXiv crawler."
   },
   "papers": [
@@ -9038,6 +9038,258 @@
       "summary": {
         "en": "Introduces rubric-grounded agentic self-evolution RL, combining generator-solver co-training, fine-grained tool-based rewards, and reward-gated on-policy distillation.",
         "zh": "提出基于评测标准的智能体自进化强化学习，通过生成器-求解器协同训练、细粒度工具奖励和奖励门控在线蒸馏提升性能。"
+      }
+    },
+    {
+      "id": "2609.02817",
+      "title": "Cliff: Learning Process Rewards from the First Mistake",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02817",
+      "summary": {
+        "en": "Cliff improves RLVR by using an LLM teacher to identify the first reasoning mistake and provide token-level positive and negative advantages.",
+        "zh": "Cliff利用大语言模型教师识别推理过程中的首个错误，并提供令牌级正负优势以改进RLVR。"
+      }
+    },
+    {
+      "id": "2609.02849",
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "category": "rlvr",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02849",
+      "summary": {
+        "en": "Presents an SFT-and-RL pipeline with curated coding data and feedback-driven test-time refinement, achieving gold-medal-level and human-beating performance in programming competitions.",
+        "zh": "提出结合精选编程数据、监督微调、强化学习与反馈驱动测试时迭代优化的流程，在编程竞赛中达到金牌并超越人类最高分。"
+      }
+    },
+    {
+      "id": "2609.01532",
+      "title": "Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall",
+      "category": "distillation",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01532",
+      "summary": {
+        "en": "Proposes entropy-routed Switch Distillation for mid-training, improving reasoning and knowledge while mitigating factual recall losses from standard logit distillation.",
+        "zh": "提出用于中期训练的基于熵路由的 Switch Distillation，在提升推理和知识能力的同时缓解标准 Logit 蒸馏造成的事实记忆损失。"
+      }
+    },
+    {
+      "id": "2609.00638",
+      "title": "It Takes Two to Match: Co-Evolving Generative Retriever with Reinforcement Learning",
+      "category": "rlvr",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00638",
+      "summary": {
+        "en": "CoGR fine-tunes query and item keyword generators, then co-evolves them with GRPO using retrieval F1 and counterfactual rewards for direct keyword-based retrieval.",
+        "zh": "CoGR先微调查询和商品关键词生成器，再利用检索F1和反事实奖励通过GRPO协同进化，实现直接的关键词检索。"
+      }
+    },
+    {
+      "id": "2608.26623",
+      "title": "AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling",
+      "category": "benchmarks",
+      "date": "2026-08-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26623",
+      "summary": {
+        "en": "AgentJudgeBench evaluates LLM-judge reliability for agentic tool-calling workflows, revealing difficulty-driven accuracy ceilings and limited benefits from reasoning or ground-truth exposure.",
+        "zh": "AgentJudgeBench评估LLM评判器在智能体工具调用工作流中的可靠性，揭示由任务难度导致的准确率上限，以及推理和真实答案暴露的有限收益。"
+      }
+    },
+    {
+      "id": "2608.29846",
+      "title": "Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation",
+      "category": "on-policy-distill",
+      "date": "2026-08-29",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.29846",
+      "summary": {
+        "en": "Introduces IDA-OPD, an influence-directed sampled-token distillation method that preserves student diversity and improves pass@k without full-vocabulary teacher probabilities.",
+        "zh": "提出IDA-OPD，一种基于影响力的采样令牌蒸馏方法，无需教师全词表概率即可保持学生多样性并提升pass@k。"
+      }
+    },
+    {
+      "id": "2608.30457",
+      "title": "Learning Where Outcomes Change:Credit-Addressable Reasoning for Multimodal Geometry",
+      "category": "rlvr",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30457",
+      "summary": {
+        "en": "Introduces Code-CoT and CE-GRPO, localizing outcome-based RL credit across typed reasoning events to improve long multimodal geometry reasoning.",
+        "zh": "提出 Code-CoT 和 CE-GRPO，将基于结果的强化学习信用分配定位到类型化推理事件中，以提升长链多模态几何推理。"
+      }
+    },
+    {
+      "id": "2609.00768",
+      "title": "DiagEvo: Diagnosis-Guided Self-Evolution via Hierarchical Error Memory",
+      "category": "data-synthesis",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00768",
+      "summary": {
+        "en": "DiagEvo uses hierarchical memory of recurring solver errors to guide self-play curriculum generation and improve reasoning across multiple benchmarks.",
+        "zh": "DiagEvo利用层次化记忆追踪求解器的重复错误，引导自博弈课程生成，并提升多个基准上的推理能力。"
+      }
+    },
+    {
+      "id": "2608.28612",
+      "title": "InternReviewer & InternAdvocate: Objective Reward and Evaluation for Agentic Reinforcement Learning in Peer Review and Rebuttal",
+      "category": "rlvr",
+      "date": "2026-07-20",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28612",
+      "summary": {
+        "en": "Introduces agentic reinforcement learning for scholarly review and rebuttal agents using retrieval, objective multi-dimensional rewards, and citation verification against interaction logs.",
+        "zh": "提出用于学术评审与 rebuttal 智能体的代理强化学习框架，结合检索、多维客观奖励及基于交互日志的引用验证。"
+      }
+    },
+    {
+      "id": "2608.28958",
+      "title": "CoVA-SFT: A Large-Scale Dataset for Chain of Visual Abstractions",
+      "category": "data-synthesis",
+      "date": "2026-08-28",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28958",
+      "summary": {
+        "en": "Introduces CoVA-SFT, a 51.9K-sample multimodal reasoning dataset with visual abstractions, self-correction, and verification, plus the CoVA-Bench evaluation benchmark.",
+        "zh": "提出CoVA-SFT多模态推理数据集，包含5.19万样本、视觉抽象、自校正与验证流程，并配套CoVA-Bench评测基准。"
+      }
+    },
+    {
+      "id": "2609.00591",
+      "title": "A Glance Is All You Need: Single-Pass Fine-Grained Image Captioning with SimLoss",
+      "category": "instruction-tuning",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00591",
+      "summary": {
+        "en": "SimLoss fine-tunes vision-language models with frozen image-embedding supervision, enabling faster single-pass fine-grained captioning and a GRPO reward-based variant.",
+        "zh": "SimLoss利用冻结图像嵌入监督微调视觉语言模型，实现更快的单次细粒度图像描述，并提出基于GRPO的奖励优化变体。"
+      }
+    },
+    {
+      "id": "2609.01591",
+      "title": "StudentSim: Training LLM-based Student Simulators",
+      "category": "reward-modeling",
+      "date": "2026-08-31",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01591",
+      "summary": {
+        "en": "Trains personalized LLM student simulators from sparse learner data and uses them as reward models for reinforcement-learning tutors, introducing StudentSimEval.",
+        "zh": "利用稀疏学习者数据训练个性化学生模拟器，将其作为强化学习导师的奖励模型，并提出StudentSimEval评测协议。"
+      }
+    },
+    {
+      "id": "2609.00111",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "category": "instruction-tuning",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00111",
+      "summary": {
+        "en": "Introduces staged supervised post-training of a pretrained vision-language model with driving data for 3D perception, scene understanding, and motion planning while preserving general capabilities.",
+        "zh": "提出对预训练视觉语言模型进行分阶段监督后训练，结合驾驶数据实现三维感知、场景理解和运动规划，同时保留通用能力。"
+      }
+    },
+    {
+      "id": "2609.00028",
+      "title": "UI-Venus-2 Technical Report",
+      "category": "rlvr",
+      "date": "2026-08-26",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.00028",
+      "summary": {
+        "en": "Presents a multimodal GUI agent trained with scalable environments, function-grounded tasks, and trace-level verification to provide reliable reinforcement-learning signals.",
+        "zh": "提出一种多模态GUI智能体，通过可扩展环境、功能导向任务和轨迹级验证，为强化学习提供可靠信号。"
+      }
+    },
+    {
+      "id": "2609.02783",
+      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "category": "tools",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02783",
+      "summary": {
+        "en": "EarlyEval predicts agent success or failure from intermediate behavior to halt runs early, reducing evaluation steps and tokens with minimal accuracy loss.",
+        "zh": "EarlyEval根据中间行为预测智能体成败并提前终止运行，在准确率损失极小的情况下减少评估步骤和输入输出令牌。"
+      }
+    },
+    {
+      "id": "2608.30968",
+      "title": "CogEvol: Towards Efficient and Reliable Learning Environment Generation",
+      "category": "rlvr",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30968",
+      "summary": {
+        "en": "CogEvol combines production-grounded supervised fine-tuning with hybrid rule-and-VLM rewards and GRPO to efficiently and reliably generate educational slides and interactive pages.",
+        "zh": "CogEvol结合生产数据监督微调与规则和视觉语言模型混合奖励，通过GRPO高效可靠地生成教育幻灯片和交互式页面。"
+      }
+    },
+    {
+      "id": "2608.28833",
+      "title": "Evaluating the Hidden Costs of Personalization in Large Language Models",
+      "category": "safety",
+      "date": "2026-08-27",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28833",
+      "summary": {
+        "en": "Introduces PRISK, an evaluation framework revealing irrelevant personalization, preference narrowing, and sycophantic bias in personalized LLMs.",
+        "zh": "提出PRISK评测框架，揭示个性化大语言模型中的无关个性化、偏好收窄和迎合偏见问题。"
+      }
+    },
+    {
+      "id": "2609.02737",
+      "title": "Language Models Can Control Their Own Attention",
+      "category": "cot-reasoning",
+      "date": "2026-09-01",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02737",
+      "summary": {
+        "en": "Introduces Declarative Attention, eliciting models to specify relevant context regions during reasoning to reduce long-context KV-cache reads with modest accuracy loss.",
+        "zh": "提出声明式注意力，促使模型在推理中指定相关上下文区域，从而减少长上下文 KV 缓存读取，并仅带来较小的准确率损失。"
+      }
+    },
+    {
+      "id": "2608.30428",
+      "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+      "category": "benchmarks",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30428",
+      "summary": {
+        "en": "Introduces MineAmongUs, an embodied multimodal deception benchmark, and ARIA, a configurable VLM-agent evaluation harness with fine-grained behavior annotations.",
+        "zh": "提出具身多模态欺骗基准MineAmongUs及可配置的VLM智能体评测框架ARIA，并提供细粒度行为标注方案。"
+      }
+    },
+    {
+      "id": "2608.31111",
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "category": "benchmarks",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31111",
+      "summary": {
+        "en": "Introduces ASPIRE, a benchmark for evaluating LLM self-evolution from vague goals through autonomous data, training, evaluation, and harness decisions.",
+        "zh": "提出ASPIRE基准，评估大模型如何从模糊目标出发，自主决定数据、训练、评测与智能体框架改进。"
+      }
+    },
+    {
+      "id": "2608.30147",
+      "title": "CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents",
+      "category": "data-synthesis",
+      "date": "2026-08-30",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30147",
+      "summary": {
+        "en": "CAST synthesizes action-level critique rationales from sparse outcomes to fine-tune critique and policy models, improving long-horizon tool-calling reliability across domains.",
+        "zh": "CAST 从稀疏任务结果合成动作级批评理由，用于微调批评模型和策略模型，提升跨领域长程工具调用的可靠性。"
       }
     }
   ]
